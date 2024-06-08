@@ -22,10 +22,10 @@ public class ItemInteractable : Interactable
     public override void Start()
     {
         base.Start();
-        itemWasObtained += InventoryUI.Instance.AddEntry;
+        itemWasObtained += InventoryUI.Instance.AddItemEntry;
     }
     private void OnDestroy()
     {
-        itemWasObtained -= InventoryUI.Instance.AddEntry;
+        itemWasObtained -= InventoryUI.Instance.AddItemEntry;
     }
 }

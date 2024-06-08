@@ -31,11 +31,13 @@ public abstract class Movement : MonoBehaviour
     {
         Vector3 moveValue = speed * Time.deltaTime * Time.timeScale * new Vector3(direction.x, -gravity, direction.y);
         _character.Move(moveValue);
-        if(moveValue == Vector3.zero) { return; }
-        Look(new Vector3(moveValue.x, 0, moveValue.z).normalized);
+
+        Vector3 lookDir = new Vector3(moveValue.x, 0, moveValue.z).normalized;        
+        if(lookDir == Vector3.zero) { return; }
+        Look(lookDir);
         model.position = transform.position;
         if(interactor == null) { return; }
-        interactor.position = transform.position + moveValue.normalized;
+        interactor.position = transform.position + lookDir.normalized;
 
     }
 

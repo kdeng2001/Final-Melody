@@ -8,7 +8,7 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private Transform content;
     [SerializeField] private GameObject itemEntry;
     public Dictionary<string, GameObject> itemEntries;
-
+    private Inventory inventory;
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -20,9 +20,10 @@ public class InventoryUI : MonoBehaviour
         {
             Instance = this;
             itemEntries = new Dictionary<string, GameObject>();
+            inventory = gameObject.AddComponent<Inventory>();
         }
     }
-    public void AddEntry(Item item)
+    public void AddItemEntry(Item item)
     {
         // if item exists in inventory, update the amount
         if(itemEntries.ContainsKey(item.itemName))
@@ -56,5 +57,6 @@ public class InventoryUI : MonoBehaviour
         tmp.text = (int.Parse(tmp.text.Substring(1)) + item.amount).ToString();
         if (tmp.text.Length <= 1) { tmp.text = "0" + tmp.text; }
         tmp.text = "x" + tmp.text;
+        inventory.AddItems(item.itemName, item.amount);
     }
 }
