@@ -9,6 +9,7 @@ public abstract class Movement : MonoBehaviour
     [SerializeField] private int speed = 1;
     [SerializeField] private Transform model;
     [SerializeField] private Transform interactor;
+    [SerializeField] private int gravity = 10;
     private CharacterController _character;
     public Vector2 direction { get; private set; }
     private void Awake()
@@ -28,10 +29,10 @@ public abstract class Movement : MonoBehaviour
 
     public virtual void Move()
     {
-        Vector3 moveValue = speed * Time.deltaTime * Time.timeScale * new Vector3(direction.x, 0, direction.y);
+        Vector3 moveValue = speed * Time.deltaTime * Time.timeScale * new Vector3(direction.x, -gravity, direction.y);
         _character.Move(moveValue);
         if(moveValue == Vector3.zero) { return; }
-        Look(moveValue.normalized);
+        Look(new Vector3(moveValue.x, 0, moveValue.z).normalized);
         model.position = transform.position;
         if(interactor == null) { return; }
         interactor.position = transform.position + moveValue.normalized;
