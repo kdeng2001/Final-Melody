@@ -100,10 +100,12 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
         // make sure inventory is empty
         inventory.items.Clear();
         itemEntries.Clear();
+        // clear out UI
         List<RectTransform> uiEntries = content.gameObject.GetComponentsInChildren<RectTransform>().ToList();
         uiEntries.RemoveAt(0);
         foreach(RectTransform ui in uiEntries) { Destroy(ui.gameObject); }
-        // add back each item and its amount from data
+        
+        // add back each item and its amount from data to inventory + ui
         foreach (KeyValuePair<string, int> pair in data.itemInventory)
         {
             AddItemEntry(pair.Key, pair.Value);
@@ -113,7 +115,7 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data)
     {
         // make sure data for inventory is empty
-        //data.itemInventory.Clear();
+        data.itemInventory.Clear();
 
         // add back in each item and its amount to data
         foreach (KeyValuePair<string, int> pair in inventory.items)
