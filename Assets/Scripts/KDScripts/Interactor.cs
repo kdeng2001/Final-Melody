@@ -26,6 +26,7 @@ public class Interactor : MonoBehaviour
             Debug.Log(other.gameObject.name + " is interactable");
             if(interactable != null) { interactable.DisableInteraction(); }
             interactable = other.GetComponent<Interactable>();
+            if(interactable == null) { return; }
             interactable.EnableInteraction();
         }
     }

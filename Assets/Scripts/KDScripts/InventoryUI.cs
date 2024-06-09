@@ -51,8 +51,8 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
                 if (tmp.name == "Count") { UpdateItemCountUI(tmp, item); }
                 else if (tmp.name == "Name") { tmp.text = item.itemName; }
             }
-
         }
+        inventory.AddItems(item.itemName, item.amount);
     }
     public void AddItemEntry(string itemName, int count)
     {
@@ -78,6 +78,7 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
                 else if (tmp.name == "Name") { tmp.text = itemName; }
             }
         }
+        inventory.AddItems(itemName, count);
     }
 
     private void UpdateItemCountUI(TextMeshProUGUI tmp, Item item)
@@ -85,16 +86,35 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
         tmp.text = (int.Parse(tmp.text.Substring(1)) + item.amount).ToString();
         if (tmp.text.Length <= 1) { tmp.text = "0" + tmp.text; }
         tmp.text = "x" + tmp.text;
-        inventory.AddItems(item.itemName, item.amount);
     }
     private void UpdateItemCountUI(TextMeshProUGUI tmp, string itemName, int count)
     {
         tmp.text = (int.Parse(tmp.text.Substring(1)) + count).ToString();
         if (tmp.text.Length <= 1) { tmp.text = "0" + tmp.text; }
         tmp.text = "x" + tmp.text;
-        inventory.AddItems(itemName, count);
     }
-
+    public void RemoveItemTest(string itemName, int amount)
+    {
+        if(itemEntries.ContainsKey(itemName) && inventory.items.ContainsKey(itemName))
+        {
+            inventory.items[itemName] -= amount;
+            if(inventory.items[itemName] <= 0)
+            {
+                inventory.items.Remove(itemName);
+                Destroy(itemEntries[itemName]);
+                itemEntries.Remove(itemName);
+                Debug.Log(itemName + " was removed");
+            }
+            else
+            {
+                foreach(TextMeshProUGUI t in itemEntries[itemName].GetComponentsInChildren<TextMeshProUGUI>())
+                {
+                    if(t.name == "Count") { UpdateItemCountUI(t, itemName, -amount); }
+                }
+            }
+            
+        }
+    }
     public void LoadData(GameData data)
     {
         // make sure inventory is empty
