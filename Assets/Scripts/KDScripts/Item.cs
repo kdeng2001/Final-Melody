@@ -15,6 +15,7 @@ public class Item : MonoBehaviour, IDataPersistence
         if(data.itemInScene.TryGetValue(id, out bool collected))
         {
             obtained = collected;
+            if(this == null) { return; }
             gameObject.SetActive(!collected);
         }
     }

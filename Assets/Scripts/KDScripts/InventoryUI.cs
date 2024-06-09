@@ -97,7 +97,10 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         // make sure inventory is empty
-        inventory.items.Clear();     
+        inventory.items.Clear();
+        itemEntries.Clear();
+        GameObject[] uiEntries = GetComponentsInChildren<GameObject>();
+        foreach(GameObject ui in uiEntries) { Destroy(ui); }
         // add back each item and its amount from data
         foreach (KeyValuePair<string, int> pair in data.itemInventory)
         {

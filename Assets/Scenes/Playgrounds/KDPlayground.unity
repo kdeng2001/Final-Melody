@@ -1117,7 +1117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
-      value: 14ec2b13-d688-44d4-8ce6-b571723c8348
+      value: bc9043d4-5cce-4150-8cbc-03073b0faf4c
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
@@ -2263,6 +2263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: final-melody-data.game
+  enableDataPersistence: 1
 --- !u!1 &1841674063
 GameObject:
   m_ObjectHideFlags: 0

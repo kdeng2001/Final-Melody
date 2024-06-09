@@ -10,6 +10,7 @@ public class DataPersistenceManager : MonoBehaviour
 {
     [Header("File Storage Config")]
     [SerializeField] private string fileName;
+    [SerializeField] private bool enableDataPersistence = true;
     public static DataPersistenceManager Instance { get; private set; }
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObjects;
@@ -35,11 +36,13 @@ public class DataPersistenceManager : MonoBehaviour
         if(gameData == null) 
         {
             Debug.Log("No data was found");
-            NewGame(); 
+            NewGame();
+            return;
         }
         // else load data for all scripts that implement IDataPersistence
-        foreach(IDataPersistence dataPersistenceObj in dataPersistenceObjects)
+        foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
+            if (dataPersistenceObj == null) { continue; }
             dataPersistenceObj.LoadData(gameData);
         }
     }    
@@ -48,6 +51,7 @@ public class DataPersistenceManager : MonoBehaviour
         // pass in data from scripts that implement IDataPersistence to GameData
         foreach(IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
+            if (dataPersistenceObj == null) { continue; }
             dataPersistenceObj.SaveData(ref gameData);
         }
         fileDataHandler.Save(gameData);
@@ -69,6 +73,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         fileDataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         dataPersistenceObjects = FindAllDataPersistenceObjects();
+        if(!enableDataPersistence) { return; }
         LoadGame();
     }
     private void OnApplicationQuit()

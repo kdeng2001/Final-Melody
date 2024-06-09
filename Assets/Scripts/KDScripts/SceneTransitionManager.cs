@@ -30,12 +30,14 @@ public class SceneTransitionManager : MonoBehaviour
     }
     public void EnterNewScene(string sceneName, string entranceID)
     {      
+        DataPersistenceManager.Instance.SaveGame();
         this.entranceID = entranceID;
         SceneManager.LoadScene(sceneName);
     }
 
     private void MovePlayerToEntrance(Scene scene, LoadSceneMode mode)
     {
+        DataPersistenceManager.Instance.LoadGame();
         if (entranceID == "") { return; }
         player = FindObjectOfType<Player>().GetComponent<Player>();
         DoorInteractable[] doors = FindObjectsOfType<DoorInteractable>();
