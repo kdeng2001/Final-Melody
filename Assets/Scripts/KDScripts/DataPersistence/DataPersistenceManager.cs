@@ -23,6 +23,7 @@ public class DataPersistenceManager : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
 

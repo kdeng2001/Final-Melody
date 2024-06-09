@@ -16,7 +16,7 @@ public class ItemInteractable : Interactable
     {
         Debug.Log("start interacting with " + transform.parent.name);
         itemWasObtained?.Invoke(item);
-        Destroy(transform.parent.gameObject);
+        transform.parent.gameObject.SetActive(false);
     }
 
     public override void Start()

@@ -24,6 +24,10 @@ public class SceneTransitionManager : MonoBehaviour
     {
         SceneManager.sceneLoaded += MovePlayerToEntrance;
     }
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= MovePlayerToEntrance;
+    }
     public void EnterNewScene(string sceneName, string entranceID)
     {      
         this.entranceID = entranceID;
@@ -46,4 +50,7 @@ public class SceneTransitionManager : MonoBehaviour
             }
         }
     }
+
+    public void LoadScene() { }
+    public void SaveScene() { }
 }

@@ -6,7 +6,7 @@ public class Inventory : MonoBehaviour
 {
     [SerializeField] public int money = 0;
     [SerializeField] public int reputation = 0;
-    public Dictionary<string, int> items { get; private set; }
+    public Dictionary<string, int> items;
     public void AddMoney(int amount) { money += amount; }
     public void RemoveMoney(int amount) { money -= amount; }
     public void AddReputation(int amount) { reputation += amount; }
