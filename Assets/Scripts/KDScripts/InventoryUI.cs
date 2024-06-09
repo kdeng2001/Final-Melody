@@ -21,6 +21,7 @@ public class InventoryUI : MonoBehaviour
             Instance = this;
             itemEntries = new Dictionary<string, GameObject>();
             inventory = gameObject.AddComponent<Inventory>();
+            DontDestroyOnLoad(gameObject);
         }
     }
     public void AddItemEntry(Item item)
