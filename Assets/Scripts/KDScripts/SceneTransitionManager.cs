@@ -20,13 +20,17 @@ public class SceneTransitionManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
+    private void Start()
+    {
+        SceneManager.sceneLoaded += MovePlayerToEntrance;
+    }
     public void EnterNewScene(string sceneName, string entranceID)
     {      
         this.entranceID = entranceID;
         SceneManager.LoadScene(sceneName);
     }
-    private void OnLevelWasLoaded(int level)
+
+    private void MovePlayerToEntrance(Scene scene, LoadSceneMode mode)
     {
         if (entranceID == "") { return; }
         player = FindObjectOfType<Player>().GetComponent<Player>();
