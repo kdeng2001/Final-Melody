@@ -10,12 +10,15 @@ using UnityEngine.SceneManagement;
 public class DataPersistenceManager : MonoBehaviour
 {
     [Header("File Storage Config")]
-    [SerializeField] private string fileName;
+    [SerializeField] private string globalSaveName;
+    [SerializeField] private string localSaveName;
     [SerializeField] private bool enableDataPersistence = true;
     public static DataPersistenceManager Instance { get; private set; }
-    private GameData gameData;
+    private GameData globalGameData;
+    private GameData localGameData;
     public List<IDataPersistence> dataPersistenceObjects;
-    private FileDataHandler fileDataHandler;
+    private FileDataHandler globalSaveDataHandler;
+    private FileDataHandler localSaveDataHandler;
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -29,12 +32,17 @@ public class DataPersistenceManager : MonoBehaviour
         }
     }
 
-    public void NewGame() { gameData = new GameData(); }
+    public void NewGame() 
+    { 
+        globalGameData = new GameData();
+        localGameData = new GameData();
+    }
     public void LoadGame() 
     {
         // load any saved data from a file using the data handler
-        gameData = fileDataHandler.Load();
-        if(gameData == null) 
+        globalGameData = globalSaveDataHandler.Load();
+        localGameData = globalGameData;
+        if(globalGameData == null) 
         {
             Debug.Log("No data was found");
             NewGame();
@@ -45,20 +53,21 @@ public class DataPersistenceManager : MonoBehaviour
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             if (dataPersistenceObj == null) { continue; }
-            dataPersistenceObj.LoadData(gameData);
+            dataPersistenceObj.LoadData(globalGameData);
         }
     }    
     public void SaveGame() 
     {
         Debug.Log("SaveGame...");
-        // pass in data from scripts that implement IDataPersistence to GameData
+        globalGameData = localGameData;
+        // pass in data from scripts that implement IDataPersistence to globalGameData
         dataPersistenceObjects = FindAllDataPersistenceObjects();
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             if (dataPersistenceObj == null) { continue; }
-            dataPersistenceObj.SaveData(ref gameData);
+            dataPersistenceObj.SaveData(ref globalGameData);
         }
-        fileDataHandler.Save(gameData);
+        globalSaveDataHandler.Save(globalGameData);
     }
 
     public void LoadScene()
@@ -67,7 +76,7 @@ public class DataPersistenceManager : MonoBehaviour
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             if (dataPersistenceObj == null) { continue; }
-            dataPersistenceObj.LoadData(gameData);
+            dataPersistenceObj.LoadData(localGameData);
         }
     }
     
@@ -78,9 +87,9 @@ public class DataPersistenceManager : MonoBehaviour
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             if (dataPersistenceObj == null) { continue; }
-            dataPersistenceObj.SaveData(ref gameData);
+            dataPersistenceObj.SaveData(ref localGameData);
         }
-        fileDataHandler.Save(gameData);
+        localSaveDataHandler.Save(localGameData);
     }
 
 
@@ -97,20 +106,13 @@ public class DataPersistenceManager : MonoBehaviour
     // --- simple save on quit, load on start ---
     private void Start()
     {
-        fileDataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
+        globalSaveDataHandler = new FileDataHandler(Application.persistentDataPath, globalSaveName);
+        localSaveDataHandler = new FileDataHandler(Application.persistentDataPath, localSaveName);
         dataPersistenceObjects = FindAllDataPersistenceObjects();
-        //SceneManager.sceneLoaded += GetDataPersistenceObjectsInScene;
         if(!enableDataPersistence) { return; }
         LoadGame();
     }
     private void OnApplicationQuit()
     {
-        //SceneManager.sceneLoaded -= GetDataPersistenceObjectsInScene;
-        SaveGame();
     }
-
-    //public void GetDataPersistenceObjectsInScene(Scene scene, LoadSceneMode mode)
-    //{
-    //    dataPersistenceObjects = FindAllDataPersistenceObjects();
-    //}
 }
