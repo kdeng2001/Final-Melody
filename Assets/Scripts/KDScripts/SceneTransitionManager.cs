@@ -29,15 +29,18 @@ public class SceneTransitionManager : MonoBehaviour
         SceneManager.sceneLoaded -= MovePlayerToEntrance;
     }
     public void EnterNewScene(string sceneName, string entranceID)
-    {      
-        DataPersistenceManager.Instance.SaveGame();
+    {
+        DataPersistenceManager.Instance.SaveScene();
+        //DataPersistenceManager.Instance.SaveGame();
         this.entranceID = entranceID;
         SceneManager.LoadScene(sceneName);
     }
 
     private void MovePlayerToEntrance(Scene scene, LoadSceneMode mode)
     {
-        DataPersistenceManager.Instance.LoadGame();
+        DataPersistenceManager.Instance.LoadScene();
+        //DataPersistenceManager.Instance.LoadGame();
+
         if (entranceID == "") { return; }
         player = FindObjectOfType<Player>().GetComponent<Player>();
         DoorInteractable[] doors = FindObjectsOfType<DoorInteractable>();

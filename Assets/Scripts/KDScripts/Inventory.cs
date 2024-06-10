@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
         if(count <= 0) { return; }
         if(items.ContainsKey(name)) { items[name] += count; }
         else { items[name] = count; }
-        Debug.Log("You have " + items[name] + " of " + name);
+        //Debug.Log("You have " + items[name] + " of " + name);
 
     }
     public void RemoveItems(string name, int count) 

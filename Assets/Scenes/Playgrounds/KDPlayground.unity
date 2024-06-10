@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &37548704 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
-  m_PrefabInstance: {fileID: 150345135}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &49052259
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,15 +151,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1465038643}
-  - {fileID: 1965813758}
-  - {fileID: 37548704}
-  - {fileID: 1683922916}
-  - {fileID: 1754779407}
-  - {fileID: 394727191}
-  - {fileID: 1467597999}
-  - {fileID: 1037565937}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79284811
@@ -256,11 +243,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 49052260}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: Orange (2)
+      value: PlaygroundOrange (3)
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -321,11 +308,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 49052260}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: Orange (4)
+      value: PlaygroundOrange (1)
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -862,18 +849,13 @@ MonoBehaviour:
   model: {fileID: 1135793411}
   interactor: {fileID: 200368291}
   gravity: 10
---- !u!4 &394727191 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
-  m_PrefabInstance: {fileID: 824969324}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &412939562
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 49052260}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 840888385856632345, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: entranceID
@@ -1109,11 +1091,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 49052260}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: Orange (3)
+      value: PlaygroundOrange (4)
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -1260,7 +1242,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1204818423}
   m_HandleRect: {fileID: 1204818422}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1394,11 +1376,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880879469}
   m_CullTransparentMesh: 1
---- !u!4 &1037565937 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6711025935644177742, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
-  m_PrefabInstance: {fileID: 412939562}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1055689677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,11 +1487,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 49052260}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: Orange (1)
+      value: PlaygroundOrange (2)
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -1855,16 +1832,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204818421}
   m_CullTransparentMesh: 1
---- !u!4 &1465038643 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3001028584633102445, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
-  m_PrefabInstance: {fileID: 3358546213315582161}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1467597999 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6711025935644177742, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
-  m_PrefabInstance: {fileID: 3537683730185324100}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1475166164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,11 +2097,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &1683922916 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
-  m_PrefabInstance: {fileID: 1106408864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1718389382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,11 +2207,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1754779407 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
-  m_PrefabInstance: {fileID: 119538171}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1816366017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,7 +2559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000026464462, y: 0.000019073486}
+  m_AnchoredPosition: {x: 0, y: 0.000019073486}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1939459924
@@ -2751,11 +2708,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2131756723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1965813758 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
-  m_PrefabInstance: {fileID: 6306960515854539689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2129172373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2979,7 +2931,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 49052260}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3001028584633102445, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3040,7 +2992,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 49052260}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 840888385856632345, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: entranceID
@@ -3113,15 +3065,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 49052260}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: Orange
+      value: PlaygroundOrange
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
-      value: 184f1689-fc7b-466d-bd2d-1ea96688d693
+      value: a3e79c3e-875e-45ce-ac5f-da06b229728a
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
@@ -3181,6 +3133,14 @@ SceneRoots:
   - {fileID: 770248917}
   - {fileID: 2129172377}
   - {fileID: 49052260}
+  - {fileID: 3358546213315582161}
+  - {fileID: 6306960515854539689}
+  - {fileID: 150345135}
+  - {fileID: 1106408864}
+  - {fileID: 119538171}
+  - {fileID: 824969324}
+  - {fileID: 3537683730185324100}
+  - {fileID: 412939562}
   - {fileID: 1630887697}
   - {fileID: 1816366018}
   - {fileID: 223653557}

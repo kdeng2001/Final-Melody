@@ -19,11 +19,12 @@ public class Interactor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //Debug.Log("trigger enter: " + other.name);
         if(HasInteractableTag(other)) 
         {
             // display interactable icon
             // enable interaction?
-            Debug.Log(other.gameObject.name + " is interactable");
+            //Debug.Log(other.gameObject.name + " is interactable");
             if(interactable != null) { interactable.DisableInteraction(); }
             interactable = other.GetComponent<Interactable>();
             if(interactable == null) { return; }
@@ -32,6 +33,7 @@ public class Interactor : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        //Debug.Log("trigger exit: " + other.name);
         if(HasInteractableTag(other))
         {
             if(interactable == other.GetComponent<Interactable>()) 
@@ -57,7 +59,7 @@ public class Interactor : MonoBehaviour
             if(interactAction != null)
             {
                 interactAction.started += context => PressInteract(context);
-                interactAction.canceled -= context => PressInteract(context);
+                //interactAction.canceled -= context => PressInteract(context);
             }
         }
     }
@@ -69,7 +71,7 @@ public class Interactor : MonoBehaviour
             if (interactAction != null)
             {
                 interactAction.started -= context => PressInteract(context);
-                interactAction.canceled -= context => PressInteract(context);
+                //interactAction.canceled -= context => PressInteract(context);
             }
         }
     }

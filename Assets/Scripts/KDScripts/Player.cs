@@ -32,6 +32,7 @@ public class Player : MonoBehaviour, IDataPersistence
 
     public void LoadData(GameData data)
     {
+        //Debug.Log("Load player data");
         CharacterController c = controller.GetComponent<CharacterController>();
         c.enabled = false;
         controller.position = model.position = interactor.position = data.playerPosition;
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data)
     {
+        //Debug.Log("Save player data");
         data.playerPosition = controller.position;
     }
 }

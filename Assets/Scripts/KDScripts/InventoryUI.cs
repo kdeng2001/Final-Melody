@@ -14,6 +14,7 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
     {
         if(Instance != null && Instance != this)
         {
+            Debug.Log("Destroy InventoryUI");
             Destroy(gameObject);
             return;
         }
@@ -117,6 +118,7 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
     }
     public void LoadData(GameData data)
     {
+        if(this == null || gameObject == null || inventory == null || itemEntries == null) { return; }
         // make sure inventory is empty
         inventory.items.Clear();
         itemEntries.Clear();
@@ -130,10 +132,14 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
         {
             AddItemEntry(pair.Key, pair.Value);
         }
+        Debug.Log("Finish loading inventory UI data");
     }
 
     public void SaveData(ref GameData data)
     {
+        Debug.Log("saving...");
+        if(this == null || gameObject == null) { return; }
+        
         // make sure data for inventory is empty
         data.itemInventory.Clear();
 
@@ -142,6 +148,7 @@ public class InventoryUI : MonoBehaviour, IDataPersistence
         {
             data.itemInventory[pair.Key] = pair.Value;
         }
+        Debug.Log("Finish saving inventory UI data");
 
     }
 }

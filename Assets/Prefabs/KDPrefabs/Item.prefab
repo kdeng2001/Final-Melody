@@ -50,6 +50,10 @@ MonoBehaviour:
   itemName: item
   id: 
   amount: 1
+  model: {fileID: 7391091972931922348}
+  interactable: {fileID: 1647559170278124661}
+  interactIcon: {fileID: 2912207952931728883}
+  obtained: 0
 --- !u!1 &1647559170278124661
 GameObject:
   m_ObjectHideFlags: 0
