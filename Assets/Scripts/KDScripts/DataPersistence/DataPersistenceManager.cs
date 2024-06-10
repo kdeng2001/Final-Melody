@@ -16,7 +16,7 @@ public class DataPersistenceManager : MonoBehaviour
     public static DataPersistenceManager Instance { get; private set; }
     private GameData globalGameData;
     private GameData localGameData;
-    public List<IDataPersistence> dataPersistenceObjects;
+    private List<IDataPersistence> dataPersistenceObjects;
     private FileDataHandler globalSaveDataHandler;
     private FileDataHandler localSaveDataHandler;
     private void Awake()
@@ -49,6 +49,10 @@ public class DataPersistenceManager : MonoBehaviour
             return;
         }
         // else load data for all scripts that implement IDataPersistence
+
+        // first load the correct scene
+        SceneManager.LoadScene(globalGameData.sceneIndex);
+        // then load everything else
         dataPersistenceObjects = FindAllDataPersistenceObjects();
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
@@ -60,6 +64,8 @@ public class DataPersistenceManager : MonoBehaviour
     {
         Debug.Log("SaveGame...");
         globalGameData = localGameData;
+        // first save the current scene
+        globalGameData.sceneIndex = SceneManager.GetActiveScene().buildIndex;
         // pass in data from scripts that implement IDataPersistence to globalGameData
         dataPersistenceObjects = FindAllDataPersistenceObjects();
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
