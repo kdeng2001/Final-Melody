@@ -12,7 +12,7 @@ public class Interactor : MonoBehaviour
 
     public void PressInteract(CallbackContext context)
     {
-        if(interactable == null) { return; }
+        if(interactable == null || !interactable.isActiveAndEnabled) { return; }
         interactable.OnStartInteract();
     }
     public void PausePlayer() { }
