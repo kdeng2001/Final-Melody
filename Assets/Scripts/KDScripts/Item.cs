@@ -19,10 +19,10 @@ public class Item : MonoBehaviour, IDataPersistence
         if(data.itemInScene.TryGetValue(id, out bool obtained))
         {
             this.obtained = obtained;
-            //Debug.Log(itemName + " was in data and obtained: " + obtained);
+            Debug.Log(itemName + " was in data and obtained: " + obtained);
             if (this == null) { return; }
-            //Debug.Log(itemName + ", " + gameObject.name + " was in data and obtained: " + obtained);
-            if(obtained) { Destroy(gameObject); }
+            Debug.Log(itemName + ", " + gameObject.name + " was in data and obtained: " + obtained);
+            if (obtained) { Destroy(gameObject); }
             gameObject.SetActive(true);
         }
     }
@@ -46,5 +46,6 @@ public class Item : MonoBehaviour, IDataPersistence
         model.SetActive(false);
         interactable.SetActive(false);
         interactIcon.SetActive(false);
+        obtained = true;
     }
 }

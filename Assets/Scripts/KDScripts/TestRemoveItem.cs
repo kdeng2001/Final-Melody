@@ -11,7 +11,7 @@ public class TestRemoveItem : MonoBehaviour
         Debug.Log("test remove item");
         foreach(string key in InventoryUI.Instance.itemEntries.Keys)
         {
-            InventoryUI.Instance.RemoveItemTest(key, removeAmount);
+            InventoryUI.Instance.inventory.UpdateItem(key, -removeAmount);
             break;
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemInteractable : Interactable
 {
     [SerializeField] Item item;
-    public delegate void ItemWasObtained(Item item);
+    public delegate void ItemWasObtained(string name, int amount);
     public ItemWasObtained itemWasObtained;
     public override void OnFinishInteract()
     {
@@ -14,20 +14,17 @@ public class ItemInteractable : Interactable
 
     public override void OnStartInteract()
     {
-        //Debug.Log("start interacting with " + transform.parent.name);
-        itemWasObtained?.Invoke(item);
+        itemWasObtained?.Invoke(item.itemName, item.amount);
         item.HandleObtained();
-        //transform.parent.gameObject.SetActive(false);
-        //Destroy(transform.parent.gameObject);
     }
 
     public override void Start()
     {
         base.Start();
-        itemWasObtained += InventoryUI.Instance.AddItemEntry;
+        itemWasObtained += InventoryUI.Instance.inventory.UpdateItem;
     }
     private void OnDestroy()
     {
-        itemWasObtained -= InventoryUI.Instance.AddItemEntry;
+        itemWasObtained -= InventoryUI.Instance.inventory.UpdateItem;
     }
 }
