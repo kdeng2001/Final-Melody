@@ -529,7 +529,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: RoomOrange (4)
+      value: Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -537,8 +537,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange3
+      value: squirrel
       objectReference: {fileID: 0}
+    - target: {fileID: 3715335771735082458, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52156d89308974143823b179dcd86343, type: 3}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -712,7 +716,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: RoomOrange (2)
+      value: Bird
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -720,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange1
+      value: bird
       objectReference: {fileID: 0}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1172,7 +1176,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: RoomOrange
+      value: Bird
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -1180,7 +1184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange
+      value: bird
       objectReference: {fileID: 0}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1454,6 +1458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7bddadd640a4646b613f65d27b1fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  removeAmount: 10
 --- !u!54 &1365570137
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1724,7 +1729,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: RoomOrange (1)
+      value: Bird
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -1736,7 +1741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange
+      value: bird
       objectReference: {fileID: 0}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1949,7 +1954,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: RoomOrange (3)
+      value: Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -1957,8 +1962,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange2
+      value: squirrel
       objectReference: {fileID: 0}
+    - target: {fileID: 3715335771735082458, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52156d89308974143823b179dcd86343, type: 3}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5

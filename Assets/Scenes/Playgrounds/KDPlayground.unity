@@ -373,7 +373,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: PlaygroundOrange (3)
+      value: Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -381,8 +381,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange2
+      value: squirrel
       objectReference: {fileID: 0}
+    - target: {fileID: 3715335771735082458, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52156d89308974143823b179dcd86343, type: 3}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.25
@@ -438,7 +442,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: PlaygroundOrange (1)
+      value: Bird
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -450,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange
+      value: bird
       objectReference: {fileID: 0}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1296,7 +1300,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: PlaygroundOrange (4)
+      value: Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -1304,8 +1308,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange3
+      value: squirrel
       objectReference: {fileID: 0}
+    - target: {fileID: 3715335771735082458, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52156d89308974143823b179dcd86343, type: 3}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.25
@@ -1861,7 +1869,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: PlaygroundOrange (2)
+      value: Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -1869,8 +1877,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange1
+      value: squirrel
       objectReference: {fileID: 0}
+    - target: {fileID: 3715335771735082458, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52156d89308974143823b179dcd86343, type: 3}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.25
@@ -4052,7 +4064,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_Name
-      value: PlaygroundOrange
+      value: Bird
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: id
@@ -4060,7 +4072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 626173445848762100, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: itemName
-      value: orange
+      value: bird
       objectReference: {fileID: 0}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemInteractable : Interactable
 {
     [SerializeField] Item item;
-    public delegate void ItemWasObtained(string name, int amount);
+    public delegate void ItemWasObtained(string name, int amount, string iconPath);
     public ItemWasObtained itemWasObtained;
     public override void OnFinishInteract()
     {
@@ -14,7 +14,7 @@ public class ItemInteractable : Interactable
 
     public override void OnStartInteract()
     {
-        itemWasObtained?.Invoke(item.itemName, item.amount);
+        itemWasObtained?.Invoke(item.itemName, item.amount, item.iconFilePath);
         item.HandleObtained();
     }
 

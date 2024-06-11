@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 public class InventoryUI : MonoBehaviour
 {
     public static InventoryUI Instance { get; private set; }
@@ -36,7 +39,7 @@ public class InventoryUI : MonoBehaviour
         itemEntries.Clear();
     }
 
-    public void UpdateItemEntry(string itemName, int amount)
+    public void UpdateItemEntry(string itemName, int amount, string iconPath)
     {
         // find if item entry already exists
         // if so, update the ui entry
@@ -44,7 +47,7 @@ public class InventoryUI : MonoBehaviour
         if (itemEntries.ContainsKey(itemName))
         {
             Debug.Log(itemName + " exists");
-            UpdateUIText(itemName, amount);
+            UpdateUI(itemName, amount, iconPath);
         }
         //else, create a new entry
         else
@@ -54,10 +57,11 @@ public class InventoryUI : MonoBehaviour
             newEntry.transform.SetParent(content, false);
             newEntry.SetActive(true);
             itemEntries[itemName] = newEntry;
-            UpdateUIText(itemName, amount);
+            UpdateUI(itemName, amount, iconPath);
+            CreateIcon(itemName, iconPath);
         }
     }
-    private void UpdateUIText(string itemName, int amount)
+    private void UpdateUI(string itemName, int amount, string iconPath)
     {
         List<TextMeshProUGUI> tmps = itemEntries[itemName].GetComponentsInChildren<TextMeshProUGUI>().ToList();
         foreach (TextMeshProUGUI tmp in tmps)
@@ -84,5 +88,20 @@ public class InventoryUI : MonoBehaviour
 
             }
         }
+
     }
+    /// <summary>
+    /// assumes that the icon is the only image, aside from the background image in the parent button
+    /// </summary>
+    /// <param name="itemName"></param>
+    /// <param name="iconPath"></param>
+    private void CreateIcon(string itemName, string iconPath)
+    {
+        Image img = itemEntries[itemName].GetComponentsInChildren<Image>()[1];
+        byte[] bytes = File.ReadAllBytes(iconPath);
+        Texture2D texture = new(64,64);
+        texture.LoadImage(bytes);
+        img.sprite = Sprite.Create(texture, new Rect(0,0,texture.width, texture.height), Vector2.zero);
+    }
+
 }
