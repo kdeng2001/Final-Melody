@@ -7,6 +7,10 @@ public class ItemInteractable : Interactable
     [SerializeField] Item item;
     public delegate void ItemWasObtained(string name, int amount, string iconPath);
     public ItemWasObtained itemWasObtained;
+    private void Awake()
+    {
+        item = transform.parent.GetComponent<Item>();
+    }
     public override void OnFinishInteract()
     {
         throw new System.NotImplementedException();

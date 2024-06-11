@@ -4,11 +4,12 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Item : MonoBehaviour, IDataPersistence
+public abstract class Item : MonoBehaviour, IDataPersistence
 {
     [SerializeField] public string itemName = "item";
     [SerializeField] public string id;
     [SerializeField] public int amount = 1;
+    [SerializeField] public bool reusable = true;
     public string iconFilePath { get; private set; }
 
     [SerializeField] private GameObject model;
@@ -23,6 +24,9 @@ public class Item : MonoBehaviour, IDataPersistence
         iconFilePath = AssetDatabase.GetAssetPath(icon.sprite);
         //Debug.Log("iconFilePath: " + iconFilePath);
     }
+
+    public abstract void UseItem();
+
     public void LoadData(GameData data)
     {
         if(data.itemInScene.TryGetValue(id, out bool obtained))
