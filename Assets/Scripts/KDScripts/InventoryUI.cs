@@ -13,11 +13,14 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private GameObject itemEntry;
     public Dictionary<string, GameObject> itemEntries;
     public Inventory inventory { get; private set; }
+    public Points points { get; private set; }
+    private TextMeshProUGUI moneyAmount;
+    private TextMeshProUGUI reputationAmount;
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
-            Debug.Log("Destroy InventoryUI");
+            //Debug.Log("Destroy InventoryUI");
             Destroy(gameObject);
             return;
         }
@@ -26,13 +29,16 @@ public class InventoryUI : MonoBehaviour
             Instance = this;
             itemEntries = new Dictionary<string, GameObject>();
             inventory = gameObject.AddComponent<Inventory>();
+            points = gameObject.AddComponent<Points>();
+            moneyAmount = GameObject.Find("MoneyAmount").GetComponent<TextMeshProUGUI>();
+            reputationAmount = GameObject.Find("ReputationAmount").GetComponent<TextMeshProUGUI>();
             DontDestroyOnLoad(gameObject);
         }
     }
 
     public void Clear()
     {
-        foreach(GameObject uiEntry in itemEntries.Values)
+        foreach (GameObject uiEntry in itemEntries.Values)
         {
             Destroy(uiEntry);
         }
@@ -46,13 +52,13 @@ public class InventoryUI : MonoBehaviour
 
         if (itemEntries.ContainsKey(itemName))
         {
-            Debug.Log(itemName + " exists");
+            //Debug.Log(itemName + " exists");
             UpdateUI(itemName, amount, iconPath);
         }
         //else, create a new entry
         else
         {
-            Debug.Log(itemName + " does not already exist");
+            //Debug.Log(itemName + " does not already exist");
             GameObject newEntry = Instantiate(itemEntry);
             newEntry.transform.SetParent(content, false);
             newEntry.SetActive(true);
@@ -72,12 +78,12 @@ public class InventoryUI : MonoBehaviour
             else if (tmp.name == "Count")
             {
                 // compute new item amount
-                Debug.Log("amount: " + amount);
+                //Debug.Log("amount: " + amount);
                 int newAmount = int.Parse(tmp.text.Substring(1)) + amount;
                 // remove if newAmount less than 0
                 if (newAmount <= 0)
                 {
-                    Debug.Log("Destroy " + itemName);
+                    //Debug.Log("Destroy " + itemName);
                     Destroy(itemEntries[itemName]);
                     itemEntries.Remove(itemName);
                     break;
@@ -101,9 +107,17 @@ public class InventoryUI : MonoBehaviour
     {
         Image img = itemEntries[itemName].GetComponentsInChildren<Image>()[1];
         byte[] bytes = File.ReadAllBytes(iconPath);
-        Texture2D texture = new(64,64);
+        Texture2D texture = new(64, 64);
         texture.LoadImage(bytes);
-        img.sprite = Sprite.Create(texture, new Rect(0,0,texture.width, texture.height), Vector2.zero);
+        img.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
     }
 
+    public void UpdateMoneyUI(int newValue)
+    {
+        moneyAmount.text = newValue.ToString();
+    }
+    public void UpdateReputationUI(int newValue)
+    {
+        reputationAmount.text = newValue.ToString();
+    }
 }

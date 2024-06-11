@@ -5,17 +5,11 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour, IDataPersistence
 {
-    [SerializeField] public int money = 0;
-    [SerializeField] public int reputation = 0;
     /// <summary>
     /// This dictionary stores a key: name, and string[], containing the amount at string[0] and iconFilePath at string[1]
     /// </summary>
     public Dictionary<string, string> itemAmounts;
     public Dictionary<string, string> itemIcons;
-    public void AddMoney(int amount) { money += amount; }
-    public void RemoveMoney(int amount) { money -= amount; }
-    public void AddReputation(int amount) { reputation += amount; }
-    public void RemoveReputation(int amount) { reputation -= amount; }
     private void Awake()
     {
         itemAmounts = new Dictionary<string, string>();
@@ -44,7 +38,7 @@ public class Inventory : MonoBehaviour, IDataPersistence
             itemIcons[itemName] = iconPath;
         }
 
-        if (itemAmounts.ContainsKey(itemName)) { Debug.Log("You have " + itemAmounts[itemName] + " of " + itemName); }
+        //if (itemAmounts.ContainsKey(itemName)) { Debug.Log("You have " + itemAmounts[itemName] + " of " + itemName); }
         InventoryUI.Instance.UpdateItemEntry(itemName, amount, iconPath);
 
     }
@@ -62,7 +56,7 @@ public class Inventory : MonoBehaviour, IDataPersistence
             int newAmount = int.Parse(itemAmounts[itemName]) + amount;
             itemAmounts[itemName] = newAmount.ToString();
             // if amount less than 0, remove from items, otherwise keep
-            if (itemAmounts.ContainsKey(itemName)) { Debug.Log("You have " + itemAmounts[itemName] + " of " + itemName); }
+            //if (itemAmounts.ContainsKey(itemName)) { Debug.Log("You have " + itemAmounts[itemName] + " of " + itemName); }
             InventoryUI.Instance.UpdateItemEntry(itemName, amount, itemIcons[itemName]);            
             if (newAmount <= 0) 
                 { 
@@ -77,7 +71,7 @@ public class Inventory : MonoBehaviour, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        Debug.Log("Load inventory");
+        //Debug.Log("Load inventory");
         itemAmounts.Clear();
         itemIcons.Clear();
         InventoryUI.Instance.Clear();
@@ -91,7 +85,7 @@ public class Inventory : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data)
     {        
-        Debug.Log("Save inventory");
+        //Debug.Log("Save inventory");
         data.itemAmountInventory.Clear();
         data.itemIconInventory.Clear();
         List<string> keys = itemAmounts.Keys.ToList();
