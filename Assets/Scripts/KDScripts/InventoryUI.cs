@@ -12,8 +12,8 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private Transform content;
     [SerializeField] private GameObject itemEntry;
     public Dictionary<string, GameObject> itemEntries;
-    public Inventory inventory { get; private set; }
-    public Points points { get; private set; }
+    [SerializeField] public Inventory inventory;
+    [SerializeField] public Points points;
     private TextMeshProUGUI moneyAmount;
     private TextMeshProUGUI reputationAmount;
     private void Awake()
@@ -28,8 +28,8 @@ public class InventoryUI : MonoBehaviour
         {
             Instance = this;
             itemEntries = new Dictionary<string, GameObject>();
-            inventory = gameObject.AddComponent<Inventory>();
-            points = gameObject.AddComponent<Points>();
+            //inventory = gameObject.AddComponent<Inventory>();
+            //points = gameObject.AddComponent<Points>();
             moneyAmount = GameObject.Find("MoneyAmount").GetComponent<TextMeshProUGUI>();
             reputationAmount = GameObject.Find("ReputationAmount").GetComponent<TextMeshProUGUI>();
             DontDestroyOnLoad(gameObject);
