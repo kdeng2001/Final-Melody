@@ -131,6 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractableIcon: {fileID: 2912207952931728883}
   item: {fileID: 0}
+  texts:
+  - {fileID: 4900000, guid: 569d308bc7b0e9e4ca21d3af0fbe963d, type: 3}
 --- !u!1 &3116633532571131866
 GameObject:
   m_ObjectHideFlags: 0

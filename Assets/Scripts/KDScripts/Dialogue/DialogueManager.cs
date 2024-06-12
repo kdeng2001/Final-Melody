@@ -15,8 +15,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
-    private Story currentStory;
+    public Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
+    public bool displayingChoices { get; private set; }
 
     private void Awake()
     {
@@ -27,11 +28,13 @@ public class DialogueManager : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
 
     private void Start()
     {
+        displayingChoices = false;
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
@@ -52,6 +55,7 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJson.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
+        Time.timeScale = 0;
 
     }
 
@@ -60,6 +64,8 @@ public class DialogueManager : MonoBehaviour
         if(currentStory.canContinue)
         {
             dialogueText.text = currentStory.Continue();
+            // display choices if any for this dialogue line
+            DisplayChoices();
         }
         else
         {
@@ -72,10 +78,12 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+        Time.timeScale = 1;
     }
 
     private void DisplayChoices()
     {
+        displayingChoices = false;
         List<Choice> currentChoices = currentStory.currentChoices;
         // defensive check to make sure UI can support the number of choices coming in
         if(currentChoices.Count > choices.Length)
@@ -87,13 +95,16 @@ public class DialogueManager : MonoBehaviour
         // enable and initialize the choices up to the amount of choices for this line of dialogue
         foreach(Choice choice in currentChoices)
         {
+            Debug.Log("choice " + index);
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
             index++;
+            displayingChoices = true;
         }
         // go through the remaining choices the UI supports and make sure they are hidden
         for(int i=index; i<choices.Length; i++)
         {
+            Debug.Log("choice inactive " + i);
             choices[i].gameObject.SetActive(false);
         }
         StartCoroutine(SelectFirstChoice());
@@ -110,6 +121,9 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
+        Debug.Log("make choice " + choiceIndex);
         currentStory.ChooseChoiceIndex(choiceIndex);
+        //displayingChoices = false;
+        ContinueStory();
     }
 }

@@ -117,7 +117,6 @@ public class DataPersistenceManager : MonoBehaviour
         dataPersistenceObjects = FindAllDataPersistenceObjects();
         if(!enableDataPersistence) { return; }
         LoadGame();
-        InventoryUI.Instance.gameObject.SetActive(false);
     }
     public void OnApplicationQuit()
     {
