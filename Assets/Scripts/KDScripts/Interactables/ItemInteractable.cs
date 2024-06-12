@@ -21,7 +21,6 @@ public class ItemInteractable : Interactable
     }
     public override void OnFinishInteract()
     {
-        currIndex++;  
         itemWasObtained?.Invoke(item.itemName, item.amount, item.iconFilePath);
         item.HandleObtained();
     }

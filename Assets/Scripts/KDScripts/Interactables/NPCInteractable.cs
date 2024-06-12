@@ -14,32 +14,46 @@ public class NPCInteractable : Interactable
     }
     public override void OnFinishInteract()
     {
-        currIndex++;
+        Debug.Log("finish npc dialogue");
+        isTalking = false;
+        if (currIndex < texts.Length - 1) { currIndex++; }
         Time.timeScale = 1;
         return;
     }
 
     public override void OnStartInteract()
     {
+        //Debug.Log("start interact npc");
         // continue dialogue
-        if(DialogueManager.Instance.dialogueIsPlaying && isTalking)
+        if(isTalking)
         {
+            Debug.Log("continue npc dialogue");
             if(DialogueManager.Instance.displayingChoices) { return; }
             isTalking = true;
             DialogueManager.Instance.ContinueStory();
         }
         // finish dialogue
-        else if (isTalking && !DialogueManager.Instance.dialogueIsPlaying){
-            isTalking = false;
-            OnFinishInteract();
-        }
+        //else if (isTalking && !DialogueManager.Instance.dialogueIsPlaying){
+        //else if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
+        //{
+
+        //    OnFinishInteract();
+        //}
         // begin dialogue
         else
         {
+            
             if(currIndex >= texts.Length) { return; }
+            Debug.Log("begin npc dialogue");
             DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
             DialogueManager.Instance.ContinueStory();
             isTalking = true;
+        }
+        // finish dialogue
+        if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
+        {
+
+            OnFinishInteract();
         }
 
     }

@@ -95,7 +95,7 @@ public class DialogueManager : MonoBehaviour
         // enable and initialize the choices up to the amount of choices for this line of dialogue
         foreach(Choice choice in currentChoices)
         {
-            Debug.Log("choice " + index);
+            //Debug.Log("choice " + index);
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
             index++;
@@ -104,7 +104,7 @@ public class DialogueManager : MonoBehaviour
         // go through the remaining choices the UI supports and make sure they are hidden
         for(int i=index; i<choices.Length; i++)
         {
-            Debug.Log("choice inactive " + i);
+            //Debug.Log("choice inactive " + i);
             choices[i].gameObject.SetActive(false);
         }
         StartCoroutine(SelectFirstChoice());
@@ -121,7 +121,7 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
-        Debug.Log("make choice " + choiceIndex);
+        //Debug.Log("make choice " + choiceIndex);
         currentStory.ChooseChoiceIndex(choiceIndex);
         //displayingChoices = false;
         ContinueStory();
