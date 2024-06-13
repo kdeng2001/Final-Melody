@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &180289762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,8 +156,12 @@ MonoBehaviour:
     partySize: 0
     musicians: []
     partyType: 0
-  musicianNames: []
-  musicianDatabase: {fileID: 0}
+  musicianNames:
+  - Piano
+  - Guitarist
+  - Trumpet
+  - Drummer
+  musicianDatabase: {fileID: 1564213956}
 --- !u!4 &180289763
 Transform:
   m_ObjectHideFlags: 0
@@ -395,6 +399,8 @@ MonoBehaviour:
   musicianNames:
   - Drummer
   - Guitarist
+  - Piano
+  - Trumpet
   musicianDatabase: {fileID: 1564213956}
 --- !u!4 &1149302427
 Transform:
@@ -474,11 +480,126 @@ PrefabInstance:
       propertyPath: m_Name
       value: musicianController
       objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: moveDatabase
+      value: 
+      objectReference: {fileID: 4351971247639341759}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[4].name
+      value: Piano
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[5].name
+      value: Trumpet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[0].health
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[1].health
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[0].moveNames.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[1].moveNames.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[4].moveNames.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[5].moveNames.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[0].moveNames.Array.data[0]
+      value: drumroll
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[0].moveNames.Array.data[1]
+      value: kick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[0].moveNames.Array.data[2]
+      value: solo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[0].moveNames.Array.data[3]
+      value: encouragement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[1].moveNames.Array.data[0]
+      value: triple chord
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[1].moveNames.Array.data[1]
+      value: riff
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[1].moveNames.Array.data[2]
+      value: harmonize
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[1].moveNames.Array.data[3]
+      value: slap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[4].moveNames.Array.data[0]
+      value: staccato
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[4].moveNames.Array.data[1]
+      value: legato
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[4].moveNames.Array.data[2]
+      value: encouragement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[4].moveNames.Array.data[3]
+      value: metronome
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[5].moveNames.Array.data[0]
+      value: fortissimo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[5].moveNames.Array.data[1]
+      value: vibrato
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[5].moveNames.Array.data[2]
+      value: breathe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+      propertyPath: musicians.Array.data[5].moveNames.Array.data[3]
+      value: metronome
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+--- !u!114 &4351971247639341759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4078327907453752106, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
+  m_PrefabInstance: {fileID: 4351971247639341757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66850b3e2c71cb345abbbe74e30fa7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

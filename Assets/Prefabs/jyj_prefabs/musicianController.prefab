@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499863434930067719}
   - component: {fileID: 7262443549526995003}
+  - component: {fileID: 4078327907453752106}
   m_Layer: 0
   m_Name: musicianController
   m_TagString: Untagged
@@ -51,15 +52,109 @@ MonoBehaviour:
     moveSize: 0
     moves: []
     type: 0
+    moveNames: []
   - name: Guitarist
     health: 0
     maxHealth: 0
     moveSize: 0
     moves: []
     type: 0
+    moveNames: []
   - name: Singer
     health: 0
     maxHealth: 0
     moveSize: 0
     moves: []
     type: 0
+    moveNames: []
+  - name: Keytarist
+    health: 0
+    maxHealth: 0
+    moveSize: 0
+    moves: []
+    type: 0
+    moveNames: []
+  moveDatabase: {fileID: 0}
+--- !u!114 &4078327907453752106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050896689555226860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66850b3e2c71cb345abbbe74e30fa7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moves:
+  - name: drumroll
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: kick
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: solo
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: encouragement
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: triple chord
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: riff
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: harmonize
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: slap
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: staccato
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: legato
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: metronome
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: fortissimo
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: vibrato
+    description: 
+    type: 0
+    power: 0
+    minigame: 0
+  - name: breathe
+    description: 
+    type: 0
+    power: 0
+    minigame: 0

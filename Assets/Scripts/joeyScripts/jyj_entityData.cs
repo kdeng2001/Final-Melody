@@ -27,6 +27,7 @@ public class jyj_entityData : MonoBehaviour
         public List<Move> moves; //moves the musician has access to
         private Move curr; //current move to be used; keep this move selected as default for next turn
         public Type type; //type of the musician
+        public string[] moveNames; //the names of the moves; use this to search the move database
     }
 
     [Serializable]
@@ -65,6 +66,9 @@ public class jyj_entityData : MonoBehaviour
     [SerializeField] private jyj_Musicians musicianDatabase;
 
     // Start is called before the first frame update
+    /*
+     * @brief populates the player's party with musicians
+     */
     void Start()
     {
         if (musicianNames.Length <= 0)
@@ -87,6 +91,10 @@ public class jyj_entityData : MonoBehaviour
 
     }
 
+    /*
+     * @brief finds the index of the musician from the musician database
+     * @param name the name of the musician
+     */
     private void getMusicianByName(string name)
     {
         int index;
