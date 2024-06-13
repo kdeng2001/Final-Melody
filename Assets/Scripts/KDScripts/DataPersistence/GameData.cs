@@ -20,7 +20,8 @@ public class GameData
 
     public GameData()
     {
-        playerPosition = Vector3.zero;
+        sceneIndex = 1;
+        playerPosition = Vector3.up;
         itemAmountInventory = new();
         itemIconInventory = new();
         itemInScene = new();

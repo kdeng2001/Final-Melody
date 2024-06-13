@@ -28,6 +28,7 @@ public class Player : MonoBehaviour, IDataPersistence
         c.enabled = false;
         controller.position = model.position = interactor.position = t.position;
         c.enabled = true;
+        //Debug.Log("Finish set player position");
     }
 
     public void LoadData(GameData data)
@@ -37,9 +38,10 @@ public class Player : MonoBehaviour, IDataPersistence
         c.enabled = false;
         controller.position = model.position = interactor.position = data.playerPosition;
         c.enabled = true;
+        //Debug.Log("Finish load player data");
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(/*ref */GameData data)
     {
         //Debug.Log("Save player data");
         data.playerPosition = controller.position;

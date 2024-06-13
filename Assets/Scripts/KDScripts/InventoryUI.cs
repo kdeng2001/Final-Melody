@@ -106,10 +106,11 @@ public class InventoryUI : MonoBehaviour
     private void CreateIcon(string itemName, string iconPath)
     {
         Image img = itemEntries[itemName].GetComponentsInChildren<Image>()[1];
-        byte[] bytes = File.ReadAllBytes(iconPath);
-        Texture2D texture = new(64, 64);
-        texture.LoadImage(bytes);
-        img.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+        //byte[] bytes = File.ReadAllBytes(iconPath);
+        //Texture2D texture = new(64, 64);
+        //texture.LoadImage(bytes);
+        //img.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+        img.sprite = Resources.Load<Sprite>(iconPath);
     }
 
     public void UpdateMoneyUI(int newValue)

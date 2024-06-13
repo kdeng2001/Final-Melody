@@ -21,7 +21,9 @@ public abstract class Item : MonoBehaviour, IDataPersistence
 
     private void Awake()
     {
-        iconFilePath = AssetDatabase.GetAssetPath(icon.sprite);
+        //iconFilePath = AssetDatabase.GetAssetPath(icon.sprite);
+        iconFilePath = icon.sprite.name;
+        Debug.Log(icon.sprite.name);
         //Debug.Log("iconFilePath: " + iconFilePath);
     }
 
@@ -40,7 +42,7 @@ public abstract class Item : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(/*ref */GameData data)
     {
         if(data.itemInScene.ContainsKey(id)) { data.itemInScene.Remove(id); }
         //Debug.Log(itemName + " is saving... " + obtained);

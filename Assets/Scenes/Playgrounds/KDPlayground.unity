@@ -1100,7 +1100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1900463221
 Transform:
   m_ObjectHideFlags: 0
@@ -1950,7 +1950,15 @@ PrefabInstance:
     - target: {fileID: 2271428115027931725, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1816366019}
+      objectReference: {fileID: 4394028875865085225}
+    - target: {fileID: 2271428115027931725, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Save
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271428115027931725, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InGameMenu, Scripts
+      objectReference: {fileID: 0}
     - target: {fileID: 2338027195478482548, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2070,7 +2078,15 @@ PrefabInstance:
     - target: {fileID: 5707190028289575813, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1816366019}
+      objectReference: {fileID: 4394028875865085225}
+    - target: {fileID: 5707190028289575813, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707190028289575813, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InGameMenu, Scripts
+      objectReference: {fileID: 0}
     - target: {fileID: 6339698040217474419, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
       propertyPath: m_Name
       value: InGameMenu
@@ -2144,6 +2160,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
+--- !u!114 &4394028875865085225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3357282766267692538, guid: 4bf2da19685d1eb419498d7ffafe0528, type: 3}
+  m_PrefabInstance: {fileID: 4394028875865085224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4861cf942abc8114892d9db88af2d2cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6877872790449042758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2195,6 +2222,10 @@ PrefabInstance:
     - target: {fileID: 5446255308036919401, guid: fcff45b7a626d164e9d80b103a148f09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6186451932706721310, guid: fcff45b7a626d164e9d80b103a148f09, type: 3}
+      propertyPath: initializeDataIfNull
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

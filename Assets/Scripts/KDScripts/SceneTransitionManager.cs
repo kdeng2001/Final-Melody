@@ -18,6 +18,7 @@ public class SceneTransitionManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            player = FindObjectOfType<Player>().GetComponent<Player>();
         }
     }
     private void Start()
@@ -30,25 +31,25 @@ public class SceneTransitionManager : MonoBehaviour
     }
     public void EnterNewScene(string sceneName, string entranceID)
     {
-        DataPersistenceManager.Instance.SaveScene();
-        //DataPersistenceManager.Instance.SaveGame();
+        DataPersistenceManager.Instance.SaveScene(SceneManager.GetActiveScene());
         this.entranceID = entranceID;
         SceneManager.LoadScene(sceneName);
+        Debug.Log("Load scene from SceneTransitionManager " + SceneManager.GetActiveScene().name);
     }
 
     private void MovePlayerToEntrance(Scene scene, LoadSceneMode mode)
     {
-        DataPersistenceManager.Instance.LoadScene();
-        //DataPersistenceManager.Instance.LoadGame();
+        //DataPersistenceManager.Instance.LoadScene();
 
         if (entranceID == "") { return; }
-        player = FindObjectOfType<Player>().GetComponent<Player>();
+        //player = FindObjectsOfType<Player>().GetComponents<Player>();
         DoorInteractable[] doors = FindObjectsOfType<DoorInteractable>();
         foreach (DoorInteractable door in doors)
         {
             if (entranceID == door.entranceID)
             {
-                player.SetPosition(door.positionToEnter);    
+                player.SetPosition(door.positionToEnter);
+                Debug.Log("Move player to entrance");
                 entranceID = ""; 
                 break;   
                 //player.SetPosition(door.transform.position); break;

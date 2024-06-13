@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using static UnityEngine.InputSystem.InputAction;
 
 public class InGameMenu : MonoBehaviour
@@ -53,5 +54,19 @@ public class InGameMenu : MonoBehaviour
         pointsUI.SetActive(!pointsUI.activeSelf);
     }
 
+    public void Save()
+    {
+        DataPersistenceManager.Instance.SaveGame();
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
 }

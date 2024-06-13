@@ -1655,9 +1655,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DataPersistenceManager, Scripts
-        m_MethodName: SaveGame
+      - m_Target: {fileID: 3357282766267692538}
+        m_TargetAssemblyTypeName: InGameMenu, Scripts
+        m_MethodName: Save
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1936,9 +1936,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DataPersistenceManager, Scripts
-        m_MethodName: OnApplicationQuit
+      - m_Target: {fileID: 3357282766267692538}
+        m_TargetAssemblyTypeName: InGameMenu, Scripts
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

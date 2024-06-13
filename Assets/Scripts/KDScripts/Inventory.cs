@@ -83,7 +83,7 @@ public class Inventory : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(/*ref */GameData data)
     {        
         //Debug.Log("Save inventory");
         data.itemAmountInventory.Clear();

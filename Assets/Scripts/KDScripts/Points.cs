@@ -37,7 +37,7 @@ public class Points : MonoBehaviour, IDataPersistence
         UpdateReputation(data.reputation);
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(/*ref */GameData data)
     {
         data.money = money;
         data.reputation = reputation;
