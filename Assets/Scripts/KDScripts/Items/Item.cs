@@ -23,7 +23,7 @@ public abstract class Item : MonoBehaviour, IDataPersistence
     {
         //iconFilePath = AssetDatabase.GetAssetPath(icon.sprite);
         iconFilePath = icon.sprite.name;
-        Debug.Log(icon.sprite.name);
+        //Debug.Log(icon.sprite.name);
         //Debug.Log("iconFilePath: " + iconFilePath);
     }
 

@@ -2,7 +2,7 @@
 
 === main ===
 // line 1
-Would you like to buy some squirrels young human? Ehehehehehehe...
+Would you like to buy some squirrels young human? Ehehehehehehe... #speaker:Old Lady? #portrait:old_lady #layout: right
 
 // line 2
 The old lady proceeds to take out a stash of squirrels from her magic hat and lays them out on a long, square sheet of blanket, showcasing her wares.

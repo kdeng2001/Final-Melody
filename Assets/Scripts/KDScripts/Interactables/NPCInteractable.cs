@@ -46,7 +46,7 @@ public class NPCInteractable : Interactable
             if(currIndex >= texts.Length) { return; }
             Debug.Log("begin npc dialogue");
             DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
-            DialogueManager.Instance.ContinueStory();
+            //DialogueManager.Instance.ContinueStory();
             isTalking = true;
         }
         // finish dialogue

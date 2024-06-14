@@ -55,7 +55,7 @@ public class ItemInteractable : Interactable
             DialogueManager.Instance.currentStory.variablesState["item"] = item.itemName;
             DialogueManager.Instance.currentStory.variablesState["amount"] = item.amount.ToString();
             
-            DialogueManager.Instance.ContinueStory();
+            //DialogueManager.Instance.ContinueStory();
             isTalking = true;
         }
 

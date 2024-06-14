@@ -1,1 +1,1 @@
-I've given you your squirrels, now scram!
+I've given you your squirrels, now scram! #speaker:Old Lady? #portrait:old_lady #layout: right
