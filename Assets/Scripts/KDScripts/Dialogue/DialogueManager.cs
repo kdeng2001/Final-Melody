@@ -7,7 +7,8 @@ using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager Instance;
+    [Header("Params")]
+    private float typingSpeed = 0.02f;
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -19,13 +20,16 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI[] choicesText;
 
     public Story currentStory;
+    private Coroutine displayLineCoroutine = null;
+    private bool canContinueToNextLine = false;
+    [SerializeField] private GameObject canContinueIcon;
     public bool dialogueIsPlaying { get; private set; }
     public bool displayingChoices { get; private set; }
 
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
-
+    public static DialogueManager Instance;
 
     private void Awake()
     {
@@ -64,7 +68,8 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJson.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
+        Player.Instance.PauseMovement();
         displayNameText.text = "???";
         portraitAnimator.Play("default");
         layoutAnimator.Play("default");
@@ -73,9 +78,10 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    IEnumerator DelayOneFrame()
+    private IEnumerator DelayOneFrame()
     {
         yield return new WaitForEndOfFrame();
+        canContinueToNextLine = true;
         ContinueStory();
     }
 
@@ -83,7 +89,14 @@ public class DialogueManager : MonoBehaviour
     {
         if(currentStory.canContinue)
         {
-            dialogueText.text = currentStory.Continue();
+            //dialogueText.text = currentStory.Continue();
+            if (displayLineCoroutine != null)
+            {
+                StopCoroutine(displayLineCoroutine);
+                ReachEndOfLine();
+                return;
+            }
+            displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
             // display choices if any for this dialogue line
             DisplayChoices();
             // handle tags
@@ -92,8 +105,31 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            if(!canContinueToNextLine) { return; }
             ExitDialogueMode();
         }
+    }
+
+    private IEnumerator DisplayLine(string line)
+    {
+        canContinueIcon.SetActive(false);
+        dialogueText.text = "";
+        canContinueToNextLine = false;
+        foreach(char letter in line.ToCharArray())
+        {
+            //Debug.Log(letter);
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+        ReachEndOfLine();
+    }
+
+    private void ReachEndOfLine()
+    {
+        displayLineCoroutine = null;
+        canContinueToNextLine = true;
+        dialogueText.text = currentStory.currentText;
+        canContinueIcon.SetActive(true);
     }
 
     private void HandleTags(List<string> currentTags)
@@ -138,7 +174,8 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
+        Player.Instance.UnPauseMovement();
     }
 
     private void DisplayChoices()
@@ -182,6 +219,7 @@ public class DialogueManager : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         //Debug.Log("make choice " + choiceIndex);
+        if(!canContinueToNextLine) { return; }
         currentStory.ChooseChoiceIndex(choiceIndex);
         //displayingChoices = false;
         ContinueStory();

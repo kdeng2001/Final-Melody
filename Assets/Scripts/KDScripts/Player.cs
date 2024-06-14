@@ -8,7 +8,7 @@ public class Player : MonoBehaviour, IDataPersistence
     [SerializeField] private Transform model;
     [SerializeField] private Transform controller;
     [SerializeField] private Transform interactor;
-
+    CharacterMovement movement;
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -18,9 +18,13 @@ public class Player : MonoBehaviour, IDataPersistence
         else
         {
             Instance = this;
+            movement = GetComponentInChildren<CharacterMovement>();
             DontDestroyOnLoad(gameObject);
         }
     }
+
+    public void PauseMovement() { movement.pauseMovement = true; }
+    public void UnPauseMovement() { movement.pauseMovement = false; }
 
     public void SetPosition(Transform t)
     {

@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 public class CharacterMovement : Movement
 {
+    public bool pauseMovement = false;
     private void OnEnable()
     {
         if (transform.parent.TryGetComponent(out PlayerInput playerInput))
@@ -28,5 +29,11 @@ public class CharacterMovement : Movement
                 moveAction.canceled -= context => SetDirection(context);
             }
         }
+    }
+
+    public override void Update()
+    {
+        if(pauseMovement) { return; }
+        base.Update(); 
     }
 }

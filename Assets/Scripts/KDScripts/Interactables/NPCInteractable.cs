@@ -32,14 +32,7 @@ public class NPCInteractable : Interactable
             isTalking = true;
             DialogueManager.Instance.ContinueStory();
         }
-        // finish dialogue
-        //else if (isTalking && !DialogueManager.Instance.dialogueIsPlaying){
-        //else if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
-        //{
-
-        //    OnFinishInteract();
-        //}
-        // begin dialogue
+        // start dialogue
         else
         {
             

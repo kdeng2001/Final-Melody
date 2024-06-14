@@ -27,38 +27,33 @@ public class ItemInteractable : Interactable
 
     public override void OnStartInteract()
     {
-        //// continue dialogue
-        //if (DialogueManager.Instance.dialogueIsPlaying && isTalking )
-        //{
-        //    if (DialogueManager.Instance.displayingChoices) { return; }
-        //    isTalking = true;
-        //    DialogueManager.Instance.ContinueStory();
-        //}
-        // finish dialogue
-        //else if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
-        //{
-        //    isTalking = false;
-        //    OnFinishInteract();
-        //}
-        // begin dialogue
-        if(DialogueManager.Instance.dialogueIsPlaying && !DialogueManager.Instance.currentStory.canContinue)
+        // continue dialogue
+        if (isTalking)
         {
-            isTalking = false;
+            Debug.Log("continue npc dialogue");
+            if (DialogueManager.Instance.displayingChoices) { return; }
+            isTalking = true;
             DialogueManager.Instance.ContinueStory();
-            OnFinishInteract();
         }
+        // start dialogue
         else
         {
+
             if (currIndex >= texts.Length) { return; }
+            Debug.Log("begin npc dialogue");
             DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
+            //DialogueManager.Instance.ContinueStory();
             // set up variables in item dialogue;
             DialogueManager.Instance.currentStory.variablesState["item"] = item.itemName;
             DialogueManager.Instance.currentStory.variablesState["amount"] = item.amount.ToString();
-            
-            //DialogueManager.Instance.ContinueStory();
             isTalking = true;
         }
+        // finish dialogue
+        if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
+        {
 
+            OnFinishInteract();
+        }
     }
 
     public override void Start()
