@@ -18892,6 +18892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607248697}
+  - component: {fileID: 1607248698}
   m_Layer: 0
   m_Name: Post Processing Volume
   m_TagString: Untagged
@@ -18914,6 +18915,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1735213225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607248698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607248696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 0}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!4 &1609370788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f08c9e24a3c5c0443949dc9a67f6acef, type: 3}
