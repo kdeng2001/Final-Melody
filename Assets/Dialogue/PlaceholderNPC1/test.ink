@@ -2,10 +2,10 @@
 
 === main ===
 // line 1
-Would you like to buy some squirrels young human? Ehehehehehehe... #speaker:Old Lady? #portrait:old_lady #layout:right
+Would you like to buy some <b><color=\#CB1F3F>squirrels</color></b> young human? Ehehehehehehe... #speaker:Old Lady? #portrait:old_lady #layout:right
 
 // line 2
-Suddenly, the old lady procures a stash of squirrels from her magic hat and lays them out on a sheet of blanket, showcasing her wares. #layout:default
+Suddenly, the old lady procures a stash of <b><color=\#CB1F3F>squirrels</color></b> from her magic hat and lays them out on a sheet of blanket, showcasing her wares. #layout:default
 
 How about it lad? #layout: right
 
@@ -21,5 +21,5 @@ Excellent choice.
 -> END
 === choice1 ===
 Now, now, don't be shy.
-Food doesn't come by easy these days.
+<b><color=\#CB1F3F>Food</color></b> doesn't come by easy these days.
 -> END

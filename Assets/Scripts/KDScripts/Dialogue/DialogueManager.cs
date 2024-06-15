@@ -115,11 +115,25 @@ public class DialogueManager : MonoBehaviour
         canContinueIcon.SetActive(false);
         dialogueText.text = "";
         canContinueToNextLine = false;
+        bool isAddingRichTextTag = false;
         foreach(char letter in line.ToCharArray())
         {
-            //Debug.Log(letter);
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            if(letter == '<' || isAddingRichTextTag)
+            {
+                isAddingRichTextTag = true;
+                dialogueText.text += letter;
+                if(letter == '>') 
+                {
+                    isAddingRichTextTag = false;
+                }
+            }
+            else
+            {
+                //Debug.Log(letter);
+                dialogueText.text += letter;
+                yield return new WaitForSeconds(typingSpeed);
+            }
+
         }
         ReachEndOfLine();
     }
