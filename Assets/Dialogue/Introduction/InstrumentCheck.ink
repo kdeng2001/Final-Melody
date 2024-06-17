@@ -5,5 +5,5 @@ INCLUDE ../GLOBALS.ink
 It's a case for your favorite instrument.
 -> END
 === already_chosen ===
-It's your {instrument_name}!
+It's a worn and destroyed case for storing the {instrument_name}...
 -> END
