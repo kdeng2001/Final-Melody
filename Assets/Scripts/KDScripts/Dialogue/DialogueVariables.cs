@@ -8,10 +8,6 @@ public class DialogueVariables : MonoBehaviour, IDataPersistence
 {
     private Dictionary<string, Ink.Runtime.Object> variables;
     //private Story globalVariablesStory;
-    private void Start()
-    {
-        SetUpVariables(DialogueManager.Instance.globalsInkFile.filePath);
-    }
     public void SetUpVariables(string globalsFilePath)
     {
         //Debug.Log("Setupvariables");

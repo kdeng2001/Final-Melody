@@ -36,6 +36,11 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] public InkFile globalsInkFile;
     private DialogueVariables dialogueVariables;
 
+    public delegate void HasEnteredDialogueMode();
+    public HasEnteredDialogueMode hasEnteredDialogueMode;
+    public delegate void HasExitedDialogueMode();
+    public HasExitedDialogueMode hasExitedDialogueMode;
+
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -46,26 +51,24 @@ public class DialogueManager : MonoBehaviour
         {
             Instance = this;
             dialogueVariables = gameObject.AddComponent<DialogueVariables>();
-            //dialogueVariables.SetUpVariables(globalsInkFile.filePath);
+            dialogueVariables.SetUpVariables(globalsInkFile.filePath);        
+            layoutAnimator = dialoguePanel.GetComponent<Animator>();
+            dialoguePanel.SetActive(false);
+            displayingChoices = false;
+            dialogueIsPlaying = false;
+
+            //get all of the choices text
+            choicesText = new TextMeshProUGUI[choices.Length];
+            int index = 0;
+            // enable and initialize the choices up to the amount of choices for this line of dialogue
+            foreach (GameObject choice in choices)
+            {
+                choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+                index++;
+            }
+
+
             DontDestroyOnLoad(gameObject);
-        }
-    }
-
-    private void Start()
-    {
-        displayingChoices = false;
-        dialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
-
-        layoutAnimator = dialoguePanel.GetComponent<Animator>();
-        //get all of the choices text
-        choicesText = new TextMeshProUGUI[choices.Length];
-        int index = 0;
-        // enable and initialize the choices up to the amount of choices for this line of dialogue
-        foreach (GameObject choice in choices)
-        {
-            choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
-            index++;
         }
     }
 
@@ -84,6 +87,8 @@ public class DialogueManager : MonoBehaviour
         portraitAnimator.Play("default");
         layoutAnimator.Play("default");
         //Debug.Log("set default tags");
+
+        hasEnteredDialogueMode?.Invoke();
         StartCoroutine(DelayOneFrame());
 
     }
@@ -202,6 +207,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         //Time.timeScale = 1;
         Player.Instance.UnPauseMovement();
+        hasExitedDialogueMode?.Invoke();
     }
 
     private void DisplayChoices()
