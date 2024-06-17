@@ -25,6 +25,10 @@ public class Introduction : MonoBehaviour
     public FinishFadeFrom finishFadeFrom;
     public FinishFadeTo finishFadeTo;
 
+    [Header("Instrument icons")]
+    [SerializeField] private SpriteRenderer drumsIcon;
+    [SerializeField] private SpriteRenderer guitarIcon;
+    [SerializeField] private SpriteRenderer keytarIcon;
     // start with black screen
     // initiate dialogue
     // continue dialogue
@@ -136,7 +140,11 @@ public class Introduction : MonoBehaviour
     private void ContinueDialogue(InputAction.CallbackContext ctx)
     {
         if(DialogueManager.Instance.displayingChoices) { return; }
-        if(!DialogueManager.Instance.currentStory.canContinue && index <2)
+        else if(DialogueManager.Instance.displayLineCoroutine != null)
+        {
+            return;
+        }
+        else if(!DialogueManager.Instance.currentStory.canContinue && index <2)
         {
             DialogueManager.Instance.ExitDialogueMode();
             Player.Instance.PauseMovement();
@@ -150,8 +158,16 @@ public class Introduction : MonoBehaviour
             }
             return;
         }
-        if(!DialogueManager.Instance.currentStory.canContinue && index == 2)
+        else if(!DialogueManager.Instance.currentStory.canContinue && index == 2)
         {
+            // add instrument to inventory
+            string instrument = (string) DialogueManager.Instance.currentStory.variablesState["instrument_name"];
+            SpriteRenderer icon;
+            if(instrument == "Guitar") { icon = guitarIcon; }
+            else if(instrument == "Keytar") { icon = keytarIcon; }
+            else { icon = drumsIcon; }
+            InventoryUI.Instance.inventory.UpdateItem(instrument, 1, icon.sprite.name);
+            // end introduction
             DialogueManager.Instance.ExitDialogueMode();
             enabled = false;
             return;

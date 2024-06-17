@@ -12,8 +12,8 @@ Choose your instrument and save the world...
         -> chosen("Guitar")
     + [Keytar]
         -> chosen("Keytar")
-    + [Oud]
-        -> chosen("Oud")
+    + [Drums]
+        -> chosen("Drums")
 
 === chosen (instrument) ===
 ~instrument_name = instrument

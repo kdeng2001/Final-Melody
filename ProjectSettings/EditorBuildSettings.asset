@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Playgrounds/KDMainMenu.unity
     guid: 14e1707c232c0514c8063f0648754ad0
   - enabled: 1
+    path: Assets/Scenes/Playgrounds/KDIntro.unity
+    guid: e1bc73946593bcd498616bb2883aec3e
+  - enabled: 1
     path: Assets/Scenes/Playgrounds/KDPlayground.unity
     guid: f1a08073a23f97741aeaf3bab5165ba5
   - enabled: 1

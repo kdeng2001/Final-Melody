@@ -10,6 +10,6 @@ You know when I was a kid, I always played the {instrument_name}. #speaker:mum #
 You obtained a {instrument_name}!
 It seems oddly similar to the one in that dream of yours. #layout:default
 You tell mom that.
-Oh? Had a dream about this {instrument_name}?
+Oh? Had a dream about this {instrument_name}? #speaker: mum #layout:left
 Well you must really be excited to play then.
 ->END
