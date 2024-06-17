@@ -144,20 +144,27 @@ public class Introduction : MonoBehaviour
             if(index == 1) 
             {
                 //StartCoroutine(FadeFrom(blackScreen));
-                finishFadeTo += ClearScreens;
+                finishFadeTo += ClearScreensAfterDialogue1;
                 StartCoroutine(FadeTo(whiteScreen));
-                index++;
+                
             }
+            return;
+        }
+        if(!DialogueManager.Instance.currentStory.canContinue && index == 2)
+        {
+            DialogueManager.Instance.ExitDialogueMode();
+            enabled = false;
             return;
         }
         DialogueManager.Instance.ContinueStory();
     }
 
-    public void ClearScreens()
+    public void ClearScreensAfterDialogue1()
     {
         blackScreen.gameObject.SetActive(false);
         whiteScreen.StartCoroutine(FadeFrom(whiteScreen));
-        finishFadeTo -= ClearScreens;
+        finishFadeTo -= ClearScreensAfterDialogue1;
+        index++;
         StartIntroDialogue(index);
     }
 }
