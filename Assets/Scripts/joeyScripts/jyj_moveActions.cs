@@ -13,7 +13,7 @@ public class jyj_moveActions : MonoBehaviour
     {
         protected Move moveData;
         public GameObject timer;
-        public int mult;
+        public float mult;
 
         public abstract void moveAction();
         public abstract void endAction();
@@ -57,7 +57,7 @@ public class jyj_moveActions : MonoBehaviour
         public override void endAction()
         {
             //Debug.Log("Times up!");
-            damage = moveData.power * mult;
+            damage = (int)(moveData.power * mult);
             Debug.Log("Damage dealt: " + damage);
         }
 
@@ -99,7 +99,30 @@ public class jyj_moveActions : MonoBehaviour
         public override void endAction()
         {
             //Debug.Log("Times up!");
-            damage = moveData.power * mult;
+            damage = (int)(moveData.power * mult);
+            Debug.Log("Damage dealt: " + damage);
+        }
+    }
+
+    private class Solo : MoveAction
+    {
+        private int damage;
+
+        public Solo()
+        {
+            moveData.power = 10;
+        }
+
+        public override void moveAction()
+        {
+            Debug.Log("Extra power!");
+            mult = 1.2f;
+            endAction();
+        }
+
+        public override void endAction()
+        {
+            damage = (int)(moveData.power * mult);
             Debug.Log("Damage dealt: " + damage);
         }
     }
@@ -111,10 +134,13 @@ public class jyj_moveActions : MonoBehaviour
         drum.timer.SetActive(false);
         drum.moveAction();*/
 
-        Kick kick = new Kick();
+        /*Kick kick = new Kick();
         kick.timer = Instantiate(precisionTimerObject);
         kick.timer.SetActive(false);
-        kick.moveAction();
+        kick.moveAction();*/
+
+        Solo solo = new Solo();
+        solo.moveAction();
     }
 
     // Update is called once per frame
