@@ -5652,6 +5652,7 @@ MonoBehaviour:
   introDialogues:
   - {fileID: 4900000, guid: bfc918af18502a74e94f9543ea963d8b, type: 3}
   - {fileID: 4900000, guid: 2bec1068b93cb8f408d5bbbd21199913, type: 3}
+  - {fileID: 4900000, guid: f34b9e2ad43f9444d874dcf11ceae6f9, type: 3}
 --- !u!4 &1659389898
 Transform:
   m_ObjectHideFlags: 0

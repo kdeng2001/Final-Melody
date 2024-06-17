@@ -135,7 +135,8 @@ public class Introduction : MonoBehaviour
 
     private void ContinueDialogue(InputAction.CallbackContext ctx)
     {
-        if(!DialogueManager.Instance.currentStory.canContinue)
+        if(DialogueManager.Instance.displayingChoices) { return; }
+        if(!DialogueManager.Instance.currentStory.canContinue && index <2)
         {
             DialogueManager.Instance.ExitDialogueMode();
             Player.Instance.PauseMovement();
@@ -157,5 +158,6 @@ public class Introduction : MonoBehaviour
         blackScreen.gameObject.SetActive(false);
         whiteScreen.StartCoroutine(FadeFrom(whiteScreen));
         finishFadeTo -= ClearScreens;
+        StartIntroDialogue(index);
     }
 }
