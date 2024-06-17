@@ -1,20 +1,8 @@
 INCLUDE ../GLOBALS.ink
 
-{instrument_name == "": -> main | -> already_chosen}
+-> main
 === main ===
-Pick an instrument kid. #speaker:mum #layout:left
-    + [Keytar]
-        -> chosen("Keytar")
-    + [Guitar]
-        -> chosen("Guitar")
-    + [Drums]
-        -> chosen("Drums")
-=== chosen(instrument) ===
-~instrument_name = instrument
-Take this {instrument}.
--> END
-
-=== already_chosen ===
-You already chose {instrument_name}. #speaker:mum #layout:left
-What more could you possibly want?
+So, now you're off to the great big city of Musicopolis, huh? #speaker:mum #layout:right
+Have fun out there {player_name}!
+Make sure you call me!
 -> END

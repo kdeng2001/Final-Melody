@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Playgrounds/KDRoom1.unity
     guid: 371f121a807f13b45bd97f2a8b9353a0
+  - enabled: 1
+    path: Assets/Scenes/Playgrounds/KDDocOffice.unity
+    guid: 8a207b4b25067414f880f2b02eb3fb41
   m_configObjects: {}

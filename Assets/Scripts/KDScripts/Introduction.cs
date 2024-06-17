@@ -29,6 +29,9 @@ public class Introduction : MonoBehaviour
     [SerializeField] private SpriteRenderer drumsIcon;
     [SerializeField] private SpriteRenderer guitarIcon;
     [SerializeField] private SpriteRenderer keytarIcon;
+
+
+    public static Introduction Instance;
     // start with black screen
     // initiate dialogue
     // continue dialogue
@@ -43,11 +46,25 @@ public class Introduction : MonoBehaviour
     // initiate dialogue with mom
     // move player to exit home/room
 
+    public bool finishIntro { get; private set; }
+
     private void Awake()
     {
-        blackScreen.gameObject.SetActive(true);        
-        whiteScreen.gameObject.SetActive(false);
-        inputField.gameObject.SetActive(false);
+
+        if(Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            finishIntro = false;
+            blackScreen.gameObject.SetActive(true);        
+            whiteScreen.gameObject.SetActive(false);
+            inputField.gameObject.SetActive(false);
+            DontDestroyOnLoad(gameObject);
+        }
+
         //StartCoroutine(FadeFrom(blackScreen));
         //StartCoroutine(FadeTo(blackScreen));
 
@@ -56,6 +73,7 @@ public class Introduction : MonoBehaviour
     }
     private void Start()
     {
+        if(Introduction.Instance.finishIntro) { return; }
         Player.Instance.PauseMovement();
         StartIntroDialogue(index);
         DialogueManager.Instance.ContinueStory();
@@ -139,16 +157,19 @@ public class Introduction : MonoBehaviour
 
     private void ContinueDialogue(InputAction.CallbackContext ctx)
     {
+        // must make choice before continuing dialogue
         if(DialogueManager.Instance.displayingChoices) { return; }
-        else if(DialogueManager.Instance.displayLineCoroutine != null)
-        {
-            return;
-        }
+        // no skipping
+        else if(DialogueManager.Instance.displayLineCoroutine != null) { return; }
+
         else if(!DialogueManager.Instance.currentStory.canContinue && index <2)
         {
             DialogueManager.Instance.ExitDialogueMode();
             Player.Instance.PauseMovement();
+            
+            // handle finishing part 1 of intro
             if(index == 0) { inputField.gameObject.SetActive(true); }
+            // handle finishing part 2 of intro
             if(index == 1) 
             {
                 //StartCoroutine(FadeFrom(blackScreen));
@@ -158,6 +179,7 @@ public class Introduction : MonoBehaviour
             }
             return;
         }
+        // handle finishing part 3 of intro
         else if(!DialogueManager.Instance.currentStory.canContinue && index == 2)
         {
             // add instrument to inventory
@@ -169,9 +191,15 @@ public class Introduction : MonoBehaviour
             InventoryUI.Instance.inventory.UpdateItem(instrument, 1, icon.sprite.name);
             // end introduction
             DialogueManager.Instance.ExitDialogueMode();
+            finishIntro = true;
             enabled = false;
             return;
         }
+
+
+
+
+        // continue story otherwise
         DialogueManager.Instance.ContinueStory();
     }
 

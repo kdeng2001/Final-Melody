@@ -89,8 +89,13 @@ MonoBehaviour:
   model: {fileID: 9132961797661383744}
   interactable: {fileID: 1076902329889167769}
   interactIcon: {fileID: 0}
-  icon: {fileID: 0}
+  icon: {fileID: 3144397181089919030}
   obtained: 0
+--- !u!212 &3144397181089919030 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3715335771735082458, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+  m_PrefabInstance: {fileID: 1741945966313403884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9132961797661383744 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7391091972931922348, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
