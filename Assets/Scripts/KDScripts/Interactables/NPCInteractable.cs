@@ -14,7 +14,7 @@ public class NPCInteractable : Interactable
     }
     public override void OnFinishInteract()
     {
-        Debug.Log("finish npc dialogue");
+        //Debug.Log("finish npc dialogue");
         isTalking = false;
         if (currIndex < texts.Length - 1) { currIndex++; }
         Time.timeScale = 1;
@@ -27,7 +27,7 @@ public class NPCInteractable : Interactable
         // continue dialogue
         if(isTalking)
         {
-            Debug.Log("continue npc dialogue");
+            //Debug.Log("continue npc dialogue");
             if(DialogueManager.Instance.displayingChoices) { return; }
             isTalking = true;
             DialogueManager.Instance.ContinueStory();
@@ -37,7 +37,7 @@ public class NPCInteractable : Interactable
         {
             
             if(currIndex >= texts.Length) { return; }
-            Debug.Log("begin npc dialogue");
+            //Debug.Log("begin npc dialogue");
             DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
             //DialogueManager.Instance.ContinueStory();
             isTalking = true;

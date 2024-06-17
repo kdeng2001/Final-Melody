@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -29,7 +30,11 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
+    
     public static DialogueManager Instance;
+    [Header("Persistent Dialogue Variables")]
+    [SerializeField] public InkFile globalsInkFile;
+    private DialogueVariables dialogueVariables;
 
     private void Awake()
     {
@@ -40,6 +45,8 @@ public class DialogueManager : MonoBehaviour
         else
         {
             Instance = this;
+            dialogueVariables = gameObject.AddComponent<DialogueVariables>();
+            //dialogueVariables.SetUpVariables(globalsInkFile.filePath);
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -68,12 +75,15 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJson.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
+
+        dialogueVariables.StartListening(currentStory);
+    
         //Time.timeScale = 0;
         Player.Instance.PauseMovement();
         displayNameText.text = "???";
         portraitAnimator.Play("default");
         layoutAnimator.Play("default");
-        Debug.Log("set default tags");
+        //Debug.Log("set default tags");
         StartCoroutine(DelayOneFrame());
 
     }
@@ -163,15 +173,15 @@ public class DialogueManager : MonoBehaviour
             switch (tagKey)
             {
                 case SPEAKER_TAG:
-                    Debug.Log("speaker=" + tagValue);
+                    //Debug.Log("speaker=" + tagValue);
                     displayNameText.text = tagValue;
                     break;
                 case PORTRAIT_TAG:
-                    Debug.Log("portrait=" + tagValue);
+                    //Debug.Log("portrait=" + tagValue);
                     portraitAnimator.Play(tagValue);
                     break;
                 case LAYOUT_TAG:
-                    Debug.Log("layout=" + tagValue);
+                    //Debug.Log("layout=" + tagValue);
                     layoutAnimator.Play(tagValue);
                     break;
                 default:
@@ -179,12 +189,14 @@ public class DialogueManager : MonoBehaviour
                     break;
             }
         }
-        Debug.Log("handle tags");
+        //Debug.Log("handle tags");
 
     }
 
     public void ExitDialogueMode()
     {
+        dialogueVariables.StopListening(currentStory);
+
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";

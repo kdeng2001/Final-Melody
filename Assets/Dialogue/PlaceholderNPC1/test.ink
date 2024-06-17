@@ -18,8 +18,10 @@ How about it lad? #layout: right
 -> END
 === choice0 ===
 Excellent choice. 
+You received a <b><color=\#CB1F3F>squirrel</color></b>! #layout:default
 -> END
 === choice1 ===
 Now, now, don't be shy.
 <b><color=\#CB1F3F>Food</color></b> doesn't come by easy these days.
+You received a <b><color=\#CB1F3F>squirrel</color></b>! #layout:default
 -> END

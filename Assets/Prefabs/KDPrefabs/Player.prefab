@@ -75,6 +75,7 @@ MonoBehaviour:
   model: {fileID: 8692668335773476163}
   interactor: {fileID: 5734913990425592850}
   gravity: 10
+  pauseMovement: 0
 --- !u!1 &295680679681949343
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +501,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdf9f64a5c5038c4a9e8e9ac351667fd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -17,6 +17,7 @@ public class GameData
     public int reputation;
     public SerializableDictionary<string, string> itemAmountInventory;
     public SerializableDictionary<string, string> itemIconInventory;
+    public SerializableDictionary<string, string> inkVariables;
 
     public GameData()
     {
