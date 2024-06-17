@@ -79,5 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: 5
-  precisionThreshold: 2
-  endThreshold: 4
+  precisionThreshold: 3
+  endThreshold: 5
+  isCustom: 0
+  customInputs: 

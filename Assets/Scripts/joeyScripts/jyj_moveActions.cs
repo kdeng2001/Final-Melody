@@ -126,6 +126,82 @@ public class jyj_moveActions : MonoBehaviour
             Debug.Log("Damage dealt: " + damage);
         }
     }
+
+    private class Encouragement : MoveAction
+    {
+        private int heal;
+
+        public Encouragement()
+        {
+            moveData.power = 10;
+        }
+
+        public override void moveAction()
+        {
+            Debug.Log("Healing time!");
+            mult = 1;
+            endAction();
+        }
+
+        public override void endAction()
+        {
+            heal = (int)(moveData.power * mult);
+            Debug.Log("Healed: " + heal);
+        }
+    }
+
+    private class TripleChord : MoveAction
+    {
+        private int damage;
+        private KeyCode[] inputs;
+
+        public TripleChord()
+        {
+            moveData.power = 10;
+        }
+
+        public override void moveAction()
+        {
+            System.Random rand = new System.Random();
+            inputs = new KeyCode[3];
+            int num = rand.Next(0, 3);
+
+            switch(num)
+            {
+                case 0:
+                    inputs[0] = KeyCode.Q;
+                    inputs[1] = KeyCode.W;
+                    inputs[2] = KeyCode.E;
+                    Debug.Log("Press Q, W, and E when prompted!");
+                    break;
+                case 1:
+                    inputs[0] = KeyCode.A;
+                    inputs[1] = KeyCode.S;
+                    inputs[2] = KeyCode.D;
+                    Debug.Log("Press A, S, and D when prompted!");
+                    break;
+                case 2:
+                    inputs[0] = KeyCode.Z;
+                    inputs[1] = KeyCode.X;
+                    inputs[2] = KeyCode.C;
+                    Debug.Log("Press Z, X, and C when prompted");
+                    break;
+                default:
+                    Debug.Log("Unexpected error occured");
+                    break;
+            }
+
+            timer.GetComponent<jyj_precisionTimer>().setCustom(inputs);
+            timer.GetComponent<jyj_precisionTimer>().setMoveAction(this);
+            timer.SetActive(true);
+        }
+
+        public override void endAction()
+        {
+            damage = (int)(mult * moveData.power);
+            Debug.Log("Damage dealt: " + damage);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -139,8 +215,17 @@ public class jyj_moveActions : MonoBehaviour
         kick.timer.SetActive(false);
         kick.moveAction();*/
 
-        Solo solo = new Solo();
-        solo.moveAction();
+        /*Solo solo = new Solo();
+        solo.moveAction();*/
+
+        Encouragement encourage = new Encouragement();
+        encourage.moveAction();
+
+        /*TripleChord chord = new TripleChord();
+        chord.timer = Instantiate(precisionTimerObject);
+        chord.timer.SetActive(false);
+        chord.moveAction();*/
+        
     }
 
     // Update is called once per frame
