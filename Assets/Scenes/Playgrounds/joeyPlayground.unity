@@ -187,6 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371200424}
   - component: {fileID: 371200423}
+  - component: {fileID: 371200425}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -271,6 +272,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &371200425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371200422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &476013687
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerObject: {fileID: 3911909052296403133, guid: ed34aa06742bff5439cb07592881da2d, type: 3}
+  precisionTimerObject: {fileID: 2272393088426102225, guid: b0784fbff1033b949a851819c451462a, type: 3}
 --- !u!114 &1564213956 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}

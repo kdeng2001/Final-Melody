@@ -5,9 +5,9 @@ using static jyj_moveActions;
 
 public class jyj_timer : MonoBehaviour
 {
-    private float time;
-    [SerializeField] private float target = 5;
-    private MoveAction move;
+    protected float time;
+    [SerializeField] protected float target = 5;
+    protected MoveAction move;
 
     // Start is called before the first frame update
     void Start()
@@ -38,3 +38,29 @@ public class jyj_timer : MonoBehaviour
         time = Time.time;
     }
 }
+
+/*public class PrecisionTimer : jyj_timer
+{
+    private float precisionThreshold;
+
+    void Update()
+    {
+        if (Time.time - time > target)
+        {
+            Debug.Log("Time Up!");
+            move.endAction();
+            Destroy(this);
+        }
+
+        if (Time.time - time > precisionThreshold + 1 && Time.time - time < precisionThreshold - 1 && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Now!");
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                move.mult++;
+                Debug.Log("Good!");
+            }
+        }
+    }
+}*/

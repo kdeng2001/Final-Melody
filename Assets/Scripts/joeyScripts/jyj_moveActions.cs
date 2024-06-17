@@ -7,6 +7,7 @@ using static jyj_timer;
 public class jyj_moveActions : MonoBehaviour
 {
     [SerializeField] private GameObject timerObject;
+    [SerializeField] private GameObject precisionTimerObject;
 
     public abstract class MoveAction
     {
@@ -55,7 +56,7 @@ public class jyj_moveActions : MonoBehaviour
 
         public override void endAction()
         {
-            Debug.Log("Times up!");
+            //Debug.Log("Times up!");
             damage = moveData.power * mult;
             Debug.Log("Damage dealt: " + damage);
         }
@@ -79,13 +80,41 @@ public class jyj_moveActions : MonoBehaviour
             }
         }
     }
+
+    private class Kick : MoveAction
+    {
+        private int damage;
+
+        public Kick()
+        {
+            moveData.power = 10;
+        }
+        public override void  moveAction()
+        {
+            Debug.Log("Press space at the right time!");
+            timer.GetComponent<jyj_precisionTimer>().setMoveAction(this);
+            timer.SetActive(true);
+        }
+
+        public override void endAction()
+        {
+            //Debug.Log("Times up!");
+            damage = moveData.power * mult;
+            Debug.Log("Damage dealt: " + damage);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
-        Drumroll drum = new Drumroll();
+        /*Drumroll drum = new Drumroll();
         drum.timer = Instantiate(timerObject);
         drum.timer.SetActive(false);
-        drum.moveAction();
+        drum.moveAction();*/
+
+        Kick kick = new Kick();
+        kick.timer = Instantiate(precisionTimerObject);
+        kick.timer.SetActive(false);
+        kick.moveAction();
     }
 
     // Update is called once per frame
