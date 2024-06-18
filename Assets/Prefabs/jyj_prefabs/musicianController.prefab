@@ -47,19 +47,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicians:
   - name: Drummer
-    health: 0
+    health: 50
     maxHealth: 0
     moveSize: 0
     moves: []
     type: 0
-    moveNames: []
+    moveNames:
+    - drumroll
+    - kick
+    - solo
+    - encouragement
   - name: Guitarist
-    health: 0
+    health: 75
     maxHealth: 0
     moveSize: 0
     moves: []
     type: 0
-    moveNames: []
+    moveNames:
+    - triple chord
+    - riff
+    - harmonize
+    - slap
   - name: Singer
     health: 0
     maxHealth: 0
@@ -74,7 +82,28 @@ MonoBehaviour:
     moves: []
     type: 0
     moveNames: []
-  moveDatabase: {fileID: 0}
+  - name: Piano
+    health: 0
+    maxHealth: 0
+    moveSize: 0
+    moves: []
+    type: 0
+    moveNames:
+    - staccato
+    - legato
+    - encouragement
+    - metronome
+  - name: Trumpet
+    health: 0
+    maxHealth: 0
+    moveSize: 0
+    moves: []
+    type: 0
+    moveNames:
+    - fortissimo
+    - vibrato
+    - breathe
+  moveDatabase: {fileID: 4078327907453752106}
 --- !u!114 &4078327907453752106
 MonoBehaviour:
   m_ObjectHideFlags: 0
