@@ -50,7 +50,7 @@ MonoBehaviour:
     musicians: []
     partyType: 1
   musicianNames: []
-  musicianDatabase: {fileID: 0}
+  musicianDatabase: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
 --- !u!114 &2953676254675805260
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,16 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using static jyj_entityData;
 using static jyj_moves;
+using static jyj_moveActions;
 
 public class jyj_Musicians : MonoBehaviour
 {
     [SerializeField] public Musician[] musicians; //list of all the musicians
     [SerializeField] private jyj_moves moveDatabase; //list of all moves
+    private MoveAction[] actionDatabase = new MoveAction[5];
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //actionDatabase = new MoveAction[5];
+        actionDatabase[0] = new Drumroll();
+        actionDatabase[1] = new Kick();
+        actionDatabase[2] = new Solo();
+        actionDatabase[3] = new Encouragement();
+        actionDatabase[4] = new TripleChord();
+
+        for (int bogus = 0; bogus < actionDatabase.Length; bogus++)
+        {
+            Debug.Log(actionDatabase[bogus].name);
+        }
     }
 
     // Update is called once per frame
@@ -72,7 +84,10 @@ public class jyj_Musicians : MonoBehaviour
             return;
         }
 
-        //musician.moves.Add(moveDatabase.moves[index]);
+        Move temp = moveDatabase.moves[index];
+        temp.action = actionDatabase[index];
+        moveDatabase.moves.RemoveAt(index);
+        moveDatabase.moves.Insert(index, temp);
         musicians[location].moves.Add(moveDatabase.moves[index]);
     }
 }

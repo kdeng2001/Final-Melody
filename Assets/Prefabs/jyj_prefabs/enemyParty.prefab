@@ -49,4 +49,4 @@ MonoBehaviour:
     musicians: []
     partyType: 2
   musicianNames: []
-  musicianDatabase: {fileID: 0}
+  musicianDatabase: {fileID: 7262443549526995003, guid: 8d8879099c2868f47b8ba1708ede7e14, type: 3}
