@@ -8,13 +8,11 @@ public class DialogueVariables : MonoBehaviour, IDataPersistence
 {
     private Dictionary<string, Ink.Runtime.Object> variables;
     //private Story globalVariablesStory;
-    public void SetUpVariables(string globalsFilePath)
+    public void SetUpVariables(TextAsset loadGlobalsJSON)
     {
         //Debug.Log("Setupvariables");
         // compile GLOBALS story
-        string inkFileContents = File.ReadAllText(globalsFilePath);
-        Ink.Compiler compiler = new Ink.Compiler(inkFileContents);
-        Story globalVariablesStory = compiler.Compile();
+        Story globalVariablesStory = new Story(loadGlobalsJSON.text);
 
         // initialize dictionary
         variables = new Dictionary<string, Ink.Runtime.Object>();

@@ -4,7 +4,6 @@ using TMPro;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
-using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -33,8 +32,11 @@ public class DialogueManager : MonoBehaviour
     
     public static DialogueManager Instance;
     [Header("Persistent Dialogue Variables")]
-    [SerializeField] public InkFile globalsInkFile;
     private DialogueVariables dialogueVariables;
+
+    // variable for the load_globals.ink JSON
+    [Header("Load Globals JSON")]
+    [SerializeField] public TextAsset loadGlobalsJSON;
 
     public delegate void HasEnteredDialogueMode();
     public HasEnteredDialogueMode hasEnteredDialogueMode;
@@ -51,7 +53,7 @@ public class DialogueManager : MonoBehaviour
         {
             Instance = this;
             dialogueVariables = gameObject.AddComponent<DialogueVariables>();
-            dialogueVariables.SetUpVariables(globalsInkFile.filePath);        
+            dialogueVariables.SetUpVariables(loadGlobalsJSON);        
             layoutAnimator = dialoguePanel.GetComponent<Animator>();
             dialoguePanel.SetActive(false);
             displayingChoices = false;

@@ -54,15 +54,4 @@ MonoBehaviour:
   - {fileID: 0}
   portraitAnimator: {fileID: 0}
   canContinueIcon: {fileID: 0}
-  globalsInkFile:
-    inkAsset: {fileID: 102900000, guid: 7b029302d93af574db638f75f0493e91, type: 3}
-    jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 0}
-    unhandledCompileErrors: []
-    recursiveIncludeErrorPaths: []
-    errors: []
-    warnings: []
-    todos: []
-    masterInkAssets: []
-    localIncludePaths: []
-    includes: []
+  loadGlobalsJSON: {fileID: 4900000, guid: fb754e1708512c041b3ad84542630e58, type: 3}
