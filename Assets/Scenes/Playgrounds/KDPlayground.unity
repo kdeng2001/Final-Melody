@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18364093, g: 0.22912368, b: 0.30521473, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5003,11 +5003,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730230731837669588, guid: e7752fe29c8af4742a5281136251aadc, type: 3}
       propertyPath: entranceID
-      value: doc
+      value: alley
       objectReference: {fileID: 0}
     - target: {fileID: 3730230731837669588, guid: e7752fe29c8af4742a5281136251aadc, type: 3}
       propertyPath: sceneToEnterName
-      value: KDDocOffice
+      value: jyj_battleAlley
       objectReference: {fileID: 0}
     - target: {fileID: 4243516835945337285, guid: e7752fe29c8af4742a5281136251aadc, type: 3}
       propertyPath: m_LocalScale.x
