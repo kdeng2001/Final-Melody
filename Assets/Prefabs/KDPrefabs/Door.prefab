@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractableIcon: {fileID: 4962869589656161864}
   sceneToEnterName: 
+  entranceID: 
   positionToEnter: {fileID: 985339273179957537}
 --- !u!54 &1197607127763336925
 Rigidbody:
@@ -282,27 +283,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 66018577534205135, guid: 9802b5ff5e2dcfa4283374756ddefbaf, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 66018577534205135, guid: 9802b5ff5e2dcfa4283374756ddefbaf, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 66018577534205135, guid: 9802b5ff5e2dcfa4283374756ddefbaf, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 66018577534205135, guid: 9802b5ff5e2dcfa4283374756ddefbaf, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 66018577534205135, guid: 9802b5ff5e2dcfa4283374756ddefbaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 66018577534205135, guid: 9802b5ff5e2dcfa4283374756ddefbaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 66018577534205135, guid: 9802b5ff5e2dcfa4283374756ddefbaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
