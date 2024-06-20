@@ -1,6 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Footsteps" ID="{EBC65F03-A1E8-489A-84BA-8F9A813663BC}" ShortID="561025001">
+					<PropertyList>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4E4EBD33-CA28-4CC5-BE49-4B5AAE370AE3}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="8"/>
+											<Property Name="Min" Type="Real64" Value="-14"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="BOOT_CONC CLEAN_WALK_1" ID="{B283814E-C69B-4300-B1A6-6706A5078D58}" ShortID="66207814">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_1" ID="{099B8777-D638-4A3C-ADE9-F2945A04715B}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1051922225"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_1" ID="{099B8777-D638-4A3C-ADE9-F2945A04715B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_2" ID="{086E54EF-1F02-4093-842D-F1A41C4ADC3B}" ShortID="421390063">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_2" ID="{213C04D4-0ADE-49E7-99F2-F27255055594}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1029415312"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_2" ID="{213C04D4-0ADE-49E7-99F2-F27255055594}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_3" ID="{EAE8A41D-9588-4231-A2A9-37EBEEEC3CBB}" ShortID="725577355">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_3" ID="{A90F4FB5-51DC-4D1E-9FA6-1000BBFA3C09}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="505505623"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_3" ID="{A90F4FB5-51DC-4D1E-9FA6-1000BBFA3C09}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_4" ID="{DD0C9D5D-6553-41A3-BA05-BFB1112C03F4}" ShortID="659562384">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_4" ID="{3276B06E-5409-4927-ADE1-002D03D336FA}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="653746798"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_4" ID="{3276B06E-5409-4927-ADE1-002D03D336FA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_5" ID="{D66EB428-0645-43F5-BF36-595EA35E4968}" ShortID="44467513">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_5" ID="{2A1E8FFE-E25F-4013-9A20-C37F60BF3AA2}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="645619578"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_5" ID="{2A1E8FFE-E25F-4013-9A20-C37F60BF3AA2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_7" ID="{B5A49FA3-3904-4431-BCEC-4D17990FCD96}" ShortID="293755173">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_7" ID="{34ED9CE3-339A-4A7D-B55D-1068362F2AE6}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.7.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="702972314"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_7" ID="{34ED9CE3-339A-4A7D-B55D-1068362F2AE6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_10" ID="{06DAFE9D-FAB4-4DE5-BA91-E7411B37FEC6}" ShortID="172761277">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_10" ID="{5307C65A-6D6A-4FDC-A850-5FB2698E9F0C}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="200926149"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_10" ID="{5307C65A-6D6A-4FDC-A850-5FB2698E9F0C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK" ID="{DD330DD4-E49A-4902-B21A-1E62BE37DF0C}" ShortID="971079657">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK" ID="{2052DD4A-FE6F-4FA2-9B05-2EF9CFD57298}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="680661866"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK" ID="{2052DD4A-FE6F-4FA2-9B05-2EF9CFD57298}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
