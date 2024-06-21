@@ -694,18 +694,18 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Piano Notes" ID="{192728EA-D156-4052-BEF9-FA503141C4D2}" ShortID="662335611">
 							<PropertyList>
-								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
-										<Value>18.5</Value>
+										<Value>17.5</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{5CDC1036-2C45-49C2-BCB0-989C1B13D4FD}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="13"/>
-													<Property Name="Min" Type="Real64" Value="-14"/>
+													<Property Name="Max" Type="Real64" Value="23"/>
+													<Property Name="Min" Type="Real64" Value="-22"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -723,7 +723,7 @@
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="10"/>
-													<Property Name="Min" Type="Real64" Value="-9"/>
+													<Property Name="Min" Type="Real64" Value="-17"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
