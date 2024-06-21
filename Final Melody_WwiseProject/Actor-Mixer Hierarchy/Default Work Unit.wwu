@@ -212,6 +212,2339 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<BlendContainer Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" ShortID="700862856">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Bar Crowd Loop 03" ID="{5DC88E58-A751-4C7E-ABFB-79E1D4780B52}" ShortID="795139730">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bar Crowd Loop 03" ID="{E401D6F9-C721-426C-B021-7C27C1E41DC5}">
+									<Language>SFX</Language>
+									<AudioFile>Bar Crowd Loop 03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="176207028"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bar Crowd Loop 03" ID="{E401D6F9-C721-426C-B021-7C27C1E41DC5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Stuff" ID="{BA7ADE60-0736-4DB5-9627-A27F7D80063D}" ShortID="805044072">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>17</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BFAB00D0-F3DE-4763-AABD-D6BC1F35A9D4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="9"/>
+													<Property Name="Min" Type="Real64" Value="-9"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2425B7C5-23C9-4162-8F32-122EA60BAF66}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="15"/>
+													<Property Name="Min" Type="Real64" Value="-11"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Glass Breaking" ID="{14C1775D-3FD2-45CE-876B-7C579ECD99B4}" ShortID="681583839">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{16A7EA3D-B595-45E9-9343-9ED2C14CBB01}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="8"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BBDC5C19-440F-4F9D-8076-6FB313C8E6E5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="18"/>
+															<Property Name="Min" Type="Real64" Value="-12"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Glass Breaking" ID="{9E715536-CA10-4D20-84A0-E2141F4FB2E8}">
+											<Language>SFX</Language>
+											<AudioFile>Glass Breaking.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="991873149"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{DDAB1314-C937-41F5-A9CF-3BA745D7D2CD}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{8F3025AC-E950-4064-9201-C570AA30880F}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{55B30A1E-836D-4039-8C23-52DA3B453126}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{D66D42F1-89EF-4B18-8807-2F052E33777F}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{0EACA67B-5169-4DF4-9B1A-507FCF1A512F}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{DC2EBF8F-68A8-41F8-84A8-00DB0095AD68}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Glass Breaking" ID="{9E715536-CA10-4D20-84A0-E2141F4FB2E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silverware Movement 01" ID="{C739C628-9C1B-4A82-8B76-62C61BD2AD43}" ShortID="932059117">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Silverware Movement 01" ID="{E0D8AEC4-63B1-4A55-A5BA-E62DA7EBB36F}">
+											<Language>SFX</Language>
+											<AudioFile>Silverware Movement 01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="653401279"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silverware Movement 01" ID="{E0D8AEC4-63B1-4A55-A5BA-E62DA7EBB36F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silverware Movement 02" ID="{3EBC36A8-3A74-42F1-A8B1-441E95C783FC}" ShortID="111283382">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Silverware Movement 02" ID="{B55C1D9B-8DA1-47A7-80DB-893C7084B4C7}">
+											<Language>SFX</Language>
+											<AudioFile>Silverware Movement 02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="466596290"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silverware Movement 02" ID="{B55C1D9B-8DA1-47A7-80DB-893C7084B4C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grab Bowl from Cupboard" ID="{1A2E740D-E9A7-474F-88E8-63144C1E9CC3}" ShortID="586447572">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grab Bowl from Cupboard" ID="{8A84A611-EBD6-438D-A2D2-9DA92B2B3E94}">
+											<Language>SFX</Language>
+											<AudioFile>Grab Bowl from Cupboard.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="331563995"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grab Bowl from Cupboard" ID="{8A84A611-EBD6-438D-A2D2-9DA92B2B3E94}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Glasses Put Away in Cupboard" ID="{2ABAD0CA-226E-4F8A-BCB4-5C85B6FA7D9A}" ShortID="576854524">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Glasses Put Away in Cupboard" ID="{06A42454-56DA-461D-81F2-81BF5BEC038E}">
+											<Language>SFX</Language>
+											<AudioFile>Glasses Put Away in Cupboard.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="770797067"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Glasses Put Away in Cupboard" ID="{06A42454-56DA-461D-81F2-81BF5BEC038E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Glasses being Stacked" ID="{C4C2B0D4-F38E-4E67-A64D-F64E9E45BACE}" ShortID="1004023089">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Glasses being Stacked" ID="{45143931-3485-4472-9AB5-DB48B1891FB0}">
+											<Language>SFX</Language>
+											<AudioFile>Glasses being Stacked.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="348757128"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Glasses being Stacked" ID="{45143931-3485-4472-9AB5-DB48B1891FB0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="New Silence" ID="{A2D0DB03-E121-4823-A233-A4218D9433D1}" ShortID="687754096">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{3E79FB09-1A40-4676-99C8-47EB0A7EF053}" ShortID="591885793" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="3"/>
+												<Property Name="LengthMax" Type="Real32" Value="5"/>
+												<Property Name="LengthMin" Type="Real32" Value="-4.5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{3E79FB09-1A40-4676-99C8-47EB0A7EF053}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{D3855407-B5EA-422F-8681-C5F9B6E088C2}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Random Events in bar_Path" ID="{82055CB8-9524-4B1B-B5BF-EC98ED906943}">
+											<PointList>
+												<Point>
+													<XPos>-54.1555</XPos>
+													<YPos>-1.45119</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>63.5388739946381</XPos>
+													<YPos>41.1609498680739</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events in bar_Path_01" ID="{0A0C7973-879D-41AE-9467-5AA8BE05411B}">
+											<PointList>
+												<Point>
+													<XPos>-47.98928</XPos>
+													<YPos>65.56728</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events in bar_Path_02" ID="{7393E1A4-AB64-4DB1-B4FE-111B60583271}">
+											<PointList>
+												<Point>
+													<XPos>82.30563</XPos>
+													<YPos>-82.71768</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events in bar_Path_03" ID="{081BCA85-84C6-4671-BAC9-2FA5396C0C7B}">
+											<PointList>
+												<Point>
+													<XPos>-81.23324</XPos>
+													<YPos>-80.60686</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events in bar_Path_04" ID="{AEE13575-5107-4535-84A5-F02C323B8996}">
+											<PointList>
+												<Point>
+													<XPos>82.30563</XPos>
+													<YPos>81.66227</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events in bar_Path_05" ID="{B7817797-A37A-4820-94D5-FA98E46632CF}">
+											<PointList>
+												<Point>
+													<XPos>-88.47185</XPos>
+													<YPos>-34.43272</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>57.37265</XPos>
+													<YPos>69.65699</YPos>
+													<Flags>0</Flags>
+													<Time>1666</Time>
+												</Point>
+												<Point>
+													<XPos>60.0536193029491</XPos>
+													<YPos>-72.0316622691293</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>-76.4075067024129</XPos>
+													<YPos>66.2269129287599</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Piano Notes" ID="{192728EA-D156-4052-BEF9-FA503141C4D2}" ShortID="662335611">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>18.5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5CDC1036-2C45-49C2-BCB0-989C1B13D4FD}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="13"/>
+													<Property Name="Min" Type="Real64" Value="-14"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A4EA34D6-E337-44D0-ADFB-0034F6FFB971}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-9"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ti2" ID="{4FB54B64-5EED-4797-AF7C-CB2D8BF4C442}" ShortID="213417378">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ti2" ID="{4F255A18-F1AB-4795-BBDF-993ECD0048CB}">
+											<Language>SFX</Language>
+											<AudioFile>Ti2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="870181068"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{A84E8C46-D6D4-4229-BBB2-A1D866C361C2}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{55D4D03E-5042-49AF-8BD2-7B6324E829D5}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{986830D2-1F30-4ECE-A062-09909E60DC39}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{946409D3-6BE2-4BFB-B95D-15EF38399AF6}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{93911A49-AB92-4B38-8BD7-02C0D5836A82}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{4E6829D0-D2F0-4FA1-BF36-CA1C26A60179}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{27F7E1F1-C7BF-4912-8A8E-F0D3D219680D}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Ti2" ID="{4F255A18-F1AB-4795-BBDF-993ECD0048CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sol" ID="{E0EBCA50-A13D-4221-B49A-6F041F504497}" ShortID="166767073">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sol" ID="{8560BD14-3B1D-40CA-9ECF-B3F1AF20ED8B}">
+											<Language>SFX</Language>
+											<AudioFile>Sol.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="906275473"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{2F54E715-5615-43A1-828E-D3D894935DC5}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{6699F818-F926-4498-961F-D230BEF46D7C}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{D59E1F79-EAFB-4C12-B123-A805E26452BB}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{89982319-E0D3-4128-8365-FFA80CB6714F}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{587A41BC-11A5-4E96-AC5B-75300A7570CF}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{BB87861E-CC4F-4D32-B8DB-5E5525D771EF}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{830C358F-9436-46BF-B2BE-18C9BE9FA093}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Sol" ID="{8560BD14-3B1D-40CA-9ECF-B3F1AF20ED8B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sol2" ID="{70701BA4-8DAE-46A2-9ECA-B9A96BB3429F}" ShortID="878307362">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sol2" ID="{2D4B38F3-E7FD-4EEE-AB35-496C66594634}">
+											<Language>SFX</Language>
+											<AudioFile>Sol2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="794114772"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{86AC154C-2A76-4886-A7C0-BE9A529CD13B}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{9427DFB8-8FCE-4FBB-AC00-91916F2123FB}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{445A43B3-570E-4284-AB9F-2180EFA2410C}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{572FC5B3-79B2-4B3A-8255-5900A5EFB63C}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{969C23CB-E062-4021-8D2E-E2DF86AF7915}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{A32005FD-E931-4DEC-9D37-BE5495261782}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{F33A2E65-BC25-4D7F-B762-9E3EC6D4BC7B}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Sol2" ID="{2D4B38F3-E7FD-4EEE-AB35-496C66594634}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ti" ID="{D642D643-751E-44A1-A30D-63E25448CF79}" ShortID="944212352">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ti" ID="{9AF2739F-8D5F-41C5-A018-673B6B1D884C}">
+											<Language>SFX</Language>
+											<AudioFile>Ti.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="182187529"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{64A2D421-5553-4835-B111-CE2010DE9A11}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{8085D33C-0524-48A8-AC90-FDFAC29D59F5}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{18C2223C-F9D9-4061-A503-D57CE3523BFB}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{FC178C51-D985-4CFE-8D9F-2A5ED239687E}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{428A3D27-21F8-4DBA-BE7D-8B035C2F1E97}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{60B1B398-3762-49E5-BE1A-170C3D82331B}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{2DAA0194-A7D5-4EC0-92C2-5BCC1BE94379}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Ti" ID="{9AF2739F-8D5F-41C5-A018-673B6B1D884C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fa2" ID="{1003B4F6-C703-4D07-B406-1760A4361504}" ShortID="901508887">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fa2" ID="{2CD09EA9-EA10-496E-81CC-F481AD1B1405}">
+											<Language>SFX</Language>
+											<AudioFile>Fa2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="304759314"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{0ABBB77F-7869-4DEC-9ACE-634E38525EE9}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{2ED372FA-02A7-4425-8875-19282853E01B}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{3FFE2BBD-EBB4-4A42-9DB5-BA76EFD91223}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{978BFF32-FAA2-40D8-A2DA-14C528F04592}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{027249AC-AE9F-4ED6-8821-A4D30DABB41C}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{F20B0BBB-F15D-4497-BEB2-0749028DD4DA}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{8A833518-D219-48C2-B2B1-EE870246D273}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Fa2" ID="{2CD09EA9-EA10-496E-81CC-F481AD1B1405}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="La" ID="{32B747A4-EAFC-41DD-87FA-1778C31041DB}" ShortID="716929315">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="La" ID="{624F9773-A909-464E-A7B4-840522A2F7F7}">
+											<Language>SFX</Language>
+											<AudioFile>La.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="378589776"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{108F35C8-1E94-4472-B029-1F7F5D2A248F}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{B1C9E043-AA98-43B4-8AD3-CB37A34F56B1}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{1ACD1274-5D7C-4149-A330-D60131F3FCCB}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{7CAC5D39-3BD4-4BEC-8E14-9E62FD0BB547}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{103F3429-F3EF-461E-AD55-C37C75F561A0}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{DE48F4F9-D269-40DD-9024-AF4EB3A0947B}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{CB15730D-8663-4EA8-9D1A-AE965205B28B}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="La" ID="{624F9773-A909-464E-A7B4-840522A2F7F7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Do2" ID="{E7987E89-01FD-434D-91FB-E01205CBC602}" ShortID="730826706">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Do2" ID="{A2F74BE2-49AE-4592-91D5-6F8D68982AD3}">
+											<Language>SFX</Language>
+											<AudioFile>Do2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="923831673"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{132767BD-ED36-4A1F-8FA6-C178568B743A}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{89068715-C860-40D7-A586-509E0DFCD61D}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{1A90A9EA-AE98-406B-9FB1-358EEB9ACBD8}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{CCB97A4E-0850-4A3A-9108-64CE0D1AA109}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{48EA0B89-47D8-40B8-87F6-82B7B01FB74A}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{B4409CAE-A006-4CD0-B597-2CA38BE718E7}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{F9CDA9B7-1BA8-4611-A44E-BED2038A58A1}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Do2" ID="{A2F74BE2-49AE-4592-91D5-6F8D68982AD3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Do" ID="{BFA9FF0E-6EEE-4105-80B9-0756E245E5D7}" ShortID="105812334">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Do" ID="{E142C66D-E3E7-4C03-B628-38FE9E76E801}">
+											<Language>SFX</Language>
+											<AudioFile>Do.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="770953017"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{E64FA3CE-9AB4-4937-AE93-F1EFDA54949F}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{37BA726B-436C-4304-AF68-226822B22640}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{BE98E850-243A-450E-8FF4-A4330F7B61AB}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{75CAEF5C-A6E2-48FC-AD53-19099C8C151D}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{AACFA406-3AF7-4589-92B1-D598A1E5F335}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{BF0A4B3E-BFF8-4D87-8676-8897B7A6104E}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{702189D2-A732-4B10-A228-4B72128096AD}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Do" ID="{E142C66D-E3E7-4C03-B628-38FE9E76E801}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="La2" ID="{2EFE2A98-EF64-4E67-8714-6466F2C5BD7B}" ShortID="459249733">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="La2" ID="{B58C7247-E608-4C9C-8020-72C94104A8A5}">
+											<Language>SFX</Language>
+											<AudioFile>La2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="993713978"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{437A2236-E6CB-4635-BEC6-E4F823090758}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{4D2B7573-1C35-49B0-AD47-DB024A851035}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{AD74EF95-9160-40E0-9093-133FA946E0BF}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{65A44E7B-B05B-473A-946C-A4E79B0A73F6}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{50381C0E-A0CF-4377-83DA-2416BDF05275}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{837E527F-2AAF-4987-B6EB-41D82ED5C223}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{E593E69C-DDC6-4C1A-9E8C-A49AFADBC19D}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="La2" ID="{B58C7247-E608-4C9C-8020-72C94104A8A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fa" ID="{EE2131F9-178D-4ACB-81C1-961984F57778}" ShortID="990557633">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fa" ID="{B6C5C8D6-16C7-4153-AA01-86284CB84C9A}">
+											<Language>SFX</Language>
+											<AudioFile>Fa.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1035264319"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{CA0C1930-02AC-486C-86B4-1A96FBB22B9F}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{1BA51FA1-351A-4CFD-A3B5-1A53EF2B8A74}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{E96FA30B-7ED4-4DF8-A7CC-3004E57B7269}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{50BC133D-6A0A-45F2-B5D0-12327ABD287E}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{D379C568-E5EC-40BF-B291-87ABD7933E19}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{4C2CDE37-02BD-4214-BEEF-F15ABDC44A46}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{ABAC927F-3FA0-46B7-B4FD-B8C2C8C96951}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Fa" ID="{B6C5C8D6-16C7-4153-AA01-86284CB84C9A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mi2" ID="{54402160-5F47-4455-861E-4773A0E77F5D}" ShortID="183705375">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mi2" ID="{D7756C57-0EF1-4F61-902A-D1FB7DCFF9E9}">
+											<Language>SFX</Language>
+											<AudioFile>Mi2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="997201571"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{DED825DF-23B2-4B35-A872-BA6AAC72FA0D}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{D7845F5C-98B7-4891-94C9-C1FD9368B92D}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{8AA1E0AE-4A3B-49D9-8CFF-CBF4FF546790}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{D3ABDC65-947F-4A31-88AA-4DFDC6057BC3}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{686AF136-92BA-469A-9A25-4AD9E8D34538}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{0069BA4C-09B2-4562-BB6B-FCFC3B57F51F}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{07EFA622-D66A-4806-99A4-4E472D6AFE3F}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Mi2" ID="{D7756C57-0EF1-4F61-902A-D1FB7DCFF9E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Re" ID="{E7BA4176-842C-409C-A6C2-3D432A972F39}" ShortID="313572898">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Re" ID="{EC5AFF29-9D68-4339-8343-5FB2422A3B36}">
+											<Language>SFX</Language>
+											<AudioFile>Re.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="959761817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{9D07A7A0-AD7F-4A6C-A16A-675DD776D4A2}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{775A7D09-191F-499A-B5F2-655ABC076B47}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{7090B63D-3708-46A6-A1B6-CFE0F0294BE7}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{50280212-D8D1-4D3E-AE57-831C55F8C5EE}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{8D3F07AB-3B6D-4870-BD2B-7941B923F075}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{9958B2F6-4A75-47A8-96CC-D1F459D6F875}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{ED628E81-31E8-4B51-A29C-49792BC6C71D}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Re" ID="{EC5AFF29-9D68-4339-8343-5FB2422A3B36}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mi" ID="{70CDE451-E274-44D6-BCC0-989533440F22}" ShortID="149587451">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mi" ID="{7FC47A61-3FC8-43D3-AEF4-B37ADFBA1C4A}">
+											<Language>SFX</Language>
+											<AudioFile>Mi.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="496944421"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{8D57BE8B-6CD6-46B7-B308-48F79DA35504}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{C99BF554-1BC6-494F-AA9F-56E3083A983C}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{C9430F5E-F2CF-4E9D-A41D-9395EF6BEA8D}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{936EF02A-4360-4D45-9E4E-4ACC25F8389B}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{9F2C06F4-440D-429B-B1F4-280FC185CEFF}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{66D87F63-92B4-4C07-9C6D-BFEF68C8A7BA}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{B68A6405-F49B-46E9-913E-BF17C713CEB7}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Mi" ID="{7FC47A61-3FC8-43D3-AEF4-B37ADFBA1C4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Re2" ID="{FD97501B-86C8-47AD-9737-BC36236987B6}" ShortID="669963192">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Re2" ID="{040D1BB5-AF22-49A6-BFBB-B78DCA32972B}">
+											<Language>SFX</Language>
+											<AudioFile>Re2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="135468730"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{79BE3A12-67C9-499A-A34F-A5E9EBB877C7}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{C486413A-FB91-4A76-9B63-EE6A455F3701}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{88B90DE3-F1FD-449E-A172-F22F752AD5AF}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{E3FCE518-F040-4894-AD47-960D977E0F88}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{421A9719-F0FC-4868-B200-6A7978463A97}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{A177734E-1C85-4F45-AA6F-E9A947A91285}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{76D58535-353F-472F-8972-DAD87D27C117}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Re2" ID="{040D1BB5-AF22-49A6-BFBB-B78DCA32972B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="New Silence" ID="{1E733635-5B24-4CA5-B15E-740CDC26C3C7}" ShortID="475838264">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{2232A24D-FA48-41D7-83EB-DD84FE3AB28D}" ShortID="666787567" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{2232A24D-FA48-41D7-83EB-DD84FE3AB28D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{FFBFC0C3-66C4-4F2E-8DE6-CAD471758F55}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Piano Notes_Path" ID="{FA92CD7F-C868-4C18-B27B-E951BAD3650E}">
+											<PointList>
+												<Point>
+													<XPos>-55.49598</XPos>
+													<YPos>60.02639</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Piano Notes_Path_01" ID="{AC8344C8-E3A6-4AAE-AED2-90E4C8924AF4}">
+											<PointList>
+												<Point>
+													<XPos>-70.50938</XPos>
+													<YPos>-61.08179</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>68.0965147453083</XPos>
+													<YPos>68.0738786279683</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Piano Notes_Path_02" ID="{146CC22E-B740-4182-ADFA-C66A12725ADB}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>69.4369973190348</XPos>
+													<YPos>-82.0580474934037</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Piano Notes_Path_03" ID="{8F209229-0B26-4651-A051-79197CEE8D35}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-67.2922252010724</XPos>
+													<YPos>73.3509234828496</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Piano Notes_Path_04" ID="{A836B299-D0A9-49C9-BEE0-6BB3CA3D7628}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>86.8632707774799</XPos>
+													<YPos>70.976253298153</YPos>
+													<Flags>0</Flags>
+													<Time>1250</Time>
+												</Point>
+												<Point>
+													<XPos>-49.3297587131367</XPos>
+													<YPos>-40.8970976253298</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>75.3351206434316</XPos>
+													<YPos>-45.910290237467</YPos>
+													<Flags>0</Flags>
+													<Time>3750</Time>
+												</Point>
+												<Point>
+													<XPos>-74.79893</XPos>
+													<YPos>53.0343</YPos>
+													<ZPos>15</ZPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
