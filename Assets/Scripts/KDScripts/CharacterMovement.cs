@@ -5,6 +5,10 @@ using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 public class CharacterMovement : Movement
 {
+    public AK.Wwise.Event footsteps;
+    private float timeBetweenFootsteps = .35f;
+    Coroutine footstepCoroutine;
+
     public bool pauseMovement = false;
     private void OnEnable()
     {
@@ -35,5 +39,19 @@ public class CharacterMovement : Movement
     {
         if(pauseMovement) { return; }
         base.Update(); 
+        if(direction != Vector2.zero) { PlayFootstepSound(); }
+    }
+
+    public void PlayFootstepSound()
+    {
+        if(footstepCoroutine == null) { footstepCoroutine = StartCoroutine(FootstepHandler(timeBetweenFootsteps)); }
+    }
+
+    IEnumerator FootstepHandler(float timeBetweenFootsteps)
+    {
+        footsteps.Post(gameObject);
+        Debug.Log("play footstep");
+        yield return new WaitForSeconds(timeBetweenFootsteps);
+        footstepCoroutine = null;
     }
 }
