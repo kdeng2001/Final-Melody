@@ -2,12 +2,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	200926149	BOOT_CONC CLEAN_WALK_10	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_10		63028
-	505505623	BOOT_CONC CLEAN_WALK_3	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_3		82780
-	645619578	BOOT_CONC CLEAN_WALK_5	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_5		70760
-	653746798	BOOT_CONC CLEAN_WALK_4	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_4		96840
-	680661866	BOOT_CONC CLEAN_WALK	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK		66308
-	702972314	BOOT_CONC CLEAN_WALK_7	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_7		48420
-	1029415312	BOOT_CONC CLEAN_WALK_2	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_2		90292
-	1051922225	BOOT_CONC CLEAN_WALK_1	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_1		79080
+	200926149	BOOT_CONC CLEAN_WALK_10	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_10		63028
+	505505623	BOOT_CONC CLEAN_WALK_3	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_3		82780
+	645619578	BOOT_CONC CLEAN_WALK_5	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_5		70760
+	653746798	BOOT_CONC CLEAN_WALK_4	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_4		96840
+	680661866	BOOT_CONC CLEAN_WALK	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK		66308
+	702972314	BOOT_CONC CLEAN_WALK_7	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_7		48420
+	1029415312	BOOT_CONC CLEAN_WALK_2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_2		90292
+	1051922225	BOOT_CONC CLEAN_WALK_1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_1		79080
 
