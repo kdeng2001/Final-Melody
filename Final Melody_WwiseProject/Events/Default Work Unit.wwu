@@ -90,6 +90,83 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_guitar_pick_click_clack" ID="{2BEA1318-862C-4222-BA9C-30728A503BAA}">
+					<ChildrenList>
+						<Action Name="" ID="{56628559-F68D-4807-A5AB-7DB3D298FE2D}" ShortID="122217329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="guitar pick click clack" ID="{29DC6683-C46A-4135-AB83-A23CD79B7A1A}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Guitar_Swoosh" ID="{88FE37B8-616D-4155-87D7-519E6927D29E}">
+					<ChildrenList>
+						<Action Name="" ID="{24CCE5DB-9B9B-4C72-A2A2-FAA620CA0965}" ShortID="553600695">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar Swoosh" ID="{439D4492-E35F-4C8B-8D3A-5F25F1833E56}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_paper_cup_sounds" ID="{3E4AA424-2978-46ED-98D6-E1C6C8A2D713}">
+					<ChildrenList>
+						<Action Name="" ID="{4FCE498C-15D7-4169-B84F-4CB1B8E5F325}" ShortID="795493626">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="paper cup sounds" ID="{35A34632-3834-49C2-8657-B0D35D8D8A1C}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_paper_rips" ID="{350599F8-CC7D-4FA0-817F-3DFCC297492A}">
+					<ChildrenList>
+						<Action Name="" ID="{764CAD82-B2DB-4FC3-9D9E-337C994EDE7D}" ShortID="911496100">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="paper rips" ID="{B21A0981-0744-4A0A-8EC0-F34DD6AF195E}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_static_y_chords" ID="{33ECA634-9F32-450A-B299-A6C6E8D6981C}">
+					<ChildrenList>
+						<Action Name="" ID="{C424251A-826B-44BA-AD2F-28DC665BB157}" ShortID="428006875">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="static-y chords" ID="{A3AC410A-9346-459C-956D-FD144047FEEC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_thick_paper__ticket_wobble_" ID="{E2D78E40-3DD4-4AF9-BC72-BE004B7430FC}">
+					<ChildrenList>
+						<Action Name="" ID="{C2AEB98E-248A-46E1-8D26-89B15C89032E}" ShortID="473498790">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="thick paper (ticket wobble)" ID="{797642E6-2F4B-434E-8580-3B04D08EC5B2}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_various_clicks" ID="{2A085E82-FDCE-4951-B6E4-C2D54DFACFC0}">
+					<ChildrenList>
+						<Action Name="" ID="{4A7916AF-857F-4C9E-A939-BF8B6249959E}" ShortID="583796188">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="various clicks" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
