@@ -37,9 +37,14 @@ public class CharacterMovement : Movement
 
     public override void Update()
     {
-        if(pauseMovement) { return; }
-        base.Update(); 
-        if(direction != Vector2.zero) { PlayFootstepSound(); }
+        if (pauseMovement) { return; }
+        base.Update();
+        if (direction != Vector2.zero) { PlayFootstepSound(); }
+        else 
+        { 
+            footsteps.Stop(gameObject);
+            footstepCoroutine = null;
+        }
     }
 
     public void PlayFootstepSound()
@@ -52,6 +57,7 @@ public class CharacterMovement : Movement
         footsteps.Post(gameObject);
         Debug.Log("play footstep");
         yield return new WaitForSeconds(timeBetweenFootsteps);
+
         footstepCoroutine = null;
     }
 }

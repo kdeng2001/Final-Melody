@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ed2355a2df2f3549b31dc0d0ee21ba96
     GuidInternal: 
-    m_lastTime: -8584826816863785035
+    m_lastTime: -8584825132303692028
     List:
     - name: Main_Soundbank
       guid: 9486bfd2f4a4c24980b1bad61c2b0283
@@ -94,8 +94,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d283a4a3cb772340b99967a8dc3a62d2
     GuidInternal: 
-    m_lastTime: -8584826822045113250
+    m_lastTime: -8584825127978752281
     List:
+    - name: Jazz_Bar_Ambience
+      guid: e08fc4de9c482843a3c51b93b7d72af7
+      id: 752228667
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Jazz_Bar_Ambience
+        ObjectType: 3
+        guid: e08fc4de9c482843a3c51b93b7d72af7
+      Path: Events\Default Work Unit\Jazz_Bar_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Jazz_Bar_Ambience_Stop
+      guid: 12bf686f762c9948a00bb97bb3db4e5c
+      id: 3751325078
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Jazz_Bar_Ambience_Stop
+        ObjectType: 3
+        guid: 12bf686f762c9948a00bb97bb3db4e5c
+      Path: Events\Default Work Unit\Jazz_Bar_Ambience_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Chime
+      guid: fa0d77da676ffe4bbedf756d31c34865
+      id: 2969046030
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Chime
+        ObjectType: 3
+        guid: fa0d77da676ffe4bbedf756d31c34865
+      Path: Events\Default Work Unit\Play_Chime
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsteps
       guid: 9047f9585a6f8b4b992439fa31c53253
       id: 3854155799
@@ -113,6 +164,159 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5480726
       minDuration: 0.27358276
+    - name: Play_Guitar_Impact
+      guid: 3a9aeae4682df84ea07eb68949df65e5
+      id: 1121667981
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Guitar_Impact
+        ObjectType: 3
+        guid: 3a9aeae4682df84ea07eb68949df65e5
+      Path: Events\Default Work Unit\Play_Guitar_Impact
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_guitar_pick_click_clack
+      guid: 1813ea2b2c862242ba9c30728a503baa
+      id: 1957959728
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_guitar_pick_click_clack
+        ObjectType: 3
+        guid: 1813ea2b2c862242ba9c30728a503baa
+      Path: Events\Default Work Unit\Play_guitar_pick_click_clack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Guitar_Snap
+      guid: e25d9bff99e5fb469aae7848b716d232
+      id: 1913203247
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Guitar_Snap
+        ObjectType: 3
+        guid: e25d9bff99e5fb469aae7848b716d232
+      Path: Events\Default Work Unit\Play_Guitar_Snap
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Guitar_Swoosh
+      guid: b837fe886d61554187d7519e6927d29e
+      id: 1850691842
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Guitar_Swoosh
+        ObjectType: 3
+        guid: b837fe886d61554187d7519e6927d29e
+      Path: Events\Default Work Unit\Play_Guitar_Swoosh
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_paper_cup_sounds
+      guid: 24a44a3e7829ed4698d6e1c6c8a2d713
+      id: 2341331244
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_paper_cup_sounds
+        ObjectType: 3
+        guid: 24a44a3e7829ed4698d6e1c6c8a2d713
+      Path: Events\Default Work Unit\Play_paper_cup_sounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_paper_rips
+      guid: f89905357dcca04f817f3dfcc297492a
+      id: 2143556127
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_paper_rips
+        ObjectType: 3
+        guid: f89905357dcca04f817f3dfcc297492a
+      Path: Events\Default Work Unit\Play_paper_rips
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_static_y_chords
+      guid: 34a6ec33329f0a45b299a6c6e8d6981c
+      id: 3447001990
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_static_y_chords
+        ObjectType: 3
+        guid: 34a6ec33329f0a45b299a6c6e8d6981c
+      Path: Events\Default Work Unit\Play_static_y_chords
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_thick_paper__ticket_wobble_
+      guid: 408ed7e2d43df94abc72be004b7430fc
+      id: 4236828667
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_thick_paper__ticket_wobble_
+        ObjectType: 3
+        guid: 408ed7e2d43df94abc72be004b7430fc
+      Path: Events\Default Work Unit\Play_thick_paper__ticket_wobble_
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_various_clicks
+      guid: 825e082acefd5149b6e4c2d54dfacfc0
+      id: 759646799
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_various_clicks
+        ObjectType: 3
+        guid: 825e082acefd5149b6e4c2d54dfacfc0
+      Path: Events\Default Work Unit\Play_various_clicks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Footsteps
       guid: 7403c302e3442046b037a2e1a2442694
       id: 2963349357
@@ -187,7 +391,7 @@ MonoBehaviour:
     m_lastTime: -8584828712101168554
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000050000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f0000001100000014000000
+  ExpandedWaapiItemIds: 020000000300000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -41,7 +41,8 @@ public class SceneTransitionManager : MonoBehaviour
     {
         //DataPersistenceManager.Instance.LoadScene();
 
-        if (entranceID == "") { return; }
+        if (entranceID == "") { Debug.Log("no entrance id"); return; }
+        Debug.Log("finding door...");
         //player = FindObjectsOfType<Player>().GetComponents<Player>();
         DoorInteractable[] doors = FindObjectsOfType<DoorInteractable>();
         foreach (DoorInteractable door in doors)

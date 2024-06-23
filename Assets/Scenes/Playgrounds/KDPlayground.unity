@@ -19768,7 +19768,7 @@ PrefabInstance:
     - target: {fileID: 6717148607746836227, guid: 58ac7c903aa6c71479baec6ce00aa624, type: 3}
       propertyPath: footsteps.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 7b6c813f7dda7474ab66656552b28e86, type: 2}
+      objectReference: {fileID: 11400000, guid: a1f394ec79ca4cd4f8e7d816411fd23d, type: 2}
     m_RemovedComponents:
     - {fileID: 2141190224678090614, guid: 58ac7c903aa6c71479baec6ce00aa624, type: 3}
     m_RemovedGameObjects: []

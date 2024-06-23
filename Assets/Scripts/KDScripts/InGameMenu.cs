@@ -10,6 +10,7 @@ public class InGameMenu : MonoBehaviour
     [SerializeField] private GameObject saveAndQuit;
     [SerializeField] private GameObject inventoryUI;
     [SerializeField] private GameObject pointsUI;
+    public bool isToggledOn { get; private set; }
     public static InGameMenu Instance { get; private set; }
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class InGameMenu : MonoBehaviour
         else
         {
             Instance = this;
+            isToggledOn = false;
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -45,13 +47,22 @@ public class InGameMenu : MonoBehaviour
         if(DialogueManager.Instance.dialogueIsPlaying) { return; }
 
         // if menu currently active, become inactive and unpause
-        if(saveAndQuit.activeSelf) { Time.timeScale = 1; }
+        if(saveAndQuit.activeSelf) 
+        { 
+            Time.timeScale = 1;
+            isToggledOn = false;
+        }
         // else become active and pause
-        else { Time.timeScale = 0; }
+        else 
+        { 
+            Time.timeScale = 0; 
+            isToggledOn = true;
+        }
         //gameObject.SetActive(!gameObject.activeSelf);
         saveAndQuit.SetActive(!saveAndQuit.activeSelf);
         inventoryUI.SetActive(!inventoryUI.activeSelf);
         pointsUI.SetActive(!pointsUI.activeSelf);
+        
     }
 
     public void Save()

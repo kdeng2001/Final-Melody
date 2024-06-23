@@ -9,7 +9,9 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("new game clicked");
         DataPersistenceManager.Instance.NewGame();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("IntroRefactor");
+        SceneManager.LoadSceneAsync("KDEssentials", LoadSceneMode.Additive);
+        Debug.Log("async adding KDEssentials");
     }
     public void OnContinueClicked()
     {

@@ -11,6 +11,7 @@ public class GuitarItem : Item, IInstrument
 
     public override void UseItem()
     {
-        throw new System.NotImplementedException();
+        //Debug.Log("use guitar!");
+        return;
     }
 }

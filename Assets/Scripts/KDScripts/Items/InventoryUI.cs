@@ -67,6 +67,7 @@ public class InventoryUI : MonoBehaviour
             CreateIcon(itemName, iconPath);
             Button button = itemEntries[itemName].GetComponent<Button>();
             button.onClick.AddListener(() => ItemsList.Instance.UseItem(itemName));
+            //button.GetComponent<RectTransform>().pivot = Vector2.up;
         }
     }
     private void UpdateUI(string itemName, int amount, string iconPath)

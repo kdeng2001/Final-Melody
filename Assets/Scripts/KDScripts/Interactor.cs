@@ -13,6 +13,7 @@ public class Interactor : MonoBehaviour
     public void PressInteract(CallbackContext context)
     {
         if(interactable == null || !interactable.isActiveAndEnabled) { return; }
+        if(InGameMenu.Instance.isToggledOn) { return; }
         interactable.OnStartInteract();
     }
     public void PausePlayer() { }
