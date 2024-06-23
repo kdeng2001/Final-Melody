@@ -7,10 +7,12 @@ using static UnityEngine.InputSystem.InputAction;
 
 public class InGameMenu : MonoBehaviour
 {
+    [SerializeField] private Animator animator;
     [SerializeField] private GameObject saveAndQuit;
     [SerializeField] private GameObject inventoryUI;
     [SerializeField] private GameObject pointsUI;
     public bool isToggledOn { get; private set; }
+    private Player player;
     public static InGameMenu Instance { get; private set; }
     private void Awake()
     {
@@ -22,6 +24,7 @@ public class InGameMenu : MonoBehaviour
         {
             Instance = this;
             isToggledOn = false;
+            player = FindObjectOfType<Player>().GetComponent<Player>();
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -47,22 +50,45 @@ public class InGameMenu : MonoBehaviour
         if(DialogueManager.Instance.dialogueIsPlaying) { return; }
 
         // if menu currently active, become inactive and unpause
-        if(saveAndQuit.activeSelf) 
-        { 
-            Time.timeScale = 1;
+        gameObject.SetActive(true);
+        saveAndQuit.SetActive(true);
+        inventoryUI.SetActive(true);
+        pointsUI.SetActive(true);
+
+        if (isToggledOn)
+        {
+            //Time.timeScale = 1;
+            player.UnPauseMovement();
             isToggledOn = false;
+            animator.Play("MenuOff");
         }
         // else become active and pause
-        else 
-        { 
-            Time.timeScale = 0; 
+        else
+        {
+            //Time.timeScale = 0;
+            player.PauseMovement();
             isToggledOn = true;
+            animator.Play("MenuOn");
         }
+
+        //if (saveAndQuit.activeSelf) 
+        //{ 
+        //    Time.timeScale = 1;
+        //    isToggledOn = false;
+        //    animator.Play("MenuOff");
+        //}
+        //// else become active and pause
+        //else 
+        //{ 
+        //    Time.timeScale = 0; 
+        //    isToggledOn = true;
+        //    animator.Play("MenuOn");
+        //}
         //gameObject.SetActive(!gameObject.activeSelf);
-        saveAndQuit.SetActive(!saveAndQuit.activeSelf);
-        inventoryUI.SetActive(!inventoryUI.activeSelf);
-        pointsUI.SetActive(!pointsUI.activeSelf);
-        
+        //saveAndQuit.SetActive(!saveAndQuit.activeSelf);
+        //inventoryUI.SetActive(!inventoryUI.activeSelf);
+        //pointsUI.SetActive(!pointsUI.activeSelf);
+
     }
 
     public void Save()
