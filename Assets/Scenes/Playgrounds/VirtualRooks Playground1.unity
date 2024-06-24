@@ -24053,6 +24053,10 @@ MonoBehaviour:
   model: {fileID: 8865213817362642876}
   interactor: {fileID: 5490907017912833773}
   gravity: 10
+  footsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   pauseMovement: 0
 --- !u!114 &6882239749631125593
 MonoBehaviour:
