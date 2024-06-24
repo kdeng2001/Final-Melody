@@ -10261,7 +10261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1189624133
 Transform:
   m_ObjectHideFlags: 0
@@ -19732,7 +19732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316c7923e39e53f4d8df3f4d57077b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractableIcon: {fileID: 0}
+  InteractableIcon: {fileID: 9061157170771650797}
   texts: []
   itemsForSale: []
 --- !u!4 &3001028582972123884
