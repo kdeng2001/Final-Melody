@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 9f1e8c99de7ff54c977c0ad5f0589961
     GuidInternal: 
-    m_lastTime: -8584828712101063494
+    m_lastTime: -8584827926414950698
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 68cea3a9cf41e945b0daf5a032bb836d
     GuidInternal: 
-    m_lastTime: -8584828712101338394
+    m_lastTime: -8584827926415080815
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ed2355a2df2f3549b31dc0d0ee21ba96
     GuidInternal: 
-    m_lastTime: -8584825132303692028
+    m_lastTime: -8584823552260559418
     List:
     - name: Main_Soundbank
       guid: 9486bfd2f4a4c24980b1bad61c2b0283
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d283a4a3cb772340b99967a8dc3a62d2
     GuidInternal: 
-    m_lastTime: -8584825127978752281
+    m_lastTime: -8584823552267240508
     List:
     - name: Jazz_Bar_Ambience
       guid: e08fc4de9c482843a3c51b93b7d72af7
@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: 9047f9585a6f8b4b992439fa31c53253
       Path: Events\Default Work Unit\Play_Footsteps
       maxAttenuation: 0
-      maxDuration: 0.5480726
-      minDuration: 0.27358276
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Guitar_Impact
       guid: 3a9aeae4682df84ea07eb68949df65e5
       id: 1121667981
@@ -229,6 +229,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: b837fe886d61554187d7519e6927d29e
       Path: Events\Default Work Unit\Play_Guitar_Swoosh
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Jazz_Bar_Ambience
+      guid: f9ca409163c5ca4db5aeae171c14225a
+      id: 1685503222
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Jazz_Bar_Ambience
+        ObjectType: 3
+        guid: f9ca409163c5ca4db5aeae171c14225a
+      Path: Events\Default Work Unit\Play_Jazz_Bar_Ambience
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -346,7 +363,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 56a82baacaad0e4fa001ad48cb4495aa
     GuidInternal: 
-    m_lastTime: -8584828712101669726
+    m_lastTime: -8584827926415150879
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -360,7 +377,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: a2da45689ef2584e983455310f4d6021
     GuidInternal: 
-    m_lastTime: -8584828712101233321
+    m_lastTime: -8584827926414970718
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -374,7 +391,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 2e07ef3ba23a9c4a904a86438b2bfe69
     GuidInternal: 
-    m_lastTime: -8584828712101273318
+    m_lastTime: -8584827926414970718
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -388,7 +405,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 06c7f03f972ada4a93ae88915b8cd825
     GuidInternal: 
-    m_lastTime: -8584828712101168554
+    m_lastTime: -8584827926414960707
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 020000000300000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000014000000
