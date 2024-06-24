@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class NPCInteractable : Interactable
 {
-    public int currIndex { get; private set; }
+    public int currIndex { get; protected set; }
     [SerializeField] private TextAsset[] texts;
-    public bool isTalking { get; private set; }
+    [HideInInspector]
+    public bool isTalking { get; protected set; }
     private void Awake()
     {
         currIndex = 0;
@@ -25,29 +26,39 @@ public class NPCInteractable : Interactable
     {
         //Debug.Log("start interact npc");
         // continue dialogue
-        if(isTalking)
-        {
-            //Debug.Log("continue npc dialogue");
-            if(DialogueManager.Instance.displayingChoices) { return; }
-            isTalking = true;
-            DialogueManager.Instance.ContinueStory();
-        }
         // start dialogue
+        if(isTalking) { ContinueDialogue(); }
         else
         {
-            
-            if(currIndex >= texts.Length) { return; }
-            //Debug.Log("begin npc dialogue");
-            DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
-            //DialogueManager.Instance.ContinueStory();
-            isTalking = true;
+            StartDialogue();
         }
-        // finish dialogue
+        // check finish dialogue
+        FinishDialogue();
+
+    }
+
+    public virtual void ContinueDialogue()
+    {
+        //Debug.Log("continue npc dialogue");
+        if (DialogueManager.Instance.displayingChoices) { return; }
+        isTalking = true;
+        DialogueManager.Instance.ContinueStory();
+    }
+
+    public virtual void StartDialogue()
+    {
+        if (currIndex >= texts.Length) { return; }
+        //Debug.Log("begin npc dialogue");
+        DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
+        //DialogueManager.Instance.ContinueStory();
+        isTalking = true;
+    }
+
+    public virtual void FinishDialogue()
+    {
         if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
         {
-
             OnFinishInteract();
         }
-
     }
 }

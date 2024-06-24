@@ -16,6 +16,10 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] public Points points;
     private TextMeshProUGUI moneyAmount;
     private TextMeshProUGUI reputationAmount;
+
+    [Header("Use Item Confirmation Pop up")]
+    [SerializeField] private RectTransform confirmationPopup;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -66,7 +70,8 @@ public class InventoryUI : MonoBehaviour
             UpdateUI(itemName, amount, iconPath);
             CreateIcon(itemName, iconPath);
             Button button = itemEntries[itemName].GetComponent<Button>();
-            button.onClick.AddListener(() => ItemsList.Instance.UseItem(itemName));
+            //button.onClick.AddListener(() => ItemsList.Instance.UseItem(itemName));
+            button.onClick.AddListener(() => HandleConfirmationPopup(itemName));
             //button.GetComponent<RectTransform>().pivot = Vector2.up;
         }
     }
@@ -121,5 +126,38 @@ public class InventoryUI : MonoBehaviour
     public void UpdateReputationUI(int newValue)
     {
         reputationAmount.text = newValue.ToString();
+    }
+
+    public void HandleConfirmationPopup(string itemName)
+    {
+        // get confirmation text
+        // change text to match relevant itemName
+        foreach(TextMeshProUGUI tmp in confirmationPopup.gameObject.GetComponentsInChildren<TextMeshProUGUI>())
+        {
+            if(tmp.name == "ConfirmationText") 
+            {
+                tmp.text = "Use " + itemName + "?";
+                break;
+            }
+        }
+        // get confirmation 'Yes' button
+        // set onClick method to use item
+        foreach(Button b in confirmationPopup.gameObject.GetComponentsInChildren<Button>())
+        {
+            if(b.name == "Yes")
+            {
+                b.onClick.AddListener(
+                    () =>
+                    {
+                        ItemsList.Instance.UseItem(itemName);
+                        confirmationPopup.gameObject.SetActive(false);
+                    }
+                );
+
+            }
+        }
+
+        // make confirmationPopup active
+        confirmationPopup.gameObject.SetActive(true);
     }
 }
