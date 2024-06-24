@@ -146,6 +146,7 @@ public class InventoryUI : MonoBehaviour
         {
             if(b.name == "Yes")
             {
+                b.onClick.RemoveAllListeners();
                 b.onClick.AddListener(
                     () =>
                     {
