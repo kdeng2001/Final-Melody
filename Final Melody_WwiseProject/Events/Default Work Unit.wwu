@@ -167,6 +167,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Jazz_Bar_Ambience" ID="{9140CAF9-C563-4DCA-B5AE-AE171C14225A}">
+					<ChildrenList>
+						<Action Name="" ID="{7FAEE02D-7FD3-4819-B52D-C6E16ACC2628}" ShortID="715227312">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

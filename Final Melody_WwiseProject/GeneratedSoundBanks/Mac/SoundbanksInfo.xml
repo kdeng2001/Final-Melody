@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{6885062E-DFC8-ABFB-0948-CC3736811276}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{F07735CB-04F6-5802-58D2-3E77BCA4C21F}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -60,7 +60,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.27358276" DurationMax="0.5480726">
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="200926149"/>
 						<MediaRef Id="505505623"/>
@@ -75,5 +75,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E7BC72CF-5B84-1A6B-D6B3-FCFC5142DFAC}</FileHash>
+	<FileHash>{58BFBDAD-30A5-2C4C-7BCD-9ABA74A3AEA3}</FileHash>
 </SoundBanksInfo>
