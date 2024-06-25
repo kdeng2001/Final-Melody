@@ -28,7 +28,23 @@ public class jyj_battleScene : MonoBehaviour
 
             player.party.musicians[0].moves[0].action.timer = Instantiate(timerObject);
             player.party.musicians[0].moves[0].action.timer.SetActive(false);
-            player.party.musicians[0].moves[0].action.moveAction();
+            //player.party.musicians[0].moves[0].action.moveAction();
+        }
+    }
+
+    public void onMoveClick(string moveName)
+    {
+        if (!init)
+        {
+            return;
+        }
+
+        for (int bogus = 0; bogus < player.party.musicians[0].moves.Count; bogus++)
+        {
+            if (player.party.musicians[0].moves[bogus].name.Equals(moveName))
+            {
+                player.party.musicians[0].moves[bogus].action.moveAction();
+            }
         }
     }
 }
