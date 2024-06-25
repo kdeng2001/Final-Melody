@@ -48,7 +48,8 @@ public class InGameMenu : MonoBehaviour
     {
         // cannot toggle menu while in dialogue
         if(DialogueManager.Instance.dialogueIsPlaying) { return; }
-
+        // cannot toggle menu while shopping
+        if(enabled == false) { return; }
         // if menu currently active, become inactive and unpause
         gameObject.SetActive(true);
         saveAndQuit.SetActive(true);

@@ -18,6 +18,8 @@ public class ShopUIManager : MonoBehaviour
 
     private Dictionary<string, ShoppingEntry> itemsUI;
     public static ShopUIManager Instance;
+    // reference to shopkeeper currently trading
+    public Shopkeeper currentShopkeeper { get; private set; }
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -27,6 +29,7 @@ public class ShopUIManager : MonoBehaviour
         else
         {
             Instance = this;
+            currentShopkeeper = null;
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -96,16 +99,22 @@ public class ShopUIManager : MonoBehaviour
 
     public delegate void StartShopping();
     public StartShopping startShopping;
-    public void DisplayShopMenu() 
-    { 
-        shopMenu.gameObject.SetActive(true);
+    public void DisplayShopMenu(Shopkeeper shopkeeper) 
+    {                 
         startShopping?.Invoke();
+        // disable opening menu
+        InGameMenu.Instance.enabled = false;
+        currentShopkeeper = shopkeeper;
+        shopMenu.gameObject.SetActive(true);
     }
     public delegate void FinishShopping();
     public FinishShopping finishShopping;
     public void HideShopMenu() 
     { 
         shopMenu.gameObject.SetActive(false);
+        // enable opening menu
+        InGameMenu.Instance.enabled = true;
+        currentShopkeeper = null;
         finishShopping?.Invoke();
     }
     // SHOP ENTRY FUNCTIONS
@@ -119,16 +128,16 @@ public class ShopUIManager : MonoBehaviour
         if(cost > InventoryUI.Instance.points.money) { return; }
         // if purchasable
         // add to player inventory
+        InventoryUI.Instance.inventory.UpdateItem(itemName, itemsUI[itemName].buyAmountVal, ItemsList.Instance.items[itemName].iconFilePath);
         // decrement player money
         // update player money ui
-        InventoryUI.Instance.inventory.UpdateItem(itemName, itemsUI[itemName].buyAmountVal);
         InventoryUI.Instance.points.UpdateMoney(-cost);
         cash.text = InventoryUI.Instance.points.money.ToString();
 
         // decrease stock inventory
         itemsUI[itemName].stockAmountVal -= itemsUI[itemName].buyAmountVal;
         // update shopkeeper stock
-
+        currentShopkeeper.UpdateItemsForSale(itemName, -itemsUI[itemName].buyAmountVal);
         // update stock ui
         itemsUI[itemName].stockAmount.text = itemsUI[itemName].stockAmountVal.ToString();
         if(itemsUI[itemName].stockAmountVal == 0) { itemsUI[itemName].soldOutFilter.gameObject.SetActive(true); }

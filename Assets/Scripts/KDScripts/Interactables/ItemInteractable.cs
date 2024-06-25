@@ -12,7 +12,7 @@ public class ItemInteractable : Interactable
     public int currIndex { get; private set; }
     [SerializeField] private TextAsset[] texts;
     public bool isTalking { get; private set; }
-
+    private bool obtained = false;
     private void Awake()
     {
         currIndex = 0;
@@ -21,8 +21,10 @@ public class ItemInteractable : Interactable
     }
     public override void OnFinishInteract()
     {
+        if(obtained) { return; }
         itemWasObtained?.Invoke(item.itemName, item.amount, item.iconFilePath);
         item.HandleObtained();
+        obtained = true;
     }
 
     public override void OnStartInteract()

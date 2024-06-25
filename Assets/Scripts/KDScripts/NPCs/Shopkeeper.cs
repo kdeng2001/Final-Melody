@@ -26,7 +26,7 @@ public class Shopkeeper : NPCInteractable
 
             currIndex = 1;
             // display shop menu
-            ShopUIManager.Instance.DisplayShopMenu();
+            ShopUIManager.Instance.DisplayShopMenu(this);
             // prevent player from talking to shop keeper while shopping menu is displayed
             Player.Instance.PauseInteractor();
             Player.Instance.PauseMovement();
@@ -56,6 +56,20 @@ public class Shopkeeper : NPCInteractable
             enabled = true;
         }
         base.OnStartInteract();
+    }
+
+    public void UpdateItemsForSale(string itemName, int itemAmount)
+    {
+        for (int i = 0; i < itemsForSale.Count; i++)
+        {
+            if(itemsForSale[i].itemName == itemName)
+            {
+                ShopItem temp = itemsForSale[i];
+                temp.stockOfUnits += itemAmount;
+                itemsForSale[i] = temp;
+                break;
+            }
+        }
     }
 
     private void OnEnable()
