@@ -154,7 +154,7 @@ public class InventoryUI : MonoBehaviour
                         confirmationPopup.gameObject.SetActive(false);
                     }
                 );
-
+                break;
             }
         }
 

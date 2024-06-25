@@ -26,13 +26,36 @@ public class Shopkeeper : NPCInteractable
 
             currIndex = 1;
             // display shop menu
+            ShopUIManager.Instance.DisplayShopMenu();
+            // prevent player from talking to shop keeper while shopping menu is displayed
+            Player.Instance.PauseInteractor();
+            Player.Instance.PauseMovement();
+            enabled = false;
+            // listen for finish shopping to start thanking player
+            ShopUIManager.Instance.finishShopping += OnStartInteract;
         }
         // if shop keeper finishes thanking player
         else if(currIndex == 1)
         {
             currIndex = 0;
+            // stop listening for finish shopping once shopping is done
+            ShopUIManager.Instance.finishShopping -= OnStartInteract;
             Time.timeScale = 1;
         }
+    }
+
+    public override void OnStartInteract()
+    {
+        // prepare the shopping experience
+        if(currIndex == 0) { ShopUIManager.Instance.PopulateShopMenu(itemsForSale);}
+        // allow player to finish shopping
+        if (currIndex == 1) 
+        {
+            //Debug.Log("Start interact index = " + currIndex);
+            Player.Instance.UnpauseInteractor();
+            enabled = true;
+        }
+        base.OnStartInteract();
     }
 
     private void OnEnable()
@@ -48,7 +71,8 @@ public class Shopkeeper : NPCInteractable
 [System.Serializable]
 public struct ShopItem
 {
-    public Item item;
-    public int cost;
-    public int amount;
+    public Sprite icon;
+    public string itemName;
+    public int costPerUnit;
+    public int stockOfUnits;
 }

@@ -19733,8 +19733,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractableIcon: {fileID: 9061157170771650797}
-  texts: []
-  itemsForSale: []
+  texts:
+  - {fileID: 4900000, guid: 1c31bba652eff364891f85ac746c9b0a, type: 3}
+  - {fileID: 4900000, guid: d8f23403108c01143be9cb2680b2568a, type: 3}
+  itemsForSale:
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: give2000money
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: 52156d89308974143823b179dcd86343, type: 3}
+    itemName: squirrel
+    costPerUnit: 1
+    stockOfUnits: 99
+  - icon: {fileID: 21300000, guid: e3061d25810e9b04785009022e2a000d, type: 3}
+    itemName: bird
+    costPerUnit: 2
+    stockOfUnits: 50
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: give2000reputation
+    costPerUnit: 2000
+    stockOfUnits: 0
 --- !u!4 &3001028582972123884
 Transform:
   m_ObjectHideFlags: 0
