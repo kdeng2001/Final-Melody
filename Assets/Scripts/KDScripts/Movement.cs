@@ -41,6 +41,15 @@ public abstract class Movement : MonoBehaviour
 
     }
 
+    //public IEnumerator MoveTo(Vector3 movePosition)
+    //{
+    //    Vector3 direction = transform.position - movePosition;
+    //    while(transform.position != movePosition)
+    //    {
+
+    //    }
+    //}
+
     public virtual void Look(Vector3 direction)
     {
         float angle = Vector3.Angle(model.forward, direction);

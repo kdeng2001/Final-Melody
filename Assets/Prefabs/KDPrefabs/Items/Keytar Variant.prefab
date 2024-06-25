@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Keytar Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6625616338305599712, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
