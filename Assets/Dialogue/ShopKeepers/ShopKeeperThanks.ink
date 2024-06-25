@@ -2,5 +2,6 @@ INCLUDE ../GLOBALS.ink
 
 -> main
 === main ===
-Thanks, and please come again!
+Remember, my brudda.
+You never saw me...
 -> END

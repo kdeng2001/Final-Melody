@@ -2,5 +2,6 @@ INCLUDE ../GLOBALS.ink
 
 -> main
 === main ===
-Welcome to my humble little shop!
+Psst.
+I got the goods...
 -> END

@@ -6,6 +6,8 @@ using TMPro;
 
 public class ShopUIManager : MonoBehaviour
 {
+    [Header("Shop Menu Animator")]
+    [SerializeField] private Animator shopMenuAnimator;
     [Header("Buy Item Entry UI Template")]
     [SerializeField] private GameObject BuyItemEntry;
     [Header("Shop Menu UI")]
@@ -100,18 +102,20 @@ public class ShopUIManager : MonoBehaviour
     public delegate void StartShopping();
     public StartShopping startShopping;
     public void DisplayShopMenu(Shopkeeper shopkeeper) 
-    {                 
+    {
         startShopping?.Invoke();
         // disable opening menu
         InGameMenu.Instance.enabled = false;
         currentShopkeeper = shopkeeper;
         shopMenu.gameObject.SetActive(true);
+        shopMenuAnimator.Play("ShopPopup");
     }
     public delegate void FinishShopping();
     public FinishShopping finishShopping;
     public void HideShopMenu() 
-    { 
-        shopMenu.gameObject.SetActive(false);
+    {
+        shopMenuAnimator.Play("ShopUnpop");
+        //shopMenu.gameObject.SetActive(false);
         // enable opening menu
         InGameMenu.Instance.enabled = true;
         currentShopkeeper = null;
