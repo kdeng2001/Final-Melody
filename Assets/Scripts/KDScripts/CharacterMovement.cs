@@ -5,14 +5,35 @@ using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 public class CharacterMovement : Movement
 {
-    public bool pauseMovement = false;
+    public AK.Wwise.Event footsteps;
+    private float timeBetweenFootsteps = .35f;
+    Coroutine footstepCoroutine;
+
+
+    public delegate void OnPauseVarChange(bool val);
+    public OnPauseVarChange onPauseVarChange;
+    private bool _pauseMovement = false;
+    public bool pauseMovement
+    {
+        get { return _pauseMovement; }
+        set
+        {
+            if(_pauseMovement == value) { return; }
+            _pauseMovement = value;
+            onPauseVarChange?.Invoke(value);
+        }
+    }
+    
     private void OnEnable()
     {
+        onPauseVarChange += OnPauseMovementChange;
         if (transform.parent.TryGetComponent(out PlayerInput playerInput))
         {
             InputAction moveAction = playerInput.actions["Move"];
             if (moveAction != null)
             {
+                moveAction.started += PlayFootstepSound;
+                moveAction.canceled += StopFootstepSound;
                 moveAction.performed += context => SetDirection(context);
                 moveAction.canceled += context => SetDirection(context);
             }
@@ -20,11 +41,14 @@ public class CharacterMovement : Movement
     }
     private void OnDisable()
     {
+        onPauseVarChange -= OnPauseMovementChange;
         if (transform.parent.TryGetComponent(out PlayerInput playerInput))
         {
             InputAction moveAction = playerInput.actions["Move"];
             if (moveAction != null)
             {
+                moveAction.started -= PlayFootstepSound;
+                moveAction.canceled -= StopFootstepSound;
                 moveAction.performed -= context => SetDirection(context);
                 moveAction.canceled -= context => SetDirection(context);
             }
@@ -33,7 +57,32 @@ public class CharacterMovement : Movement
 
     public override void Update()
     {
-        if(pauseMovement) { return; }
-        base.Update(); 
+        if (pauseMovement) { return; }
+        base.Update();
+    }
+
+    public void PlayFootstepSound(CallbackContext ctx)
+    {
+        footsteps.Post(gameObject);
+    }
+
+    public void StopFootstepSound(CallbackContext ctx)
+    {
+        footsteps.Stop(gameObject);
+    }
+
+    public void OnPauseMovementChange(bool val)
+    {
+        if(val == true) { footsteps.Stop(gameObject); }
+        else 
+        { 
+            if(transform.parent.TryGetComponent(out PlayerInput playerInput) 
+                && playerInput.actions["Move"].IsPressed())
+            {
+                footsteps.Post(gameObject); 
+            }
+            
+        }
+        
     }
 }

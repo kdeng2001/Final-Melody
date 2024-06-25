@@ -22,10 +22,58 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{2ABD40C5-574D-7741-6576-5BCDA6B6C56A}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{F07735CB-04F6-5802-58D2-3E77BCA4C21F}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
+			<Media>
+				<File Id="200926149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.10.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="505505623" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.3.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="645619578" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.5.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="653746798" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.4.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="680661866" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK_818F3B66.wem</CachePath>
+				</File>
+				<File Id="702972314" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.7.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1029415312" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.2.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1051922225" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.1.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.1_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="200926149"/>
+						<MediaRef Id="505505623"/>
+						<MediaRef Id="645619578"/>
+						<MediaRef Id="653746798"/>
+						<MediaRef Id="680661866"/>
+						<MediaRef Id="702972314"/>
+						<MediaRef Id="1029415312"/>
+						<MediaRef Id="1051922225"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C9CAB6B8-BD2B-CF66-93E5-C387F9F9E37F}</FileHash>
+	<FileHash>{58BFBDAD-30A5-2C4C-7BCD-9ABA74A3AEA3}</FileHash>
 </SoundBanksInfo>

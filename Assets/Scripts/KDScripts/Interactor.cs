@@ -12,7 +12,8 @@ public class Interactor : MonoBehaviour
 
     public void PressInteract(CallbackContext context)
     {
-        if(interactable == null || !interactable.isActiveAndEnabled) { return; }
+        if(interactable == null || !interactable.enabled || !enabled) { Debug.Log("interactor is null or disabled"); return; }
+        if(InGameMenu.Instance.isToggledOn) { return; }
         interactable.OnStartInteract();
     }
     public void PausePlayer() { }
@@ -53,6 +54,7 @@ public class Interactor : MonoBehaviour
     }    
     private void OnEnable()
     {
+        Debug.Log("interactor enabled");
         if(transform.parent.TryGetComponent(out PlayerInput playerInput))
         {
             InputAction interactAction = playerInput.actions["Interact"];
@@ -65,6 +67,7 @@ public class Interactor : MonoBehaviour
     }
     private void OnDisable()
     {
+        Debug.Log("interactor disabled");
         if (transform.parent.TryGetComponent(out PlayerInput playerInput))
         {
             InputAction interactAction = playerInput.actions["Interact"];

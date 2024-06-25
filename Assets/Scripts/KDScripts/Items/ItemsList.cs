@@ -15,6 +15,7 @@ public class ItemsList : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
             Item[] itemComponents = GetComponentsInChildren<Item>();
             items = new();
             foreach(Item i in itemComponents)

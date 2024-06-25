@@ -4,7 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{A25523ED-2FDF-4935-B31D-C0D0EE21BA96}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Main_Soundbank" ID="{D2BF8694-A4F4-49C2-80B1-BAD61C2B0283}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Jazz_Bar_Ambience" ID="{F0E50740-30E8-41AA-9E65-23C9CC899646}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps" ID="{58F94790-6F5A-4B8B-9924-39FA31C53253}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

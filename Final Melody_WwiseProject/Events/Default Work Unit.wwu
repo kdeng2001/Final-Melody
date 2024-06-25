@@ -1,6 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Footsteps" ID="{58F94790-6F5A-4B8B-9924-39FA31C53253}">
+					<ChildrenList>
+						<Action Name="" ID="{0D67B343-C660-4FBF-A2D3-716E472D1300}" ShortID="654061999">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{EBC65F03-A1E8-489A-84BA-8F9A813663BC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Footsteps" ID="{02C30374-44E3-4620-B037-A2E1A2442694}">
+					<ChildrenList>
+						<Action Name="" ID="{69849627-2F04-4CF8-A54F-712F98E95CCE}" ShortID="972262034">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{EBC65F03-A1E8-489A-84BA-8F9A813663BC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jazz_Bar_Ambience" ID="{DEC48FE0-489C-4328-A3C5-1B93B7D72AF7}">
+					<ChildrenList>
+						<Action Name="" ID="{2F9CF67A-F39F-435E-AAF1-9BBFCEC25FC6}" ShortID="389084570">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jazz_Bar_Ambience_Stop" ID="{6F68BF12-2C76-4899-A00B-B97BB3DB4E5C}">
+					<ChildrenList>
+						<Action Name="" ID="{E3992CB0-06A9-4B04-9C38-104F39C8348A}" ShortID="348197159">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Chime" ID="{DA770DFA-6F67-4BFE-BEDF-756D31C34865}">
+					<ChildrenList>
+						<Action Name="" ID="{F5035C21-2214-4270-A57F-FC83D0BA458D}" ShortID="272712432">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chime" ID="{DE60024B-441A-4A0C-8B9B-9333F258B6B7}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Guitar_Impact" ID="{E4EA9A3A-2D68-4EF8-A07E-B68949DF65E5}">
+					<ChildrenList>
+						<Action Name="" ID="{0A4965D4-2415-40C3-9E3D-BF36F7E28A06}" ShortID="619561623">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar Impact" ID="{926B523D-A74A-49AA-87F6-3FD39F6A1C7A}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Guitar_Snap" ID="{FF9B5DE2-E599-46FB-9AAE-7848B716D232}">
+					<ChildrenList>
+						<Action Name="" ID="{5CC74F5A-AE66-4CF2-B519-181BAFA3B1D0}" ShortID="934303400">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar Snap" ID="{B0C2211E-C951-4F4D-B2A6-28A8ED958307}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_guitar_pick_click_clack" ID="{2BEA1318-862C-4222-BA9C-30728A503BAA}">
+					<ChildrenList>
+						<Action Name="" ID="{56628559-F68D-4807-A5AB-7DB3D298FE2D}" ShortID="122217329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="guitar pick click clack" ID="{29DC6683-C46A-4135-AB83-A23CD79B7A1A}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Guitar_Swoosh" ID="{88FE37B8-616D-4155-87D7-519E6927D29E}">
+					<ChildrenList>
+						<Action Name="" ID="{24CCE5DB-9B9B-4C72-A2A2-FAA620CA0965}" ShortID="553600695">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar Swoosh" ID="{439D4492-E35F-4C8B-8D3A-5F25F1833E56}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_paper_cup_sounds" ID="{3E4AA424-2978-46ED-98D6-E1C6C8A2D713}">
+					<ChildrenList>
+						<Action Name="" ID="{4FCE498C-15D7-4169-B84F-4CB1B8E5F325}" ShortID="795493626">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="paper cup sounds" ID="{35A34632-3834-49C2-8657-B0D35D8D8A1C}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_paper_rips" ID="{350599F8-CC7D-4FA0-817F-3DFCC297492A}">
+					<ChildrenList>
+						<Action Name="" ID="{764CAD82-B2DB-4FC3-9D9E-337C994EDE7D}" ShortID="911496100">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="paper rips" ID="{B21A0981-0744-4A0A-8EC0-F34DD6AF195E}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_static_y_chords" ID="{33ECA634-9F32-450A-B299-A6C6E8D6981C}">
+					<ChildrenList>
+						<Action Name="" ID="{C424251A-826B-44BA-AD2F-28DC665BB157}" ShortID="428006875">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="static-y chords" ID="{A3AC410A-9346-459C-956D-FD144047FEEC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_thick_paper__ticket_wobble_" ID="{E2D78E40-3DD4-4AF9-BC72-BE004B7430FC}">
+					<ChildrenList>
+						<Action Name="" ID="{C2AEB98E-248A-46E1-8D26-89B15C89032E}" ShortID="473498790">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="thick paper (ticket wobble)" ID="{797642E6-2F4B-434E-8580-3B04D08EC5B2}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_various_clicks" ID="{2A085E82-FDCE-4951-B6E4-C2D54DFACFC0}">
+					<ChildrenList>
+						<Action Name="" ID="{4A7916AF-857F-4C9E-A939-BF8B6249959E}" ShortID="583796188">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="various clicks" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jazz_Bar_Ambience" ID="{9140CAF9-C563-4DCA-B5AE-AE171C14225A}">
+					<ChildrenList>
+						<Action Name="" ID="{7FAEE02D-7FD3-4819-B52D-C6E16ACC2628}" ShortID="715227312">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

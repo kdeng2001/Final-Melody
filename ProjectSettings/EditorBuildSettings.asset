@@ -6,21 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Playgrounds/KDMainMenu.unity
-    guid: 14e1707c232c0514c8063f0648754ad0
+    path: Assets/Scenes/BuildScenes/MainMenuRefactor.unity
+    guid: 0a24eda4620896849b6eafdca55529ca
   - enabled: 1
-    path: Assets/Scenes/Playgrounds/KDIntro.unity
-    guid: e1bc73946593bcd498616bb2883aec3e
+    path: Assets/Scenes/BuildScenes/KDEssentials.unity
+    guid: b340fb96c0df2cd448287fbe798cfa07
   - enabled: 1
-    path: Assets/Scenes/Playgrounds/KDPlayground.unity
-    guid: f1a08073a23f97741aeaf3bab5165ba5
+    path: Assets/Scenes/BuildScenes/IntroRefactor.unity
+    guid: 59670d9ebecf34e4ea0adea23f077725
   - enabled: 1
-    path: Assets/Scenes/Playgrounds/KDRoom1.unity
-    guid: 371f121a807f13b45bd97f2a8b9353a0
+    path: Assets/Scenes/BuildScenes/StreetRefactor.unity
+    guid: cbeb873b8f7a3d04486fabc276829390
   - enabled: 1
-    path: Assets/Scenes/Playgrounds/KDDocOffice.unity
-    guid: 8a207b4b25067414f880f2b02eb3fb41
+    path: Assets/Scenes/BuildScenes/TempRoom1.unity
+    guid: c93222f292299da4eb5eff954b8a97f6
   - enabled: 1
-    path: Assets/Scenes/Playgrounds/jyj_battleAlley.unity
-    guid: 610ac6f9a4a3845449d252c6ea2fe7a3
+    path: Assets/Scenes/BuildScenes/DocOffice.unity
+    guid: f7c972cdf3ec50946939cb037ee300f1
+  - enabled: 1
+    path: Assets/Scenes/BuildScenes/BattleAlley.unity
+    guid: 1f59009793cc0da4c9497cb09f1b5346
   m_configObjects: {}

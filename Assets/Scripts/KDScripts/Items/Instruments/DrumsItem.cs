@@ -11,6 +11,7 @@ public class DrumsItem : Item, IInstrument
 
     public override void UseItem()
     {
-        throw new System.NotImplementedException();
+        //Debug.Log("use drums!");
+        return;
     }
 }

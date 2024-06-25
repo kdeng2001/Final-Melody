@@ -1,6 +1,3615 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Footsteps" ID="{EBC65F03-A1E8-489A-84BA-8F9A813663BC}" ShortID="561025001">
+					<PropertyList>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4E4EBD33-CA28-4CC5-BE49-4B5AAE370AE3}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-14"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="BOOT_CONC CLEAN_WALK_1" ID="{B283814E-C69B-4300-B1A6-6706A5078D58}" ShortID="66207814">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_1" ID="{099B8777-D638-4A3C-ADE9-F2945A04715B}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1051922225"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_1" ID="{099B8777-D638-4A3C-ADE9-F2945A04715B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_2" ID="{086E54EF-1F02-4093-842D-F1A41C4ADC3B}" ShortID="421390063">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_2" ID="{213C04D4-0ADE-49E7-99F2-F27255055594}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1029415312"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_2" ID="{213C04D4-0ADE-49E7-99F2-F27255055594}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_3" ID="{EAE8A41D-9588-4231-A2A9-37EBEEEC3CBB}" ShortID="725577355">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_3" ID="{A90F4FB5-51DC-4D1E-9FA6-1000BBFA3C09}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="505505623"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_3" ID="{A90F4FB5-51DC-4D1E-9FA6-1000BBFA3C09}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_4" ID="{DD0C9D5D-6553-41A3-BA05-BFB1112C03F4}" ShortID="659562384">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_4" ID="{3276B06E-5409-4927-ADE1-002D03D336FA}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="653746798"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_4" ID="{3276B06E-5409-4927-ADE1-002D03D336FA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_5" ID="{D66EB428-0645-43F5-BF36-595EA35E4968}" ShortID="44467513">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_5" ID="{2A1E8FFE-E25F-4013-9A20-C37F60BF3AA2}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="645619578"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_5" ID="{2A1E8FFE-E25F-4013-9A20-C37F60BF3AA2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_7" ID="{B5A49FA3-3904-4431-BCEC-4D17990FCD96}" ShortID="293755173">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_7" ID="{34ED9CE3-339A-4A7D-B55D-1068362F2AE6}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.7.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="702972314"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_7" ID="{34ED9CE3-339A-4A7D-B55D-1068362F2AE6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK_10" ID="{06DAFE9D-FAB4-4DE5-BA91-E7411B37FEC6}" ShortID="172761277">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK_10" ID="{5307C65A-6D6A-4FDC-A850-5FB2698E9F0C}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="200926149"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK_10" ID="{5307C65A-6D6A-4FDC-A850-5FB2698E9F0C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BOOT_CONC CLEAN_WALK" ID="{DD330DD4-E49A-4902-B21A-1E62BE37DF0C}" ShortID="971079657">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BOOT_CONC CLEAN_WALK" ID="{2052DD4A-FE6F-4FA2-9B05-2EF9CFD57298}">
+									<Language>SFX</Language>
+									<AudioFile>BOOT_CONC CLEAN_WALK.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="680661866"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BOOT_CONC CLEAN_WALK" ID="{2052DD4A-FE6F-4FA2-9B05-2EF9CFD57298}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<BlendContainer Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" ShortID="700862856">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Bar Crowd Loop 03" ID="{5DC88E58-A751-4C7E-ABFB-79E1D4780B52}" ShortID="795139730">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bar Crowd Loop 03" ID="{E401D6F9-C721-426C-B021-7C27C1E41DC5}">
+									<Language>SFX</Language>
+									<AudioFile>Bar Crowd Loop 03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="176207028"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bar Crowd Loop 03" ID="{E401D6F9-C721-426C-B021-7C27C1E41DC5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Random Events" ID="{EF94EA44-EAB8-4740-BC2C-A45A53D7A70B}" ShortID="96819973">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>11.5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D67AF2B6-7791-4468-ABCC-AB7A07AA25A6}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="34"/>
+													<Property Name="Min" Type="Real64" Value="-27"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4ADD5C3C-4F1B-49C3-8C94-E5B0737E297E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="16"/>
+													<Property Name="Min" Type="Real64" Value="-16"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sol2" ID="{70701BA4-8DAE-46A2-9ECA-B9A96BB3429F}" ShortID="878307362">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sol2" ID="{2D4B38F3-E7FD-4EEE-AB35-496C66594634}">
+											<Language>SFX</Language>
+											<AudioFile>Sol2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="794114772"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{4E32E35E-9B42-4704-BAFC-59F30DB1E964}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{BA523281-5AA6-4609-99C7-A5D6C5BC2B06}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{E7E46A73-4263-46D2-AB62-9E2495DC3D2F}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{48A0F10D-FE7D-4A97-A579-1D8C69CE31B0}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{23E53D03-EFBA-49DE-82F2-22FEFDCCE0DB}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{C87FBA56-596E-4ED2-9047-24CAD9C19E94}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Sol2" ID="{2D4B38F3-E7FD-4EEE-AB35-496C66594634}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ti" ID="{D642D643-751E-44A1-A30D-63E25448CF79}" ShortID="944212352">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ti" ID="{9AF2739F-8D5F-41C5-A018-673B6B1D884C}">
+											<Language>SFX</Language>
+											<AudioFile>Ti.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="182187529"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{6DD272DE-66CF-48E1-8D3B-BA71B4D1902C}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{0574BA57-FF05-44EE-8D8A-041B77ACB804}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{B98E408D-0C90-40B1-B9F5-22D7775E90E9}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{FB70CCB6-D531-43AB-8AAD-2EA70254101C}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{7A5B4184-DFF3-476F-AFF6-496C7050804E}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{50E2D595-015B-4F19-8355-A5F0B41E13E3}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Ti" ID="{9AF2739F-8D5F-41C5-A018-673B6B1D884C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ti2" ID="{4FB54B64-5EED-4797-AF7C-CB2D8BF4C442}" ShortID="213417378">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ti2" ID="{4F255A18-F1AB-4795-BBDF-993ECD0048CB}">
+											<Language>SFX</Language>
+											<AudioFile>Ti2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="870181068"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{4B9F9A9D-739B-4AE5-8173-20E1A2FD3F21}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{E55F6F83-3D98-4A00-BF31-88A55A788727}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{4F24C968-7C26-469B-83B3-804B85B166B5}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{FEB9460B-B825-49A7-9B44-38B3C5DE2456}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{E5FAFAC0-3958-4F37-84AA-5EB1C6ED954A}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{64C9E94B-7BD1-4F0C-9EDF-D05A6AFC8512}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Ti2" ID="{4F255A18-F1AB-4795-BBDF-993ECD0048CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fa2" ID="{1003B4F6-C703-4D07-B406-1760A4361504}" ShortID="901508887">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fa2" ID="{2CD09EA9-EA10-496E-81CC-F481AD1B1405}">
+											<Language>SFX</Language>
+											<AudioFile>Fa2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="304759314"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{A5BBD80C-4608-4374-8261-F1B530B9CB67}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{A8845466-AAEE-4139-A88C-A97DE91E28D1}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{19212491-1834-41C0-8A75-D94995CBBDB6}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{AA3ADC73-4BD8-4DCA-B095-C059E2A74F97}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{B798E18C-5BFD-478F-BC55-A211E18BF00B}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{F0424D72-4981-4055-B1CE-FAC015E9F56D}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Fa2" ID="{2CD09EA9-EA10-496E-81CC-F481AD1B1405}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sol" ID="{E0EBCA50-A13D-4221-B49A-6F041F504497}" ShortID="166767073">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sol" ID="{8560BD14-3B1D-40CA-9ECF-B3F1AF20ED8B}">
+											<Language>SFX</Language>
+											<AudioFile>Sol.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="906275473"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{3DAB4F2B-54B0-46EF-85A9-E8D83BE721EC}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{27AFD672-0161-4897-8D53-B8FF17E2CF20}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{F2FB2555-D7FA-438F-ADC6-9C7BA8E4898A}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{571062CF-DDDB-4EC1-81E4-6C1044B081D5}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{ED6A4AEF-829A-4591-8DB6-267207CA99DB}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{2A944927-A514-4B40-B622-16A7C4F5C81D}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Sol" ID="{8560BD14-3B1D-40CA-9ECF-B3F1AF20ED8B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mi" ID="{70CDE451-E274-44D6-BCC0-989533440F22}" ShortID="149587451">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mi" ID="{7FC47A61-3FC8-43D3-AEF4-B37ADFBA1C4A}">
+											<Language>SFX</Language>
+											<AudioFile>Mi.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="496944421"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{AF51D9BF-4A6E-4383-89FC-B7A1775FCF0E}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{735F34FA-CD19-4002-91A7-6D6EFFA1A011}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{5AB1D945-BF66-4585-A628-6C7D0358E360}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{AE4EF5F4-E0F0-47A6-AD90-385A83EEDE30}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{93CBDB8C-17F9-4600-95B4-07395B006CF4}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{318793BF-5132-4B64-8281-B15A842837BC}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Mi" ID="{7FC47A61-3FC8-43D3-AEF4-B37ADFBA1C4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Re" ID="{E7BA4176-842C-409C-A6C2-3D432A972F39}" ShortID="313572898">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Re" ID="{EC5AFF29-9D68-4339-8343-5FB2422A3B36}">
+											<Language>SFX</Language>
+											<AudioFile>Re.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="959761817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{F19959A0-7505-49E0-912A-27C368603D12}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{572DC5D6-904F-469B-A6C7-2D7F81860649}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{17E882BA-FD97-4147-A92F-284C2726A2F3}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{0C81C980-070D-4E68-A5AC-F237AF0FF047}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{61C977B9-5F2B-4339-BC4B-F3F957546B65}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{C99D84A5-0AEC-4D5C-9119-E1E1854CA858}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Re" ID="{EC5AFF29-9D68-4339-8343-5FB2422A3B36}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="La" ID="{32B747A4-EAFC-41DD-87FA-1778C31041DB}" ShortID="716929315">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="La" ID="{624F9773-A909-464E-A7B4-840522A2F7F7}">
+											<Language>SFX</Language>
+											<AudioFile>La.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="378589776"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{DB565ABF-4814-4FDC-A605-1E352EDEC8BC}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{C071553C-6E04-4C24-BF4E-986C692DDB4A}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{CF78BC4B-29BB-4023-A06A-4F99BF31EF87}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{3912F6F5-FB62-4F7B-BFC1-9E0BAC3E606A}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{74EE9CEF-EB75-49C4-BC3E-E27348EB67A4}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{AF40B12F-4A38-4721-970E-AC2F94B9C4A4}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="La" ID="{624F9773-A909-464E-A7B4-840522A2F7F7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mi2" ID="{54402160-5F47-4455-861E-4773A0E77F5D}" ShortID="183705375">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mi2" ID="{D7756C57-0EF1-4F61-902A-D1FB7DCFF9E9}">
+											<Language>SFX</Language>
+											<AudioFile>Mi2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="997201571"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{08442383-FC1F-4C71-9D88-D064A403B2DB}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{2F3D4E8C-39D9-4473-B78C-8C5766B77EB4}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{A15F311E-88A3-4101-A6D1-9C06992CB192}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{1CD0441C-DCAF-48C9-841A-C1F99DB5C745}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{2955FF35-F7E7-47D2-A030-1A68C6B30296}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{0FDD643C-A5E0-4091-98EB-DC4A6649BC63}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Mi2" ID="{D7756C57-0EF1-4F61-902A-D1FB7DCFF9E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Do2" ID="{E7987E89-01FD-434D-91FB-E01205CBC602}" ShortID="730826706">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Do2" ID="{A2F74BE2-49AE-4592-91D5-6F8D68982AD3}">
+											<Language>SFX</Language>
+											<AudioFile>Do2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="923831673"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{64133991-FB80-49E9-AD22-9C004ED37CAB}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{08A0E6AA-3C99-44FF-84CE-BC68606C02DE}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{DC22B91D-7BA9-4B3C-AA1E-7BDF1E4D26B3}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{7D78A04E-7AA8-4366-9162-DDC365A9FF93}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{9F674A42-0252-4E13-B641-30CF3C9482C1}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{DAF7D86B-10EF-4253-A1F2-CCEBBF07B471}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Do2" ID="{A2F74BE2-49AE-4592-91D5-6F8D68982AD3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="La2" ID="{2EFE2A98-EF64-4E67-8714-6466F2C5BD7B}" ShortID="459249733">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="La2" ID="{B58C7247-E608-4C9C-8020-72C94104A8A5}">
+											<Language>SFX</Language>
+											<AudioFile>La2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="993713978"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{DBB46BBC-D340-47EC-869C-303CC423F4FD}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{617552C3-22E3-4215-A56A-71545DB9ACE4}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{3BD31573-64B8-4B1F-A11D-906BB20CAACD}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{CFFB1889-B69F-47F7-B705-23ACFEC939E3}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{08372C00-1091-474F-A784-6277EE6A2BFC}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{864C65F1-830C-436D-8E90-76FEE5FE69A9}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="La2" ID="{B58C7247-E608-4C9C-8020-72C94104A8A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fa" ID="{EE2131F9-178D-4ACB-81C1-961984F57778}" ShortID="990557633">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fa" ID="{B6C5C8D6-16C7-4153-AA01-86284CB84C9A}">
+											<Language>SFX</Language>
+											<AudioFile>Fa.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1035264319"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{035D69B7-9918-4FD2-B986-39A617C6D0CC}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{D63EE856-AB23-4141-A6CD-E8E87ADB0F69}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{6B00303B-B30A-4BF6-B552-D8CF73F9B351}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{D07BAADD-88AA-4862-9E6A-527A9B191C2A}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{24F50558-FB46-413D-AA49-C51F1567439A}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{B48C56A5-0F98-4281-A924-9B6219995531}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Fa" ID="{B6C5C8D6-16C7-4153-AA01-86284CB84C9A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Do" ID="{BFA9FF0E-6EEE-4105-80B9-0756E245E5D7}" ShortID="105812334">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Do" ID="{E142C66D-E3E7-4C03-B628-38FE9E76E801}">
+											<Language>SFX</Language>
+											<AudioFile>Do.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="770953017"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{2C0F5433-1488-4EB8-91C1-DB364E902F56}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{EC832782-C5B8-46CB-81F0-94994A49E55A}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{1BB989AC-3175-4898-8A6F-7499FAB0AB2E}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{6619DB8A-80AA-4964-87B3-C723E408F3C5}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{D48E41BB-B72F-402A-9EF8-FD59ECBB719C}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{EBE8F539-334C-4298-A50F-FE912335C6CF}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Do" ID="{E142C66D-E3E7-4C03-B628-38FE9E76E801}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Re2" ID="{FD97501B-86C8-47AD-9737-BC36236987B6}" ShortID="669963192">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Re2" ID="{040D1BB5-AF22-49A6-BFBB-B78DCA32972B}">
+											<Language>SFX</Language>
+											<AudioFile>Re2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="135468730"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{457B58A0-EAD3-4575-9EFB-D4525900989F}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Piano Notes_Path" ID="{F2BDFFAB-4467-4F2C-9687-627304AA724B}">
+													<PointList>
+														<Point>
+															<XPos>-55.49598</XPos>
+															<YPos>60.02639</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_01" ID="{A7491A4A-63EA-48EB-A8A2-3A1B5E4EC9AD}">
+													<PointList>
+														<Point>
+															<XPos>-70.50938</XPos>
+															<YPos>-61.08179</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>68.0965147453083</XPos>
+															<YPos>68.0738786279683</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_02" ID="{94C28674-2B9D-4B80-A4B3-E34792C158DE}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>69.4369973190348</XPos>
+															<YPos>-82.0580474934037</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_03" ID="{9568EDBC-6226-4DB6-A71A-5B126E75C7AF}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-67.2922252010724</XPos>
+															<YPos>73.3509234828496</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Piano Notes_Path_04" ID="{2D55BF8C-8A1E-45ED-BFC8-D332B17AF546}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>86.8632707774799</XPos>
+															<YPos>70.976253298153</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>-49.3297587131367</XPos>
+															<YPos>-40.8970976253298</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>75.3351206434316</XPos>
+															<YPos>-45.910290237467</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-74.79893</XPos>
+															<YPos>53.0343</YPos>
+															<ZPos>15</ZPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Re2" ID="{040D1BB5-AF22-49A6-BFBB-B78DCA32972B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grab Bowl from Cupboard" ID="{1A2E740D-E9A7-474F-88E8-63144C1E9CC3}" ShortID="586447572">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grab Bowl from Cupboard" ID="{8A84A611-EBD6-438D-A2D2-9DA92B2B3E94}">
+											<Language>SFX</Language>
+											<AudioFile>Grab Bowl from Cupboard.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="331563995"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{0B31ACB5-45D6-48DA-9CEB-C2121F114D3E}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{3FC6BAF1-4B9B-4D1C-8D0A-84DD3BB9A365}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{01276CB8-4ADA-4E32-91E6-0A567B98BD26}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{3C70C077-C291-46ED-8A77-F266115BE9A6}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{C60B1579-6536-4D4E-9EE7-80A9B056AE00}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{D96D12A6-EF61-4725-8151-75C6A3707173}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{350F9BA2-7FAC-4DDF-B7F9-09A8559F188B}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Grab Bowl from Cupboard" ID="{8A84A611-EBD6-438D-A2D2-9DA92B2B3E94}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Glass Breaking" ID="{14C1775D-3FD2-45CE-876B-7C579ECD99B4}" ShortID="681583839">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{16A7EA3D-B595-45E9-9343-9ED2C14CBB01}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="8"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BBDC5C19-440F-4F9D-8076-6FB313C8E6E5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="18"/>
+															<Property Name="Min" Type="Real64" Value="-12"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Glass Breaking" ID="{9E715536-CA10-4D20-84A0-E2141F4FB2E8}">
+											<Language>SFX</Language>
+											<AudioFile>Glass Breaking.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="991873149"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{BD5655E7-0104-483D-9884-413DFECD1420}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{CBF4AFB8-8ABE-408C-8D09-A35A7CFB9884}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{702759EB-C510-4414-9BED-442DBAEAD45A}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{8C5AB737-8BF9-4E78-9637-C0D3354FF619}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{D410A4D7-4DAE-4E3C-8764-F5F76AE19D87}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{A5EB5415-BA74-4664-9B02-FE2E98631ABD}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{F28F1112-3E3E-4423-A619-B15D8C92F107}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Glass Breaking" ID="{9E715536-CA10-4D20-84A0-E2141F4FB2E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silverware Movement 02" ID="{3EBC36A8-3A74-42F1-A8B1-441E95C783FC}" ShortID="111283382">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Silverware Movement 02" ID="{B55C1D9B-8DA1-47A7-80DB-893C7084B4C7}">
+											<Language>SFX</Language>
+											<AudioFile>Silverware Movement 02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="466596290"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{9014637E-14FA-46B3-8D86-661EF2445293}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{2D77F7D8-D872-4469-89B0-A0F0E6A7D71C}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{EA7E2096-4910-4A0A-B794-4F79F5F7006A}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{E0B5C256-466E-4F88-AF0F-0FC0ACF0095D}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{37AB1FEA-D0CC-48F0-919F-A448B96A0D6A}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{946C3A87-859B-4C07-BF02-D5CC90AEFC4C}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{0D28B9E1-5B14-4A04-A995-C88C4E18E977}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Silverware Movement 02" ID="{B55C1D9B-8DA1-47A7-80DB-893C7084B4C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Glasses being Stacked" ID="{C4C2B0D4-F38E-4E67-A64D-F64E9E45BACE}" ShortID="1004023089">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Glasses being Stacked" ID="{45143931-3485-4472-9AB5-DB48B1891FB0}">
+											<Language>SFX</Language>
+											<AudioFile>Glasses being Stacked.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="348757128"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{3D5772B4-F946-4268-B905-2E8CBEF7F670}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{026A63D5-4EA9-4DC7-818F-869C0CABBDA8}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{82CCA5BD-D9A9-4EBD-8EF3-CC53854ABD48}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{1F35777A-8EEA-4DA4-A6C5-C0F0F3628257}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{AA5BB020-0440-48B4-A8B0-B25EFA005C4A}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{3E7B1691-DF8A-4656-BED6-E408A81305CF}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{42B019A7-BC3F-4FB2-ACC4-2E41BBAB60DC}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Glasses being Stacked" ID="{45143931-3485-4472-9AB5-DB48B1891FB0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Silverware Movement 01" ID="{C739C628-9C1B-4A82-8B76-62C61BD2AD43}" ShortID="932059117">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Silverware Movement 01" ID="{E0D8AEC4-63B1-4A55-A5BA-E62DA7EBB36F}">
+											<Language>SFX</Language>
+											<AudioFile>Silverware Movement 01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="653401279"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{B397AA6D-53FD-48F8-9705-892C6595F6B8}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{867BFB06-09CF-464A-9B25-9A8439545FA3}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{23FAED77-21A9-4B94-8BC8-E6087F799B96}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{CBF1FD14-9C73-4044-95D0-5EAEA0E4B06E}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{B1D7971B-056F-43FD-BD10-40583E0FA585}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{E001D7FA-47C1-4EB5-87CC-0960B1A7C6E9}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{29CED204-12BD-4062-815E-9755F0662647}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Silverware Movement 01" ID="{E0D8AEC4-63B1-4A55-A5BA-E62DA7EBB36F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Glasses Put Away in Cupboard" ID="{2ABAD0CA-226E-4F8A-BCB4-5C85B6FA7D9A}" ShortID="576854524">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Glasses Put Away in Cupboard" ID="{06A42454-56DA-461D-81F2-81BF5BEC038E}">
+											<Language>SFX</Language>
+											<AudioFile>Glasses Put Away in Cupboard.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="770797067"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{E8A588D3-AF89-4FC2-B142-2E680402E3E9}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{06E783C2-1DDB-48D2-B31A-CE5AE412750F}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{88E51ECE-AB6E-47A3-8E56-D98F13B51A90}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{905570F8-34F8-46E2-897B-F0CA0721FA4E}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{8A81CE77-5F8C-4902-AAE5-9EF059F3B8D4}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{084970D6-E899-4235-85A2-0BB118E0FFE0}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{657B6DA1-AC48-425F-B646-E9CBE9B3C924}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Glasses Put Away in Cupboard" ID="{06A42454-56DA-461D-81F2-81BF5BEC038E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="New Silence" ID="{A2D0DB03-E121-4823-A233-A4218D9433D1}" ShortID="687754096">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{3E79FB09-1A40-4676-99C8-47EB0A7EF053}" ShortID="591885793" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="3"/>
+												<Property Name="LengthMax" Type="Real32" Value="5"/>
+												<Property Name="LengthMin" Type="Real32" Value="-4.5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{6E9616E7-BCB6-4148-A32B-537D2D39949D}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Random Events in bar_Path" ID="{976F5E6F-4FF1-40A1-8BC2-D8DE6DBA5C99}">
+													<PointList>
+														<Point>
+															<XPos>-54.1555</XPos>
+															<YPos>-1.45119</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>63.5388739946381</XPos>
+															<YPos>41.1609498680739</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_01" ID="{D09ECF80-8812-46E8-B06F-E6B8F1CA5D55}">
+													<PointList>
+														<Point>
+															<XPos>-47.98928</XPos>
+															<YPos>65.56728</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_02" ID="{67FA0144-CD8B-4AEC-99A0-0756B573D59D}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>-82.71768</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_03" ID="{AB9605FF-4469-4938-9A6C-673FC04F50C3}">
+													<PointList>
+														<Point>
+															<XPos>-81.23324</XPos>
+															<YPos>-80.60686</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_04" ID="{09928B99-29CA-49A8-876A-455A7B08C188}">
+													<PointList>
+														<Point>
+															<XPos>82.30563</XPos>
+															<YPos>81.66227</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Random Events in bar_Path_05" ID="{6288E626-8D2D-435E-A2ED-68B34B77446E}">
+													<PointList>
+														<Point>
+															<XPos>-88.47185</XPos>
+															<YPos>-34.43272</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>57.37265</XPos>
+															<YPos>69.65699</YPos>
+															<Flags>0</Flags>
+															<Time>1666</Time>
+														</Point>
+														<Point>
+															<XPos>60.0536193029491</XPos>
+															<YPos>-72.0316622691293</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>-76.4075067024129</XPos>
+															<YPos>66.2269129287599</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{3E79FB09-1A40-4676-99C8-47EB0A7EF053}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{9866AB2F-F130-430C-90D2-93E5F958F353}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Random Events_Path" ID="{76E1E413-07EE-42DA-99B9-D90BAD06CDE0}">
+											<PointList>
+												<Point>
+													<XPos>-75.06702</XPos>
+													<YPos>74.27441</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events_Path_01" ID="{210AF9DE-70CC-4A55-AE38-78D92641C6AA}">
+											<PointList>
+												<Point>
+													<XPos>76.40751</XPos>
+													<YPos>81.66227</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events_Path_02" ID="{9E34E501-211B-4363-AACF-9040E04BCFEF}">
+											<PointList>
+												<Point>
+													<XPos>-78.82038</XPos>
+													<YPos>-80.34301</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events_Path_03" ID="{085AC732-3CCF-419C-8883-237E9A635F8B}">
+											<PointList>
+												<Point>
+													<XPos>73.19035</XPos>
+													<YPos>-72.69129</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events_Path_04" ID="{AC81C3B8-CFE8-4B44-883E-8C96087BCFBA}">
+											<PointList>
+												<Point>
+													<XPos>-43.16354</XPos>
+													<YPos>60.81794</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>71.8498659517426</XPos>
+													<YPos>-68.8654353562005</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events_Path_05" ID="{A271BD09-7469-49BF-8BBD-01573F88A72F}">
+											<PointList>
+												<Point>
+													<XPos>-80.69705</XPos>
+													<YPos>-76.38522</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>81.5013404825737</XPos>
+													<YPos>72.2955145118733</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Random Events_Path_06" ID="{98CC4A73-7ECD-4973-9C9C-8940190803AF}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>0.536193029490619</XPos>
+													<YPos>-68.3377308707124</YPos>
+													<Flags>0</Flags>
+													<Time>833</Time>
+												</Point>
+												<Point>
+													<XPos>-66.7560321715818</XPos>
+													<YPos>7.65171503957784</YPos>
+													<Flags>0</Flags>
+													<Time>1666</Time>
+												</Point>
+												<Point>
+													<XPos>45.0402144772118</XPos>
+													<YPos>31.6622691292876</YPos>
+													<Flags>0</Flags>
+													<Time>2500</Time>
+												</Point>
+												<Point>
+													<XPos>39.4101876675603</XPos>
+													<YPos>74.934036939314</YPos>
+													<Flags>0</Flags>
+													<Time>3333</Time>
+												</Point>
+												<Point>
+													<XPos>-55.7640750670241</XPos>
+													<YPos>56.2005277044855</YPos>
+													<Flags>0</Flags>
+													<Time>4166</Time>
+												</Point>
+												<Point>
+													<XPos>37.5335120643432</XPos>
+													<YPos>-36.6754617414248</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<RandomSequenceContainer Name="Guitar Snap" ID="{B0C2211E-C951-4F4D-B2A6-28A8ED958307}" ShortID="907728225">
+					<PropertyList>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{EB3DBAB9-F7F2-43C1-A46D-94404A81F7D5}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-11"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="guitar string snap 2" ID="{BCBD0E21-EB46-43C4-8DD1-14B7A297816A}" ShortID="94531922">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="guitar string snap 2" ID="{24250ED5-9237-4D58-BD67-14334A05C27F}">
+									<Language>SFX</Language>
+									<AudioFile>guitar string snap 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="714191138"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="guitar string snap 2" ID="{24250ED5-9237-4D58-BD67-14334A05C27F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="guitar string snap" ID="{C1074459-E2DE-454E-9236-6AD0A0413FA6}" ShortID="271142186">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="guitar string snap" ID="{98349952-3107-4AA0-8D42-5343BE3E7ABF}">
+									<Language>SFX</Language>
+									<AudioFile>guitar string snap.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1005809217"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="guitar string snap" ID="{98349952-3107-4AA0-8D42-5343BE3E7ABF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Chime" ID="{DE60024B-441A-4A0C-8B9B-9333F258B6B7}" ShortID="126209408">
+					<PropertyList>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{69446F78-9039-491C-98B6-30444914075E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="14"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="chime 2" ID="{92FC352C-C742-4071-9B9F-F540AD9975D9}" ShortID="817485123">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="chime 2" ID="{D6BEDC18-7336-4CB1-BF6D-3B758349BFC9}">
+									<Language>SFX</Language>
+									<AudioFile>chime 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="698235323"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="chime 2" ID="{D6BEDC18-7336-4CB1-BF6D-3B758349BFC9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="chime 3" ID="{D4C772F0-9164-4689-8E59-EA9637114B74}" ShortID="563449799">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="chime 3" ID="{769B8207-CE2F-4DCA-BDA5-E56D14A4C883}">
+									<Language>SFX</Language>
+									<AudioFile>chime 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="4149405"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="chime 3" ID="{769B8207-CE2F-4DCA-BDA5-E56D14A4C883}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="chime" ID="{B0EB4CAD-4DBC-45CF-87E7-91806ADDC9FA}" ShortID="591176330">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="chime" ID="{130EDD05-3EA9-4C58-A71C-17C3066BBD00}">
+									<Language>SFX</Language>
+									<AudioFile>chime.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="2333916"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="electronic chimes" ID="{7D8E1731-08F1-44A1-9E12-13342D927D80}">
+									<Language>SFX</Language>
+									<AudioFile>electronic chimes.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="843622230"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="electronic chimes" ID="{7D8E1731-08F1-44A1-9E12-13342D927D80}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="electronic chimes" ID="{56F036A2-171E-4429-9150-3F05EBFBE367}" ShortID="870169750">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="electronic chimes" ID="{41ABBB12-4FEB-4206-8D45-3A3ED66E1F5E}">
+									<Language>SFX</Language>
+									<AudioFile>electronic chimes.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="843622230"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="electronic chimes" ID="{41ABBB12-4FEB-4206-8D45-3A3ED66E1F5E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Guitar Swoosh" ID="{439D4492-E35F-4C8B-8D3A-5F25F1833E56}" ShortID="1063405155">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{52701F46-6444-4989-8DA0-D8C186295B85}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="14"/>
+											<Property Name="Min" Type="Real64" Value="-8"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="guitar swoosh" ID="{E2A3A10E-A7C4-45E1-BC6C-7BD68F942713}">
+							<Language>SFX</Language>
+							<AudioFile>guitar swoosh.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="605139908"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="guitar swoosh" ID="{E2A3A10E-A7C4-45E1-BC6C-7BD68F942713}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="guitar pick click clack" ID="{29DC6683-C46A-4135-AB83-A23CD79B7A1A}" ShortID="189386848">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="guitar pick click clack" ID="{3E03F3A3-D36B-46DB-83D3-7CF3B9102E0B}">
+							<Language>SFX</Language>
+							<AudioFile>guitar pick click clack.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="232196511"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="guitar pick click clack" ID="{3E03F3A3-D36B-46DB-83D3-7CF3B9102E0B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="paper cup sounds" ID="{35A34632-3834-49C2-8657-B0D35D8D8A1C}" ShortID="678332309">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="paper cup sounds" ID="{C4D7276E-9E67-4F0B-8FB4-A3E4C8210BDA}">
+							<Language>SFX</Language>
+							<AudioFile>paper cup sounds.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1034615824"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="paper cup sounds" ID="{C4D7276E-9E67-4F0B-8FB4-A3E4C8210BDA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="paper rips" ID="{B21A0981-0744-4A0A-8EC0-F34DD6AF195E}" ShortID="418483390">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="paper rips" ID="{15EC3863-8DA1-4C41-AA79-85808123BB43}">
+							<Language>SFX</Language>
+							<AudioFile>paper rips.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="591124313"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="paper rips" ID="{15EC3863-8DA1-4C41-AA79-85808123BB43}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="static-y chords" ID="{A3AC410A-9346-459C-956D-FD144047FEEC}" ShortID="549978526">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="static-y chords" ID="{992A6733-42CD-41AC-865B-8953F5285396}">
+							<Language>SFX</Language>
+							<AudioFile>static-y chords.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="253651070"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="static-y chords" ID="{992A6733-42CD-41AC-865B-8953F5285396}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="thick paper (ticket wobble)" ID="{797642E6-2F4B-434E-8580-3B04D08EC5B2}" ShortID="36187162">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}">
+							<Language>SFX</Language>
+							<AudioFile>thick paper (ticket wobble).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="527394364"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="various clicks" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" ShortID="563181178">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="various clicks" ID="{F6A406B9-0F89-438D-97DA-76096DC8053D}">
+							<Language>SFX</Language>
+							<AudioFile>various clicks.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="201321310"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="various clicks" ID="{F6A406B9-0F89-438D-97DA-76096DC8053D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Guitar Impact" ID="{926B523D-A74A-49AA-87F6-3FD39F6A1C7A}" ShortID="623499118">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="guitar impact 1" ID="{2EBA5F91-DBC0-4BE6-8160-C19B61F9378F}" ShortID="598117518">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="guitar impact 1" ID="{0D1097F6-91A2-4101-8466-B3DA6BE0385D}">
+									<Language>SFX</Language>
+									<AudioFile>guitar impact 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="172635804"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="guitar impact 1" ID="{0D1097F6-91A2-4101-8466-B3DA6BE0385D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="impact 2" ID="{E5CD518F-BE98-430F-9C53-62FDF5A6E185}" ShortID="566063090">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="impact 2" ID="{07FE70D9-4373-4BF4-AE05-2B6400A63A2A}">
+									<Language>SFX</Language>
+									<AudioFile>impact 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="693247168"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="impact 2" ID="{07FE70D9-4373-4BF4-AE05-2B6400A63A2A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Guitar String Snaps" ID="{7F93520C-379E-4207-A25B-BCE4F9FBCB15}" ShortID="284392017">
+					<PropertyList>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{78C4ECC9-7393-442E-94D5-F4D1521B28AA}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="19"/>
+											<Property Name="Min" Type="Real64" Value="-24"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="guitar string snap" ID="{1D7E545C-BC8D-4592-87C7-150B6A4881CD}" ShortID="957211944">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="guitar string snap" ID="{B6D75532-8A81-47D6-A3CC-1E306924173F}">
+									<Language>SFX</Language>
+									<AudioFile>guitar string snap.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1005809217"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="guitar string snap" ID="{B6D75532-8A81-47D6-A3CC-1E306924173F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="guitar string snap 2" ID="{46BAE4F1-B5E1-423D-976D-67A2FBE2D420}" ShortID="959968846">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="guitar string snap 2" ID="{8A20F898-5C57-4A70-B0FD-451F991D48B4}">
+									<Language>SFX</Language>
+									<AudioFile>guitar string snap 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="714191138"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="guitar string snap 2" ID="{8A20F898-5C57-4A70-B0FD-451F991D48B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

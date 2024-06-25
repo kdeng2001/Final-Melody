@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.InputSystem;
 
-public class Introduction : MonoBehaviour
+public class Introduction : Cutscene
 {
     [Header("Screens for transitions")]
     [SerializeField] private Image blackScreen;
@@ -26,9 +26,9 @@ public class Introduction : MonoBehaviour
     public FinishFadeTo finishFadeTo;
 
     [Header("Instrument icons")]
-    [SerializeField] private SpriteRenderer drumsIcon;
-    [SerializeField] private SpriteRenderer guitarIcon;
-    [SerializeField] private SpriteRenderer keytarIcon;
+    [SerializeField] private Sprite drumsIcon;
+    [SerializeField] private Sprite guitarIcon;
+    [SerializeField] private Sprite keytarIcon;
 
 
     public static Introduction Instance;
@@ -59,8 +59,8 @@ public class Introduction : MonoBehaviour
         {
             Instance = this;
             finishIntro = false;
-            blackScreen.gameObject.SetActive(true);        
-            whiteScreen.gameObject.SetActive(false);
+            //blackScreen.gameObject.SetActive(true);        
+            //whiteScreen.gameObject.SetActive(false);
             inputField.gameObject.SetActive(false);
             DontDestroyOnLoad(gameObject);
         }
@@ -71,29 +71,29 @@ public class Introduction : MonoBehaviour
         //inputField.gameObject.SetActive(true);
 
     }
-    private void Start()
-    {
-        if(Introduction.Instance.finishIntro) { return; }
-        Player.Instance.PauseMovement();
-        StartIntroDialogue(index);
-        DialogueManager.Instance.ContinueStory();
-    }
-    private void OnEnable()
-    {
-        InputAction interactAction = playerInput.actions["Interact"];
-        if(interactAction != null)
-        {
-            interactAction.started += ContinueDialogue;
-        }
-    }
-    private void OnDisable()
-    {
-        InputAction interactAction = playerInput.actions["Interact"];
-        if (interactAction != null)
-        {
-            interactAction.started -= ContinueDialogue;
-        }
-    }
+    //private void Start()
+    //{
+    //    if(Introduction.Instance.finishIntro) { return; }
+    //    Player.Instance.PauseMovement();
+    //    StartIntroDialogue(index);
+    //    DialogueManager.Instance.ContinueStory();
+    //}
+    //private void OnEnable()
+    //{
+    //    InputAction interactAction = playerInput.actions["Interact"];
+    //    if(interactAction != null)
+    //    {
+    //        interactAction.started += ContinueDialogue;
+    //    }
+    //}
+    //private void OnDisable()
+    //{
+    //    InputAction interactAction = playerInput.actions["Interact"];
+    //    if (interactAction != null)
+    //    {
+    //        interactAction.started -= ContinueDialogue;
+    //    }
+    //}
 
     /// <summary>
     /// moves alpha of screen from 0 to 1
@@ -145,16 +145,19 @@ public class Introduction : MonoBehaviour
             Debug.Log("Submit!");
             playerName = inputField.text;
             inputField.gameObject.SetActive(false);
-            StartIntroDialogue(++index);
+            index++;
+            Debug.Log("submit name index: " + index);
+            StartIntroDialogue();
             DialogueManager.Instance.currentStory.variablesState["player_name"] = playerName;
         }
     }
 
-    private void StartIntroDialogue(int index)
+    private void StartIntroDialogue()
     {
         DialogueManager.Instance.EnterDialogueMode(introDialogues[index]);
     }
 
+    bool fadingToWhite = false;
     private void ContinueDialogue(InputAction.CallbackContext ctx)
     {
         // must make choice before continuing dialogue
@@ -170,11 +173,12 @@ public class Introduction : MonoBehaviour
             // handle finishing part 1 of intro
             if(index == 0) { inputField.gameObject.SetActive(true); }
             // handle finishing part 2 of intro
-            if(index == 1) 
+            if(index == 1 && !fadingToWhite) 
             {
                 //StartCoroutine(FadeFrom(blackScreen));
                 finishFadeTo += ClearScreensAfterDialogue1;
                 StartCoroutine(FadeTo(whiteScreen));
+                fadingToWhite = true;
                 
             }
             return;
@@ -184,14 +188,15 @@ public class Introduction : MonoBehaviour
         {
             // add instrument to inventory
             string instrument = (string) DialogueManager.Instance.currentStory.variablesState["instrument_name"];
-            SpriteRenderer icon;
+            Sprite icon;
             if(instrument == "Guitar") { icon = guitarIcon; }
             else if(instrument == "Keytar") { icon = keytarIcon; }
             else { icon = drumsIcon; }
-            InventoryUI.Instance.inventory.UpdateItem(instrument, 1, icon.sprite.name);
+            InventoryUI.Instance.inventory.UpdateItem(instrument, 1, icon.name);
             // end introduction
             DialogueManager.Instance.ExitDialogueMode();
             finishIntro = true;
+            Finish();
             enabled = false;
             return;
         }
@@ -205,10 +210,48 @@ public class Introduction : MonoBehaviour
 
     public void ClearScreensAfterDialogue1()
     {
+        if(index != 1) { return;}
         blackScreen.gameObject.SetActive(false);
         whiteScreen.StartCoroutine(FadeFrom(whiteScreen));
         finishFadeTo -= ClearScreensAfterDialogue1;
         index++;
-        StartIntroDialogue(index);
+        Debug.Log("clear screens after dialogue1 index: " + index);
+        StartIntroDialogue();
+    }
+
+    public override void Play()
+    {
+        if(isPlaying) { return; }
+        EnableCutsceneIteract();
+        blackScreen.gameObject.SetActive(true);
+        whiteScreen.gameObject.SetActive(false);
+        inputField.gameObject.SetActive(false);
+        isPlaying = true;
+        Player.Instance.PauseMovement();
+        StartIntroDialogue();
+        DialogueManager.Instance.ContinueStory();
+        Debug.Log("Play Introduction!");
+    }
+    public override void Finish()
+    {
+        base.Finish();
+        DisableCutsceneIteract();
+    }
+
+    public void EnableCutsceneIteract()
+    {
+        InputAction interactAction = playerInput.actions["Interact"];
+        if (interactAction != null)
+        {
+            interactAction.started += ContinueDialogue;
+        }
+    }
+    public void DisableCutsceneIteract()
+    {
+        InputAction interactAction = playerInput.actions["Interact"];
+        if (interactAction != null)
+        {
+            interactAction.started -= ContinueDialogue;
+        }
     }
 }
