@@ -19753,6 +19753,7 @@ MonoBehaviour:
     itemName: give2000reputation
     costPerUnit: 2000
     stockOfUnits: 0
+  id: e3587773-1d36-4430-982c-b087cfb1eecb
 --- !u!4 &3001028582972123884
 Transform:
   m_ObjectHideFlags: 0

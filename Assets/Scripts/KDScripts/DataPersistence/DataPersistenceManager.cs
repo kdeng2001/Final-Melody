@@ -95,7 +95,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void LoadScene(Scene scene, LoadSceneMode mode)
     {
-        if(mode == LoadSceneMode.Single) { return; }
+        //if(mode == LoadSceneMode.Single) { return; }
         Debug.Log("LoadScene..." + SceneManager.GetActiveScene().name);
         if (localGameData == null && initializeDataIfNull)
         {

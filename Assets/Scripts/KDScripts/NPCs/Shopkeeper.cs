@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class Shopkeeper : NPCInteractable
+public class Shopkeeper : NPCInteractable, IDataPersistence
 {
     // player initiates dialogue
     // shop keeper welcomes player (Dialogue 1)
@@ -12,6 +13,8 @@ public class Shopkeeper : NPCInteractable
 
     [Header("Shopkeeper goods")]
     [SerializeField] private List<ShopItem> itemsForSale;
+    [Header("ID for data persistence across scenes and sessions")]
+    public string id;
     public bool isShopping { get; private set; }
     private void Awake()
     {
@@ -71,14 +74,79 @@ public class Shopkeeper : NPCInteractable
             }
         }
     }
-
-    private void OnEnable()
+    [ContextMenu("Generate guid for id")]
+    private void GenerateGUID()
     {
-        
+        id = System.Guid.NewGuid().ToString();
     }
-    private void OnDisable()
+
+    public void LoadData(GameData data)
     {
-        
+        Debug.Log("shop keeper start load data");
+        // decode itemForSale data, where even strings are itemName, odd strings are stockOfUnits
+        // set the string values to the corresponding itemForSale
+        string decode;
+        if(!data.shopkeepers.TryGetValue(id, out decode)) { Debug.Log("no id found"); return; }
+        int index = 0;
+        Dictionary<string, int> itemsTemp = new();
+        // parse data
+        while(index < decode.Length)
+        {
+            int strLength = 0;
+            int count = 0;
+            // get length of itemName
+            while(decode[index] != '#')
+            {
+                count++;
+                index++;
+            }
+            // get itemName
+            Debug.Log("Item... " + "strLength=" + decode.Substring(index - count, count) + ", " + "str=" + decode.Substring(index + 1, strLength));
+            strLength = int.Parse(decode.Substring(index - count, count));
+            string itemName = decode.Substring(index + 1, strLength);
+            index += strLength + 1;
+
+            strLength = 0;
+            count = 0;
+            // get length of stockOfUnits
+            while (decode[index] != '#')
+            {
+                count++;
+                index++;
+            }
+            // get stockOfUnits
+            Debug.Log("Stock... " + "strLength=" + decode.Substring(index - count, count) + ", " + "str=" + decode.Substring(index + 1, strLength));
+            strLength = int.Parse(decode.Substring(index - count, count));
+            int itemCount = int.Parse(decode.Substring(index + 1, strLength));
+
+            itemsTemp[itemName] = itemCount;
+            index+= strLength + 1;
+        }
+        // load data
+        for(int i=0; i<itemsTemp.Count; i++) 
+        {
+            ShopItem temp = itemsForSale[i];
+            temp.stockOfUnits = itemsTemp[itemsForSale[i].itemName];
+            itemsForSale[i] = temp;
+        }
+        Debug.Log("load shopkeeper data");
+    }
+
+    public void SaveData(GameData data)
+    {
+        // clear data if exists
+        if(data.shopkeepers.ContainsKey(id)) { data.shopkeepers.Remove(id); }
+        // encode itemForSale itemName and stockOfUnits into a single string
+        string encode = "";
+        foreach(ShopItem item in itemsForSale)
+        {
+            encode += string.Concat(
+                item.itemName.Length.ToString(), "#", item.itemName, 
+                item.stockOfUnits.ToString().Length, "#", item.stockOfUnits.ToString() 
+                );
+        }
+        Debug.Log("save shopkeeper data");
+        data.shopkeepers[id] = encode;
     }
 }
 

@@ -122,6 +122,8 @@ public class ShopUIManager : MonoBehaviour
     {
         // if amount more than stock, return
         if(itemsUI[itemName].buyAmountVal > itemsUI[itemName].stockAmountVal) { return; }
+        // if amount is 0
+        if(itemsUI[itemName].buyAmountVal == 0) { return; }
 
         // if not purchasable, return
         int cost = (itemsUI[itemName].buyAmountVal + 1) * itemsUI[itemName].costVal;

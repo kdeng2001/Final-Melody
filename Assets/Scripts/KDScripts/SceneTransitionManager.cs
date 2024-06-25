@@ -37,7 +37,7 @@ public class SceneTransitionManager : MonoBehaviour
         this.entranceID = entranceID;
         //SceneManager.LoadScene(sceneName);
         EnterSceneCoroutine = StartCoroutine(EnterScene(sceneName));
-        Debug.Log("Load scene from SceneTransitionManager " + SceneManager.GetActiveScene().name);
+        //Debug.Log("Load scene from SceneTransitionManager " + SceneManager.GetActiveScene().name);
     }
 
     private IEnumerator EnterScene(string sceneName)
@@ -61,7 +61,7 @@ public class SceneTransitionManager : MonoBehaviour
         //DataPersistenceManager.Instance.LoadScene();
 
         if (entranceID == "") { Debug.Log("no entrance id"); return; }
-        Debug.Log("finding door...");
+        //Debug.Log("finding door...");
         //player = FindObjectsOfType<Player>().GetComponents<Player>();
         DoorInteractable[] doors = FindObjectsOfType<DoorInteractable>();
         foreach (DoorInteractable door in doors)
@@ -69,7 +69,7 @@ public class SceneTransitionManager : MonoBehaviour
             if (entranceID == door.entranceID)
             {
                 player.SetPosition(door.positionToEnter);
-                Debug.Log("Move player to entrance");
+                //Debug.Log("Move player to entrance");
                 entranceID = ""; 
                 break;   
                 //player.SetPosition(door.transform.position); break;

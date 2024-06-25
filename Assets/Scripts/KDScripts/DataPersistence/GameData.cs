@@ -18,6 +18,7 @@ public class GameData
     public SerializableDictionary<string, string> itemAmountInventory;
     public SerializableDictionary<string, string> itemIconInventory;
     public SerializableDictionary<string, string> inkVariables;
+    public SerializableDictionary<string, string> shopkeepers;
 
     public GameData()
     {
@@ -26,5 +27,6 @@ public class GameData
         itemAmountInventory = new();
         itemIconInventory = new();
         itemInScene = new();
+        shopkeepers = new();
     }
 }
