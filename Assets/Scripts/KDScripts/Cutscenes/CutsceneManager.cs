@@ -38,10 +38,24 @@ public class CutsceneManager : MonoBehaviour
             Debug.Log(cutscene.sceneName + " = " + SceneManager.GetActiveScene().name);
             if(cutscene.sceneName == SceneManager.GetActiveScene().name && !cutscene.isComplete) 
             { 
+                if(!cutscene.playOnStart) { continue; }
                 cutscene.Play();
                 break;
             }
         }
     }
 
+}
+
+
+public struct CutsceneData
+{
+    // id to link cutscene data to corresponding cutscene
+    public string cutsceneID;
+    // order in which this cutscene part plays
+    public int cutsceneOrder;
+    // actors in this cutscene part
+    public List<CutsceneActor> actors;
+    // dialogue a cutscene actor triggers
+    public TextAsset dialogue;
 }

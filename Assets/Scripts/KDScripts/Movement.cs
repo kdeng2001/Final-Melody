@@ -40,15 +40,26 @@ public abstract class Movement : MonoBehaviour
         interactor.position = transform.position + lookDir.normalized;
 
     }
+    // used for cutscenes
+    public IEnumerator SceneMoveTo(Vector3 movePosition, int speed)
+    {
+        // calculate/set direction to move in
+        direction = (movePosition - transform.position).normalized;
+        // start position
+        Vector3 initPosition = transform.position;
+        // calculate distance to travel
+        float targetDistance = Vector3.Distance(transform.position, movePosition);
+        
+        // move while targetDistance has not been covered
+        while (Vector3.Distance(transform.position, initPosition) < targetDistance)
+        {
+            Move();
+            yield return null;
 
-    //public IEnumerator MoveTo(Vector3 movePosition)
-    //{
-    //    Vector3 direction = transform.position - movePosition;
-    //    while(transform.position != movePosition)
-    //    {
-
-    //    }
-    //}
+        }
+        // final adjustment if not properly positioned
+        _character.Move(movePosition);
+    }
 
     public virtual void Look(Vector3 direction)
     {
