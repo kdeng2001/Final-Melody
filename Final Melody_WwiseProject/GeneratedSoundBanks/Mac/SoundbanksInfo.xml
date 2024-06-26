@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6B0FE488-414D-47D5-419A-E95FE58404D1}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,6 +21,18 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<StateGroups>
+				<StateGroup Id="3991942870" Name="Music">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="896309499" Name="Jazz_Battle"/>
+						<State Id="1562068129" Name="Overworld"/>
+						<State Id="2074201812" Name="Jazz_Bar"/>
+						<State Id="2628598795" Name="Rock_Battle"/>
+						<State Id="3781847844" Name="Rock_Bar"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{F07735CB-04F6-5802-58D2-3E77BCA4C21F}">
 			<ShortName>Main_Soundbank</ShortName>
@@ -75,5 +87,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{58BFBDAD-30A5-2C4C-7BCD-9ABA74A3AEA3}</FileHash>
+	<FileHash>{9666E5DF-E6EA-2B26-8E67-AA232FF7A181}</FileHash>
 </SoundBanksInfo>

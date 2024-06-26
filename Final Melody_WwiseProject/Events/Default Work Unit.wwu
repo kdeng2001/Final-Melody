@@ -178,6 +178,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_World" ID="{CCCC23D3-4614-46C0-ABAC-5BEFDCAE6B51}">
+					<ChildrenList>
+						<Action Name="" ID="{F6564984-3308-481E-B255-E5C1584833C3}" ShortID="923478900">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="World" ID="{852C6643-725B-4345-A14F-4DB4975AAF21}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jazz" ID="{AEBDB589-86E9-400F-A90A-EEBC32335392}">
+					<ChildrenList>
+						<Action Name="" ID="{3ED3712E-EFA3-4A1B-ADEE-AB4F0DB76C11}" ShortID="284548882">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz" ID="{1CF3CFF6-60D2-4AE1-B5C3-E0151D304487}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Overworld" ID="{DDEC5AC2-4C4F-4C05-91D4-227A1494D148}">
+					<ChildrenList>
+						<Action Name="" ID="{1AF24D16-522F-436C-8E40-795FD32E865F}" ShortID="1036005340">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Overworld" ID="{26450D6B-158E-405E-8586-568F5658A8FE}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rock" ID="{006E678A-C92F-424F-A9CF-767D145544AC}">
+					<ChildrenList>
+						<Action Name="" ID="{50494480-95C5-4E86-BCC9-7476F635E0A3}" ShortID="668645849">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rock" ID="{0AC28A3E-8E17-4AD1-9175-5E90E85F348D}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
