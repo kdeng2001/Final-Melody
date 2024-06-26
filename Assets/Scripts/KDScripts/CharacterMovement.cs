@@ -57,7 +57,7 @@ public class CharacterMovement : Movement
 
     public override void Update()
     {
-        if (pauseMovement) { return; }
+        if (pauseMovement) { this.animHandler.Idle(); return; }
         base.Update();
     }
 

@@ -10,7 +10,7 @@ public abstract class Movement : MonoBehaviour
     [SerializeField] private Transform model;
     [SerializeField] private Transform interactor;
     [SerializeField] private int gravity = 10;
-    [SerializeField] private CharacterAnimHandler animHandler;
+    [SerializeField] public CharacterAnimHandler animHandler;
     private CharacterController _character;
     public Vector2 direction { get; private set; }
     private void Awake()

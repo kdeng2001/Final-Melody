@@ -740,8 +740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeSpeed: 0.02
-  blackScreen: {fileID: 2486349335319087261}
-  whiteScreen: {fileID: 2546517763248244285}
+  blackScreen: {fileID: 1909399650}
+  whiteScreen: {fileID: 478522235}
 --- !u!4 &1749702811
 Transform:
   m_ObjectHideFlags: 0
@@ -1068,17 +1068,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5819767456241679544, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
   m_PrefabInstance: {fileID: 7052764681346680091}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2486349335319087261 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6770858745201121481, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
-  m_PrefabInstance: {fileID: 7052764681346680091}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610252081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &2486349335319087264
 Animator:
   serializedVersion: 5
@@ -1100,17 +1089,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2546517763248244285 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8105099808772292980, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
-  m_PrefabInstance: {fileID: 7052764681346680091}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575678524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &2546517763248244288
 Animator:
   serializedVersion: 5
@@ -1271,11 +1249,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2912131568001307950, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000060081482
+      value: -0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 2912131568001307950, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00010041521
+      value: -0.0005824366
       objectReference: {fileID: 0}
     - target: {fileID: 3026885682572084662, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
