@@ -53,7 +53,7 @@ public class ShopUIManager : MonoBehaviour
             (itemsUI[item.itemName]) = CreateShoppingEntry(item);
             itemsUI[item.itemName].transform.SetParent(shopContent, false);
             RectTransform itemT = itemsUI[item.itemName].transform.GetComponent<RectTransform>();
-            itemT.localPosition = new(-550, itemT.localPosition.y - index * itemT.rect.height, 0);
+            itemT.localPosition = new(itemT.localPosition.x, itemT.localPosition.y - index * itemT.rect.height, 0);
             itemsUI[item.itemName].gameObject.SetActive(true);
             index++;
         }
@@ -109,19 +109,31 @@ public class ShopUIManager : MonoBehaviour
         InGameMenu.Instance.enabled = false;
         currentShopkeeper = shopkeeper;
         shopMenu.gameObject.SetActive(true);
-        shopMenuAnimator.Play("ShopPopup");
+        //shopMenuAnimator.Play("ShopPopup");
     }
     public delegate void FinishShopping();
     public FinishShopping finishShopping;
     public void HideShopMenu() 
     {
         shopMenuAnimator.Play("ShopUnpop");
+        StartCoroutine(HandleFinishAnimation());
         //shopMenu.gameObject.SetActive(false);
         // enable opening menu
         InGameMenu.Instance.enabled = true;
         currentShopkeeper = null;
         finishShopping?.Invoke();
     }
+
+    IEnumerator HandleFinishAnimation()
+    {
+        while(shopMenu.transform.localScale.x > 0.1)
+        {
+            yield return null;
+        }
+        shopMenu.transform.localScale = new(1, 1, 1);
+        shopMenu.gameObject.SetActive(false);
+    }
+
     // SHOP ENTRY FUNCTIONS
     public void Buy(string itemName) 
     {
