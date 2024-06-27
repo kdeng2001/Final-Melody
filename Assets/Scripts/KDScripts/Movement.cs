@@ -65,8 +65,8 @@ public abstract class Movement : MonoBehaviour
 
     int Up = 1;
     int Down = -1;
-    int Left = 1;
-    int Right = -1;
+    int Left = -1;
+    int Right = 1;
     int None = 0;
     float diagonal = 0.71f;
     public virtual void Look(Vector3 direction)
@@ -79,21 +79,21 @@ public abstract class Movement : MonoBehaviour
         {
             //Debug.Log("direction: " + direction);
             // left anim --> left / left-down
-            if((direction.x == Left && direction.z == None) || (direction.x > 0 && direction.z < 0)) 
+            if((direction.x == Left && direction.z == None) || (direction.x < 0 && direction.z < 0)) 
             {
                 animHandler.PlayAnimation(CharacterAnimHandler.aWalk, CharacterAnimHandler.dLeft);
             }
             // up anim --> up / left-up
-            else if((direction.x == None && direction.z == Up) || (direction.x > 0 && direction.z > 0)) {
+            else if((direction.x == None && direction.z == Up) || (direction.x < 0 && direction.z > 0)) {
                 animHandler.PlayAnimation(CharacterAnimHandler.aWalk, CharacterAnimHandler.dUp);
             }
             // right anim --> right / right-up
-            else if((direction.x == Right && direction.z == None) || (direction.x < 0 && direction.z > 0))
+            else if((direction.x == Right && direction.z == None) || (direction.x > 0 && direction.z > 0))
             {
                 animHandler.PlayAnimation(CharacterAnimHandler.aWalk, CharacterAnimHandler.dRight);
             }
             // down anim --> down / right-down
-            else if ((direction.x == None && direction.z == Down) || (direction.x < 0 && direction.z < 0))
+            else if ((direction.x == None && direction.z == Down) || (direction.x > 0 && direction.z < 0))
             {
                 animHandler.PlayAnimation(CharacterAnimHandler.aWalk, CharacterAnimHandler.dDown);
             }

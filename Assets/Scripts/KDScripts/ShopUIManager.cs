@@ -32,7 +32,8 @@ public class ShopUIManager : MonoBehaviour
         {
             Instance = this;
             currentShopkeeper = null;
-            DontDestroyOnLoad(gameObject);
+            //shopMenu.gameObject.SetActive(false);
+            //DontDestroyOnLoad(gameObject);
         }
     }
     private void Start()
@@ -52,7 +53,7 @@ public class ShopUIManager : MonoBehaviour
             (itemsUI[item.itemName]) = CreateShoppingEntry(item);
             itemsUI[item.itemName].transform.SetParent(shopContent, false);
             RectTransform itemT = itemsUI[item.itemName].transform.GetComponent<RectTransform>();
-            itemT.localPosition = new(0, itemT.localPosition.y - index * itemT.rect.height, 0);
+            itemT.localPosition = new(-550, itemT.localPosition.y - index * itemT.rect.height, 0);
             itemsUI[item.itemName].gameObject.SetActive(true);
             index++;
         }

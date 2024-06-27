@@ -59,7 +59,6 @@ public class DialogueManager : MonoBehaviour
             displayingChoices = false;
             dialogueIsPlaying = false;
             displayLineCoroutine = null;
-
             //get all of the choices text
             choicesText = new TextMeshProUGUI[choices.Length];
             int index = 0;
@@ -67,6 +66,7 @@ public class DialogueManager : MonoBehaviour
             foreach (GameObject choice in choices)
             {
                 choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+                choice.SetActive(false);
                 index++;
             }
 

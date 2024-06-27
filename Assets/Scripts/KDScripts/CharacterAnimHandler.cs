@@ -34,7 +34,7 @@ public class CharacterAnimHandler : MonoBehaviour
     public void SetAnimation(string animation) { characterAnimator.Play(animation); }
     public void Idle()
     {
-        //Debug.Log("Idling...");
+        Debug.Log("Idling..." + currentDirection);
         currentAnimation = aIdle + currentDirection;
         characterAnimator.Play(currentAnimation);
         currentAction = aIdle;

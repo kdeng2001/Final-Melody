@@ -6174,20 +6174,77 @@ PrefabInstance:
     - target: {fileID: 6634483886878251102, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
       propertyPath: texts.Array.data[0]
       value: 
-      objectReference: {fileID: 4900000, guid: bdb1cfe417d4b154ba1c947bc2d47b1f, type: 3}
+      objectReference: {fileID: 4900000, guid: 44c8ea3bc4a721d45ac5c5d637a26eb8, type: 3}
     - target: {fileID: 7184846456626787422, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7576048863951247213, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: NPCRusty
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+--- !u!1 &1203592924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203592926}
+  - component: {fileID: 1203592925}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1203592925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203592924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55cdb72b777e514aa1b21832c48b3b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 3911b448d43d12747a8e84beef3fb36b, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1203592926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203592924}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1223292321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6882,11 +6939,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 985339273179957537, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 985339273179957537, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0000014603138
+      value: 0.0000022351742
       objectReference: {fileID: 0}
     - target: {fileID: 6711025935644177742, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10511,11 +10568,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 985339273179957537, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 985339273179957537, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0000014603138
+      value: 0.0000022351742
       objectReference: {fileID: 0}
     - target: {fileID: 6711025935644177742, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11403,3 +11460,4 @@ SceneRoots:
   - {fileID: 1993140518}
   - {fileID: 7743259234127727122}
   - {fileID: 970932231}
+  - {fileID: 1203592926}

@@ -57,7 +57,10 @@ public class CharacterMovement : Movement
 
     public override void Update()
     {
-        if (pauseMovement) { this.animHandler.Idle(); return; }
+        if (pauseMovement) 
+        { 
+            return; 
+        }
         base.Update();
     }
 
@@ -74,7 +77,7 @@ public class CharacterMovement : Movement
 
     public void OnPauseMovementChange(bool val)
     {
-        if(val == true) { footsteps.Stop(gameObject); }
+        if(val == true) { footsteps.Stop(gameObject); animHandler.Idle(); }
         else 
         { 
             if(transform.parent.TryGetComponent(out PlayerInput playerInput) 
