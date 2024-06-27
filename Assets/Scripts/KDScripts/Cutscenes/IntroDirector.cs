@@ -5,21 +5,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
 
-public class IntroDirector : MonoBehaviour
+public class IntroDirector : TimelineDirector
 {
-    [SerializeField] private PlayableDirector introTimeline;
-    [SerializeField] private TMP_InputField inputField;
-    [SerializeField] private PlayerInput playerInput;
-
     private string playerName = "";
     private string currentDialogueName;
-    private void Awake()
-    {
-        inputField.gameObject.SetActive(false);
-        if(!introTimeline.gameObject.activeSelf) { return; }
-        Player.Instance.PauseMovement();
-    }
-    public void StartDialogue(TextAsset asset)
+
+    public override void StartDialogue(TextAsset asset)
     {
         Player.Instance.PauseMovement();
         currentDialogueName = asset.name;
@@ -29,11 +20,8 @@ public class IntroDirector : MonoBehaviour
             Debug.Log("it's mum time!");
             momContinue += HandleMomContinue; 
         }
-
-        DialogueManager.Instance.EnterDialogueMode(asset);
+        base.StartDialogue(asset);
         setNameInInk?.Invoke();
-        EnableCutsceneIteract();
-        introTimeline.Pause();
     }
 
     int momCount = 0;
@@ -46,74 +34,28 @@ public class IntroDirector : MonoBehaviour
             case 0:
                 {
                     momCount++;
-                    StartCoroutine(WaitAndResumeDialogue(1.1f));
+                    StartCoroutine(ResumeAndWaitDialogue(1.1f));
                     return;
                 }
             case 1:
                 {
-                    StartCoroutine(WaitAndResumeDialogue(1.5f));
+                    StartCoroutine(ResumeAndWaitDialogue(1.5f));
                     momContinue -= HandleMomContinue;
+                    momCount++;
                     return;
                 }
-            
+
         }
-        
-        
     }
 
-    private IEnumerator WaitAndResumeDialogue(float waitTime)
-    {        
-               
-        Player.Instance.PauseInteractor();
-        Player.Instance.PauseMovement();
-        introTimeline.Resume(); 
-        yield return new WaitForSeconds(waitTime);
-        introTimeline.Pause();
-        Player.Instance.UnpauseInteractor();
-    }
-    public void ContinueDialogue(InputAction.CallbackContext context)
+    public override void ContinueDialogue(InputAction.CallbackContext context)
     {
         // must make choice before continuing dialogue
         if (DialogueManager.Instance.displayingChoices) { return; }
         // no skipping
         else if (DialogueManager.Instance.displayLineCoroutine != null) { return; }
-
-        if (!DialogueManager.Instance.currentStory.canContinue)
-        {
-            DialogueManager.Instance.ExitDialogueMode();
-            Player.Instance.PauseMovement();
-            DisableCutsceneIteract();
-            introTimeline.Resume();
-            return;
-        }
-        DialogueManager.Instance.ContinueStory();
+        base.ContinueDialogue(context);
         momContinue?.Invoke();
-    }
-
-    public void EnableCutsceneIteract()
-    {
-        InputAction interactAction = playerInput.actions["Interact"];
-        if (interactAction != null)
-        {
-            interactAction.started += ContinueDialogue;
-        }
-    }
-    public void DisableCutsceneIteract()
-    {
-        InputAction interactAction = playerInput.actions["Interact"];
-        if (interactAction != null)
-        {
-            interactAction.started -= ContinueDialogue;
-        }
-    }
-
-    // 
-    public void DisplayNameField()
-    {
-        inputField.gameObject.SetActive(true);
-        introTimeline.Pause();
-        Player.Instance.PauseInteractor();
-        Player.Instance.PauseMovement();
     }
 
     public void SubmitName()
@@ -124,7 +66,7 @@ public class IntroDirector : MonoBehaviour
             Debug.Log("Submit!");
             inputField.gameObject.SetActive(false);
             playerName = inputField.text;
-            introTimeline.Resume();
+            timeline.Resume();
             setNameInInk += SetName;
         }
     }
@@ -134,11 +76,5 @@ public class IntroDirector : MonoBehaviour
     { 
         DialogueManager.Instance.currentStory.variablesState["player_name"] = playerName;
         setNameInInk -= SetName;
-    }
-
-    public void UnpauseAll()
-    {
-        Player.Instance.UnpauseInteractor();
-        Player.Instance.UnPauseMovement();
     }
 }

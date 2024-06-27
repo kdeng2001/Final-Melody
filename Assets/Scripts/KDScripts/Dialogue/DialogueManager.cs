@@ -21,7 +21,7 @@ public class DialogueManager : MonoBehaviour
 
     public Story currentStory;
     public Coroutine displayLineCoroutine { get; private set; }
-    private bool canContinueToNextLine = false;
+    public bool canContinueToNextLine { get; private set; }
     [SerializeField] private GameObject canContinueIcon;
     public bool dialogueIsPlaying { get; private set; }
     public bool displayingChoices { get; private set; }
@@ -59,6 +59,7 @@ public class DialogueManager : MonoBehaviour
             displayingChoices = false;
             dialogueIsPlaying = false;
             displayLineCoroutine = null;
+            canContinueToNextLine = false;
             //get all of the choices text
             choicesText = new TextMeshProUGUI[choices.Length];
             int index = 0;

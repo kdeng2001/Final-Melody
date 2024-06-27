@@ -424,6 +424,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 334797283eefcbb439d0b63fe9765873, type: 2}
     - {fileID: 11400000, guid: 67aed8773fc6d91439aa820e00fe5848, type: 2}
     - {fileID: 11400000, guid: f1754c3aac2adec4787168cc271cebe9, type: 2}
+    - {fileID: 11400000, guid: 1da29481f40193f47a1e32b3dce8b0fe, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -442,8 +443,8 @@ MonoBehaviour:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 700750974}
-          m_TargetAssemblyTypeName: IntroDirector, Assembly-CSharp
-          m_MethodName: DisplayNameField
+          m_TargetAssemblyTypeName: TimelineDirector, Assembly-CSharp
+          m_MethodName: DisplayField
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -495,6 +496,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 700750974}
+          m_TargetAssemblyTypeName: TimelineDirector, Assembly-CSharp
+          m_MethodName: PauseAll
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &700750974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791dfc4bae17ea34fba7e11213fba22e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introTimeline: {fileID: 47633791}
+  timeline: {fileID: 47633791}
   inputField: {fileID: 7874863738570665091}
   playerInput: {fileID: 1489396030}
 --- !u!4 &700750975
