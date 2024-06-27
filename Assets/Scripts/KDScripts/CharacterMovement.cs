@@ -63,6 +63,7 @@ public class CharacterMovement : Movement
 
     public void PlayFootstepSound(CallbackContext ctx)
     {
+        if(pauseMovement) { return; }
         footsteps.Post(gameObject);
     }
 
