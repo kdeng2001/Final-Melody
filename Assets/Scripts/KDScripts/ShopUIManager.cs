@@ -160,6 +160,9 @@ public class ShopUIManager : MonoBehaviour
         // update stock ui
         itemsUI[itemName].stockAmount.text = itemsUI[itemName].stockAmountVal.ToString();
         if(itemsUI[itemName].stockAmountVal == 0) { itemsUI[itemName].soldOutFilter.gameObject.SetActive(true); }
+        // reset shop buy amount
+        itemsUI[itemName].buyAmountVal = 0;
+        itemsUI[itemName].buyAmount.text = "x <b>00</b>";
     }
     public void IncrementBuyAmount(string itemName)
     {
