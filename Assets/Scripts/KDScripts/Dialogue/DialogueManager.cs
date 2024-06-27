@@ -240,7 +240,7 @@ public class DialogueManager : MonoBehaviour
             //Debug.Log("choice inactive " + i);
             choices[i].gameObject.SetActive(false);
         }
-        StartCoroutine(SelectFirstChoice());
+        //StartCoroutine(SelectFirstChoice());
     }
 
     private IEnumerator SelectFirstChoice()
