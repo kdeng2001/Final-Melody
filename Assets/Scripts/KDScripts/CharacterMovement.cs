@@ -37,6 +37,12 @@ public class CharacterMovement : Movement
                 moveAction.performed += context => SetDirection(context);
                 moveAction.canceled += context => SetDirection(context);
             }
+            InputAction runAction = playerInput.actions["ToggleRun"];
+            if(runAction != null)
+            {
+                runAction.started += ToggleRun;
+                runAction.canceled += ToggleRun;
+            }
         }
     }
     private void OnDisable()
@@ -51,6 +57,12 @@ public class CharacterMovement : Movement
                 moveAction.canceled -= StopFootstepSound;
                 moveAction.performed -= context => SetDirection(context);
                 moveAction.canceled -= context => SetDirection(context);
+            }
+            InputAction runAction = playerInput.actions["ToggleRun"];
+            if (runAction != null)
+            {
+                runAction.started -= ToggleRun;
+                runAction.canceled -= ToggleRun;
             }
         }
     }

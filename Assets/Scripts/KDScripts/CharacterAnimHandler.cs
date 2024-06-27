@@ -40,4 +40,13 @@ public class CharacterAnimHandler : MonoBehaviour
         currentAction = aIdle;
     }
 
+    public void Speedup()
+    {
+        characterAnimator.speed = 1.3f;
+    }
+    public void Slowdown()
+    {
+        characterAnimator.speed = 0.65f;
+    }
+
 }

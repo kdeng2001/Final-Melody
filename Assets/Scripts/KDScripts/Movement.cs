@@ -7,6 +7,10 @@ using static UnityEngine.InputSystem.InputAction;
 public abstract class Movement : MonoBehaviour
 {
     [SerializeField] private int speed = 1;
+
+    private float walkSpeed = .7f;
+    /*[SerializeField]*/ private float runSpeed = 1.75f;
+    private float moveRate = 1f;
     [SerializeField] private Transform model;
     [SerializeField] private Transform interactor;
     [SerializeField] private int gravity = 10;
@@ -30,7 +34,7 @@ public abstract class Movement : MonoBehaviour
 
     public virtual void Move()
     {
-        Vector3 moveValue = speed * Time.deltaTime * Time.timeScale * new Vector3(direction.x, -gravity, direction.y);
+        Vector3 moveValue = speed * moveRate * Time.deltaTime * Time.timeScale * new Vector3(direction.x, -gravity, direction.y);
         _character.Move(moveValue);
 
         Vector3 lookDir = new Vector3(moveValue.x, 0, moveValue.z).normalized;        
@@ -97,6 +101,26 @@ public abstract class Movement : MonoBehaviour
             {
                 animHandler.PlayAnimation(CharacterAnimHandler.aWalk, CharacterAnimHandler.dDown);
             }
+        }
+    }
+
+    private bool isRunning = false;
+    public virtual void ToggleRun(CallbackContext context)
+    {
+        // stop runnning
+        if(isRunning) 
+        {
+            animHandler.Slowdown();
+            moveRate = walkSpeed;
+            isRunning = false;
+
+        }
+        // start running
+        else
+        {
+            animHandler.Speedup();
+            moveRate = runSpeed;
+            isRunning = true;
         }
     }
 }
