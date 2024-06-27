@@ -5,9 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour, IDataPersistence
 {
     public static Player Instance { get; private set; }
-    [SerializeField] private Transform model;
-    [SerializeField] private Transform controller;
-    [SerializeField] private Transform interactor;
+    [SerializeField] public Transform model;
+    [SerializeField] public Transform controller;
+    [SerializeField] public Transform interactor;
 
     private Interactor interactorComponent;
     CharacterMovement movement;

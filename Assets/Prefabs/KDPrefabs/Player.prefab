@@ -106,8 +106,6 @@ GameObject:
   - component: {fileID: 3798749893263277158}
   - component: {fileID: 6090932565139371485}
   - component: {fileID: 6640486878725192358}
-  - component: {fileID: 1908592009278216841}
-  - component: {fileID: 1787147351411245788}
   - component: {fileID: 6725262857211547358}
   m_Layer: 0
   m_Name: Main Camera
@@ -216,42 +214,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1908592009278216841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512634949346431224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c6d1508b6464345911efec8a3b2e39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
---- !u!114 &1787147351411245788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512634949346431224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a776f4c72804d9843a79050404188d17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!114 &6725262857211547358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,3 +705,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfa957d06939c54b886d8c3a636a57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignoreY: 0

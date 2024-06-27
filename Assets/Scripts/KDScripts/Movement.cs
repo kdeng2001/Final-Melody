@@ -77,7 +77,7 @@ public abstract class Movement : MonoBehaviour
         if(direction == Vector3.zero) { animHandler.Idle(); }
         else
         {
-            Debug.Log("direction: " + direction);
+            //Debug.Log("direction: " + direction);
             // left anim --> left / left-down
             if((direction.x == Left && direction.z == None) || (direction.x > 0 && direction.z < 0)) 
             {
