@@ -21,7 +21,7 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "ToggleMenu",
@@ -36,6 +36,24 @@
                     "name": "ToggleRun",
                     "type": "Button",
                     "id": "33eec2cc-0275-44d1-bc0f-8e4d26f5957c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "WinBattleDebug",
+                    "type": "Button",
+                    "id": "0c8c73d7-d438-403d-8bfc-ff8bc2870a98",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LoseBattleDebug",
+                    "type": "Button",
+                    "id": "2069f9e1-4e9c-405e-b550-6f458b24d24f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -126,8 +144,30 @@
                     "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
                     "action": "ToggleRun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c5ec4d59-735a-426f-9728-b9ee09ae3f3c",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "WinBattleDebug",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9593563e-7ebd-4de5-b13b-b04178789cf1",
+                    "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LoseBattleDebug",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

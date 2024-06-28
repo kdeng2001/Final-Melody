@@ -10,7 +10,9 @@ public class Settings : MonoBehaviour
     [SerializeField] private Animator optionsAnim;
     public static Settings Instance;
     public Slider slider;
-    public float volume = 1;
+    public float masterVolume;
+    public float musicVolume;
+    public float SFXVolume;
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -21,8 +23,40 @@ public class Settings : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            SetSpecificVolume("Master");
+            SetSpecificVolume("Music");
+            SetSpecificVolume("SFX");
             options.SetActive(false);
         }
+    }
+    public void SetSpecificVolume(string whatValue)
+    {
+        if(whatValue == "Master")
+        {
+            masterVolume = slider.value;
+            AkSoundEngine.SetRTPCValue("MasterVolume", masterVolume);
+        }
+        if (whatValue == "Music")
+        {
+            musicVolume = slider.value;
+            AkSoundEngine.SetRTPCValue("MusicVolume", musicVolume);
+        }
+        if (whatValue == "SFX")
+        {
+            SFXVolume = slider.value;
+            AkSoundEngine.SetRTPCValue("SFXVolume", SFXVolume);
+        }
+    }
+
+    public IEnumerator Popdown()
+    {
+        optionsAnim.Play("Popdown");
+        while(options.transform.localScale.x > 0.1)
+        {
+            yield return null;
+        }
+        poppingDown = null;
+        options.SetActive(false);
     }
     private Coroutine poppingDown = null;
     public void ExitSettings()
@@ -36,24 +70,6 @@ public class Settings : MonoBehaviour
         if(poppingDown != null) { return; }
         poppingDown = StartCoroutine(Popdown());
     }
-
-    public void SetVolume()
-    {
-        volume = slider.value;
-        AkSoundEngine.SetRTPCValue(null, volume);
-    }
-
-    public IEnumerator Popdown()
-    {
-        optionsAnim.Play("Popdown");
-        while(options.transform.localScale.x > 0.1)
-        {
-            yield return null;
-        }
-        poppingDown = null;
-        options.SetActive(false);
-    }
-
     public void Popup()
     {
         if(options.activeSelf) { /*Debug.Log("options is active");*/ return; }

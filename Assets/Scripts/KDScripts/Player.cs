@@ -61,10 +61,28 @@ public class Player : MonoBehaviour, IDataPersistence
     {
         InputAction toggleMenu = playerInput.actions["ToggleMenu"];
         toggleMenu.started += context => InGameMenu.Instance.ToggleMenu(context);
+
+        //GenericBattleNPC npc = FindAnyObjectByType<GenericBattleNPC>();
+        //InputAction loseEndBattle = playerInput.actions["LoseBattleDebug"];
+        //InputAction winEndBattle = playerInput.actions["WinBattleDebug"];
+        //if (npc != null)
+        //{
+        //    loseEndBattle.started += context => npc.EndBattleDebug(context, false);
+        //    winEndBattle.started += context => npc.EndBattleDebug(context, true);
+        //}
     }
     private void OnDisable()
     {
         InputAction toggleMenu = playerInput.actions["ToggleMenu"];
         toggleMenu.started -= context => InGameMenu.Instance.ToggleMenu(context);
+
+        //GenericBattleNPC npc = FindAnyObjectByType<GenericBattleNPC>();
+        //InputAction loseEndBattle = playerInput.actions["LoseBattleDebug"];
+        //InputAction winEndBattle = playerInput.actions["WinBattleDebug"];
+        //if (npc != null)
+        //{
+        //    loseEndBattle.started -= context => npc.EndBattleDebug(context, false);
+        //    winEndBattle.started -= context => npc.EndBattleDebug(context, true);
+        //}
     }
 }
