@@ -14,8 +14,26 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
-        static const AkUniqueID PLAY_JAZZ_BAR_AMBIENCE = 1685503222U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace STATE
+            {
+                static const AkUniqueID JAZZ_BAR = 2074201812U;
+                static const AkUniqueID JAZZ_BATTLE = 896309499U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OVERWORLD = 1562068129U;
+                static const AkUniqueID ROCK_BAR = 3781847844U;
+                static const AkUniqueID ROCK_BATTLE = 2628598795U;
+            } // namespace STATE
+        } // namespace MUSIC
+
+    } // namespace STATES
 
     namespace BANKS
     {

@@ -53,6 +53,8 @@ public class AudioManager : MonoBehaviour
                 // when scene found
                 if (sceneName == scene.name)
                 {
+                    // if music is unavailable
+                    if(loop.musicLoop == null) { continue; }
                     // if the current scene's music is same as new scene's music do nothing and return
                     // otherwise, play new music and stop old one
                     if (loop.musicLoop.Name != currentLoopName)
