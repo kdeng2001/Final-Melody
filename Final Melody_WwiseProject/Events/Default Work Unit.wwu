@@ -222,6 +222,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Jazz_Bar_Ambience_01" ID="{A405888F-764B-4BDF-A069-58D35CFDB040}">
+					<ChildrenList>
+						<Action Name="" ID="{3480F20D-5C20-4E41-A010-9EE63399C01B}" ShortID="739606208">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{004F7F4F-4458-4780-9A16-49F4E7228CAC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jazz_Fight_1" ID="{2F51F4BF-F26A-48ED-8A41-803A3E5C82AE}">
+					<ChildrenList>
+						<Action Name="" ID="{D9F3BF79-F521-4171-9D91-0CF357719192}" ShortID="984939054">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Fight 1" ID="{226DDFFC-BA72-48E4-B223-823D9266A68A}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Overworld_01" ID="{13315D85-5910-4A23-9467-11DC5FF3B01D}">
+					<ChildrenList>
+						<Action Name="" ID="{819D723A-E788-4613-8FDA-A0D74A3722D1}" ShortID="109710857">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Overworld" ID="{3B424030-4199-4C5C-A2A4-4EDF047C6030}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rock_Bar_Ambience" ID="{F68F7937-12F3-485F-9D6C-320C38062459}">
+					<ChildrenList>
+						<Action Name="" ID="{49521BE9-77B8-4CD2-ABD5-74BF91B8092C}" ShortID="309094908">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rock Bar Ambience" ID="{DBCDEE68-2067-423F-ADB1-CC1913E51A68}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rock_Battles" ID="{D48E0FA2-0C9C-4C03-A22E-6A9087B2EEE2}">
+					<ChildrenList>
+						<Action Name="" ID="{1DC79F61-9495-4C96-B7AA-8DE55BAA78C6}" ShortID="601787902">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rock Battles" ID="{7D849604-A12D-4CBF-8223-4FA96229267F}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
