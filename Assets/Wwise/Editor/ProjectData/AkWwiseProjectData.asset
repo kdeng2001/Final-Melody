@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d283a4a3cb772340b99967a8dc3a62d2
     GuidInternal: 
-    m_lastTime: -8584821577694577408
+    m_lastTime: -8584820071789899094
     List:
     - name: Jazz_Bar_Ambience
       guid: e08fc4de9c482843a3c51b93b7d72af7
@@ -266,6 +266,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Jazz_Bar_Ambience_01
+      guid: 8f8805a44b76df4ba06958d35cfdb040
+      id: 1066505092
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Jazz_Bar_Ambience_01
+        ObjectType: 3
+        guid: 8f8805a44b76df4ba06958d35cfdb040
+      Path: Events\Default Work Unit\Play_Jazz_Bar_Ambience_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Jazz_Fight_1
+      guid: bff4512f6af2ed488a41803a3e5c82ae
+      id: 2231034946
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Jazz_Fight_1
+        ObjectType: 3
+        guid: bff4512f6af2ed488a41803a3e5c82ae
+      Path: Events\Default Work Unit\Play_Jazz_Fight_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Overworld
       guid: c25aecdd4f4c054c91d4227a1494d148
       id: 1841649256
@@ -280,6 +314,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: c25aecdd4f4c054c91d4227a1494d148
       Path: Events\Default Work Unit\Play_Overworld
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Overworld_01
+      guid: 855d31131059234a946711dc5ff3b01d
+      id: 3760154814
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Overworld_01
+        ObjectType: 3
+        guid: 855d31131059234a946711dc5ff3b01d
+      Path: Events\Default Work Unit\Play_Overworld_01
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -331,6 +382,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8a676e002fc94f42a9cf767d145544ac
       Path: Events\Default Work Unit\Play_Rock
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Rock_Bar_Ambience
+      guid: 37798ff6f3125f489d6c320c38062459
+      id: 3737082598
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Rock_Bar_Ambience
+        ObjectType: 3
+        guid: 37798ff6f3125f489d6c320c38062459
+      Path: Events\Default Work Unit\Play_Rock_Bar_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Rock_Battles
+      guid: a20f8ed49c0c034ca22e6a9087b2eee2
+      id: 576708969
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Rock_Battles
+        ObjectType: 3
+        guid: a20f8ed49c0c034ca22e6a9087b2eee2
+      Path: Events\Default Work Unit\Play_Rock_Battles
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
