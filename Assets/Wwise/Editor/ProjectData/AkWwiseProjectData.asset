@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ed2355a2df2f3549b31dc0d0ee21ba96
     GuidInternal: 
-    m_lastTime: -8584821574043431274
+    m_lastTime: -8584820066701610161
     List:
     - name: Main_Soundbank
       guid: 9486bfd2f4a4c24980b1bad61c2b0283
@@ -94,42 +94,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d283a4a3cb772340b99967a8dc3a62d2
     GuidInternal: 
-    m_lastTime: -8584820071789899094
+    m_lastTime: -8584820068444703060
     List:
-    - name: Jazz_Bar_Ambience
-      guid: e08fc4de9c482843a3c51b93b7d72af7
-      id: 752228667
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d283a4a3cb772340b99967a8dc3a62d2
-      - ElementName: Jazz_Bar_Ambience
-        ObjectType: 3
-        guid: e08fc4de9c482843a3c51b93b7d72af7
-      Path: Events\Default Work Unit\Jazz_Bar_Ambience
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Jazz_Bar_Ambience_Stop
-      guid: 12bf686f762c9948a00bb97bb3db4e5c
-      id: 3751325078
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d283a4a3cb772340b99967a8dc3a62d2
-      - ElementName: Jazz_Bar_Ambience_Stop
-        ObjectType: 3
-        guid: 12bf686f762c9948a00bb97bb3db4e5c
-      Path: Events\Default Work Unit\Jazz_Bar_Ambience_Stop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Chime
       guid: fa0d77da676ffe4bbedf756d31c34865
       id: 2969046030
@@ -232,25 +198,8 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Jazz
-      guid: 89b5bdaee9860f40a90aeebc32335392
-      id: 3474269109
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d283a4a3cb772340b99967a8dc3a62d2
-      - ElementName: Play_Jazz
-        ObjectType: 3
-        guid: 89b5bdaee9860f40a90aeebc32335392
-      Path: Events\Default Work Unit\Play_Jazz
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Jazz_Bar_Ambience
-      guid: f9ca409163c5ca4db5aeae171c14225a
+      guid: 5262650ebbb1a54b81daf08408a62704
       id: 1685503222
       PathAndIcons:
       - ElementName: Events
@@ -261,30 +210,13 @@ MonoBehaviour:
         guid: d283a4a3cb772340b99967a8dc3a62d2
       - ElementName: Play_Jazz_Bar_Ambience
         ObjectType: 3
-        guid: f9ca409163c5ca4db5aeae171c14225a
+        guid: 5262650ebbb1a54b81daf08408a62704
       Path: Events\Default Work Unit\Play_Jazz_Bar_Ambience
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Jazz_Bar_Ambience_01
-      guid: 8f8805a44b76df4ba06958d35cfdb040
-      id: 1066505092
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d283a4a3cb772340b99967a8dc3a62d2
-      - ElementName: Play_Jazz_Bar_Ambience_01
-        ObjectType: 3
-        guid: 8f8805a44b76df4ba06958d35cfdb040
-      Path: Events\Default Work Unit\Play_Jazz_Bar_Ambience_01
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Jazz_Fight_1
-      guid: bff4512f6af2ed488a41803a3e5c82ae
+      guid: 51c237cf28563e4abc12ae15a872e5d0
       id: 2231034946
       PathAndIcons:
       - ElementName: Events
@@ -295,7 +227,7 @@ MonoBehaviour:
         guid: d283a4a3cb772340b99967a8dc3a62d2
       - ElementName: Play_Jazz_Fight_1
         ObjectType: 3
-        guid: bff4512f6af2ed488a41803a3e5c82ae
+        guid: 51c237cf28563e4abc12ae15a872e5d0
       Path: Events\Default Work Unit\Play_Jazz_Fight_1
       maxAttenuation: 0
       maxDuration: -1
@@ -334,6 +266,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Overworld_02
+      guid: c8adaa286ae5e7438fe2e079cf0bb97c
+      id: 3760154813
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Play_Overworld_02
+        ObjectType: 3
+        guid: c8adaa286ae5e7438fe2e079cf0bb97c
+      Path: Events\Default Work Unit\Play_Overworld_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_paper_cup_sounds
       guid: 24a44a3e7829ed4698d6e1c6c8a2d713
       id: 2341331244
@@ -368,25 +317,8 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Rock
-      guid: 8a676e002fc94f42a9cf767d145544ac
-      id: 2803807589
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d283a4a3cb772340b99967a8dc3a62d2
-      - ElementName: Play_Rock
-        ObjectType: 3
-        guid: 8a676e002fc94f42a9cf767d145544ac
-      Path: Events\Default Work Unit\Play_Rock
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Rock_Bar_Ambience
-      guid: 37798ff6f3125f489d6c320c38062459
+      guid: 74b8d136151da646b4ccb0bd148bfdd5
       id: 3737082598
       PathAndIcons:
       - ElementName: Events
@@ -397,13 +329,13 @@ MonoBehaviour:
         guid: d283a4a3cb772340b99967a8dc3a62d2
       - ElementName: Play_Rock_Bar_Ambience
         ObjectType: 3
-        guid: 37798ff6f3125f489d6c320c38062459
+        guid: 74b8d136151da646b4ccb0bd148bfdd5
       Path: Events\Default Work Unit\Play_Rock_Bar_Ambience
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_Rock_Battles
-      guid: a20f8ed49c0c034ca22e6a9087b2eee2
+      guid: b6342b85ed51d94f940a09d58a941152
       id: 576708969
       PathAndIcons:
       - ElementName: Events
@@ -414,11 +346,11 @@ MonoBehaviour:
         guid: d283a4a3cb772340b99967a8dc3a62d2
       - ElementName: Play_Rock_Battles
         ObjectType: 3
-        guid: a20f8ed49c0c034ca22e6a9087b2eee2
+        guid: b6342b85ed51d94f940a09d58a941152
       Path: Events\Default Work Unit\Play_Rock_Battles
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 188
+      minDuration: 156.13188
     - name: Play_static_y_chords
       guid: 34a6ec33329f0a45b299a6c6e8d6981c
       id: 3447001990
@@ -470,23 +402,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_World
-      guid: d323cccc1446c046abac5befdcae6b51
-      id: 2208368414
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d283a4a3cb772340b99967a8dc3a62d2
-      - ElementName: Play_World
-        ObjectType: 3
-        guid: d323cccc1446c046abac5befdcae6b51
-      Path: Events\Default Work Unit\Play_World
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Stop_Footsteps
       guid: 7403c302e3442046b037a2e1a2442694
       id: 2963349357
@@ -501,6 +416,91 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7403c302e3442046b037a2e1a2442694
       Path: Events\Default Work Unit\Stop_Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Jazz_Bar_Ambience
+      guid: 4d30219d243b0c4b873f4b547bcb462f
+      id: 1871632168
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Stop_Jazz_Bar_Ambience
+        ObjectType: 3
+        guid: 4d30219d243b0c4b873f4b547bcb462f
+      Path: Events\Default Work Unit\Stop_Jazz_Bar_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Jazz_Fight_1
+      guid: 209c7d203f8e9b469c0896e3f323f62e
+      id: 580093268
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Stop_Jazz_Fight_1
+        ObjectType: 3
+        guid: 209c7d203f8e9b469c0896e3f323f62e
+      Path: Events\Default Work Unit\Stop_Jazz_Fight_1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Overworld
+      guid: 9d763912fdfef64da74dabcbc2186f66
+      id: 2683982410
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Stop_Overworld
+        ObjectType: 3
+        guid: 9d763912fdfef64da74dabcbc2186f66
+      Path: Events\Default Work Unit\Stop_Overworld
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Rock_Bar_Ambience
+      guid: a156607e23bfa945b4b916f12df96ea5
+      id: 443452692
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Stop_Rock_Bar_Ambience
+        ObjectType: 3
+        guid: a156607e23bfa945b4b916f12df96ea5
+      Path: Events\Default Work Unit\Stop_Rock_Bar_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Rock_Battles
+      guid: 77bde8166f932e4f966aa8a8f1645571
+      id: 525671363
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d283a4a3cb772340b99967a8dc3a62d2
+      - ElementName: Stop_Rock_Battles
+        ObjectType: 3
+        guid: 77bde8166f932e4f966aa8a8f1645571
+      Path: Events\Default Work Unit\Stop_Rock_Battles
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -675,7 +675,7 @@ MonoBehaviour:
     m_lastTime: -8584827926414960707
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

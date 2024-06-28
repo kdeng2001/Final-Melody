@@ -701,13 +701,25 @@ MonoBehaviour:
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 636eae9bce4a3694db526a605f552f40, type: 2}
+      WwiseObjectReference: {fileID: 11400000, guid: 3bbfcb5dd45037f4b99d6517c6b11655, type: 2}
   - sceneNames:
     - DocOffice
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 124df4b8f2aa42f4791b8db844ab319b, type: 2}
+      WwiseObjectReference: {fileID: 11400000, guid: 8e59bbbe939cd6a4b8e3212f6d0c26b5, type: 2}
+  - sceneNames:
+    - TempRoom1
+    musicLoop:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 63d52b0eff132d345a508d2a4a5adff0, type: 2}
+  - sceneNames:
+    - BattleAlley
+    musicLoop:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 63d52b0eff132d345a508d2a4a5adff0, type: 2}
 --- !u!114 &993542904
 MonoBehaviour:
   m_ObjectHideFlags: 0
