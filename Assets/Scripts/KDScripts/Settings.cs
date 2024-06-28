@@ -32,7 +32,7 @@ public class Settings : MonoBehaviour
             options.SetActive(false); 
             return;
         }
-        if(!options.activeSelf) { return; }
+        if(options == null || !options.activeSelf) { return; }
         if(poppingDown != null) { return; }
         poppingDown = StartCoroutine(Popdown());
     }
@@ -65,10 +65,14 @@ public class Settings : MonoBehaviour
 
     private void OnEnable()
     {
-        SceneManager.sceneUnloaded += (scene) => ExitSettings();
+        SceneManager.sceneUnloaded += ExitSettingsOnUnload;
     }
     private void OnDisable()
     {
-        
+        SceneManager.sceneUnloaded -= ExitSettingsOnUnload;
+    }   
+    public void ExitSettingsOnUnload(Scene scene)
+    {
+        ExitSettings();
     }
 }
