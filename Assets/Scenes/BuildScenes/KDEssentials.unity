@@ -720,6 +720,12 @@ MonoBehaviour:
       idInternal: 0
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 63d52b0eff132d345a508d2a4a5adff0, type: 2}
+  - sceneNames:
+    - MockBattleScene
+    musicLoop:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 8e59bbbe939cd6a4b8e3212f6d0c26b5, type: 2}
 --- !u!114 &993542904
 MonoBehaviour:
   m_ObjectHideFlags: 0

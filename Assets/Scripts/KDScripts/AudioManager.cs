@@ -45,6 +45,8 @@ public class AudioManager : MonoBehaviour
     //}
     public void PlaySceneMusic(Scene scene, LoadSceneMode mode)
     {
+        //Debug.Log(scene.name + " mode: " + mode);
+        //if(LoadSceneMode.Additive == mode) { Debug.Log(scene.name + " mode: " + mode + " will not play"); return; }
         // loop to find corresponding scene
         foreach (WorldMusicLoops loop in worldMusic)
         {
@@ -72,7 +74,25 @@ public class AudioManager : MonoBehaviour
         }
 
     }
+    public void PlayBattleSceneMusic(Scene scene, LoadSceneMode mode)
+    {
+        foreach (WorldMusicLoops loop in worldMusic)
+        {
+            foreach(string sceneName in loop.sceneNames)
+            {
+                if(scene.name == sceneName)
+                {
+                    loop.musicLoop.Post(Player.Instance.controller.gameObject);
+                }
+            }
+        }
+    }
+    public void StopBattleSceneMusic(Scene scene)
+    {
+
+    }
 }
+
 [System.Serializable]
 
 public struct WorldMusicLoops
