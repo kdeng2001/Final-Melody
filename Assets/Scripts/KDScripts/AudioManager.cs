@@ -60,7 +60,9 @@ public class AudioManager : MonoBehaviour
                     {
                         if (currentMusicID != 0) AkSoundEngine.StopPlayingID(currentMusicID);
                         Debug.Log("Playing: " + loop.musicLoop.Id);
-                        currentMusicID = loop.musicLoop.Post(Player.Instance.controller.gameObject);
+                        //currentMusicID = loop.musicLoop.Post(Player.Instance.controller.gameObject);
+                        currentMusicID = loop.musicLoop.Post(gameObject);
+                        
                         currentLoopName = loop.musicLoop.Name;
                         currentWorldMusic = loop.musicLoop;
                     }
@@ -87,7 +89,9 @@ public class AudioManager : MonoBehaviour
                     if (loop.musicLoop.Name != currentLoopName)
                     {
                         if( currentMusicID != 0) { AkSoundEngine.StopPlayingID(currentMusicID); }
-                        currentMusicID = loop.musicLoop.Post(Player.Instance.controller.gameObject);
+                        //currentMusicID = loop.musicLoop.Post(Player.Instance.controller.gameObject);
+                        currentMusicID = loop.musicLoop.Post(gameObject);
+                        
                         currentLoopName = loop.musicLoop.Name;
                         currentBattleMusic = loop.musicLoop;
                     }
@@ -107,7 +111,9 @@ public class AudioManager : MonoBehaviour
                     if(loop.musicLoop.Name == currentLoopName)
                     {
                         if(currentMusicID != 0) { AkSoundEngine.StopPlayingID(currentMusicID); }
-                        currentMusicID = currentWorldMusic.Post(Player.Instance.controller.gameObject);
+                        //currentMusicID = currentWorldMusic.Post(Player.Instance.controller.gameObject);
+                        currentMusicID = currentWorldMusic.Post(gameObject);
+
                         currentLoopName = currentWorldMusic.Name;
                         //currentWorldMusic = currentWorldMusic;
                     }
