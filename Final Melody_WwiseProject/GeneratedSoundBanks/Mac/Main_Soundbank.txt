@@ -1,13 +1,31 @@
 Event	ID	Name			Wwise Object Path	Notes
+	576708969	Play_Rock_Battles			\Default Work Unit\Play_Rock_Battles	
+	3737082598	Play_Rock_Bar_Ambience			\Default Work Unit\Play_Rock_Bar_Ambience	
+	3760154813	Play_Overworld_02			\Default Work Unit\Play_Overworld_02	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music			
+	896309499	Jazz_Battle	Music			
+	1562068129	Overworld	Music			
+	2074201812	Jazz_Bar	Music			
+	2628598795	Rock_Battle	Music			
+	3781847844	Rock_Bar	Music			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	200926149	BOOT_CONC CLEAN_WALK_10	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_10		63028
-	505505623	BOOT_CONC CLEAN_WALK_3	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_3		82780
-	645619578	BOOT_CONC CLEAN_WALK_5	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_5		70760
-	653746798	BOOT_CONC CLEAN_WALK_4	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_4		96840
-	680661866	BOOT_CONC CLEAN_WALK	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK		66308
-	702972314	BOOT_CONC CLEAN_WALK_7	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_7		48420
-	1029415312	BOOT_CONC CLEAN_WALK_2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_2		90292
-	1051922225	BOOT_CONC CLEAN_WALK_1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_1		79080
+	65309078	Rock Song 1	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Song 1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 1\Rock Song 1		29977528
+	200926149	BOOT_CONC CLEAN_WALK_10	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_10		63028
+	426595442	Rock Song 2	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Song 2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 2\Rock Song 2		36096160
+	468749629	Rock Bar Music overworld 110 bpm	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Bar Music overworld 110 bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Bar Ambience\Rock Bar Music overworld 110 bpm\Rock Bar Music overworld 110 bpm		16756572
+	505505623	BOOT_CONC CLEAN_WALK_3	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_3		82780
+	645619578	BOOT_CONC CLEAN_WALK_5	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_5		70760
+	653746798	BOOT_CONC CLEAN_WALK_4	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_4		96840
+	666262496	overworld music loop	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\overworld music loop_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Overworld\Overworld\overworld music loop\overworld music loop		8205472
+	680661866	BOOT_CONC CLEAN_WALK	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK		66308
+	702972314	BOOT_CONC CLEAN_WALK_7	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_7		48420
+	1029415312	BOOT_CONC CLEAN_WALK_2	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_2		90292
+	1051922225	BOOT_CONC CLEAN_WALK_1	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_1		79080
 

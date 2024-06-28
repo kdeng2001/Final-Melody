@@ -34,13 +34,25 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{43E74744-A39B-CD36-717B-AFAE369D353E}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{86A09CE2-9E3A-B266-CFFF-C91A4A5921CB}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
+				<File Id="65309078" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rock Song 1.wav</ShortName>
+					<CachePath>SFX/Rock Song 1_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="200926149" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.10.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="426595442" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rock Song 2.wav</ShortName>
+					<CachePath>SFX/Rock Song 2_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="468749629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rock Bar Music overworld 110 bpm.wav</ShortName>
+					<CachePath>SFX/Rock Bar Music overworld 110 bpm_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="505505623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.3.wav</ShortName>
@@ -53,6 +65,10 @@
 				<File Id="653746798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.4.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="666262496" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>overworld music loop.wav</ShortName>
+					<CachePath>SFX/overworld music loop_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="680661866" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.wav</ShortName>
@@ -84,8 +100,24 @@
 						<MediaRef Id="1051922225"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3760154813" Name="Play_Overworld_02" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="666262496"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3737082598" Name="Play_Rock_Bar_Ambience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="468749629"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="576708969" Name="Play_Rock_Battles" DurationType="OneShot" DurationMin="156.13188" DurationMax="188">
+					<MediaRefs>
+						<MediaRef Id="65309078"/>
+						<MediaRef Id="426595442"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D2DE64C0-4E1F-87DB-A269-3E70391842A9}</FileHash>
+	<FileHash>{C931D5D2-901F-4565-EF10-9DAD1D3051AD}</FileHash>
 </SoundBanksInfo>
