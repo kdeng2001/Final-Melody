@@ -28,35 +28,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Jazz_Bar_Ambience" ID="{DEC48FE0-489C-4328-A3C5-1B93B7D72AF7}">
-					<ChildrenList>
-						<Action Name="" ID="{2F9CF67A-F39F-435E-AAF1-9BBFCEC25FC6}" ShortID="389084570">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Jazz_Bar_Ambience_Stop" ID="{6F68BF12-2C76-4899-A00B-B97BB3DB4E5C}">
-					<ChildrenList>
-						<Action Name="" ID="{E3992CB0-06A9-4B04-9C38-104F39C8348A}" ShortID="348197159">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Chime" ID="{DA770DFA-6F67-4BFE-BEDF-756D31C34865}">
 					<ChildrenList>
 						<Action Name="" ID="{F5035C21-2214-4270-A57F-FC83D0BA458D}" ShortID="272712432">
@@ -167,78 +138,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Jazz_Bar_Ambience" ID="{9140CAF9-C563-4DCA-B5AE-AE171C14225A}">
-					<ChildrenList>
-						<Action Name="" ID="{7FAEE02D-7FD3-4819-B52D-C6E16ACC2628}" ShortID="715227312">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_World" ID="{CCCC23D3-4614-46C0-ABAC-5BEFDCAE6B51}">
-					<ChildrenList>
-						<Action Name="" ID="{F6564984-3308-481E-B255-E5C1584833C3}" ShortID="923478900">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="World" ID="{852C6643-725B-4345-A14F-4DB4975AAF21}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Jazz" ID="{AEBDB589-86E9-400F-A90A-EEBC32335392}">
-					<ChildrenList>
-						<Action Name="" ID="{3ED3712E-EFA3-4A1B-ADEE-AB4F0DB76C11}" ShortID="284548882">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz" ID="{1CF3CFF6-60D2-4AE1-B5C3-E0151D304487}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Overworld" ID="{DDEC5AC2-4C4F-4C05-91D4-227A1494D148}">
 					<ChildrenList>
 						<Action Name="" ID="{1AF24D16-522F-436C-8E40-795FD32E865F}" ShortID="1036005340">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Overworld" ID="{26450D6B-158E-405E-8586-568F5658A8FE}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Rock" ID="{006E678A-C92F-424F-A9CF-767D145544AC}">
-					<ChildrenList>
-						<Action Name="" ID="{50494480-95C5-4E86-BCC9-7476F635E0A3}" ShortID="668645849">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rock" ID="{0AC28A3E-8E17-4AD1-9175-5E90E85F348D}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Jazz_Bar_Ambience_01" ID="{A405888F-764B-4BDF-A069-58D35CFDB040}">
-					<ChildrenList>
-						<Action Name="" ID="{3480F20D-5C20-4E41-A010-9EE63399C01B}" ShortID="739606208">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Bar Ambience" ID="{004F7F4F-4458-4780-9A16-49F4E7228CAC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Jazz_Fight_1" ID="{2F51F4BF-F26A-48ED-8A41-803A3E5C82AE}">
-					<ChildrenList>
-						<Action Name="" ID="{D9F3BF79-F521-4171-9D91-0CF357719192}" ShortID="984939054">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Fight 1" ID="{226DDFFC-BA72-48E4-B223-823D9266A68A}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -255,9 +160,42 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Rock_Bar_Ambience" ID="{F68F7937-12F3-485F-9D6C-320C38062459}">
+				<Event Name="Play_Jazz_Bar_Ambience" ID="{0E656252-B1BB-4BA5-81DA-F08408A62704}">
 					<ChildrenList>
-						<Action Name="" ID="{49521BE9-77B8-4CD2-ABD5-74BF91B8092C}" ShortID="309094908">
+						<Action Name="" ID="{6474EACF-9338-4683-B4B9-DAF39C09BB31}" ShortID="758926715">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{004F7F4F-4458-4780-9A16-49F4E7228CAC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jazz_Fight_1" ID="{CF37C251-5628-4A3E-BC12-AE15A872E5D0}">
+					<ChildrenList>
+						<Action Name="" ID="{9C9C8407-9BA0-43A1-8333-486CC6E98A3F}" ShortID="578235027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Fight 1" ID="{226DDFFC-BA72-48E4-B223-823D9266A68A}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Overworld_02" ID="{28AAADC8-E56A-43E7-8FE2-E079CF0BB97C}">
+					<ChildrenList>
+						<Action Name="" ID="{555A7BB7-48C7-4712-A068-A6CCA8BA5A0D}" ShortID="370167192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Overworld" ID="{3B424030-4199-4C5C-A2A4-4EDF047C6030}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rock_Bar_Ambience" ID="{36D1B874-1D15-46A6-B4CC-B0BD148BFDD5}">
+					<ChildrenList>
+						<Action Name="" ID="{9AD53BF1-2B04-45D0-9C58-D95B152948E4}" ShortID="1013384614">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Rock Bar Ambience" ID="{DBCDEE68-2067-423F-ADB1-CC1913E51A68}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
@@ -266,9 +204,79 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Rock_Battles" ID="{D48E0FA2-0C9C-4C03-A22E-6A9087B2EEE2}">
+				<Event Name="Play_Rock_Battles" ID="{852B34B6-51ED-4FD9-940A-09D58A941152}">
 					<ChildrenList>
-						<Action Name="" ID="{1DC79F61-9495-4C96-B7AA-8DE55BAA78C6}" ShortID="601787902">
+						<Action Name="" ID="{B71F39C7-B6DB-4511-AA29-C895DDA5466D}" ShortID="329276019">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rock Battles" ID="{7D849604-A12D-4CBF-8223-4FA96229267F}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Jazz_Bar_Ambience" ID="{9D21304D-3B24-4B0C-873F-4B547BCB462F}">
+					<ChildrenList>
+						<Action Name="" ID="{D921FED5-14E5-49CD-8E07-6C716B17CB2D}" ShortID="297616422">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{004F7F4F-4458-4780-9A16-49F4E7228CAC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Jazz_Fight_1" ID="{207D9C20-8E3F-469B-9C08-96E3F323F62E}">
+					<ChildrenList>
+						<Action Name="" ID="{EDD797C3-24C9-4930-A00A-CB6BE441B5B5}" ShortID="679574619">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Fight 1" ID="{226DDFFC-BA72-48E4-B223-823D9266A68A}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Overworld" ID="{1239769D-FEFD-4DF6-A74D-ABCBC2186F66}">
+					<ChildrenList>
+						<Action Name="" ID="{4042CB50-07CF-416C-A374-71BEFB856B80}" ShortID="1015934577">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Overworld" ID="{3B424030-4199-4C5C-A2A4-4EDF047C6030}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Rock_Bar_Ambience" ID="{7E6056A1-BF23-45A9-B4B9-16F12DF96EA5}">
+					<ChildrenList>
+						<Action Name="" ID="{51B2B2F2-77F6-4417-89A1-5D888DD8DB25}" ShortID="892437949">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rock Bar Ambience" ID="{DBCDEE68-2067-423F-ADB1-CC1913E51A68}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Rock_Battles" ID="{16E8BD77-936F-4F2E-966A-A8A8F1645571}">
+					<ChildrenList>
+						<Action Name="" ID="{28F74906-CF60-47F3-BF54-26829E4C7022}" ShortID="991816739">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Rock Battles" ID="{7D849604-A12D-4CBF-8223-4FA96229267F}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
