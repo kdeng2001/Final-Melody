@@ -71,7 +71,11 @@ public class InGameMenu : MonoBehaviour
     }
     public void Quit()
     {
-        destroyLoadMainMenu?.Invoke();
+        DestroyOnMainMenu[] destroyObjects = FindObjectsOfType<DestroyOnMainMenu>();
+        foreach(DestroyOnMainMenu obj in destroyObjects)
+        {
+            Destroy(obj.gameObject);
+        }
         ToMainMenu();
         //Application.Quit();
     }
