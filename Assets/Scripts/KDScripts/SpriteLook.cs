@@ -8,7 +8,7 @@ public class SpriteLook : MonoBehaviour
     private void Update()
     {
         //transform.LookAt(Camera.main.transform);
-
+        if(Camera.main == null) { return; }
         Vector3 newtarget = Camera.main.transform.position;
         if(ignoreY)
         {

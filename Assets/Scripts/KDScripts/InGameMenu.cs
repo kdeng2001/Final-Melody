@@ -30,20 +30,11 @@ public class InGameMenu : MonoBehaviour
     }
     private void Start()
     {
-        PlayerInput playerInput = Player.Instance.GetComponent<PlayerInput>();
-        InputAction toggleMenu = playerInput.actions["ToggleMenu"];
-        toggleMenu.started += context => ToggleMenu(context);
+
         saveAndQuit.SetActive(false);
         inventoryUI.SetActive(false);
         pointsUI.SetActive(false);
     }
-
-    //private void OnDestroy()
-    //{
-    //    PlayerInput playerInput = Player.Instance.GetComponent<PlayerInput>();
-    //    InputAction toggleMenu = playerInput.actions["ToggleMenu"];
-    //    toggleMenu.started -= context => ToggleMenu(context);
-    //}
     public void ToggleMenu(CallbackContext context)
     {
         // cannot toggle menu while in dialogue
@@ -59,6 +50,7 @@ public class InGameMenu : MonoBehaviour
         if (isToggledOn)
         {
             //Time.timeScale = 1;
+            Settings.Instance.ExitSettings();
             player.UnPauseMovement();
             isToggledOn = false;
             animator.Play("MenuOff");
@@ -72,39 +64,26 @@ public class InGameMenu : MonoBehaviour
             animator.Play("MenuOn");
         }
 
-        //if (saveAndQuit.activeSelf) 
-        //{ 
-        //    Time.timeScale = 1;
-        //    isToggledOn = false;
-        //    animator.Play("MenuOff");
-        //}
-        //// else become active and pause
-        //else 
-        //{ 
-        //    Time.timeScale = 0; 
-        //    isToggledOn = true;
-        //    animator.Play("MenuOn");
-        //}
-        //gameObject.SetActive(!gameObject.activeSelf);
-        //saveAndQuit.SetActive(!saveAndQuit.activeSelf);
-        //inventoryUI.SetActive(!inventoryUI.activeSelf);
-        //pointsUI.SetActive(!pointsUI.activeSelf);
-
     }
-
     public void Save()
     {
         DataPersistenceManager.Instance.SaveGame();
     }
-
     public void Quit()
     {
-        Application.Quit();
+        destroyLoadMainMenu?.Invoke();
+        ToMainMenu();
+        //Application.Quit();
     }
-
+    public delegate void DestroyLoadMainMenu();
+    public DestroyLoadMainMenu destroyLoadMainMenu;
     public void ToMainMenu()
     {
         SceneManager.LoadScene(0);
     }
 
+    public void OpenSettings()
+    {
+        Settings.Instance.Popup();
+    }
 }

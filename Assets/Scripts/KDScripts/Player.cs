@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour, IDataPersistence
 {
@@ -8,6 +9,7 @@ public class Player : MonoBehaviour, IDataPersistence
     [SerializeField] public Transform model;
     [SerializeField] public Transform controller;
     [SerializeField] public Transform interactor;
+    [SerializeField] public PlayerInput playerInput;
 
     private Interactor interactorComponent;
     CharacterMovement movement;
@@ -53,5 +55,16 @@ public class Player : MonoBehaviour, IDataPersistence
     {
         //Debug.Log("Save player data");
         data.playerPosition = controller.position;
+    }
+
+    private void OnEnable()
+    {
+        InputAction toggleMenu = playerInput.actions["ToggleMenu"];
+        toggleMenu.started += context => InGameMenu.Instance.ToggleMenu(context);
+    }
+    private void OnDisable()
+    {
+        InputAction toggleMenu = playerInput.actions["ToggleMenu"];
+        toggleMenu.started -= context => InGameMenu.Instance.ToggleMenu(context);
     }
 }

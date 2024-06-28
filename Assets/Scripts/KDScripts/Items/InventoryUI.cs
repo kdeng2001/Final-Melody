@@ -14,8 +14,8 @@ public class InventoryUI : MonoBehaviour
     public Dictionary<string, GameObject> itemEntries;
     [SerializeField] public Inventory inventory;
     [SerializeField] public Points points;
-    private TextMeshProUGUI moneyAmount;
-    private TextMeshProUGUI reputationAmount;
+    [SerializeField] private TextMeshProUGUI moneyAmount;
+    [SerializeField] private TextMeshProUGUI reputationAmount;
 
     [Header("Use Item Confirmation Pop up")]
     [SerializeField] private RectTransform confirmationPopup;
@@ -34,8 +34,8 @@ public class InventoryUI : MonoBehaviour
             itemEntries = new Dictionary<string, GameObject>();
             //inventory = gameObject.AddComponent<Inventory>();
             //points = gameObject.AddComponent<Points>();
-            moneyAmount = GameObject.Find("MoneyAmount").GetComponent<TextMeshProUGUI>();
-            reputationAmount = GameObject.Find("ReputationAmount").GetComponent<TextMeshProUGUI>();
+            //moneyAmount = GameObject.Find("MoneyAmount").GetComponent<TextMeshProUGUI>();
+            //reputationAmount = GameObject.Find("ReputationAmount").GetComponent<TextMeshProUGUI>();
             DontDestroyOnLoad(gameObject);
         }
     }
