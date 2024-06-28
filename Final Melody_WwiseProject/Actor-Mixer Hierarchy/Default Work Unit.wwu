@@ -16,8 +16,8 @@
 									<Modifier Name="" ID="{4E4EBD33-CA28-4CC5-BE49-4B5AAE370AE3}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="3"/>
-											<Property Name="Min" Type="Real64" Value="-14"/>
+											<Property Name="Max" Type="Real64" Value="6"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
