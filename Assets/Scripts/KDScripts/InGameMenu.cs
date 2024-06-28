@@ -37,6 +37,8 @@ public class InGameMenu : MonoBehaviour
     }
     public void ToggleMenu(CallbackContext context)
     {
+        // cannot toggle menu if disabled
+        if(!enabled) { return; }
         // cannot toggle menu while in dialogue
         if(DialogueManager.Instance.dialogueIsPlaying) { return; }
         // cannot toggle menu while shopping

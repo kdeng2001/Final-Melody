@@ -89,11 +89,13 @@ public class TimelineDirector : MonoBehaviour
     {
         Player.Instance.PauseInteractor();
         Player.Instance.PauseMovement();
+        InGameMenu.Instance.enabled = false;
     }
 
     public void UnpauseAll()
     {
         Player.Instance.UnpauseInteractor();
         Player.Instance.UnPauseMovement();
+        InGameMenu.Instance.enabled = true;
     }
 }
