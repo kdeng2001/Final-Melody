@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e827ca9f92b448b4f891df73e54837a2
+guid: 2119c6ce8f1939e4f89b2708adf2557c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
@@ -95,18 +95,48 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: mom_portrait_default_old_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -46.5}
+        - {x: 46.5, y: 0}
+        - {x: 0, y: 46.5}
+        - {x: -46.5, y: 0}
+      physicsShape:
+      - - {x: 0, y: -46.5}
+        - {x: 46.5, y: 0}
+        - {x: 0, y: 46.5}
+        - {x: -46.5, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408b1cb25a16e5e449be0ea2a5bb7a6c
+      internalID: -875613585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mom_portrait_default_old_0: -875613585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
