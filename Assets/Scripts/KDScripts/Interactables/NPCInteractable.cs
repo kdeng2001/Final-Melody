@@ -6,6 +6,13 @@ public class NPCInteractable : Interactable
 {
     public int currIndex { get; protected set; }
     [SerializeField] private TextAsset[] texts;
+
+    [SerializeField] private Sprite upLook;
+    [SerializeField] private Sprite downLook;
+    [SerializeField] private Sprite leftLook;
+    [SerializeField] private Sprite rightLook;
+    [SerializeField] private SpriteRenderer currentSprite;
+
     [HideInInspector]
     public bool isTalking { get; protected set; }
     private void Awake()
@@ -30,6 +37,7 @@ public class NPCInteractable : Interactable
         if(isTalking) { ContinueDialogue(); }
         else
         {
+            HandleSpriteLook();
             StartDialogue();
         }
         // check finish dialogue
@@ -61,4 +69,46 @@ public class NPCInteractable : Interactable
             OnFinishInteract();
         }
     }
+
+    public void HandleSpriteLook()
+    {
+        Vector3 direction = transform.position - Player.Instance.model.position;
+        // face left or right
+        if(Mathf.Abs(direction.x) > Mathf.Abs(direction.z))
+        {
+            // face right
+            if(direction.x > 0)
+            {
+                Debug.Log("Face right");
+                if(rightLook == null) { return; }
+                currentSprite.sprite = rightLook;
+            }
+            // face left
+            else
+            {
+                Debug.Log("Face left");
+                if (leftLook == null) { return; }
+                currentSprite.sprite = leftLook;
+            }
+        }
+        // face up or down
+        else
+        {
+            // face up
+            if(direction.z < 0)
+            {
+                Debug.Log("Face up");
+                if (upLook == null) { return; }
+                currentSprite.sprite = upLook;
+            }
+            // face down
+            else
+            {
+                Debug.Log("Face down");
+                if (downLook == null) { return; }
+                currentSprite.sprite = downLook;
+            }
+        }
+    }
 }
+

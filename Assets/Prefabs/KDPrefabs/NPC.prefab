@@ -214,6 +214,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractableIcon: {fileID: 9061157170251461228}
   texts: []
+  upLook: {fileID: 0}
+  downLook: {fileID: 0}
+  leftLook: {fileID: 0}
+  rightLook: {fileID: 0}
+  currentSprite: {fileID: 2532462245153387392}
 --- !u!1 &5127542650629916413
 GameObject:
   m_ObjectHideFlags: 0

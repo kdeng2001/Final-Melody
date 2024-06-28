@@ -6168,6 +6168,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6634483886878251102, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+      propertyPath: upLook
+      value: 
+      objectReference: {fileID: 1290668349, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
+    - target: {fileID: 6634483886878251102, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+      propertyPath: downLook
+      value: 
+      objectReference: {fileID: 1714268476, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
+    - target: {fileID: 6634483886878251102, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+      propertyPath: leftLook
+      value: 
+      objectReference: {fileID: -1499875663, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
+    - target: {fileID: 6634483886878251102, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+      propertyPath: rightLook
+      value: 
+      objectReference: {fileID: -422296248, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
+    - target: {fileID: 6634483886878251102, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
       propertyPath: texts.Array.size
       value: 1
       objectReference: {fileID: 0}
