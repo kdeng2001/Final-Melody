@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BuildScenes/StreetRefactor.unity
     guid: cbeb873b8f7a3d04486fabc276829390
   - enabled: 1
-    path: Assets/Scenes/BuildScenes/TempRoom1.unity
+    path: Assets/Scenes/BuildScenes/MusicVenue.unity
     guid: c93222f292299da4eb5eff954b8a97f6
   - enabled: 1
     path: Assets/Scenes/BuildScenes/DocOffice.unity

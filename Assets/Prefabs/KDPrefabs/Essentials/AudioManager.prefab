@@ -105,7 +105,7 @@ MonoBehaviour:
   worldMusic:
   - sceneNames:
     - StreetRefactor
-    - IntroRefactor
+    - BattleAlley
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
@@ -118,8 +118,9 @@ MonoBehaviour:
       WwiseObjectReference: {fileID: 11400000, guid: 8e59bbbe939cd6a4b8e3212f6d0c26b5, type: 2}
   - sceneNames:
     - TempRoom1
-    - BattleAlley
     - MainMenuRefactor
+    - IntroRefactor
+    - MusicVenue
     musicLoop:
       idInternal: 0
       valueGuidInternal: 

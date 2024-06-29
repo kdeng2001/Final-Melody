@@ -3391,7 +3391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 840888385856632345, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: sceneToEnterName
-      value: TempRoom1
+      value: MusicVenue
       objectReference: {fileID: 0}
     - target: {fileID: 943329531353040124, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: m_Mesh
@@ -7840,6 +7840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfa957d06939c54b886d8c3a636a57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookAtObj: {fileID: 0}
   ignoreY: 0
 --- !u!23 &847072623
 MeshRenderer:
@@ -15845,6 +15846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfa957d06939c54b886d8c3a636a57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookAtObj: {fileID: 0}
   ignoreY: 1
 --- !u!1 &1718389382
 GameObject:
@@ -20315,9 +20317,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractableIcon: {fileID: 121913816}
+  interacting: 0
   texts:
   - {fileID: 4900000, guid: 1c31bba652eff364891f85ac746c9b0a, type: 3}
   - {fileID: 4900000, guid: d8f23403108c01143be9cb2680b2568a, type: 3}
+  upLook: {fileID: 0}
+  downLook: {fileID: 0}
+  leftLook: {fileID: 0}
+  rightLook: {fileID: 0}
+  currentSprite: {fileID: 0}
   itemsForSale:
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
     itemName: give2000money
@@ -20603,7 +20611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 840888385856632345, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: sceneToEnterName
-      value: TempRoom1
+      value: MusicVenue
       objectReference: {fileID: 0}
     - target: {fileID: 943329531353040124, guid: 93a51f591d4fde54c83318da12a1e840, type: 3}
       propertyPath: m_Mesh
@@ -20797,8 +20805,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractableIcon: {fileID: 1677373863}
+  interacting: 0
   texts:
   - {fileID: 4900000, guid: b2ea565b982205c40ab328a9f3a7ca94, type: 3}
+  upLook: {fileID: 0}
+  downLook: {fileID: 0}
+  leftLook: {fileID: 0}
+  rightLook: {fileID: 0}
+  currentSprite: {fileID: 0}
 --- !u!1 &7576048863435196003
 GameObject:
   m_ObjectHideFlags: 0

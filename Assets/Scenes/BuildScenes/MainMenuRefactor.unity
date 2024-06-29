@@ -265,28 +265,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1510697477485488711, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
-      propertyPath: worldMusic.Array.data[0].sceneNames.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510697477485488711, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
-      propertyPath: worldMusic.Array.data[2].sceneNames.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510697477485488711, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
-      propertyPath: worldMusic.Array.data[0].sceneNames.Array.data[1]
-      value: BattleAlley
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510697477485488711, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
-      propertyPath: worldMusic.Array.data[2].sceneNames.Array.data[1]
-      value: MainMenuRefactor
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510697477485488711, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
-      propertyPath: worldMusic.Array.data[2].sceneNames.Array.data[2]
-      value: IntroRefactor
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510697477485488711, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
       propertyPath: worldMusic.Array.data[2].sceneNames.Array.data[3]
-      value: IntroRefactor
+      value: MusicVenue
       objectReference: {fileID: 0}
     - target: {fileID: 4323385457940299022, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
       propertyPath: m_Name
