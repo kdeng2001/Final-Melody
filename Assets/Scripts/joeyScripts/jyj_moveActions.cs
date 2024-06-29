@@ -4,6 +4,7 @@ using UnityEngine;
 using static jyj_entityData;
 using static jyj_timer;
 using System;
+using TMPro;
 
 public class jyj_moveActions : MonoBehaviour
 {
@@ -51,6 +52,8 @@ public abstract class MoveAction
     public GameObject timer;
     public float mult;
     public string name;
+    public GameObject command;
+    public GameObject button;
 
     public abstract void moveAction();
     public abstract void endAction();
@@ -69,8 +72,11 @@ public class Drumroll : MoveAction
 
     public override void moveAction()
     {
+        mult = 0;
         Debug.Log("Press 'SPACE' as much as you can!");
-        timer.GetComponent<jyj_timer>().setMoveAction(this);
+        TextMeshProUGUI text = command.GetComponent<TextMeshProUGUI>();
+        text.text = "Press 'SPACE' as much as you can!";
+        timer.GetComponent<jyj_timer>().setMoveAction(this, text);
         timer.SetActive(true);
         //float time = Time.time;
 
@@ -95,7 +101,10 @@ public class Drumroll : MoveAction
     {
         //Debug.Log("Times up!");
         damage = (int)(moveData.power * mult);
+        TextMeshProUGUI text = command.GetComponent<TextMeshProUGUI>();
+        text.text = "Damage dealt: " + damage;
         Debug.Log("Damage dealt: " + damage);
+        button.SetActive(true);
     }
 
     private IEnumerator check()
@@ -129,8 +138,11 @@ public class Kick : MoveAction
     }
     public override void moveAction()
     {
+        mult = 0;
+        TextMeshProUGUI text = command.GetComponent<TextMeshProUGUI>();
+        text.text = "Press space at the right time!";
         Debug.Log("Press space at the right time!");
-        timer.GetComponent<jyj_precisionTimer>().setMoveAction(this);
+        timer.GetComponent<jyj_precisionTimer>().setMoveAction(this, text);
         timer.SetActive(true);
     }
 
@@ -139,6 +151,9 @@ public class Kick : MoveAction
         //Debug.Log("Times up!");
         damage = (int)(moveData.power * mult);
         Debug.Log("Damage dealt: " + damage);
+        TextMeshProUGUI text = command.GetComponent<TextMeshProUGUI>();
+        text.text = "Damage dealt: " + damage;
+        button.SetActive(true);
     }
 }
 
@@ -154,6 +169,8 @@ public class Solo : MoveAction
 
     public override void moveAction()
     {
+        TextMeshProUGUI text = command.GetComponent<TextMeshProUGUI>();
+        text.text = "Extra power!";
         Debug.Log("Extra power!");
         mult = 1.2f;
         endAction();
@@ -163,6 +180,9 @@ public class Solo : MoveAction
     {
         damage = (int)(moveData.power * mult);
         Debug.Log("Damage dealt: " + damage);
+        TextMeshProUGUI text = command.GetComponent<TextMeshProUGUI>();
+        text.text = "Damage dealt: " + damage;
+        button.SetActive(true);
     }
 }
 
@@ -178,6 +198,8 @@ public class Encouragement : MoveAction
 
     public override void moveAction()
     {
+        TextMeshProUGUI text = command.GetComponent<TextMeshProUGUI>();
+        text.text = "Encouragement Time!";
         Debug.Log("Healing time!");
         mult = 1;
         endAction();
@@ -187,6 +209,9 @@ public class Encouragement : MoveAction
     {
         heal = (int)(moveData.power * mult);
         Debug.Log("Healed: " + heal);
+        TextMeshProUGUI text = command.GetComponent<TextMeshProUGUI>();
+        text.text = "Healed: " + heal;
+        button.SetActive(true);
     }
 }
 
@@ -233,7 +258,7 @@ public class TripleChord : MoveAction
         }
 
         timer.GetComponent<jyj_precisionTimer>().setCustom(inputs);
-        timer.GetComponent<jyj_precisionTimer>().setMoveAction(this);
+        timer.GetComponent<jyj_precisionTimer>().setMoveAction(this, null);
         timer.SetActive(true);
     }
 

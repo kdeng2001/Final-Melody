@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UIElements;
+    
 public class jyj_precisionTimer : jyj_timer
 {
     [SerializeField] private float precisionThreshold;
@@ -15,11 +16,17 @@ public class jyj_precisionTimer : jyj_timer
         {
             Debug.Log("Time Up!");
             move.endAction();
+            move.timer = null;
+            GetComponentInParent<jyj_battleScene>().currentAction = false;
+            move.button.SetActive(true);
             Destroy(this);
+            //this.gameObject.SetActive(false);
+            return;
         }
 
         if (Time.time - time > precisionThreshold && Time.time - time < endThreshold)
         {
+            text.text = "Now!";
             Debug.Log("Now!");
 
             if (Input.GetKeyDown(KeyCode.Space) && !isCustom)

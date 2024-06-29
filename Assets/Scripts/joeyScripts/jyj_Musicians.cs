@@ -80,7 +80,7 @@ public class jyj_Musicians : MonoBehaviour
 
         if (index < 0)
         {
-            Debug.Log("Musician not found");
+            Debug.Log("Move not found");
             return;
         }
 
@@ -89,5 +89,6 @@ public class jyj_Musicians : MonoBehaviour
         moveDatabase.moves.RemoveAt(index);
         moveDatabase.moves.Insert(index, temp);
         musicians[location].moves.Add(moveDatabase.moves[index]);
+        Debug.Log("Move found successfully");
     }
 }
