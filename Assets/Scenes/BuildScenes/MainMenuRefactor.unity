@@ -264,10 +264,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1510697477485488711, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
-      propertyPath: worldMusic.Array.data[2].sceneNames.Array.data[3]
-      value: MusicVenue
-      objectReference: {fileID: 0}
     - target: {fileID: 4323385457940299022, guid: e42f3cd14aebd1f438b1a97ceb43ba16, type: 3}
       propertyPath: m_Name
       value: AudioManager
