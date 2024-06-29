@@ -13,7 +13,7 @@ public class TimelineDirector : MonoBehaviour
 
     private string playerName = "";
     private string currentDialogueName;
-    private void Awake()
+    public virtual void Awake()
     {
         inputField.gameObject.SetActive(false);
         //if (!timeline.gameObject.activeSelf) { return; }

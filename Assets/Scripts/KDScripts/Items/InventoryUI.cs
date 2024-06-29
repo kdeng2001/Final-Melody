@@ -77,6 +77,7 @@ public class InventoryUI : MonoBehaviour
     }
     private void UpdateUI(string itemName, int amount, string iconPath)
     {
+        Debug.Log("updateUI");
         List<TextMeshProUGUI> tmps = itemEntries[itemName].GetComponentsInChildren<TextMeshProUGUI>().ToList();
         foreach (TextMeshProUGUI tmp in tmps)
         {
@@ -121,10 +122,12 @@ public class InventoryUI : MonoBehaviour
 
     public void UpdateMoneyUI(int newValue)
     {
+        Debug.Log("updateUI");
         moneyAmount.text = newValue.ToString();
     }
     public void UpdateReputationUI(int newValue)
     {
+        Debug.Log("updateUI");
         reputationAmount.text = newValue.ToString();
     }
 

@@ -23,6 +23,7 @@ public class NPCInteractable : Interactable
     public override void OnFinishInteract()
     {
         //Debug.Log("finish npc dialogue");
+        interacting = false;
         isTalking = false;
         if (currIndex < texts.Length - 1) { currIndex++; }
         Time.timeScale = 1;
@@ -56,6 +57,7 @@ public class NPCInteractable : Interactable
     public virtual void StartDialogue()
     {
         if (currIndex >= texts.Length) { return; }
+        interacting = true;
         //Debug.Log("begin npc dialogue");
         DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
         //DialogueManager.Instance.ContinueStory();
@@ -67,6 +69,7 @@ public class NPCInteractable : Interactable
         if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
         {
             OnFinishInteract();
+            
         }
     }
 

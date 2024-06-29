@@ -21,6 +21,7 @@ public class ItemsList : MonoBehaviour
             foreach(Item i in itemComponents)
             {
                 items[i.itemName] = i;
+                if(gameObject == null) { return; }
                 i.gameObject.SetActive(false);
             }
         }

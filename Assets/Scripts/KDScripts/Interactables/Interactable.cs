@@ -7,7 +7,7 @@ public abstract class Interactable: MonoBehaviour
     [Tooltip("an icon that appears, showing that the object is interactable currently")]
     [SerializeField] private GameObject InteractableIcon;
     private bool _canInteract = false;
-
+    public bool interacting = false;
     public virtual void Start()
     {
         DisableInteraction();

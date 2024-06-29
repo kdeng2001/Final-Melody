@@ -17,8 +17,8 @@ public class DataPersistenceManager : MonoBehaviour
     [SerializeField] private string globalSaveName;
     [SerializeField] private string localSaveName;
     public static DataPersistenceManager Instance { get; private set; }
-    private GameData globalGameData;
-    private GameData localGameData;
+    public GameData globalGameData { get; private set; }
+    public GameData localGameData { get; private set; }
     private List<IDataPersistence> dataPersistenceObjects;
     private FileDataHandler globalSaveDataHandler;
     private FileDataHandler localSaveDataHandler;
@@ -96,7 +96,7 @@ public class DataPersistenceManager : MonoBehaviour
     public void LoadScene(Scene scene, LoadSceneMode mode)
     {
         //if(mode == LoadSceneMode.Single) { return; }
-        if(mode == LoadSceneMode.Additive) { return; }
+        //if(mode == LoadSceneMode.Additive) { return; }
         Debug.Log("LoadScene..." + SceneManager.GetActiveScene().name);
         if (localGameData == null && initializeDataIfNull)
         {

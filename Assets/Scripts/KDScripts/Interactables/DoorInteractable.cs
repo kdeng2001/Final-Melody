@@ -9,11 +9,13 @@ public class DoorInteractable : Interactable
     [SerializeField] public Transform positionToEnter;
     public override void OnFinishInteract()
     {
-        throw new System.NotImplementedException();
+        //base.OnFinishInteract();
+        //throw new System.NotImplementedException();
     }
 
     public override void OnStartInteract()
     {
+        //base.OnStartInteract();
         SceneTransitionManager.Instance.EnterNewScene(sceneToEnterName, entranceID);
     }
 }

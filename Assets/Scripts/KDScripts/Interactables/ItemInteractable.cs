@@ -21,14 +21,17 @@ public class ItemInteractable : Interactable
     }
     public override void OnFinishInteract()
     {
+        interacting = false;
         if(obtained) { return; }
         itemWasObtained?.Invoke(item.itemName, item.amount, item.iconFilePath);
         item.HandleObtained();
         obtained = true;
+        itemWasObtained -= InventoryUI.Instance.inventory.UpdateItem;
     }
 
     public override void OnStartInteract()
     {
+        interacting = true;
         // continue dialogue
         if (isTalking)
         {
@@ -49,22 +52,23 @@ public class ItemInteractable : Interactable
             DialogueManager.Instance.currentStory.variablesState["item"] = item.itemName;
             DialogueManager.Instance.currentStory.variablesState["amount"] = item.amount.ToString();
             isTalking = true;
+            itemWasObtained += InventoryUI.Instance.inventory.UpdateItem;
         }
         // finish dialogue
         if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
         {
-
+            
             OnFinishInteract();
         }
     }
 
-    public override void Start()
-    {
-        base.Start();
-        itemWasObtained += InventoryUI.Instance.inventory.UpdateItem;
-    }
-    private void OnDestroy()
-    {
-        itemWasObtained -= InventoryUI.Instance.inventory.UpdateItem;
-    }
+    //public override void Start()
+    //{
+    //    base.Start();
+        
+    //}
+    //private void OnDisable()
+    //{
+        
+    //}
 }

@@ -10,6 +10,21 @@ public class IntroDirector : TimelineDirector
     private string playerName = "";
     private string currentDialogueName;
 
+    [SerializeField] private Sprite drumsIcon;
+    [SerializeField] private Sprite guitarIcon;
+    [SerializeField] private Sprite keytarIcon;
+    public override void Awake()
+    {
+        base.Awake();
+        if(
+            DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Guitar") ||
+            DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Keytar") ||
+            DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Drums")
+            )
+        {
+            timeline.gameObject.SetActive(false);
+        }
+    }
     public override void StartDialogue(TextAsset asset)
     {
         Player.Instance.PauseMovement();
@@ -34,6 +49,7 @@ public class IntroDirector : TimelineDirector
             case 0:
                 {
                     momCount++;
+                    AddInstrument();
                     StartCoroutine(ResumeAndWaitDialogue(1.1f));
                     return;
                 }
@@ -76,5 +92,15 @@ public class IntroDirector : TimelineDirector
     { 
         DialogueManager.Instance.currentStory.variablesState["player_name"] = playerName;
         setNameInInk -= SetName;
+    }
+
+    private void AddInstrument()
+    {
+        string instrument = (string)DialogueManager.Instance.currentStory.variablesState["instrument_name"];
+        Sprite icon;
+        if (instrument == "Guitar") { icon = guitarIcon; }
+        else if (instrument == "Keytar") { icon = keytarIcon; }
+        else { icon = drumsIcon; }
+        InventoryUI.Instance.inventory.UpdateItem(instrument, 1, icon.name);
     }
 }

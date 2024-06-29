@@ -35,7 +35,7 @@ public class Interactor : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         //Debug.Log("trigger exit: " + other.name);
-        if(HasInteractableTag(other))
+        if(HasInteractableTag(other) && !interactable.interacting)
         {
             if(interactable == other.GetComponent<Interactable>()) 
             {

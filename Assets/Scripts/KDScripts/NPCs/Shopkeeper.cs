@@ -44,13 +44,14 @@ public class Shopkeeper : NPCInteractable, IDataPersistence
             // stop listening for finish shopping once shopping is done
             ShopUIManager.Instance.finishShopping -= OnStartInteract;
             Time.timeScale = 1;
+            interacting = false;
         }
     }
 
     public override void OnStartInteract()
     {
         // prepare the shopping experience
-        if(currIndex == 0) { ShopUIManager.Instance.PopulateShopMenu(itemsForSale);}
+        if(currIndex == 0) { ShopUIManager.Instance.PopulateShopMenu(itemsForSale); interacting = true; }
         // allow player to finish shopping
         if (currIndex == 1) 
         {

@@ -17,6 +17,9 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("continue clicked");
         DataPersistenceManager.Instance.LoadGame();
+        if(DataPersistenceManager.Instance.globalGameData == null) { return; }
+        //SceneManager.LoadScene(DataPersistenceManager.Instance.globalGameData.sceneIndex);
+        SceneManager.LoadSceneAsync("KDEssentials", LoadSceneMode.Additive);
         //SceneManager.LoadScene(1);
     }
 }
