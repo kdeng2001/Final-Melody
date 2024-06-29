@@ -8,6 +8,7 @@ public class Settings : MonoBehaviour
 {
     [SerializeField] private GameObject options;
     [SerializeField] private Animator optionsAnim;
+    [SerializeField] public Button ExitButton;
     public static Settings Instance;
     public Slider slider;
     public float masterVolume;
