@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Brown
+  m_Name: MT_Ground_carpet_MsuicVenue
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: 65cf3b8ab89d1dc47a682f46773f683f, type: 2}
+  m_Parent: {fileID: 2100000, guid: 18160829bf1c33a4e857830bf6436b16, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -25,29 +25,18 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 34d8e8966cb47a44aa3d14bb381616cf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 34d8e8966cb47a44aa3d14bb381616cf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - _GlossMapScale: 1
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Parallax: 0.02
-    - _Smoothness: 0.5
-    m_Colors:
-    - _BaseColor: {r: 0.51886785, g: 0.29735544, b: 0.119927, a: 1}
-    - _Color: {r: 0.5188678, g: 0.2973554, b: 0.11992697, a: 1}
+    m_Floats: []
+    m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &5836614605614744351
+--- !u!114 &3714316878838974482
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
