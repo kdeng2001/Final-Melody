@@ -105,7 +105,6 @@ MonoBehaviour:
   worldMusic:
   - sceneNames:
     - StreetRefactor
-    - MainMenuRefactor
     - IntroRefactor
     musicLoop:
       idInternal: 0
@@ -120,6 +119,7 @@ MonoBehaviour:
   - sceneNames:
     - TempRoom1
     - BattleAlley
+    - MainMenuRefactor
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
