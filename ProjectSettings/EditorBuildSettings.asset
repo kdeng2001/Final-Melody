@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BuildScenes/MockBattleScene.unity
     guid: 98e8d4a1593e48e45a8b852d954d6f10
+  - enabled: 1
+    path: Assets/Scenes/BuildScenes/VirtualRook_jyj_KD_BattleStage.unity
+    guid: f80f9af8a77eff74f85661419ea49cbe
   m_configObjects: {}

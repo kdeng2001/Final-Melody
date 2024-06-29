@@ -17,9 +17,11 @@ public class IntroDirector : TimelineDirector
     {
         base.Awake();
         if(
+            DataPersistenceManager.Instance != null && (
             DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Guitar") ||
             DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Keytar") ||
             DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Drums")
+            )
             )
         {
             timeline.gameObject.SetActive(false);

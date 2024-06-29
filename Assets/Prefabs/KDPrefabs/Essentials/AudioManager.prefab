@@ -127,6 +127,7 @@ MonoBehaviour:
   battleMusic:
   - sceneNames:
     - MockBattleScene
+    - VirtualRook_jyj_KD_BattleStage
     musicLoop:
       idInternal: 0
       valueGuidInternal: 

@@ -6225,11 +6225,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCRusty
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6634483886878251102, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2177030312483865390, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1145779605}
   m_SourcePrefab: {fileID: 100100000, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+--- !u!1 &1145779602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2177030312483865390, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+  m_PrefabInstance: {fileID: 1145779601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1145779603 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2532462245153387392, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+  m_PrefabInstance: {fileID: 1145779601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1145779604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9061157170251461228, guid: 14870938c2c7453468d4a5dd15ade010, type: 3}
+  m_PrefabInstance: {fileID: 1145779601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1145779605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145779602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6944bc5992a90b49b7671176788a0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractableIcon: {fileID: 1145779604}
+  interacting: 0
+  texts:
+  - {fileID: 4900000, guid: 44c8ea3bc4a721d45ac5c5d637a26eb8, type: 3}
+  upLook: {fileID: 1290668349, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
+  downLook: {fileID: 1714268476, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
+  leftLook: {fileID: -1499875663, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
+  rightLook: {fileID: -422296248, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
+  currentSprite: {fileID: 1145779603}
+  HasBeenBeaten: 0
+  BattleScene: VirtualRook_jyj_KD_BattleStage
 --- !u!1001 &1223292321
 PrefabInstance:
   m_ObjectHideFlags: 0

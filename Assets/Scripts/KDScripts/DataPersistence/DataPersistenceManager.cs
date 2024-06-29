@@ -97,6 +97,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         //if(mode == LoadSceneMode.Single) { return; }
         //if(mode == LoadSceneMode.Additive) { return; }
+        if(scene.name == "MockBattleScene" || scene.name == "VirtualRook_jyj_KD_BattleStage") { return; }
         Debug.Log("LoadScene..." + SceneManager.GetActiveScene().name);
         if (localGameData == null && initializeDataIfNull)
         {
