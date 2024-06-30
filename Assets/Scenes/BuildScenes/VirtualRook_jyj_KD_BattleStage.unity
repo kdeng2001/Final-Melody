@@ -276,7 +276,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a480d17d88bae0e40b137b9775b9fd2d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 986aaeb7f7c249c4ab1225a57b32e898, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee5f433ff23bc4429db590b2e7cfaa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drummer: {fileID: 21300000, guid: a480d17d88bae0e40b137b9775b9fd2d, type: 3}
+  drummer: {fileID: 21300000, guid: 986aaeb7f7c249c4ab1225a57b32e898, type: 3}
   guitarist: {fileID: 21300000, guid: c9353582880eec7439d4a9d472a56f9e, type: 3}
   keytarist: {fileID: 21300000, guid: 50ba984d23ca152459d0b9151ae1d6d2, type: 3}
   sprite: {fileID: 158879948}

@@ -9,22 +9,25 @@ public class BattleSprite : MonoBehaviour
     [SerializeField] private Sprite keytarist;
     [SerializeField] private SpriteRenderer sprite;
 
-    private void Awake()
+    private void Start()
     {
         if (
-            DataPersistenceManager.Instance != null && DataPersistenceManager.Instance.globalGameData != null &&
-            DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Guitar")
+            DataPersistenceManager.Instance != null && DataPersistenceManager.Instance.localGameData != null &&
+            DataPersistenceManager.Instance.localGameData.itemAmountInventory.ContainsKey("Guitar")
             )
         {
+            Debug.Log("guitarist battler!");
             sprite.sprite = guitarist;
         }
-        else if (DataPersistenceManager.Instance != null && DataPersistenceManager.Instance.globalGameData != null &&
-            DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Drums"))
+        else if (DataPersistenceManager.Instance != null && DataPersistenceManager.Instance.localGameData != null &&
+            DataPersistenceManager.Instance.localGameData.itemAmountInventory.ContainsKey("Drums"))
         {
+            Debug.Log("drummer battler!");
             sprite.sprite = drummer;
         }
         else
         {
+            Debug.Log("drummer keytarist!");
             sprite.sprite = keytarist;
         }
     }
