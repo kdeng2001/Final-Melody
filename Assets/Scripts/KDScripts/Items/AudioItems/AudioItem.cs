@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GuitarImpactItem : Item
+public class AudioItem : Item
 {
     public override void UseItem()
     {

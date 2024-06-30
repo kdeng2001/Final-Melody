@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 68cea3a9cf41e945b0daf5a032bb836d
     GuidInternal: 
-    m_lastTime: -8584827926415080815
+    m_lastTime: -8584818964644537102
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ed2355a2df2f3549b31dc0d0ee21ba96
     GuidInternal: 
-    m_lastTime: -8584819698407743459
+    m_lastTime: -8584818954632997645
     List:
     - name: Main_Soundbank
       guid: 9486bfd2f4a4c24980b1bad61c2b0283
@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: fa0d77da676ffe4bbedf756d31c34865
       Path: Events\Default Work Unit\Play_Chime
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 17
+      minDuration: 4
     - name: Play_Footsteps
       guid: 9047f9585a6f8b4b992439fa31c53253
       id: 3854155799
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: 3a9aeae4682df84ea07eb68949df65e5
       Path: Events\Default Work Unit\Play_Guitar_Impact
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2
+      minDuration: 2
     - name: Play_guitar_pick_click_clack
       guid: 1813ea2b2c862242ba9c30728a503baa
       id: 1957959728
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: e25d9bff99e5fb469aae7848b716d232
       Path: Events\Default Work Unit\Play_Guitar_Snap
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2
+      minDuration: 2
     - name: Play_Guitar_Swoosh
       guid: b837fe886d61554187d7519e6927d29e
       id: 1850691842
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: b837fe886d61554187d7519e6927d29e
       Path: Events\Default Work Unit\Play_Guitar_Swoosh
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2
+      minDuration: 2
     - name: Play_Jazz_Bar_Ambience
       guid: 5262650ebbb1a54b81daf08408a62704
       id: 1685503222
@@ -230,8 +230,8 @@ MonoBehaviour:
         guid: 51c237cf28563e4abc12ae15a872e5d0
       Path: Events\Default Work Unit\Play_Jazz_Fight_1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 188
+      minDuration: 141.93163
     - name: Play_Overworld
       guid: c25aecdd4f4c054c91d4227a1494d148
       id: 1841649256
@@ -366,8 +366,8 @@ MonoBehaviour:
         guid: 34a6ec33329f0a45b299a6c6e8d6981c
       Path: Events\Default Work Unit\Play_static_y_chords
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 22
+      minDuration: 22
     - name: Play_thick_paper__ticket_wobble_
       guid: 408ed7e2d43df94abc72be004b7430fc
       id: 4236828667
@@ -516,8 +516,73 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 56a82baacaad0e4fa001ad48cb4495aa
     GuidInternal: 
-    m_lastTime: -8584827926415150879
-    List: []
+    m_lastTime: -8584818966657491372
+    List:
+    - name: MasterVolume
+      guid: 44e4eb3d1cad5a429a0acf51da932335
+      id: 2918011349
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 56a82baacaad0e4fa001ad48cb4495aa
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 916447a8b3018f4abbf7777631972fe2
+      - ElementName: MasterVolume
+        ObjectType: 13
+        guid: 44e4eb3d1cad5a429a0acf51da932335
+      Path: Game Parameters\Default Work Unit\Volume\MasterVolume
+    - name: MusicVolume
+      guid: a21fbe60d125504f829b30e36137841d
+      id: 2346531308
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 56a82baacaad0e4fa001ad48cb4495aa
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 916447a8b3018f4abbf7777631972fe2
+      - ElementName: MusicVolume
+        ObjectType: 13
+        guid: a21fbe60d125504f829b30e36137841d
+      Path: Game Parameters\Default Work Unit\Volume\MusicVolume
+    - name: SFXVolume
+      guid: 6c3844516cbfc248bc822eb84fd96247
+      id: 988953028
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 56a82baacaad0e4fa001ad48cb4495aa
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 916447a8b3018f4abbf7777631972fe2
+      - ElementName: SFXVolume
+        ObjectType: 13
+        guid: 6c3844516cbfc248bc822eb84fd96247
+      Path: Game Parameters\Default Work Unit\Volume\SFXVolume
+    - name: Volume
+      guid: 916447a8b3018f4abbf7777631972fe2
+      id: 2415836739
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 56a82baacaad0e4fa001ad48cb4495aa
+      - ElementName: Volume
+        ObjectType: 4
+        guid: 916447a8b3018f4abbf7777631972fe2
+      Path: Game Parameters\Default Work Unit\Volume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:

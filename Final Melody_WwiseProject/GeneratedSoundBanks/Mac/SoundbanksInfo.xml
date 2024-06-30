@@ -39,17 +39,29 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{9DE6A1CB-1B7B-60A2-DC9E-200FC3631A9B}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{49FDCD98-16B3-B9F8-516C-66CA0FFCEC5B}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
+				<File Id="4149405" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chime 3.wav</ShortName>
+					<CachePath>SFX/chime 3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="65309078" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rock Song 1.wav</ShortName>
 					<CachePath>SFX/Rock Song 1_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="172635804" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar impact 1.wav</ShortName>
+					<CachePath>SFX/guitar impact 1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="200926149" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.10.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="253651070" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>static-y chords.wav</ShortName>
+					<CachePath>SFX/static-y chords_818F3B66.wem</CachePath>
 				</File>
 				<File Id="426595442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rock Song 2.wav</ShortName>
@@ -62,6 +74,18 @@
 				<File Id="505505623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.3.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="578811595" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jazz Song 2 V1.wav</ShortName>
+					<CachePath>SFX/Jazz Song 2 V1_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="601627150" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jazz 1 .wav</ShortName>
+					<CachePath>SFX/Jazz 1 _FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="605139908" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar swoosh.wav</ShortName>
+					<CachePath>SFX/guitar swoosh_818F3B66.wem</CachePath>
 				</File>
 				<File Id="645619578" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.5.wav</ShortName>
@@ -79,9 +103,29 @@
 					<ShortName>BOOT_CONC CLEAN_WALK.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK_818F3B66.wem</CachePath>
 				</File>
+				<File Id="693247168" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>impact 2.wav</ShortName>
+					<CachePath>SFX/impact 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="698235323" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chime 2.wav</ShortName>
+					<CachePath>SFX/chime 2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="702972314" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.7.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="714191138" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar string snap 2.wav</ShortName>
+					<CachePath>SFX/guitar string snap 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="843622230" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>electronic chimes.wav</ShortName>
+					<CachePath>SFX/electronic chimes_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1005809217" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar string snap.wav</ShortName>
+					<CachePath>SFX/guitar string snap_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1029415312" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.2.wav</ShortName>
@@ -93,6 +137,13 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="2969046030" Name="Play_Chime" DurationType="OneShot" DurationMin="4" DurationMax="17">
+					<MediaRefs>
+						<MediaRef Id="4149405"/>
+						<MediaRef Id="698235323"/>
+						<MediaRef Id="843622230"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="200926149"/>
@@ -103,6 +154,29 @@
 						<MediaRef Id="702972314"/>
 						<MediaRef Id="1029415312"/>
 						<MediaRef Id="1051922225"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1121667981" Name="Play_Guitar_Impact" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="172635804"/>
+						<MediaRef Id="693247168"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1913203247" Name="Play_Guitar_Snap" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="714191138"/>
+						<MediaRef Id="1005809217"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1850691842" Name="Play_Guitar_Swoosh" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="605139908"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2231034946" Name="Play_Jazz_Fight_1" DurationType="OneShot" DurationMin="141.93163" DurationMax="188">
+					<MediaRefs>
+						<MediaRef Id="578811595"/>
+						<MediaRef Id="601627150"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3760154813" Name="Play_Overworld_02" DurationType="Infinite">
@@ -121,8 +195,13 @@
 						<MediaRef Id="426595442"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3447001990" Name="Play_static_y_chords" DurationType="OneShot" DurationMin="22" DurationMax="22">
+					<MediaRefs>
+						<MediaRef Id="253651070"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9B948F51-5CD2-168C-7024-FBDDB49E409B}</FileHash>
+	<FileHash>{B47215FD-0F37-55BA-690A-A053D3F32FA9}</FileHash>
 </SoundBanksInfo>

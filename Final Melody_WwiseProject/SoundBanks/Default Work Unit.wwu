@@ -5,9 +5,15 @@
 			<ChildrenList>
 				<SoundBank Name="Main_Soundbank" ID="{D2BF8694-A4F4-49C2-80B1-BAD61C2B0283}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Guitar_Swoosh" ID="{88FE37B8-616D-4155-87D7-519E6927D29E}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Overworld_02" ID="{28AAADC8-E56A-43E7-8FE2-E079CF0BB97C}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_static_y_chords" ID="{33ECA634-9F32-450A-B299-A6C6E8D6981C}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Rock_Bar_Ambience" ID="{36D1B874-1D15-46A6-B4CC-B0BD148BFDD5}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Guitar_Snap" ID="{FF9B5DE2-E599-46FB-9AAE-7848B716D232}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Jazz_Fight_1" ID="{CF37C251-5628-4A3E-BC12-AE15A872E5D0}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{58F94790-6F5A-4B8B-9924-39FA31C53253}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Chime" ID="{DA770DFA-6F67-4BFE-BEDF-756D31C34865}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Guitar_Impact" ID="{E4EA9A3A-2D68-4EF8-A07E-B68949DF65E5}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Rock_Battles" ID="{852B34B6-51ED-4FD9-940A-09D58A941152}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

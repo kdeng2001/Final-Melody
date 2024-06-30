@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.004821769, g: 0.0030422073, b: 0.0126572, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8966,6 +8966,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 0.68934196, z: 2}
   m_Center: {x: 0, y: 0.0978676, z: 0}
+--- !u!1 &1042796893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042796895}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1042796895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042796893}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1049197750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 77df3295d84c06e40a4be544e24839de, type: 3}
@@ -20318,11 +20349,39 @@ MonoBehaviour:
     costPerUnit: 2000
     stockOfUnits: 0
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: chime
+    itemName: chime_SFX
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: guitar_impact
+    itemName: guitar_snap_SFX
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: jazz_fight_MUSIC
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: rock_ambience_MUSIC
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: static_y_chords_SFX
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: guitar_impact_SFX
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: guitar_swoosh_SFX
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: overworld_MUSIC
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: rock_battle_MUSIC
     costPerUnit: 0
     stockOfUnits: 1
   id: e3587773-1d36-4430-982c-b087cfb1eecb
@@ -20899,3 +20958,4 @@ SceneRoots:
   - {fileID: 831690015}
   - {fileID: 739385278}
   - {fileID: 1403968774}
+  - {fileID: 1042796895}
