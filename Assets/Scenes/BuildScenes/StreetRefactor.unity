@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.004821769, g: 0.0030422073, b: 0.0126572, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12296,7 +12296,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1403968774}
-  - component: {fileID: 1403968773}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -12304,31 +12303,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1403968773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403968772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c55cdb72b777e514aa1b21832c48b3b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 3911b448d43d12747a8e84beef3fb36b, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &1403968774
 Transform:
   m_ObjectHideFlags: 0
@@ -20343,6 +20317,14 @@ MonoBehaviour:
     itemName: give2000reputation
     costPerUnit: 2000
     stockOfUnits: 0
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: chime
+    costPerUnit: 0
+    stockOfUnits: 1
+  - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+    itemName: guitar_impact
+    costPerUnit: 0
+    stockOfUnits: 1
   id: e3587773-1d36-4430-982c-b087cfb1eecb
 --- !u!4 &2927799680571685906
 Transform:

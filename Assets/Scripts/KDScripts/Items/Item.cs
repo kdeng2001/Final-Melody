@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public abstract class Item : MonoBehaviour, IDataPersistence
 {
+    [Header("Audio")]
+    [SerializeField] public AK.Wwise.Event pickupWwiseSFX;
+    //[SerializeField] public AudioSource pickupAudioSFX;
+
     [SerializeField] public string itemName = "item";
     [SerializeField] public string id;
     [SerializeField] public int amount = 1;
@@ -18,16 +22,76 @@ public abstract class Item : MonoBehaviour, IDataPersistence
     [SerializeField] private SpriteRenderer icon;
     //[System.NonSerialized]
     public bool obtained = false;
-
+    public bool isSoundPlaying { get; private set; }
     private void Awake()
     {
         //iconFilePath = AssetDatabase.GetAssetPath(icon.sprite);
         iconFilePath = icon.sprite.name;
         //Debug.Log(icon.sprite.name);
         //Debug.Log("iconFilePath: " + iconFilePath);
+        isSoundPlaying = false;
     }
 
     public abstract void UseItem();
+    public virtual void PlaySFX()
+    {
+        // wwise
+        if(pickupWwiseSFX != null && !isSoundPlaying) 
+        { 
+            if(AudioManager.Instance.itemAudio != null) { AudioManager.Instance.itemAudio.StopSFX(false); }
+            pickupWwiseSFX.Post(AudioManager.Instance.gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);
+            isSoundPlaying = true;
+            AudioManager.Instance.PauseCurrentMusic();
+            AudioManager.Instance.itemAudio = this;
+        }
+        //// audio source
+        //else if(pickupAudioSFX != null && !pickupAudioSFX) 
+        //{ 
+        //    pickupAudioSFX.Play();
+        //    AudioManager.Instance.PauseCurrentMusic();
+            
+        //}
+    }
+
+    public void StopSFX(bool resume)
+    {
+        if(pickupWwiseSFX != null)
+        {
+            Debug.Log("StopSFX");
+            pickupWwiseSFX.Stop(AudioManager.Instance.gameObject);
+            isSoundPlaying = false;
+            if (resume) { AudioManager.Instance.ResumeCurrentMusic(); }
+            AudioManager.Instance.itemAudio = null;
+        }
+        //else if(pickupAudioSFX != null)
+        //{
+        //    pickupAudioSFX.Stop();
+        //    AudioManager.Instance.ResumeCurrentMusic();
+        //}
+    }
+
+    void CallBackFunction(object in_cookie, AkCallbackType callType, object in_info)
+    {
+        if (callType == AkCallbackType.AK_EndOfEvent)
+        {
+            // return if unnatural stop / already stopped
+            if(!isSoundPlaying) { return; }
+            // stop
+            StopSFX(true);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void LoadData(GameData data)
     {

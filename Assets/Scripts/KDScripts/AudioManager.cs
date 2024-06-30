@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
 
     private AK.Wwise.Event currentWorldMusic;
     private AK.Wwise.Event currentBattleMusic;
+
+    public Item itemAudio;
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -42,6 +44,7 @@ public class AudioManager : MonoBehaviour
     }
     public void PlaySceneMusic(Scene scene, LoadSceneMode mode)
     {
+        if(itemAudio != null) { itemAudio.StopSFX(true); }
         //Debug.Log(scene.name + " mode: " + mode);
         //if(LoadSceneMode.Additive == mode) { Debug.Log(scene.name + " mode: " + mode + " will not play"); return; }
         // loop to find corresponding scene
@@ -74,7 +77,8 @@ public class AudioManager : MonoBehaviour
     }
     public void PlayBattleMusic(Scene scene, LoadSceneMode mode)
     {
-        if(LoadSceneMode.Additive != mode) { return; }
+        if (itemAudio != null) { itemAudio.StopSFX(true); }
+        if (LoadSceneMode.Additive != mode) { return; }
         foreach (BattleMusicLoops loop in battleMusic)
         {
             foreach (string sceneName in loop.sceneNames)
@@ -121,6 +125,22 @@ public class AudioManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private bool currentMusicIsPlaying = true;
+    public void PauseCurrentMusic()
+    {
+        if(!currentMusicIsPlaying) { return; }
+        AkSoundEngine.StopPlayingID(currentMusicID);
+        currentMusicIsPlaying = false;
+    }
+
+    public void ResumeCurrentMusic() 
+    {
+        if (currentMusicIsPlaying) { return; }
+        AkSoundEngine.StopPlayingID(currentMusicID);
+        currentMusicID = currentWorldMusic.Post(gameObject);
+        currentMusicIsPlaying = true;
     }
 }
 

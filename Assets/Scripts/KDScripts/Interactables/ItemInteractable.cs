@@ -53,6 +53,7 @@ public class ItemInteractable : Interactable
             DialogueManager.Instance.currentStory.variablesState["amount"] = item.amount.ToString();
             isTalking = true;
             itemWasObtained += InventoryUI.Instance.inventory.UpdateItem;
+            if (item.pickupWwiseSFX != null/* || item.pickupAudioSFX != null*/) { item.PlaySFX(); }
         }
         // finish dialogue
         if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)

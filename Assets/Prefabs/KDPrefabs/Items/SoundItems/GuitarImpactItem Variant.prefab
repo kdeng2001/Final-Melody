@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6090666257735542731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_Name
+      value: GuitarImpactItem Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538588960024020446, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7578030582084436387}
+  m_SourcePrefab: {fileID: 100100000, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+--- !u!1 &3608520524257414759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7391091972931922348, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+  m_PrefabInstance: {fileID: 6090666257735542731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4781462601061469118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1647559170278124661, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+  m_PrefabInstance: {fileID: 6090666257735542731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5923215820666265823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 483320955196770068, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+  m_PrefabInstance: {fileID: 6090666257735542731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7578030582084436387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5923215820666265823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6dec06b4c5a7842b8ff6304ce0e71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupWwiseSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8e59bbbe939cd6a4b8e3212f6d0c26b5, type: 2}
+  itemName: guitar_impact
+  id: 
+  amount: 1
+  reusable: 1
+  model: {fileID: 3608520524257414759}
+  interactable: {fileID: 4781462601061469118}
+  interactIcon: {fileID: 9001667634077944376}
+  icon: {fileID: 7424714508911419921}
+  obtained: 0
+--- !u!212 &7424714508911419921 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3715335771735082458, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+  m_PrefabInstance: {fileID: 6090666257735542731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9001667634077944376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2912207952931728883, guid: 7ace1ef21ccb467478add9c61eef3785, type: 3}
+  m_PrefabInstance: {fileID: 6090666257735542731}
+  m_PrefabAsset: {fileID: 0}
