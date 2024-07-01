@@ -1138,6 +1138,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3483888288589326888, guid: 3d49dcb744eb9094fa30a7943f8d39f7, type: 3}
+      propertyPath: openDoorSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: bcf8a5bc1d044944989f6e967828e3a5, type: 2}
+    - target: {fileID: 3483888288589326888, guid: 3d49dcb744eb9094fa30a7943f8d39f7, type: 3}
+      propertyPath: closeDoorSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b49f9d9e9e18d346993234f1123d1f5, type: 2}
     - target: {fileID: 4276266863600236837, guid: 3d49dcb744eb9094fa30a7943f8d39f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
