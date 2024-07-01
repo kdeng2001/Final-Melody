@@ -118,13 +118,23 @@ MonoBehaviour:
       WwiseObjectReference: {fileID: 11400000, guid: 8e59bbbe939cd6a4b8e3212f6d0c26b5, type: 2}
   - sceneNames:
     - TempRoom1
-    - MainMenuRefactor
-    - IntroRefactor
     - MusicVenue
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 63d52b0eff132d345a508d2a4a5adff0, type: 2}
+  - sceneNames:
+    - MainMenuRefactor
+    musicLoop:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: beb0b432bd5cf7b4fa48bfc5dd387b64, type: 2}
+  - sceneNames:
+    - IntroRefactor
+    musicLoop:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: ea791505aa3bff3499ce7c28343a428e, type: 2}
   battleMusic:
   - sceneNames:
     - MockBattleScene
@@ -133,3 +143,4 @@ MonoBehaviour:
       idInternal: 0
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 11400000, guid: 8e59bbbe939cd6a4b8e3212f6d0c26b5, type: 2}
+  itemAudio: {fileID: 0}
