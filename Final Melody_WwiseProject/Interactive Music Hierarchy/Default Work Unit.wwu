@@ -1323,8 +1323,8 @@
 											<Custom>
 												<MusicPlaylistItem Name="" ID="{6EAA21C3-CA37-46E6-9F25-06670C2EA089}" ShortID="608193209">
 													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-														<Property Name="PlayMode" Type="int16" Value="3"/>
 													</PropertyList>
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{0B846604-3936-4B82-AA8F-941393D9F25E}" ShortID="501136935">
@@ -1334,6 +1334,16 @@
 															<ReferenceList>
 																<Reference Name="Segment">
 																	<ObjectRef Name="Indie 1" ID="{FFEF7566-0DAE-4123-8581-34731159C512}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{A3CC5265-A7A1-41AC-96B0-503050A4C1FF}" ShortID="700266435">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="Indie 2" ID="{B624C617-4567-48D2-90B8-FC441031CB03}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
 																</Reference>
 															</ReferenceList>
 														</MusicPlaylistItem>
