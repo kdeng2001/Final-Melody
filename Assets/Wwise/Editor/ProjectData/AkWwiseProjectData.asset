@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ed2355a2df2f3549b31dc0d0ee21ba96
     GuidInternal: 
-    m_lastTime: -8584818954632997645
+    m_lastTime: -8584817494065707672
     List:
     - name: Main_Soundbank
       guid: 9486bfd2f4a4c24980b1bad61c2b0283
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d283a4a3cb772340b99967a8dc3a62d2
     GuidInternal: 
-    m_lastTime: -8584819698425702364
+    m_lastTime: -8584817495378817265
     List:
     - name: Play_Chime
       guid: fa0d77da676ffe4bbedf756d31c34865
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: b837fe886d61554187d7519e6927d29e
       Path: Events\Default Work Unit\Play_Guitar_Swoosh
       maxAttenuation: 0
-      maxDuration: 2
-      minDuration: 2
+      maxDuration: 1.0864431
+      minDuration: 1.0864431
     - name: Play_Jazz_Bar_Ambience
       guid: 5262650ebbb1a54b81daf08408a62704
       id: 1685503222
@@ -740,7 +740,7 @@ MonoBehaviour:
     m_lastTime: -8584827926414960707
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000
+  ExpandedWaapiItemIds: 05000000060000000700000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

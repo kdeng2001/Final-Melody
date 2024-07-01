@@ -39,13 +39,17 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{49FDCD98-16B3-B9F8-516C-66CA0FFCEC5B}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{3D259CD3-8AB2-EFBB-DE23-67AEABF4A29D}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
 				<File Id="4149405" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>chime 3.wav</ShortName>
 					<CachePath>SFX/chime 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="27257627" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Indie1_worldised.wav</ShortName>
+					<CachePath>SFX/Indie1_worldised_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="65309078" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rock Song 1.wav</ShortName>
@@ -58,6 +62,10 @@
 				<File Id="200926149" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.10.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="245976823" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Intro music loop (worldised).wav</ShortName>
+					<CachePath>SFX/Intro music loop (worldised)_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="253651070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>static-y chords.wav</ShortName>
@@ -85,7 +93,7 @@
 				</File>
 				<File Id="605139908" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>guitar swoosh.wav</ShortName>
-					<CachePath>SFX/guitar swoosh_818F3B66.wem</CachePath>
+					<CachePath>SFX/guitar swoosh_91713290.wem</CachePath>
 				</File>
 				<File Id="645619578" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.5.wav</ShortName>
@@ -122,6 +130,10 @@
 				<File Id="843622230" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>electronic chimes.wav</ShortName>
 					<CachePath>SFX/electronic chimes_818F3B66.wem</CachePath>
+				</File>
+				<File Id="938790332" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Indie 2 - worldised.wav</ShortName>
+					<CachePath>SFX/Indie 2 - worldised_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="1005809217" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>guitar string snap.wav</ShortName>
@@ -168,9 +180,20 @@
 						<MediaRef Id="1005809217"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1850691842" Name="Play_Guitar_Swoosh" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="1850691842" Name="Play_Guitar_Swoosh" DurationType="OneShot" DurationMin="1.0864431" DurationMax="1.0864431">
 					<MediaRefs>
 						<MediaRef Id="605139908"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2988589071" Name="Play_Indie" DurationType="OneShot" DurationMin="138.26613" DurationMax="138.26613">
+					<MediaRefs>
+						<MediaRef Id="27257627"/>
+						<MediaRef Id="938790332"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2124979004" Name="Play_Intro_Dream" DurationType="OneShot" DurationMin="55.07127" DurationMax="55.07127">
+					<MediaRefs>
+						<MediaRef Id="245976823"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2231034946" Name="Play_Jazz_Fight_1" DurationType="OneShot" DurationMin="141.93163" DurationMax="188">
@@ -203,5 +226,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BC2C78A2-EF97-44F5-18D3-1064331614BD}</FileHash>
+	<FileHash>{405CE82F-E703-FC6E-3275-AB87C7316695}</FileHash>
 </SoundBanksInfo>

@@ -662,7 +662,7 @@ MonoBehaviour:
   introLoop:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 347b8e435df307641871e734be19b779, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 40577a02c31f9d04e8978b6075e1c2a9, type: 2}
 --- !u!4 &700750975
 Transform:
   m_ObjectHideFlags: 0

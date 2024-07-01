@@ -285,6 +285,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Intro_Dream" ID="{B97FCC21-DE58-4156-83E1-14B381086A1C}">
+					<ChildrenList>
+						<Action Name="" ID="{E3C061E6-52FA-468E-AE42-0B915E7B8E0B}" ShortID="1022449954">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Intro Dream" ID="{8FFD79D0-DA8F-40FE-8F3C-19A81510427C}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Indie" ID="{AAAF1A51-CDCE-492F-9280-C492486D17D1}">
+					<ChildrenList>
+						<Action Name="" ID="{B1F7BDBF-309F-4C21-A88A-FEEC1C1E79EF}" ShortID="378420216">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Indie" ID="{FFEF7566-0DAE-4123-8581-34731159C512}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

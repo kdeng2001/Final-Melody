@@ -3,8 +3,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	1121667981	Play_Guitar_Impact			\Default Work Unit\Play_Guitar_Impact	
 	1850691842	Play_Guitar_Swoosh			\Default Work Unit\Play_Guitar_Swoosh	
 	1913203247	Play_Guitar_Snap			\Default Work Unit\Play_Guitar_Snap	
+	2124979004	Play_Intro_Dream			\Default Work Unit\Play_Intro_Dream	
 	2231034946	Play_Jazz_Fight_1			\Default Work Unit\Play_Jazz_Fight_1	
 	2969046030	Play_Chime			\Default Work Unit\Play_Chime	
+	2988589071	Play_Indie			\Default Work Unit\Play_Indie	
 	3447001990	Play_static_y_chords			\Default Work Unit\Play_static_y_chords	
 	3737082598	Play_Rock_Bar_Ambience			\Default Work Unit\Play_Rock_Bar_Ambience	
 	3760154813	Play_Overworld_02			\Default Work Unit\Play_Overworld_02	
@@ -23,16 +25,18 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4149405	chime 3	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\chime 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chime\chime 3		705696
+	27257627	Indie1_worldised	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Indie1_worldised_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Indie\Indie1_worldised		22556256
 	65309078	Rock Song 1	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Song 1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 1\Rock Song 1		29977528
 	172635804	guitar impact 1	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar impact 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Impact\guitar impact 1		352896
 	200926149	BOOT_CONC CLEAN_WALK_10	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_10		63028
+	245976823	Intro music loop (worldised)	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Intro music loop (worldised)_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Intro Dream\Intro music loop (worldised)		9714668
 	253651070	static-y chords	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\static-y chords_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\static-y chords		3880896
 	426595442	Rock Song 2	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Song 2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 2\Rock Song 2		36096160
 	468749629	Rock Bar Music overworld 110 bpm	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Bar Music overworld 110 bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Bar Ambience\Rock Bar Music overworld 110 bpm\Rock Bar Music overworld 110 bpm		16756572
 	505505623	BOOT_CONC CLEAN_WALK_3	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_3		82780
 	578811595	Jazz Song 2 V1	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Jazz Song 2 V1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Jazz\Jazz Fight 1\Jazz Song 2 V1\Jazz Song 2 V1		33163360
 	601627150	Jazz 1 	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Jazz 1 _FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Jazz\Jazz Fight 1\Jazz 1\Jazz 1 		25036900
-	605139908	Guitar Swoosh	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar swoosh_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Swoosh		352896
+	605139908	Guitar Swoosh	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar swoosh_91713290.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Swoosh		191748
 	645619578	BOOT_CONC CLEAN_WALK_5	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_5		70760
 	653746798	BOOT_CONC CLEAN_WALK_4	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_4		96840
 	666262496	overworld music loop	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\overworld music loop_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Overworld\Overworld\overworld music loop\overworld music loop		8205472
@@ -42,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	702972314	BOOT_CONC CLEAN_WALK_7	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_7		48420
 	714191138	guitar string snap 2	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar string snap 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Snap\guitar string snap 2		352896
 	843622230	electronic chimes	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\electronic chimes_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chime\electronic chimes		2998896
+	938790332	Indie 2 - worldised	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Indie 2 - worldised_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Indie\Indie 2 - worldised		24390240
 	1005809217	guitar string snap	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar string snap_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Snap\guitar string snap		352896
 	1029415312	BOOT_CONC CLEAN_WALK_2	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_2		90292
 	1051922225	BOOT_CONC CLEAN_WALK_1	C:\Users\Kenneth\UnityGames\Final Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_1		79080
