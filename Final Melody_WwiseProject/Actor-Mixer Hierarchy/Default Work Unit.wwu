@@ -3884,6 +3884,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Door-Close" ID="{DE770654-C418-4AAC-B7CC-48965F024ABA}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.02810256410256"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.57948717948718"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Door-Close.wav</AudioFile>
 									<MediaIDList>
@@ -3906,6 +3911,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Door-Open" ID="{55DFACBA-175A-434D-A711-5B4E1E9A46DC}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.271261538461538"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.25341538461538"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Door-Open.wav</AudioFile>
 									<MediaIDList>
