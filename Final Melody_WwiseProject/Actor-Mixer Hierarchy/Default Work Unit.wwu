@@ -3477,32 +3477,6 @@
 						<ActiveSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="button click 1" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" ShortID="563181178">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="various clicks" ID="{F6A406B9-0F89-438D-97DA-76096DC8053D}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.695110410401642"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>various clicks.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="6109518"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="various clicks" ID="{F6A406B9-0F89-438D-97DA-76096DC8053D}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<RandomSequenceContainer Name="Guitar Impact" ID="{926B523D-A74A-49AA-87F6-3FD39F6A1C7A}" ShortID="623499118">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3632,33 +3606,6 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="button click 2" ID="{948AD8E1-C315-466F-8690-4A00CD33659E}" ShortID="74201957">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="various clicks" ID="{9F7A0036-0491-437C-84A9-956187D60C58}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="8.4594407535028"/>
-								<Property Name="TrimEnd" Type="Real64" Value="9.03634445626592"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>various clicks.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="201321310"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="various clicks" ID="{9F7A0036-0491-437C-84A9-956187D60C58}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="cash register" ID="{68595FE1-275C-44E1-9B48-D9C9EA711EDE}" ShortID="992931250">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3723,50 +3670,6 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Door-Open" ID="{55DFACBA-175A-434D-A711-5B4E1E9A46DC}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Drumstick1" ID="{789DCD76-576A-49F7-8EE9-F2EF8CFBF29D}" ShortID="236307544">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Drumstick1" ID="{67E32E8E-5E73-4484-941B-CDCF0A4F7DCF}">
-							<Language>SFX</Language>
-							<AudioFile>Drumstick1.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="171165949"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Drumstick1" ID="{67E32E8E-5E73-4484-941B-CDCF0A4F7DCF}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Drumstick2" ID="{C5899A82-3E0B-48D4-BCE9-127B0FAD6FCD}" ShortID="108624111">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Drumstick2" ID="{625CCD6B-4578-4688-AA5C-62E2BF4F5DF9}">
-							<Language>SFX</Language>
-							<AudioFile>Drumstick2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="125427792"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Drumstick2" ID="{625CCD6B-4578-4688-AA5C-62E2BF4F5DF9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Sniffing" ID="{68425E81-0494-40C7-9398-585560451D4E}" ShortID="385508338">
@@ -3835,6 +3738,163 @@
 						<ActiveSource Name="Stomach-gurlge" ID="{2280A859-CF94-44C2-B88A-FF00C8E58FC1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Button Click" ID="{75F00C87-DB1A-4DC7-AAC5-71255BB723B9}" ShortID="1043563413">
+					<PropertyList>
+						<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6AC31C70-80CC-4BD6-AC39-9F99A76F11AC}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="11"/>
+											<Property Name="Min" Type="Real64" Value="-6"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="button click 1" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" ShortID="563181178">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="various clicks" ID="{F6A406B9-0F89-438D-97DA-76096DC8053D}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.695110410401642"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>various clicks.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="6109518"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="various clicks" ID="{F6A406B9-0F89-438D-97DA-76096DC8053D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="button click 2" ID="{948AD8E1-C315-466F-8690-4A00CD33659E}" ShortID="74201957">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="various clicks" ID="{9F7A0036-0491-437C-84A9-956187D60C58}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="8.4594407535028"/>
+										<Property Name="TrimEnd" Type="Real64" Value="9.03634445626592"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>various clicks.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="201321310"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="various clicks" ID="{9F7A0036-0491-437C-84A9-956187D60C58}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Drum Stickls" ID="{6D31921F-1FD3-4EBF-9919-1B2B11999DD9}" ShortID="106962392">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{278B3668-BA88-4E03-8B24-D093354BEACB}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="6"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Drumstick1" ID="{789DCD76-576A-49F7-8EE9-F2EF8CFBF29D}" ShortID="236307544">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Drumstick1" ID="{67E32E8E-5E73-4484-941B-CDCF0A4F7DCF}">
+									<Language>SFX</Language>
+									<AudioFile>Drumstick1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="171165949"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Drumstick1" ID="{67E32E8E-5E73-4484-941B-CDCF0A4F7DCF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Drumstick2" ID="{C5899A82-3E0B-48D4-BCE9-127B0FAD6FCD}" ShortID="108624111">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Drumstick2" ID="{625CCD6B-4578-4688-AA5C-62E2BF4F5DF9}">
+									<Language>SFX</Language>
+									<AudioFile>Drumstick2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="125427792"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Drumstick2" ID="{625CCD6B-4578-4688-AA5C-62E2BF4F5DF9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

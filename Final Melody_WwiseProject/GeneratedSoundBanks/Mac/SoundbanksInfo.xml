@@ -29,17 +29,20 @@
 			<StateGroups>
 				<StateGroup Id="3991942870" Name="Music">
 					<States>
+						<State Id="345544" Name="Character_Home"/>
+						<State Id="275234447" Name="Indie_Battle"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="896309499" Name="Jazz_Battle"/>
 						<State Id="1562068129" Name="Overworld"/>
 						<State Id="2074201812" Name="Jazz_Bar"/>
 						<State Id="2628598795" Name="Rock_Battle"/>
+						<State Id="3404308272" Name="Indie_Bar"/>
 						<State Id="3781847844" Name="Rock_Bar"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{3D259CD3-8AB2-EFBB-DE23-67AEABF4A29D}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{70B99FB5-17F5-833C-3841-1C48ACC6BEB2}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -62,10 +65,6 @@
 				<File Id="200926149" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.10.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.10_818F3B66.wem</CachePath>
-				</File>
-				<File Id="245976823" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Intro music loop (worldised).wav</ShortName>
-					<CachePath>SFX/Intro music loop (worldised)_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="253651070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>static-y chords.wav</ShortName>
@@ -191,11 +190,6 @@
 						<MediaRef Id="938790332"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2124979004" Name="Play_Intro_Dream" DurationType="OneShot" DurationMin="55.07127" DurationMax="55.07127">
-					<MediaRefs>
-						<MediaRef Id="245976823"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2231034946" Name="Play_Jazz_Fight_1" DurationType="OneShot" DurationMin="141.93163" DurationMax="188">
 					<MediaRefs>
 						<MediaRef Id="578811595"/>
@@ -226,5 +220,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{146969BE-1204-737D-2FA3-3174C3C2C00E}</FileHash>
+	<FileHash>{9B50CB66-D462-A14C-405F-9C409C130C50}</FileHash>
 </SoundBanksInfo>

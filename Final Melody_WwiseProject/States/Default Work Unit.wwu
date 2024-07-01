@@ -11,6 +11,9 @@
 						<State Name="Rock_Battle" ID="{6DF4B565-1BE9-47D3-AE1A-0376325FB523}"/>
 						<State Name="Jazz_Bar" ID="{819D1678-17E0-4A4C-A95D-3FB38A8A1DC4}"/>
 						<State Name="Jazz_Battle" ID="{DE976C29-C82A-4A16-AD1D-51ADEE3B2B38}"/>
+						<State Name="Indie_Bar" ID="{87773992-088F-4F22-8D56-038318CEC891}"/>
+						<State Name="Indie_Battle" ID="{E05F9911-0D63-4374-9C08-404B071CF56E}"/>
+						<State Name="Character_Home" ID="{0173D5D5-6865-4EB8-A483-3D2BB19EB6C9}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
