@@ -13,6 +13,7 @@ public class IntroDirector : TimelineDirector
     [SerializeField] private Sprite drumsIcon;
     [SerializeField] private Sprite guitarIcon;
     [SerializeField] private Sprite keytarIcon;
+    [SerializeField] private AK.Wwise.Event introLoop;
     public override void Awake()
     {
         base.Awake();
@@ -104,5 +105,17 @@ public class IntroDirector : TimelineDirector
         else if (instrument == "Keytar") { icon = keytarIcon; }
         else { icon = drumsIcon; }
         InventoryUI.Instance.inventory.UpdateItem(instrument, 1, icon.name);
+    }
+
+    public void PlayIntroLoop()
+    {
+        AudioManager.Instance.PauseCurrentMusic();
+        introLoop.Post(AudioManager.Instance.gameObject);
+    }
+
+    public void StopIntroLoop()
+    {
+        introLoop.Stop(AudioManager.Instance.gameObject);
+        AudioManager.Instance.ResumeCurrentMusic();
     }
 }

@@ -241,7 +241,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 322203127}
-  - component: {fileID: 322203126}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -249,31 +248,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &322203126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322203125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c55cdb72b777e514aa1b21832c48b3b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 3911b448d43d12747a8e84beef3fb36b, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &322203127
 Transform:
   m_ObjectHideFlags: 0
@@ -552,6 +526,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 67aed8773fc6d91439aa820e00fe5848, type: 2}
     - {fileID: 11400000, guid: f1754c3aac2adec4787168cc271cebe9, type: 2}
     - {fileID: 11400000, guid: 1da29481f40193f47a1e32b3dce8b0fe, type: 2}
+    - {fileID: 11400000, guid: f907fa1b3c80e1f4f869f7bd0766c4be, type: 2}
+    - {fileID: 11400000, guid: a6acc26afe0396d458763714421b03bd, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -637,6 +613,34 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 700750974}
+          m_TargetAssemblyTypeName: IntroDirector, Assembly-CSharp
+          m_MethodName: PlayIntroLoop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 700750974}
+          m_TargetAssemblyTypeName: IntroDirector, Assembly-CSharp
+          m_MethodName: StopIntroLoop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &700750974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,6 +659,10 @@ MonoBehaviour:
   drumsIcon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
   guitarIcon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
   keytarIcon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
+  introLoop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 347b8e435df307641871e734be19b779, type: 2}
 --- !u!4 &700750975
 Transform:
   m_ObjectHideFlags: 0
