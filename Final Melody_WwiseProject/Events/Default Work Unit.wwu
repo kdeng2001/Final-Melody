@@ -285,17 +285,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Indie" ID="{AAAF1A51-CDCE-492F-9280-C492486D17D1}">
-					<ChildrenList>
-						<Action Name="" ID="{B1F7BDBF-309F-4C21-A88A-FEEC1C1E79EF}" ShortID="378420216">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Indie" ID="{FFEF7566-0DAE-4123-8581-34731159C512}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Intro_Dream_World" ID="{457FB0BD-9C75-40F4-B978-0EF8F49FA602}">
 					<ChildrenList>
 						<Action Name="" ID="{67F47259-A371-4AC5-878F-CD557C8AF771}" ShortID="167194264">
@@ -324,6 +313,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Intro Dream World" ID="{15C3EE7F-3527-43BB-B949-38FF58657411}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Indie_Music" ID="{13A5E474-7B20-41B5-B050-8A14CBF6B1FC}">
+					<ChildrenList>
+						<Action Name="" ID="{A916AB7F-3D6C-48B2-8A27-BC2A1B6C46CA}" ShortID="165820429">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Indie Music" ID="{8BFB9818-6C08-4AFD-8431-178B11B3EDFC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

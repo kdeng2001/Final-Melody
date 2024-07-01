@@ -5,7 +5,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1913203247	Play_Guitar_Snap			\Default Work Unit\Play_Guitar_Snap	
 	2231034946	Play_Jazz_Fight_1			\Default Work Unit\Play_Jazz_Fight_1	
 	2969046030	Play_Chime			\Default Work Unit\Play_Chime	
-	2988589071	Play_Indie			\Default Work Unit\Play_Indie	
 	3447001990	Play_static_y_chords			\Default Work Unit\Play_static_y_chords	
 	3737082598	Play_Rock_Bar_Ambience			\Default Work Unit\Play_Rock_Bar_Ambience	
 	3760154813	Play_Overworld_02			\Default Work Unit\Play_Overworld_02	
@@ -27,7 +26,6 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4149405	chime 3	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\chime 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chime\chime 3		705696
-	27257627	Indie1_worldised	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Indie1_worldised_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Indie\Indie Music\Indie\Indie1_worldised		22556256
 	65309078	Rock Song 1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Song 1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 1\Rock Song 1		29977528
 	172635804	guitar impact 1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar impact 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Impact\guitar impact 1		352896
 	200926149	BOOT_CONC CLEAN_WALK_10	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_10		63028
@@ -47,7 +45,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	702972314	BOOT_CONC CLEAN_WALK_7	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_7		48420
 	714191138	guitar string snap 2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar string snap 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Snap\guitar string snap 2		352896
 	843622230	electronic chimes	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\electronic chimes_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chime\electronic chimes		2998896
-	938790332	Indie 2 - worldised	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Indie 2 - worldised_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Indie\Indie Music\Indie\Indie 2 - worldised		24390240
 	1005809217	guitar string snap	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar string snap_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Snap\guitar string snap		352896
 	1029415312	BOOT_CONC CLEAN_WALK_2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_2		90292
 	1051922225	BOOT_CONC CLEAN_WALK_1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_1		79080

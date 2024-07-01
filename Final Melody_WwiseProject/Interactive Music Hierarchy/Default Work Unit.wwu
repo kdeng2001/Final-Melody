@@ -1333,7 +1333,7 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Segment">
-																	<ObjectRef Name="Indie" ID="{FFEF7566-0DAE-4123-8581-34731159C512}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+																	<ObjectRef Name="Indie 1" ID="{FFEF7566-0DAE-4123-8581-34731159C512}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
 																</Reference>
 															</ReferenceList>
 														</MusicPlaylistItem>
@@ -1358,7 +1358,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicSegment Name="Indie" ID="{FFEF7566-0DAE-4123-8581-34731159C512}" ShortID="644740035">
+										<MusicSegment Name="Indie 1" ID="{FFEF7566-0DAE-4123-8581-34731159C512}" ShortID="644740035">
 											<PropertyList>
 												<Property Name="EndPosition" Type="Real64" Value="138266.12244898"/>
 												<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
@@ -1424,8 +1424,45 @@
 														</ObjectList>
 													</ObjectLists>
 												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{973B1B12-820B-4807-8165-FE7BC82E007D}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{3002A20C-DBD7-4A1A-93D9-103E7FD6B049}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="127869.387755102"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+										<MusicSegment Name="Indie 2" ID="{B624C617-4567-48D2-90B8-FC441031CB03}" ShortID="392549309">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="138266.12244898"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
 												<MusicTrack Name="Indie 2 - worldised" ID="{FF52445A-16B6-4511-80A2-9D42105170A6}" ShortID="233720421">
 													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
 														</Reference>
@@ -1481,15 +1518,15 @@
 												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicCue Name="Entry Cue" ID="{973B1B12-820B-4807-8165-FE7BC82E007D}"/>
+															<MusicCue Name="Entry Cue" ID="{D0C760C6-D171-4DCB-A602-336F019CDE6F}"/>
 														</Local>
 													</Reference>
 													<Reference>
 														<Local>
-															<MusicCue Name="Exit Cue" ID="{3002A20C-DBD7-4A1A-93D9-103E7FD6B049}">
+															<MusicCue Name="Exit Cue" ID="{9F2B56B2-BA42-4B1F-BB60-1643C847C792}">
 																<PropertyList>
 																	<Property Name="CueType" Type="int16" Value="1"/>
-																	<Property Name="TimeMs" Type="Real64" Value="127869.387755102"/>
+																	<Property Name="TimeMs" Type="Real64" Value="1000"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>

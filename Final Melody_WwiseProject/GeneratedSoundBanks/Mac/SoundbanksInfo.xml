@@ -42,17 +42,13 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{70B99FB5-17F5-833C-3841-1C48ACC6BEB2}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{7A49BFFA-5583-12BF-3C9F-CEB38ABEF281}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
 				<File Id="4149405" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>chime 3.wav</ShortName>
 					<CachePath>SFX/chime 3_818F3B66.wem</CachePath>
-				</File>
-				<File Id="27257627" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Indie1_worldised.wav</ShortName>
-					<CachePath>SFX/Indie1_worldised_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="65309078" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rock Song 1.wav</ShortName>
@@ -130,10 +126,6 @@
 					<ShortName>electronic chimes.wav</ShortName>
 					<CachePath>SFX/electronic chimes_818F3B66.wem</CachePath>
 				</File>
-				<File Id="938790332" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Indie 2 - worldised.wav</ShortName>
-					<CachePath>SFX/Indie 2 - worldised_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="1005809217" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>guitar string snap.wav</ShortName>
 					<CachePath>SFX/guitar string snap_818F3B66.wem</CachePath>
@@ -184,12 +176,6 @@
 						<MediaRef Id="605139908"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2988589071" Name="Play_Indie" DurationType="OneShot" DurationMin="138.26613" DurationMax="138.26613">
-					<MediaRefs>
-						<MediaRef Id="27257627"/>
-						<MediaRef Id="938790332"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2231034946" Name="Play_Jazz_Fight_1" DurationType="OneShot" DurationMin="141.93163" DurationMax="188">
 					<MediaRefs>
 						<MediaRef Id="578811595"/>
@@ -220,5 +206,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9B50CB66-D462-A14C-405F-9C409C130C50}</FileHash>
+	<FileHash>{8AF50DDA-7B6D-538E-E64D-1830525E69F9}</FileHash>
 </SoundBanksInfo>
