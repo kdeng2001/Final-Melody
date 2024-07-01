@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9DB54E84-2913-9D82-52B4-8DFC18414B80}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{482B58FF-1121-70DD-52AB-5081EB722C57}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -42,10 +42,430 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{2ABD40C5-574D-7741-6576-5BCDA6B6C56A}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{9FF98A15-9453-E06A-261C-032E7BB6939F}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
+			<Media>
+				<File Id="4149405" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chime 3.wav</ShortName>
+					<CachePath>SFX/chime 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="6109518" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>various clicks.wav</ShortName>
+					<CachePath>SFX/various clicks_C00FBD9E.wem</CachePath>
+				</File>
+				<File Id="27257627" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Indie1_worldised.wav</ShortName>
+					<CachePath>SFX/Indie1_worldised_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="65309078" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rock Song 1.wav</ShortName>
+					<CachePath>SFX/Rock Song 1_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="125427792" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drumstick2.wav</ShortName>
+					<CachePath>SFX/Drumstick2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="135468730" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Re2.wav</ShortName>
+					<CachePath>SFX/Re2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="171165949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drumstick1.wav</ShortName>
+					<CachePath>SFX/Drumstick1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="172635804" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar impact 1.wav</ShortName>
+					<CachePath>SFX/guitar impact 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="176207028" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bar Crowd Loop 03.wav</ShortName>
+					<CachePath>SFX/Bar Crowd Loop 03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="182187529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ti.wav</ShortName>
+					<CachePath>SFX/Ti_818F3B66.wem</CachePath>
+				</File>
+				<File Id="200926149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.10.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="201321310" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>various clicks.wav</ShortName>
+					<CachePath>SFX/various clicks_4CC09B7C.wem</CachePath>
+				</File>
+				<File Id="232196511" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar pick click clack.wav</ShortName>
+					<CachePath>SFX/guitar pick click clack_16C842D0.wem</CachePath>
+				</File>
+				<File Id="245976823" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Intro music loop (worldised).wav</ShortName>
+					<CachePath>SFX/Intro music loop (worldised)_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="253651070" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>static-y chords.wav</ShortName>
+					<CachePath>SFX/static-y chords_818F3B66.wem</CachePath>
+				</File>
+				<File Id="304759314" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fa2.wav</ShortName>
+					<CachePath>SFX/Fa2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="314858832" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>cash register.wav</ShortName>
+					<CachePath>SFX/cash register_818F3B66.wem</CachePath>
+				</File>
+				<File Id="331563995" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grab Bowl from Cupboard.wav</ShortName>
+					<CachePath>SFX/Grab Bowl from Cupboard_818F3B66.wem</CachePath>
+				</File>
+				<File Id="348757128" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Glasses being Stacked.wav</ShortName>
+					<CachePath>SFX/Glasses being Stacked_818F3B66.wem</CachePath>
+				</File>
+				<File Id="378589776" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>La.wav</ShortName>
+					<CachePath>SFX/La_818F3B66.wem</CachePath>
+				</File>
+				<File Id="426595442" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rock Song 2.wav</ShortName>
+					<CachePath>SFX/Rock Song 2_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="431641171" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sniffing.wav</ShortName>
+					<CachePath>SFX/Sniffing_818F3B66.wem</CachePath>
+				</File>
+				<File Id="466596290" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Silverware Movement 02.wav</ShortName>
+					<CachePath>SFX/Silverware Movement 02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="468749629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rock Bar Music overworld 110 bpm.wav</ShortName>
+					<CachePath>SFX/Rock Bar Music overworld 110 bpm_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="496944421" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Mi.wav</ShortName>
+					<CachePath>SFX/Mi_818F3B66.wem</CachePath>
+				</File>
+				<File Id="505505623" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.3.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="527394364" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>thick paper (ticket wobble).wav</ShortName>
+					<CachePath>SFX/thick paper (ticket wobble)_EFDF3408.wem</CachePath>
+				</File>
+				<File Id="562146787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Door-Close.wav</ShortName>
+					<CachePath>SFX/Door-Close_F4C6B253.wem</CachePath>
+				</File>
+				<File Id="578811595" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jazz Song 2 V1.wav</ShortName>
+					<CachePath>SFX/Jazz Song 2 V1_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="591124313" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paper rips.wav</ShortName>
+					<CachePath>SFX/paper rips_0B80AD88.wem</CachePath>
+				</File>
+				<File Id="601627150" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jazz 1 .wav</ShortName>
+					<CachePath>SFX/Jazz 1 _FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="605139908" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar swoosh.wav</ShortName>
+					<CachePath>SFX/guitar swoosh_91713290.wem</CachePath>
+				</File>
+				<File Id="623018892" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Door-Open.wav</ShortName>
+					<CachePath>SFX/Door-Open_9A4E3628.wem</CachePath>
+				</File>
+				<File Id="645619578" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.5.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="653401279" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Silverware Movement 01.wav</ShortName>
+					<CachePath>SFX/Silverware Movement 01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="653746798" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.4.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="666262496" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>overworld music loop.wav</ShortName>
+					<CachePath>SFX/overworld music loop_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="680661866" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK_818F3B66.wem</CachePath>
+				</File>
+				<File Id="693247168" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>impact 2.wav</ShortName>
+					<CachePath>SFX/impact 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="698235323" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chime 2.wav</ShortName>
+					<CachePath>SFX/chime 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="702972314" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.7.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="714191138" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar string snap 2.wav</ShortName>
+					<CachePath>SFX/guitar string snap 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="770797067" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Glasses Put Away in Cupboard.wav</ShortName>
+					<CachePath>SFX/Glasses Put Away in Cupboard_818F3B66.wem</CachePath>
+				</File>
+				<File Id="770953017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Do.wav</ShortName>
+					<CachePath>SFX/Do_818F3B66.wem</CachePath>
+				</File>
+				<File Id="794114772" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sol2.wav</ShortName>
+					<CachePath>SFX/Sol2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="843622230" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>electronic chimes.wav</ShortName>
+					<CachePath>SFX/electronic chimes_818F3B66.wem</CachePath>
+				</File>
+				<File Id="850621682" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stomach-gurlge.wav</ShortName>
+					<CachePath>SFX/Stomach-gurlge_818F3B66.wem</CachePath>
+				</File>
+				<File Id="870181068" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ti2.wav</ShortName>
+					<CachePath>SFX/Ti2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="906275473" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sol.wav</ShortName>
+					<CachePath>SFX/Sol_818F3B66.wem</CachePath>
+				</File>
+				<File Id="923831673" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Do2.wav</ShortName>
+					<CachePath>SFX/Do2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="927113786" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Stomach-growl.wav</ShortName>
+					<CachePath>SFX/Stomach-growl_818F3B66.wem</CachePath>
+				</File>
+				<File Id="938790332" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Indie 2 - worldised.wav</ShortName>
+					<CachePath>SFX/Indie 2 - worldised_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="959761817" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Re.wav</ShortName>
+					<CachePath>SFX/Re_818F3B66.wem</CachePath>
+				</File>
+				<File Id="991873149" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Glass Breaking.wav</ShortName>
+					<CachePath>SFX/Glass Breaking_818F3B66.wem</CachePath>
+				</File>
+				<File Id="993713978" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>La2.wav</ShortName>
+					<CachePath>SFX/La2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="997201571" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Mi2.wav</ShortName>
+					<CachePath>SFX/Mi2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1005809217" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>guitar string snap.wav</ShortName>
+					<CachePath>SFX/guitar string snap_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1029415312" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.2.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1034615824" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>paper cup sounds.wav</ShortName>
+					<CachePath>SFX/paper cup sounds_2A7C3CA5.wem</CachePath>
+				</File>
+				<File Id="1035264319" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fa.wav</ShortName>
+					<CachePath>SFX/Fa_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1051922225" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BOOT_CONC CLEAN_WALK.1.wav</ShortName>
+					<CachePath>SFX/BOOT_CONC CLEAN_WALK.1_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="591885793" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="1149159311" Name="Play_Button_Click" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="6109518"/>
+						<MediaRef Id="201321310"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1433988185" Name="Play_cash_register" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="314858832"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2969046030" Name="Play_Chime" DurationType="OneShot" DurationMin="4" DurationMax="17">
+					<MediaRefs>
+						<MediaRef Id="4149405"/>
+						<MediaRef Id="698235323"/>
+						<MediaRef Id="843622230"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2292458263" Name="Play_Door_Close" DurationType="OneShot" DurationMin="0.50987214" DurationMax="0.50987214">
+					<MediaRefs>
+						<MediaRef Id="562146787"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1660008929" Name="Play_Door_Open" DurationType="OneShot" DurationMin="0.8256982" DurationMax="0.8256982">
+					<MediaRefs>
+						<MediaRef Id="623018892"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2717851284" Name="Play_Drum_Stickls" DurationType="OneShot" DurationMin="0.928" DurationMax="0.928">
+					<MediaRefs>
+						<MediaRef Id="125427792"/>
+						<MediaRef Id="171165949"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="200926149"/>
+						<MediaRef Id="505505623"/>
+						<MediaRef Id="645619578"/>
+						<MediaRef Id="653746798"/>
+						<MediaRef Id="680661866"/>
+						<MediaRef Id="702972314"/>
+						<MediaRef Id="1029415312"/>
+						<MediaRef Id="1051922225"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1121667981" Name="Play_Guitar_Impact" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="172635804"/>
+						<MediaRef Id="693247168"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1957959728" Name="Play_guitar_pick_click_clack" DurationType="OneShot" DurationMin="0.69695" DurationMax="0.69695">
+					<MediaRefs>
+						<MediaRef Id="232196511"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1913203247" Name="Play_Guitar_Snap" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="714191138"/>
+						<MediaRef Id="1005809217"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1850691842" Name="Play_Guitar_Swoosh" DurationType="OneShot" DurationMin="1.0864431" DurationMax="1.0864431">
+					<MediaRefs>
+						<MediaRef Id="605139908"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3917357839" Name="Play_Indie_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="27257627"/>
+						<MediaRef Id="938790332"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2694120253" Name="Play_Intro_Dream_World" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="245976823"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1685503222" Name="Play_Jazz_Bar_Ambience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="135468730"/>
+						<MediaRef Id="176207028"/>
+						<MediaRef Id="182187529"/>
+						<MediaRef Id="304759314"/>
+						<MediaRef Id="331563995"/>
+						<MediaRef Id="348757128"/>
+						<MediaRef Id="378589776"/>
+						<MediaRef Id="466596290"/>
+						<MediaRef Id="496944421"/>
+						<MediaRef Id="653401279"/>
+						<MediaRef Id="770797067"/>
+						<MediaRef Id="770953017"/>
+						<MediaRef Id="794114772"/>
+						<MediaRef Id="870181068"/>
+						<MediaRef Id="906275473"/>
+						<MediaRef Id="923831673"/>
+						<MediaRef Id="959761817"/>
+						<MediaRef Id="991873149"/>
+						<MediaRef Id="993713978"/>
+						<MediaRef Id="997201571"/>
+						<MediaRef Id="1035264319"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="591885793"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="1066505092" Name="Play_Jazz_Bar_Ambience_01" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2231034946" Name="Play_Jazz_Fight_1" DurationType="OneShot" DurationMin="141.93163" DurationMax="188">
+					<MediaRefs>
+						<MediaRef Id="578811595"/>
+						<MediaRef Id="601627150"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1841649256" Name="Play_Overworld" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="666262496"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2341331244" Name="Play_paper_cup_sounds" DurationType="OneShot" DurationMin="0.5996522" DurationMax="0.5996522">
+					<MediaRefs>
+						<MediaRef Id="1034615824"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2143556127" Name="Play_paper_rips" DurationType="OneShot" DurationMin="1.0463043" DurationMax="1.0463043">
+					<MediaRefs>
+						<MediaRef Id="591124313"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3737082598" Name="Play_Rock_Bar_Ambience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="468749629"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="576708969" Name="Play_Rock_Battles" DurationType="OneShot" DurationMin="156.13188" DurationMax="188">
+					<MediaRefs>
+						<MediaRef Id="65309078"/>
+						<MediaRef Id="426595442"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3904066322" Name="Play_Sniffing" DurationType="OneShot" DurationMin="1.472" DurationMax="1.472">
+					<MediaRefs>
+						<MediaRef Id="431641171"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3447001990" Name="Play_static_y_chords" DurationType="OneShot" DurationMin="22" DurationMax="22">
+					<MediaRefs>
+						<MediaRef Id="253651070"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2065944663" Name="Play_Stomach_growl" DurationType="OneShot" DurationMin="2.144" DurationMax="2.144">
+					<MediaRefs>
+						<MediaRef Id="927113786"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="171402846" Name="Play_Stomach_gurlge" DurationType="OneShot" DurationMin="2.592" DurationMax="2.592">
+					<MediaRefs>
+						<MediaRef Id="850621682"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4236828667" Name="Play_thick_paper__ticket_wobble_" DurationType="OneShot" DurationMin="0.2771256" DurationMax="0.2771256">
+					<MediaRefs>
+						<MediaRef Id="527394364"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BD9403EB-C78B-139B-79E3-22A06D37531C}</FileHash>
+	<FileHash>{61C4A1FB-1EC5-550B-E759-4E75EAB37B20}</FileHash>
 </SoundBanksInfo>

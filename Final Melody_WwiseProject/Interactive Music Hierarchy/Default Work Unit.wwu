@@ -1325,6 +1325,7 @@
 													<PropertyList>
 														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="PlayMode" Type="int16" Value="3"/>
 													</PropertyList>
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{0B846604-3936-4B82-AA8F-941393D9F25E}" ShortID="501136935">
