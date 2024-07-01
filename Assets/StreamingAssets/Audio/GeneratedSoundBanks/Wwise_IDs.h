@@ -13,13 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CASH_REGISTER = 1433988185U;
         static const AkUniqueID PLAY_CHIME = 2969046030U;
+        static const AkUniqueID PLAY_DOOR_CLOSE = 2292458263U;
+        static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_GUITAR_IMPACT = 1121667981U;
         static const AkUniqueID PLAY_GUITAR_SNAP = 1913203247U;
         static const AkUniqueID PLAY_GUITAR_SWOOSH = 1850691842U;
         static const AkUniqueID PLAY_INDIE = 2988589071U;
-        static const AkUniqueID PLAY_INTRO_DREAM = 2124979004U;
+        static const AkUniqueID PLAY_INTRO_DREAM_WORLD = 2694120253U;
         static const AkUniqueID PLAY_JAZZ_FIGHT_1 = 2231034946U;
         static const AkUniqueID PLAY_OVERWORLD_02 = 3760154813U;
         static const AkUniqueID PLAY_ROCK_BAR_AMBIENCE = 3737082598U;
@@ -35,6 +38,9 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID CHARACTER_HOME = 345544U;
+                static const AkUniqueID INDIE_BAR = 3404308272U;
+                static const AkUniqueID INDIE_BATTLE = 275234447U;
                 static const AkUniqueID JAZZ_BAR = 2074201812U;
                 static const AkUniqueID JAZZ_BATTLE = 896309499U;
                 static const AkUniqueID NONE = 748895195U;

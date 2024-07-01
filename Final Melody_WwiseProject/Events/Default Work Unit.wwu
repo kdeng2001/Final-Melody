@@ -318,12 +318,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+<<<<<<< HEAD
 				<Event Name="Play_Indie_Music" ID="{13A5E474-7B20-41B5-B050-8A14CBF6B1FC}">
 					<ChildrenList>
 						<Action Name="" ID="{A916AB7F-3D6C-48B2-8A27-BC2A1B6C46CA}" ShortID="165820429">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Indie Music" ID="{8BFB9818-6C08-4AFD-8431-178B11B3EDFC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+=======
+				<Event Name="Play_Door_Close" ID="{728FFBBF-3626-403B-865E-CF7F7025C1E2}">
+					<ChildrenList>
+						<Action Name="" ID="{562528F6-3C7C-4336-BC7E-FB09F48AC86F}" ShortID="170098738">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door-Close" ID="{BF0A3788-8B83-4EA6-BD8E-B98AE0F70D39}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Door_Open" ID="{740178B1-F987-4D05-9493-201575FA2FB5}">
+					<ChildrenList>
+						<Action Name="" ID="{FD807A11-2559-4A37-9C4D-37005BD5CBD3}" ShortID="932587812">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door-Open" ID="{BC2D3BB0-5FC4-49E1-BA10-21BD92451B60}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_cash_register" ID="{83DBA858-2C37-457B-8C01-DF5293BC4D16}">
+					<ChildrenList>
+						<Action Name="" ID="{9AA08443-239C-441C-9F9B-4AD26D262C97}" ShortID="733240600">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cash register" ID="{68595FE1-275C-44E1-9B48-D9C9EA711EDE}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+>>>>>>> d85b9de4a7e1279ed36e85d9e2946bad13689234
 								</Reference>
 							</ReferenceList>
 						</Action>

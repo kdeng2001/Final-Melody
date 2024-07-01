@@ -3308,127 +3308,6 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="Guitar Swoosh" ID="{439D4492-E35F-4C8B-8D3A-5F25F1833E56}" ShortID="1063405155">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{52701F46-6444-4989-8DA0-D8C186295B85}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="14"/>
-											<Property Name="Min" Type="Real64" Value="-8"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="guitar swoosh" ID="{E2A3A10E-A7C4-45E1-BC6C-7BD68F942713}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.613705428879442"/>
-								<Property Name="TrimEnd" Type="Real64" Value="1.70014848564978"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>guitar swoosh.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="605139908"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="guitar swoosh" ID="{E2A3A10E-A7C4-45E1-BC6C-7BD68F942713}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="guitar pick click clack" ID="{29DC6683-C46A-4135-AB83-A23CD79B7A1A}" ShortID="189386848">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="guitar pick click clack" ID="{3E03F3A3-D36B-46DB-83D3-7CF3B9102E0B}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.696950014689592"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>guitar pick click clack.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="232196511"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="guitar pick click clack" ID="{3E03F3A3-D36B-46DB-83D3-7CF3B9102E0B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="paper cup sounds" ID="{35A34632-3834-49C2-8657-B0D35D8D8A1C}" ShortID="678332309">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="paper cup sounds" ID="{C4D7276E-9E67-4F0B-8FB4-A3E4C8210BDA}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="6.60893248858914"/>
-								<Property Name="TrimEnd" Type="Real64" Value="7.20858466419471"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>paper cup sounds.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1034615824"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="paper cup sounds" ID="{C4D7276E-9E67-4F0B-8FB4-A3E4C8210BDA}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="paper rips" ID="{B21A0981-0744-4A0A-8EC0-F34DD6AF195E}" ShortID="418483390">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="paper rips" ID="{15EC3863-8DA1-4C41-AA79-85808123BB43}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimEnd" Type="Real64" Value="1.04630437376559"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>paper rips.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="591124313"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="paper rips" ID="{15EC3863-8DA1-4C41-AA79-85808123BB43}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="static-y chords" ID="{A3AC410A-9346-459C-956D-FD144047FEEC}" ShortID="549978526">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3449,32 +3328,6 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="static-y chords" ID="{992A6733-42CD-41AC-865B-8953F5285396}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="thick paper (ticket wobble)" ID="{797642E6-2F4B-434E-8580-3B04D08EC5B2}" ShortID="36187162">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="4.81557280386904"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>thick paper (ticket wobble).wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="527394364"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Guitar Impact" ID="{926B523D-A74A-49AA-87F6-3FD39F6A1C7A}" ShortID="623499118">
@@ -3606,72 +3459,6 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="cash register" ID="{68595FE1-275C-44E1-9B48-D9C9EA711EDE}" ShortID="992931250">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="cash register" ID="{BE217A0B-BA6C-4756-9B78-70BF4A5FB521}">
-							<Language>SFX</Language>
-							<AudioFile>cash register.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="314858832"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="cash register" ID="{BE217A0B-BA6C-4756-9B78-70BF4A5FB521}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Door-Close" ID="{BF0A3788-8B83-4EA6-BD8E-B98AE0F70D39}" ShortID="744698316">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Door-Close" ID="{DE770654-C418-4AAC-B7CC-48965F024ABA}">
-							<Language>SFX</Language>
-							<AudioFile>Door-Close.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="562146787"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Door-Close" ID="{DE770654-C418-4AAC-B7CC-48965F024ABA}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Door-Open" ID="{BC2D3BB0-5FC4-49E1-BA10-21BD92451B60}" ShortID="213144220">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Door-Open" ID="{55DFACBA-175A-434D-A711-5B4E1E9A46DC}">
-							<Language>SFX</Language>
-							<AudioFile>Door-Open.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="623018892"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Door-Open" ID="{55DFACBA-175A-434D-A711-5B4E1E9A46DC}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Sniffing" ID="{68425E81-0494-40C7-9398-585560451D4E}" ShortID="385508338">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3891,6 +3678,243 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Drumstick2" ID="{625CCD6B-4578-4688-AA5C-62E2BF4F5DF9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Item purchase" ID="{EBF02736-1FA5-4746-9C70-4D723046DE7C}" ShortID="816706365">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="cash register" ID="{68595FE1-275C-44E1-9B48-D9C9EA711EDE}" ShortID="992931250">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cash register" ID="{BE217A0B-BA6C-4756-9B78-70BF4A5FB521}">
+									<Language>SFX</Language>
+									<AudioFile>cash register.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="314858832"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="cash register" ID="{BE217A0B-BA6C-4756-9B78-70BF4A5FB521}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="guitar pick click clack" ID="{29DC6683-C46A-4135-AB83-A23CD79B7A1A}" ShortID="189386848">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="guitar pick click clack" ID="{3E03F3A3-D36B-46DB-83D3-7CF3B9102E0B}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.696950014689592"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>guitar pick click clack.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="232196511"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="guitar pick click clack" ID="{3E03F3A3-D36B-46DB-83D3-7CF3B9102E0B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="paper cup sounds" ID="{35A34632-3834-49C2-8657-B0D35D8D8A1C}" ShortID="678332309">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="paper cup sounds" ID="{C4D7276E-9E67-4F0B-8FB4-A3E4C8210BDA}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="6.60893248858914"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.20858466419471"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>paper cup sounds.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1034615824"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="paper cup sounds" ID="{C4D7276E-9E67-4F0B-8FB4-A3E4C8210BDA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="thick paper (ticket wobble)" ID="{797642E6-2F4B-434E-8580-3B04D08EC5B2}" ShortID="36187162">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.81557280386904"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>thick paper (ticket wobble).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="527394364"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="paper rips" ID="{B21A0981-0744-4A0A-8EC0-F34DD6AF195E}" ShortID="418483390">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="paper rips" ID="{15EC3863-8DA1-4C41-AA79-85808123BB43}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.04630437376559"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>paper rips.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="591124313"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="paper rips" ID="{15EC3863-8DA1-4C41-AA79-85808123BB43}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Guitar Swoosh" ID="{439D4492-E35F-4C8B-8D3A-5F25F1833E56}" ShortID="1063405155">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{52701F46-6444-4989-8DA0-D8C186295B85}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="14"/>
+													<Property Name="Min" Type="Real64" Value="-8"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="guitar swoosh" ID="{E2A3A10E-A7C4-45E1-BC6C-7BD68F942713}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.613705428879442"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.70014848564978"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>guitar swoosh.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="605139908"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="guitar swoosh" ID="{E2A3A10E-A7C4-45E1-BC6C-7BD68F942713}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Doors" ID="{A16CF6C6-AE1B-495E-A006-A0385E398CA8}" ShortID="621864371">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Door-Close" ID="{BF0A3788-8B83-4EA6-BD8E-B98AE0F70D39}" ShortID="744698316">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Door-Close" ID="{DE770654-C418-4AAC-B7CC-48965F024ABA}">
+									<Language>SFX</Language>
+									<AudioFile>Door-Close.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="562146787"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Door-Close" ID="{DE770654-C418-4AAC-B7CC-48965F024ABA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Door-Open" ID="{BC2D3BB0-5FC4-49E1-BA10-21BD92451B60}" ShortID="213144220">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Door-Open" ID="{55DFACBA-175A-434D-A711-5B4E1E9A46DC}">
+									<Language>SFX</Language>
+									<AudioFile>Door-Open.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="623018892"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Door-Open" ID="{55DFACBA-175A-434D-A711-5B4E1E9A46DC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
