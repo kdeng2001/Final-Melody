@@ -42,11 +42,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-<<<<<<< HEAD
 		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{7A49BFFA-5583-12BF-3C9F-CEB38ABEF281}">
-=======
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{EF42FEFC-C035-E429-3B71-1F179B730440}">
->>>>>>> d85b9de4a7e1279ed36e85d9e2946bad13689234
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -66,17 +62,9 @@
 					<ShortName>BOOT_CONC CLEAN_WALK.10.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.10_818F3B66.wem</CachePath>
 				</File>
-				<File Id="245976823" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Intro music loop (worldised).wav</ShortName>
-					<CachePath>SFX/Intro music loop (worldised)_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="253651070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>static-y chords.wav</ShortName>
 					<CachePath>SFX/static-y chords_818F3B66.wem</CachePath>
-				</File>
-				<File Id="314858832" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>cash register.wav</ShortName>
-					<CachePath>SFX/cash register_818F3B66.wem</CachePath>
 				</File>
 				<File Id="426595442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rock Song 2.wav</ShortName>
@@ -90,10 +78,6 @@
 					<ShortName>BOOT_CONC CLEAN_WALK.3.wav</ShortName>
 					<CachePath>SFX/BOOT_CONC CLEAN_WALK.3_818F3B66.wem</CachePath>
 				</File>
-				<File Id="562146787" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Door-Close.wav</ShortName>
-					<CachePath>SFX/Door-Close_818F3B66.wem</CachePath>
-				</File>
 				<File Id="578811595" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Jazz Song 2 V1.wav</ShortName>
 					<CachePath>SFX/Jazz Song 2 V1_FBC78EF0.wem</CachePath>
@@ -105,10 +89,6 @@
 				<File Id="605139908" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>guitar swoosh.wav</ShortName>
 					<CachePath>SFX/guitar swoosh_91713290.wem</CachePath>
-				</File>
-				<File Id="623018892" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Door-Open.wav</ShortName>
-					<CachePath>SFX/Door-Open_818F3B66.wem</CachePath>
 				</File>
 				<File Id="645619578" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BOOT_CONC CLEAN_WALK.5.wav</ShortName>
@@ -160,26 +140,11 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1433988185" Name="Play_cash_register" DurationType="OneShot" DurationMin="1" DurationMax="1">
-					<MediaRefs>
-						<MediaRef Id="314858832"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2969046030" Name="Play_Chime" DurationType="OneShot" DurationMin="4" DurationMax="17">
 					<MediaRefs>
 						<MediaRef Id="4149405"/>
 						<MediaRef Id="698235323"/>
 						<MediaRef Id="843622230"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2292458263" Name="Play_Door_Close" DurationType="OneShot" DurationMin="2.24" DurationMax="2.24">
-					<MediaRefs>
-						<MediaRef Id="562146787"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1660008929" Name="Play_Door_Open" DurationType="OneShot" DurationMin="1.824" DurationMax="1.824">
-					<MediaRefs>
-						<MediaRef Id="623018892"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" DurationType="Infinite">
@@ -211,20 +176,6 @@
 						<MediaRef Id="605139908"/>
 					</MediaRefs>
 				</Event>
-<<<<<<< HEAD
-=======
-				<Event Id="2988589071" Name="Play_Indie" DurationType="OneShot" DurationMin="138.26613" DurationMax="138.26613">
-					<MediaRefs>
-						<MediaRef Id="27257627"/>
-						<MediaRef Id="938790332"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2694120253" Name="Play_Intro_Dream_World" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="245976823"/>
-					</MediaRefs>
-				</Event>
->>>>>>> d85b9de4a7e1279ed36e85d9e2946bad13689234
 				<Event Id="2231034946" Name="Play_Jazz_Fight_1" DurationType="OneShot" DurationMin="141.93163" DurationMax="188">
 					<MediaRefs>
 						<MediaRef Id="578811595"/>
@@ -255,9 +206,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-<<<<<<< HEAD
 	<FileHash>{252EE4F0-65C2-7161-1431-C422FECC5727}</FileHash>
-=======
-	<FileHash>{51046329-6CC4-18F9-FDD1-6ABCA2BA75AB}</FileHash>
->>>>>>> d85b9de4a7e1279ed36e85d9e2946bad13689234
 </SoundBanksInfo>

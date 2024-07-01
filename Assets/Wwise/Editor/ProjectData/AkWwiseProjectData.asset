@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ed2355a2df2f3549b31dc0d0ee21ba96
     GuidInternal: 
-    m_lastTime: -8584817490710689426
+    m_lastTime: -8584817494065707672
     List:
     - name: Main_Soundbank
       guid: 9486bfd2f4a4c24980b1bad61c2b0283
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d283a4a3cb772340b99967a8dc3a62d2
     GuidInternal: 
-    m_lastTime: -8584817490710624338
+    m_lastTime: -8584817495378817265
     List:
     - name: Play_Chime
       guid: fa0d77da676ffe4bbedf756d31c34865
@@ -198,40 +198,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.0864431
       minDuration: 1.0864431
-    - name: Play_Indie
-      guid: 511aafaacecd2f499280c492486d17d1
-      id: 2988589071
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d283a4a3cb772340b99967a8dc3a62d2
-      - ElementName: Play_Indie
-        ObjectType: 3
-        guid: 511aafaacecd2f499280c492486d17d1
-      Path: Events\Default Work Unit\Play_Indie
-      maxAttenuation: 0
-      maxDuration: 138.26613
-      minDuration: 138.26613
-    - name: Play_Intro_Dream
-      guid: 21cc7fb958de564183e114b381086a1c
-      id: 2124979004
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d283a4a3cb772340b99967a8dc3a62d2
-      - ElementName: Play_Intro_Dream
-        ObjectType: 3
-        guid: 21cc7fb958de564183e114b381086a1c
-      Path: Events\Default Work Unit\Play_Intro_Dream
-      maxAttenuation: 0
-      maxDuration: 55.07127
-      minDuration: 55.07127
     - name: Play_Jazz_Bar_Ambience
       guid: 5262650ebbb1a54b81daf08408a62704
       id: 1685503222
