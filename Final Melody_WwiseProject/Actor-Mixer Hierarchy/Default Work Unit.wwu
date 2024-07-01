@@ -3659,6 +3659,182 @@
 						<ActiveSource Name="various clicks" ID="{9F7A0036-0491-437C-84A9-956187D60C58}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="cash register" ID="{68595FE1-275C-44E1-9B48-D9C9EA711EDE}" ShortID="992931250">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="cash register" ID="{BE217A0B-BA6C-4756-9B78-70BF4A5FB521}">
+							<Language>SFX</Language>
+							<AudioFile>cash register.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="314858832"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="cash register" ID="{BE217A0B-BA6C-4756-9B78-70BF4A5FB521}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Door-Close" ID="{BF0A3788-8B83-4EA6-BD8E-B98AE0F70D39}" ShortID="744698316">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Door-Close" ID="{DE770654-C418-4AAC-B7CC-48965F024ABA}">
+							<Language>SFX</Language>
+							<AudioFile>Door-Close.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="562146787"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Door-Close" ID="{DE770654-C418-4AAC-B7CC-48965F024ABA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Door-Open" ID="{BC2D3BB0-5FC4-49E1-BA10-21BD92451B60}" ShortID="213144220">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Door-Open" ID="{55DFACBA-175A-434D-A711-5B4E1E9A46DC}">
+							<Language>SFX</Language>
+							<AudioFile>Door-Open.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="623018892"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Door-Open" ID="{55DFACBA-175A-434D-A711-5B4E1E9A46DC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Drumstick1" ID="{789DCD76-576A-49F7-8EE9-F2EF8CFBF29D}" ShortID="236307544">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Drumstick1" ID="{67E32E8E-5E73-4484-941B-CDCF0A4F7DCF}">
+							<Language>SFX</Language>
+							<AudioFile>Drumstick1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="171165949"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Drumstick1" ID="{67E32E8E-5E73-4484-941B-CDCF0A4F7DCF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Drumstick2" ID="{C5899A82-3E0B-48D4-BCE9-127B0FAD6FCD}" ShortID="108624111">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Drumstick2" ID="{625CCD6B-4578-4688-AA5C-62E2BF4F5DF9}">
+							<Language>SFX</Language>
+							<AudioFile>Drumstick2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="125427792"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Drumstick2" ID="{625CCD6B-4578-4688-AA5C-62E2BF4F5DF9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Sniffing" ID="{68425E81-0494-40C7-9398-585560451D4E}" ShortID="385508338">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sniffing" ID="{8F30DBBB-7D76-4CD6-93C3-01FB017970C7}">
+							<Language>SFX</Language>
+							<AudioFile>Sniffing.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="431641171"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Sniffing" ID="{8F30DBBB-7D76-4CD6-93C3-01FB017970C7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Stomach-growl" ID="{9CDA645B-36D7-42A3-85BF-AA143D857EC1}" ShortID="950285833">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Stomach-growl" ID="{0E2C9FDC-0CC3-4217-9126-721997271DAF}">
+							<Language>SFX</Language>
+							<AudioFile>Stomach-growl.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="927113786"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Stomach-growl" ID="{0E2C9FDC-0CC3-4217-9126-721997271DAF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Stomach-gurlge" ID="{9179F44F-6910-4533-AFD0-8E9FC595EDB6}" ShortID="393084876">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Stomach-gurlge" ID="{2280A859-CF94-44C2-B88A-FF00C8E58FC1}">
+							<Language>SFX</Language>
+							<AudioFile>Stomach-gurlge.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="850621682"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Stomach-gurlge" ID="{2280A859-CF94-44C2-B88A-FF00C8E58FC1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
