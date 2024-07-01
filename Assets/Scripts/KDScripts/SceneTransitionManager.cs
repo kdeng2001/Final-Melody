@@ -9,6 +9,9 @@ public class SceneTransitionManager : MonoBehaviour
     private Player player;
     private string entranceID = "";
     private Coroutine EnterSceneCoroutine = null;
+
+    [SerializeField] public AK.Wwise.Event openDoorSound;
+    [SerializeField] public AK.Wwise.Event closeDoorSound;
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -30,21 +33,22 @@ public class SceneTransitionManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= MovePlayerToEntrance;
     }
-    public void EnterNewScene(string sceneName, string entranceID)
+    public void EnterNewScene(string sceneName, string entranceID, bool isRealDoor)
     {
         if(EnterSceneCoroutine != null) { return; }
         DataPersistenceManager.Instance.SaveScene(SceneManager.GetActiveScene());
         this.entranceID = entranceID;
         //SceneManager.LoadScene(sceneName);
-        EnterSceneCoroutine = StartCoroutine(EnterScene(sceneName));
+        EnterSceneCoroutine = StartCoroutine(EnterScene(sceneName, isRealDoor));
         //Debug.Log("Load scene from SceneTransitionManager " + SceneManager.GetActiveScene().name);
     }
 
-    private IEnumerator EnterScene(string sceneName)
+    private IEnumerator EnterScene(string sceneName,  bool isRealDoor)
     {
         
         LoadSceneManager.Instance.FadeToScreen(LoadSceneManager.Instance.blackScreen);
         player.PauseMovement();
+        if(isRealDoor) { openDoorSound.Post(AudioManager.Instance.gameObject); }
         yield return new WaitForSeconds(1.5f);
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         while(!operation.isDone)
@@ -52,6 +56,7 @@ public class SceneTransitionManager : MonoBehaviour
             yield return null;
         }
         LoadSceneManager.Instance.FadeFromScreen(LoadSceneManager.Instance.blackScreen);
+        if (isRealDoor) { closeDoorSound.Post(AudioManager.Instance.gameObject); }
         player.UnPauseMovement();
         EnterSceneCoroutine = null;
     }

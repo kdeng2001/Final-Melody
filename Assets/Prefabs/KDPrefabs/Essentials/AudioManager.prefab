@@ -109,22 +109,32 @@ MonoBehaviour:
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 3bbfcb5dd45037f4b99d6517c6b11655, type: 2}
+      WwiseObjectReference: {fileID: 11400000, guid: 8c50aa546ea494a4e897ffd13af7636e, type: 2}
   - sceneNames:
     - DocOffice
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 8e59bbbe939cd6a4b8e3212f6d0c26b5, type: 2}
+      WwiseObjectReference: {fileID: 11400000, guid: f4a2b875486ff614eba5e45d186b31e9, type: 2}
   - sceneNames:
     - TempRoom1
-    - MainMenuRefactor
-    - IntroRefactor
     - MusicVenue
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 63d52b0eff132d345a508d2a4a5adff0, type: 2}
+      WwiseObjectReference: {fileID: 11400000, guid: e9305c707fe7f2c42ba0a8f096f30690, type: 2}
+  - sceneNames:
+    - MainMenuRefactor
+    musicLoop:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 01bbd9250c062a14a8c2963f85fec71d, type: 2}
+  - sceneNames:
+    - IntroRefactor
+    musicLoop:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 458beef08b0e74c40bae9ed3bd4d22e4, type: 2}
   battleMusic:
   - sceneNames:
     - MockBattleScene
@@ -132,4 +142,5 @@ MonoBehaviour:
     musicLoop:
       idInternal: 0
       valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 8e59bbbe939cd6a4b8e3212f6d0c26b5, type: 2}
+      WwiseObjectReference: {fileID: 11400000, guid: f4a2b875486ff614eba5e45d186b31e9, type: 2}
+  itemAudio: {fileID: 0}

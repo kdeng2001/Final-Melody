@@ -7,6 +7,8 @@ public class DoorInteractable : Interactable
     [SerializeField] private string sceneToEnterName;
     [SerializeField] public string entranceID;
     [SerializeField] public Transform positionToEnter;
+
+    [SerializeField] public bool isARealDoor = true;
     public override void OnFinishInteract()
     {
         //base.OnFinishInteract();
@@ -16,6 +18,6 @@ public class DoorInteractable : Interactable
     public override void OnStartInteract()
     {
         //base.OnStartInteract();
-        SceneTransitionManager.Instance.EnterNewScene(sceneToEnterName, entranceID);
+        SceneTransitionManager.Instance.EnterNewScene(sceneToEnterName, entranceID, isARealDoor);
     }
 }

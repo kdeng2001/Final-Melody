@@ -813,23 +813,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!1 &848637033 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6779293870037018851, guid: 3d49dcb744eb9094fa30a7943f8d39f7, type: 3}
-  m_PrefabInstance: {fileID: 1420270206}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &848637034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848637033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ba849cd0d5e9fe4397eb59dd6c01770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &904022010
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,6 +857,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 408608053265387288, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c50aa546ea494a4e897ffd13af7636e, type: 2}
+    - target: {fileID: 900353341422611333, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 68f11e88ee0ec944d9a666b6db47823e, type: 2}
+    - target: {fileID: 2275174353793530272, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 47d8b3f5fccedec4880168a919909d87, type: 2}
     - target: {fileID: 2786377804114552884, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
       propertyPath: icon
       value: 
@@ -922,10 +917,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4954493763990221981, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f4a2b875486ff614eba5e45d186b31e9, type: 2}
+    - target: {fileID: 5132515051408743141, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9dd0fc9e2f3a30e44b79c563d5fea9a2, type: 2}
+    - target: {fileID: 5291059951870376543, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e9305c707fe7f2c42ba0a8f096f30690, type: 2}
     - target: {fileID: 5847750021402751496, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
       propertyPath: m_Name
       value: ItemsList
       objectReference: {fileID: 0}
+    - target: {fileID: 6333181776955826084, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 12c84dfcf8294ff49adc671ab74e975c, type: 2}
+    - target: {fileID: 7274616792917638893, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1c45b1cf510e7ee46892989fb3939a4a, type: 2}
+    - target: {fileID: 7520065264231366831, guid: 6b4a2bfd8a2a33f4c90a8cfd5a49a911, type: 3}
+      propertyPath: pickupWwiseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9be0ff67d002eae499b65e781a617504, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1185,10 +1204,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6779293870037018851, guid: 3d49dcb744eb9094fa30a7943f8d39f7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 848637034}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d49dcb744eb9094fa30a7943f8d39f7, type: 3}
 --- !u!1001 &1489396026
 PrefabInstance:
@@ -2454,6 +2470,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5376094506016573456, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
+      propertyPath: purchaseSFX.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 68f71e0e52fc63743b5885b86cb6f930, type: 2}
     - target: {fileID: 5407370628973613710, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -184.47913

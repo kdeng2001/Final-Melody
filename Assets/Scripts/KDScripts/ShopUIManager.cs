@@ -17,11 +17,14 @@ public class ShopUIManager : MonoBehaviour
     [SerializeField] private Button ExitButton;
     [Header("Player Cash")]
     [SerializeField] private TextMeshProUGUI cash;
+    [Header("Purchase SFX")]
+    [SerializeField] private AK.Wwise.Event purchaseSFX;
 
     private Dictionary<string, ShoppingEntry> itemsUI;
     public static ShopUIManager Instance;
     // reference to shopkeeper currently trading
     public Shopkeeper currentShopkeeper { get; private set; }
+    
     private void Awake()
     {
         if(Instance != null && Instance != this)
@@ -145,7 +148,9 @@ public class ShopUIManager : MonoBehaviour
         // if not purchasable, return
         int cost = (itemsUI[itemName].buyAmountVal + 1) * itemsUI[itemName].costVal;
         if(cost > InventoryUI.Instance.points.money) { return; }
-        // if purchasable
+        // ======================= if purchasable =================================
+        // play purchase sound
+        purchaseSFX.Post(AudioManager.Instance.gameObject);
         // add to player inventory
         InventoryUI.Instance.inventory.UpdateItem(itemName, itemsUI[itemName].buyAmountVal, ItemsList.Instance.items[itemName].iconFilePath);
         // decrement player money
