@@ -132,7 +132,7 @@
 						<Action Name="" ID="{4A7916AF-857F-4C9E-A939-BF8B6249959E}" ShortID="583796188">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="various clicks" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+									<ObjectRef Name="button click 1" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

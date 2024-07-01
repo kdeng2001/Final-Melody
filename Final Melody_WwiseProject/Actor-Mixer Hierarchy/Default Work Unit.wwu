@@ -3334,6 +3334,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="guitar swoosh" ID="{E2A3A10E-A7C4-45E1-BC6C-7BD68F942713}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.613705428879442"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.70014848564978"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>guitar swoosh.wav</AudioFile>
 							<MediaIDList>
@@ -3356,6 +3361,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="guitar pick click clack" ID="{3E03F3A3-D36B-46DB-83D3-7CF3B9102E0B}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.696950014689592"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>guitar pick click clack.wav</AudioFile>
 							<MediaIDList>
@@ -3378,6 +3387,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="paper cup sounds" ID="{C4D7276E-9E67-4F0B-8FB4-A3E4C8210BDA}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="6.60893248858914"/>
+								<Property Name="TrimEnd" Type="Real64" Value="7.20858466419471"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>paper cup sounds.wav</AudioFile>
 							<MediaIDList>
@@ -3400,6 +3414,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="paper rips" ID="{15EC3863-8DA1-4C41-AA79-85808123BB43}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.04630437376559"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>paper rips.wav</AudioFile>
 							<MediaIDList>
@@ -3444,6 +3462,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="4.81557280386904"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>thick paper (ticket wobble).wav</AudioFile>
 							<MediaIDList>
@@ -3455,7 +3477,7 @@
 						<ActiveSource Name="thick paper (ticket wobble)" ID="{C74F064C-8DC9-4DC6-BD2A-BCEA3D4E3BE1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="various clicks" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" ShortID="563181178">
+				<Sound Name="button click 1" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" ShortID="563181178">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
@@ -3466,10 +3488,14 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="various clicks" ID="{F6A406B9-0F89-438D-97DA-76096DC8053D}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.695110410401642"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>various clicks.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="201321310"/>
+								<MediaID ID="6109518"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
@@ -3606,6 +3632,33 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="button click 2" ID="{948AD8E1-C315-466F-8690-4A00CD33659E}" ShortID="74201957">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3AD389EF-0582-4412-AF7D-1CF3DC98C7FF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A9A3CE68-41CF-45E9-B0DA-F5A032BB836D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="various clicks" ID="{9F7A0036-0491-437C-84A9-956187D60C58}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="8.4594407535028"/>
+								<Property Name="TrimEnd" Type="Real64" Value="9.03634445626592"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>various clicks.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="201321310"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="various clicks" ID="{9F7A0036-0491-437C-84A9-956187D60C58}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
