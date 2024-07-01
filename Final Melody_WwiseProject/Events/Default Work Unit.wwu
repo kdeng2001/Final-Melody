@@ -3,302 +3,9 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Footsteps" ID="{58F94790-6F5A-4B8B-9924-39FA31C53253}">
+				<Event Name="Play_Button_Click" ID="{80E4B509-4B9A-4692-A781-1D12B900D4C7}">
 					<ChildrenList>
-						<Action Name="" ID="{0D67B343-C660-4FBF-A2D3-716E472D1300}" ShortID="654061999">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{EBC65F03-A1E8-489A-84BA-8F9A813663BC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Footsteps" ID="{02C30374-44E3-4620-B037-A2E1A2442694}">
-					<ChildrenList>
-						<Action Name="" ID="{69849627-2F04-4CF8-A54F-712F98E95CCE}" ShortID="972262034">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{EBC65F03-A1E8-489A-84BA-8F9A813663BC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Chime" ID="{DA770DFA-6F67-4BFE-BEDF-756D31C34865}">
-					<ChildrenList>
-						<Action Name="" ID="{F5035C21-2214-4270-A57F-FC83D0BA458D}" ShortID="272712432">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Chime" ID="{DE60024B-441A-4A0C-8B9B-9333F258B6B7}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Guitar_Impact" ID="{E4EA9A3A-2D68-4EF8-A07E-B68949DF65E5}">
-					<ChildrenList>
-						<Action Name="" ID="{0A4965D4-2415-40C3-9E3D-BF36F7E28A06}" ShortID="619561623">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Guitar Impact" ID="{926B523D-A74A-49AA-87F6-3FD39F6A1C7A}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Guitar_Snap" ID="{FF9B5DE2-E599-46FB-9AAE-7848B716D232}">
-					<ChildrenList>
-						<Action Name="" ID="{5CC74F5A-AE66-4CF2-B519-181BAFA3B1D0}" ShortID="934303400">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Guitar Snap" ID="{B0C2211E-C951-4F4D-B2A6-28A8ED958307}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_guitar_pick_click_clack" ID="{2BEA1318-862C-4222-BA9C-30728A503BAA}">
-					<ChildrenList>
-						<Action Name="" ID="{56628559-F68D-4807-A5AB-7DB3D298FE2D}" ShortID="122217329">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="guitar pick click clack" ID="{29DC6683-C46A-4135-AB83-A23CD79B7A1A}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Guitar_Swoosh" ID="{88FE37B8-616D-4155-87D7-519E6927D29E}">
-					<ChildrenList>
-						<Action Name="" ID="{24CCE5DB-9B9B-4C72-A2A2-FAA620CA0965}" ShortID="553600695">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Guitar Swoosh" ID="{439D4492-E35F-4C8B-8D3A-5F25F1833E56}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_paper_cup_sounds" ID="{3E4AA424-2978-46ED-98D6-E1C6C8A2D713}">
-					<ChildrenList>
-						<Action Name="" ID="{4FCE498C-15D7-4169-B84F-4CB1B8E5F325}" ShortID="795493626">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="paper cup sounds" ID="{35A34632-3834-49C2-8657-B0D35D8D8A1C}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_paper_rips" ID="{350599F8-CC7D-4FA0-817F-3DFCC297492A}">
-					<ChildrenList>
-						<Action Name="" ID="{764CAD82-B2DB-4FC3-9D9E-337C994EDE7D}" ShortID="911496100">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="paper rips" ID="{B21A0981-0744-4A0A-8EC0-F34DD6AF195E}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_static_y_chords" ID="{33ECA634-9F32-450A-B299-A6C6E8D6981C}">
-					<ChildrenList>
-						<Action Name="" ID="{C424251A-826B-44BA-AD2F-28DC665BB157}" ShortID="428006875">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="static-y chords" ID="{A3AC410A-9346-459C-956D-FD144047FEEC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_thick_paper__ticket_wobble_" ID="{E2D78E40-3DD4-4AF9-BC72-BE004B7430FC}">
-					<ChildrenList>
-						<Action Name="" ID="{C2AEB98E-248A-46E1-8D26-89B15C89032E}" ShortID="473498790">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="thick paper (ticket wobble)" ID="{797642E6-2F4B-434E-8580-3B04D08EC5B2}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_various_clicks" ID="{2A085E82-FDCE-4951-B6E4-C2D54DFACFC0}">
-					<ChildrenList>
-						<Action Name="" ID="{4A7916AF-857F-4C9E-A939-BF8B6249959E}" ShortID="583796188">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="button click 1" ID="{0C61D546-6F0B-40CA-B591-B36698BF42F7}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Overworld" ID="{DDEC5AC2-4C4F-4C05-91D4-227A1494D148}">
-					<ChildrenList>
-						<Action Name="" ID="{1AF24D16-522F-436C-8E40-795FD32E865F}" ShortID="1036005340">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Overworld" ID="{26450D6B-158E-405E-8586-568F5658A8FE}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Overworld_01" ID="{13315D85-5910-4A23-9467-11DC5FF3B01D}">
-					<ChildrenList>
-						<Action Name="" ID="{819D723A-E788-4613-8FDA-A0D74A3722D1}" ShortID="109710857">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Overworld" ID="{3B424030-4199-4C5C-A2A4-4EDF047C6030}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Jazz_Bar_Ambience" ID="{0E656252-B1BB-4BA5-81DA-F08408A62704}">
-					<ChildrenList>
-						<Action Name="" ID="{6474EACF-9338-4683-B4B9-DAF39C09BB31}" ShortID="758926715">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Bar Ambience" ID="{004F7F4F-4458-4780-9A16-49F4E7228CAC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Jazz_Fight_1" ID="{CF37C251-5628-4A3E-BC12-AE15A872E5D0}">
-					<ChildrenList>
-						<Action Name="" ID="{9C9C8407-9BA0-43A1-8333-486CC6E98A3F}" ShortID="578235027">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Fight 1" ID="{226DDFFC-BA72-48E4-B223-823D9266A68A}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Overworld_02" ID="{28AAADC8-E56A-43E7-8FE2-E079CF0BB97C}">
-					<ChildrenList>
-						<Action Name="" ID="{555A7BB7-48C7-4712-A068-A6CCA8BA5A0D}" ShortID="370167192">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Overworld" ID="{3B424030-4199-4C5C-A2A4-4EDF047C6030}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Rock_Bar_Ambience" ID="{36D1B874-1D15-46A6-B4CC-B0BD148BFDD5}">
-					<ChildrenList>
-						<Action Name="" ID="{9AD53BF1-2B04-45D0-9C58-D95B152948E4}" ShortID="1013384614">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rock Bar Ambience" ID="{DBCDEE68-2067-423F-ADB1-CC1913E51A68}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Rock_Battles" ID="{852B34B6-51ED-4FD9-940A-09D58A941152}">
-					<ChildrenList>
-						<Action Name="" ID="{B71F39C7-B6DB-4511-AA29-C895DDA5466D}" ShortID="329276019">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rock Battles" ID="{7D849604-A12D-4CBF-8223-4FA96229267F}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Jazz_Bar_Ambience" ID="{9D21304D-3B24-4B0C-873F-4B547BCB462F}">
-					<ChildrenList>
-						<Action Name="" ID="{D921FED5-14E5-49CD-8E07-6C716B17CB2D}" ShortID="297616422">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Bar Ambience" ID="{004F7F4F-4458-4780-9A16-49F4E7228CAC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Jazz_Fight_1" ID="{207D9C20-8E3F-469B-9C08-96E3F323F62E}">
-					<ChildrenList>
-						<Action Name="" ID="{EDD797C3-24C9-4930-A00A-CB6BE441B5B5}" ShortID="679574619">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Jazz Fight 1" ID="{226DDFFC-BA72-48E4-B223-823D9266A68A}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Overworld" ID="{1239769D-FEFD-4DF6-A74D-ABCBC2186F66}">
-					<ChildrenList>
-						<Action Name="" ID="{4042CB50-07CF-416C-A374-71BEFB856B80}" ShortID="1015934577">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Overworld" ID="{3B424030-4199-4C5C-A2A4-4EDF047C6030}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Rock_Bar_Ambience" ID="{7E6056A1-BF23-45A9-B4B9-16F12DF96EA5}">
-					<ChildrenList>
-						<Action Name="" ID="{51B2B2F2-77F6-4417-89A1-5D888DD8DB25}" ShortID="892437949">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rock Bar Ambience" ID="{DBCDEE68-2067-423F-ADB1-CC1913E51A68}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Rock_Battles" ID="{16E8BD77-936F-4F2E-966A-A8A8F1645571}">
-					<ChildrenList>
-						<Action Name="" ID="{28F74906-CF60-47F3-BF54-26829E4C7022}" ShortID="991816739">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rock Battles" ID="{7D849604-A12D-4CBF-8223-4FA96229267F}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Intro_Dream_World" ID="{457FB0BD-9C75-40F4-B978-0EF8F49FA602}">
-					<ChildrenList>
-						<Action Name="" ID="{67F47259-A371-4AC5-878F-CD557C8AF771}" ShortID="167194264">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Intro Dream World" ID="{15C3EE7F-3527-43BB-B949-38FF58657411}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Button_Click" ID="{4FD06650-E18A-4F01-A1DC-D87E959A08EC}">
-					<ChildrenList>
-						<Action Name="" ID="{796B784A-DFBD-45FB-869F-449E10AB2A6A}" ShortID="142099232">
+						<Action Name="" ID="{F1E33934-18B2-4AA1-A404-1F00DC642498}" ShortID="900456094">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Button Click" ID="{75F00C87-DB1A-4DC7-AAC5-71255BB723B9}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
@@ -307,9 +14,207 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Intro_Dream_World_01" ID="{AC596CEE-1087-4E9D-9914-C4B4ADE8C709}">
+				<Event Name="Play_Chime" ID="{83F18B80-7982-4D33-BE79-E93300054F15}">
 					<ChildrenList>
-						<Action Name="" ID="{BC2E25CD-C4D0-4AA6-8C79-5D5BC6349B45}" ShortID="993989062">
+						<Action Name="" ID="{6DFB1D54-79F7-4FBA-A7BD-FA443BE78104}" ShortID="971908344">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chime" ID="{DE60024B-441A-4A0C-8B9B-9333F258B6B7}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Drum_Stickls" ID="{5C6B3661-390B-4081-8EB9-ADA46DD2A031}">
+					<ChildrenList>
+						<Action Name="" ID="{F9B2C831-CB0F-4FD8-ABE9-C266D5333178}" ShortID="866222163">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drum Stickls" ID="{6D31921F-1FD3-4EBF-9919-1B2B11999DD9}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footsteps" ID="{869856FC-F9E0-45AE-8E11-41ABC8A1F8D1}">
+					<ChildrenList>
+						<Action Name="" ID="{631E3AFE-BFD0-4918-9127-A52CAFDE82AF}" ShortID="1028714349">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{EBC65F03-A1E8-489A-84BA-8F9A813663BC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Guitar_Impact" ID="{3D30BAF5-C2BC-4BC2-8CA8-463E5F1CF56A}">
+					<ChildrenList>
+						<Action Name="" ID="{AA187891-5006-4D78-A307-5ED8E3FC2DF1}" ShortID="313928761">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar Impact" ID="{926B523D-A74A-49AA-87F6-3FD39F6A1C7A}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Guitar_Snap" ID="{C7AE6F90-53B7-4BDD-8C13-A48651B3D6A6}">
+					<ChildrenList>
+						<Action Name="" ID="{AE5E3841-F07E-4CAA-91B5-D4AACB319FC8}" ShortID="77465870">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar Snap" ID="{B0C2211E-C951-4F4D-B2A6-28A8ED958307}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jazz_Bar_Ambience" ID="{918E2898-4E55-4F3E-A1BB-7C8F1F97A986}">
+					<ChildrenList>
+						<Action Name="" ID="{EDB62599-162A-4D89-AB17-0940094DEAF5}" ShortID="493429080">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{88ECC195-5C18-4D1C-A47B-6441DC1A4C95}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_cash_register" ID="{E9A683B8-7787-48BB-80B6-B00D2C41F3C4}">
+					<ChildrenList>
+						<Action Name="" ID="{F6A92D06-3F5C-4491-A065-AF672E688054}" ShortID="35636718">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cash register" ID="{68595FE1-275C-44E1-9B48-D9C9EA711EDE}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Door_Close" ID="{71A41FA2-12E9-4FAF-AFB7-1BBF48891D5F}">
+					<ChildrenList>
+						<Action Name="" ID="{23030D52-D9B5-443F-8235-D74D59570074}" ShortID="847802584">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door-Close" ID="{BF0A3788-8B83-4EA6-BD8E-B98AE0F70D39}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Door_Open" ID="{3C121F10-9247-4C98-981E-D8DB30CAFFD4}">
+					<ChildrenList>
+						<Action Name="" ID="{4E7CCA89-F5A3-4A3F-A8C5-C6E9831DEB72}" ShortID="373676792">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door-Open" ID="{BC2D3BB0-5FC4-49E1-BA10-21BD92451B60}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_guitar_pick_click_clack" ID="{4AEF8ABE-3CD5-4F63-B19E-2BC9B62F7919}">
+					<ChildrenList>
+						<Action Name="" ID="{9403EBE8-94BD-41CE-A217-9C942BF7205C}" ShortID="968816309">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="guitar pick click clack" ID="{29DC6683-C46A-4135-AB83-A23CD79B7A1A}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Guitar_Swoosh" ID="{E80EFDC0-CD7E-4E78-8092-1140C0357C9A}">
+					<ChildrenList>
+						<Action Name="" ID="{32B0381E-BD61-44ED-850D-26EB6FA711CC}" ShortID="34476782">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guitar Swoosh" ID="{439D4492-E35F-4C8B-8D3A-5F25F1833E56}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_paper_cup_sounds" ID="{5EF4FFCE-9794-4B86-B6BF-05A5B52F6B86}">
+					<ChildrenList>
+						<Action Name="" ID="{5D0DFF2B-3A4B-4B5E-9784-33F11456E5BE}" ShortID="799079016">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="paper cup sounds" ID="{35A34632-3834-49C2-8657-B0D35D8D8A1C}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_paper_rips" ID="{F5AF5AF5-1C1F-4B23-AA1D-B050D96CB0BC}">
+					<ChildrenList>
+						<Action Name="" ID="{93D97227-4D5D-47F0-AD14-156BA87611F9}" ShortID="259866627">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="paper rips" ID="{B21A0981-0744-4A0A-8EC0-F34DD6AF195E}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Sniffing" ID="{FA12C8CE-F527-4C7C-A241-40CFBF2B8348}">
+					<ChildrenList>
+						<Action Name="" ID="{00AF0926-68C5-490A-9750-62EA78CFC6A1}" ShortID="678054669">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sniffing" ID="{68425E81-0494-40C7-9398-585560451D4E}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_static_y_chords" ID="{BDC5B158-70E0-4987-BBFE-E009A74FF33C}">
+					<ChildrenList>
+						<Action Name="" ID="{442B7C01-E0F9-4E78-9DDF-7F5148F9FCB5}" ShortID="322663485">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="static-y chords" ID="{A3AC410A-9346-459C-956D-FD144047FEEC}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stomach_growl" ID="{7F5B287A-C734-4AFB-AED8-4B89E6837F63}">
+					<ChildrenList>
+						<Action Name="" ID="{4382DB9E-D43B-4834-9B4E-445D428C996B}" ShortID="846754546">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stomach-growl" ID="{9CDA645B-36D7-42A3-85BF-AA143D857EC1}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stomach_gurlge" ID="{6E3E508A-CBA2-4D4D-94A4-1F054C475368}">
+					<ChildrenList>
+						<Action Name="" ID="{7DAF5E81-1B63-4631-B331-D790677B6651}" ShortID="161434985">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stomach-gurlge" ID="{9179F44F-6910-4533-AFD0-8E9FC595EDB6}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_thick_paper__ticket_wobble_" ID="{D67E0682-8D7A-41BA-A6FC-A8B991AEB13D}">
+					<ChildrenList>
+						<Action Name="" ID="{19D5615D-CD30-4A31-ADDE-C558FC4AE10C}" ShortID="1061301040">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="thick paper (ticket wobble)" ID="{797642E6-2F4B-434E-8580-3B04D08EC5B2}" WorkUnitID="{2603E232-F983-4CEA-8CF7-2EAC8C2EA565}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Intro_Dream_World" ID="{76B49707-4DD5-429F-B815-3573573B7F25}">
+					<ChildrenList>
+						<Action Name="" ID="{F73837E2-AC1D-414F-A9E0-01ECF7381F83}" ShortID="536551191">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Intro Dream World" ID="{15C3EE7F-3527-43BB-B949-38FF58657411}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
@@ -318,12 +223,67 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Indie_Music" ID="{13A5E474-7B20-41B5-B050-8A14CBF6B1FC}">
+				<Event Name="Play_Indie_Music" ID="{F0466951-94F7-4824-BD5C-8306C0696035}">
 					<ChildrenList>
-						<Action Name="" ID="{A916AB7F-3D6C-48B2-8A27-BC2A1B6C46CA}" ShortID="165820429">
+						<Action Name="" ID="{D3E39B46-0F9F-4F86-84B2-0DF4E8BF0AB5}" ShortID="328962399">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Indie Music" ID="{8BFB9818-6C08-4AFD-8431-178B11B3EDFC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jazz_Bar_Ambience_01" ID="{D09B3E80-0C27-4FE2-BEE5-185423584560}">
+					<ChildrenList>
+						<Action Name="" ID="{A1557AA4-2F3D-4ED0-BAA3-7E6ABCD6414F}" ShortID="391967265">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Bar Ambience" ID="{004F7F4F-4458-4780-9A16-49F4E7228CAC}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jazz_Fight_1" ID="{5A189C9C-A7AE-4936-9D13-054ED4A63715}">
+					<ChildrenList>
+						<Action Name="" ID="{305C52B8-B445-4B3B-8349-845B50014A9C}" ShortID="937648192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jazz Fight 1" ID="{226DDFFC-BA72-48E4-B223-823D9266A68A}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Overworld" ID="{9DF90F64-CD4B-4E77-B506-EEC4C9FF5536}">
+					<ChildrenList>
+						<Action Name="" ID="{139A92AB-67FD-4B96-99F0-3C85B809663E}" ShortID="766801361">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Overworld" ID="{3B424030-4199-4C5C-A2A4-4EDF047C6030}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rock_Bar_Ambience" ID="{CB703DD7-D739-4F0D-8B78-241F6239F216}">
+					<ChildrenList>
+						<Action Name="" ID="{CAF101B9-BDB7-4637-8953-73A1B075A1D6}" ShortID="890623094">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rock Bar Ambience" ID="{DBCDEE68-2067-423F-ADB1-CC1913E51A68}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rock_Battles" ID="{23C8C76E-7F64-444B-AC59-3B11F6F88FB2}">
+					<ChildrenList>
+						<Action Name="" ID="{BF6C837C-A57A-4F0D-B7FA-7542C4FE35EB}" ShortID="284641515">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rock Battles" ID="{7D849604-A12D-4CBF-8223-4FA96229267F}" WorkUnitID="{713B2342-FAD8-40D6-AF4C-6646B58DC96C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
