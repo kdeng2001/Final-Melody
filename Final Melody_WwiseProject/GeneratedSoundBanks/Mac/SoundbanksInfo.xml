@@ -42,7 +42,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{E46C0CA9-329B-044E-1A41-869481D3A41B}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{3AEBAD34-A083-0F9B-C6CC-C0EB3D7587A2}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -167,7 +167,7 @@
 						<MediaRef Id="605139908"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3917357839" Name="Play_Indie_Music" DurationType="Infinite"/>
+				<Event Id="3917357839" Name="Play_Indie_Music" DurationType="OneShot" DurationMin="127.86939" DurationMax="138.26613"/>
 				<Event Id="2694120253" Name="Play_Intro_Dream_World" DurationType="Infinite"/>
 				<Event Id="1685503222" Name="Play_Jazz_Bar_Ambience" DurationType="Infinite"/>
 				<Event Id="1066505092" Name="Play_Jazz_Bar_Ambience_01" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -209,5 +209,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4DD20053-E593-A68B-D02A-1354E3F26848}</FileHash>
+	<FileHash>{2C1715FD-797F-A479-1742-2AB6B521FE9A}</FileHash>
 </SoundBanksInfo>

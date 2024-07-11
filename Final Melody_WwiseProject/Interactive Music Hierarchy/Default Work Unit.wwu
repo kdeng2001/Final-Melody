@@ -1323,7 +1323,6 @@
 											<Custom>
 												<MusicPlaylistItem Name="" ID="{6EAA21C3-CA37-46E6-9F25-06670C2EA089}" ShortID="608193209">
 													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="PlayMode" Type="int16" Value="3"/>
 													</PropertyList>
