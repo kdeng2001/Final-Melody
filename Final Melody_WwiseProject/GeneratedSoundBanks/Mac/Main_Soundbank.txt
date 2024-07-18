@@ -29,7 +29,6 @@ Event	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4149405	chime 3	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\chime 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chime\chime 3		705696
 	172635804	guitar impact 1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar impact 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Impact\guitar impact 1		352896
-	213726798	Jazz Song	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Jazz Song 2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Jazz\Jazz Fight 1\Jazz Song 2 V1\Jazz Song		16934560
 	232196511	guitar pick click clack	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar pick click clack_16C842D0.wem		\Actor-Mixer Hierarchy\Default Work Unit\guitar pick click clack		61566
 	253651070	static-y chords	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\static-y chords_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\static-y chords		3880896
 	314858832	cash register	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\cash register_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\cash register		176496
