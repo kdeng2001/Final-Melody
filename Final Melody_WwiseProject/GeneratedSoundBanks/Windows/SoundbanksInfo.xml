@@ -42,7 +42,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{3AEBAD34-A083-0F9B-C6CC-C0EB3D7587A2}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{2746A7FB-F3F7-66AC-E165-B28DA6F48968}">
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<Media>
@@ -53,6 +53,10 @@
 				<File Id="172635804" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>guitar impact 1.wav</ShortName>
 					<CachePath>SFX/guitar impact 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="213726798" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Jazz Song 2.wav</ShortName>
+					<CachePath>SFX/Jazz Song 2_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="232196511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>guitar pick click clack.wav</ShortName>
@@ -171,7 +175,11 @@
 				<Event Id="2694120253" Name="Play_Intro_Dream_World" DurationType="Infinite"/>
 				<Event Id="1685503222" Name="Play_Jazz_Bar_Ambience" DurationType="Infinite"/>
 				<Event Id="1066505092" Name="Play_Jazz_Bar_Ambience_01" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2231034946" Name="Play_Jazz_Fight_1" DurationType="OneShot" DurationMin="141.93163" DurationMax="188"/>
+				<Event Id="2231034946" Name="Play_Jazz_Fight_1" DurationType="OneShot" DurationMin="141.93163" DurationMax="192">
+					<MediaRefs>
+						<MediaRef Id="213726798"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1841649256" Name="Play_Overworld" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="666262496"/>
@@ -209,5 +217,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3A8A5F3A-D638-3F61-3A9A-5D4E14593EC9}</FileHash>
+	<FileHash>{E61F5653-D200-446B-E803-FE0941E66F51}</FileHash>
 </SoundBanksInfo>
