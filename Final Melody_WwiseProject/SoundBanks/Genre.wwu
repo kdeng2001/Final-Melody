@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E329EFFA-BF0C-4D0A-95FF-90271EC3E69D}" SchemaVersion="119" RootDocumentID="{A25523ED-2FDF-4935-B31D-C0D0EE21BA96}" ParentDocumentID="{A25523ED-2FDF-4935-B31D-C0D0EE21BA96}">
+	<SoundBanks>
+		<WorkUnit Name="Genre" ID="{E329EFFA-BF0C-4D0A-95FF-90271EC3E69D}" OwnerID="{A25523ED-2FDF-4935-B31D-C0D0EE21BA96}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundBank Name="Rock" ID="{DBBBBD83-257D-4895-A6D7-89B9C4EE412F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Rock_Battles" ID="{23C8C76E-7F64-444B-AC59-3B11F6F88FB2}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Rock_Bar_Ambience" ID="{CB703DD7-D739-4F0D-8B78-241F6239F216}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Indie" ID="{12F186A4-4665-48A0-9FA1-CF10C2CAA098}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Indie_Music" ID="{F0466951-94F7-4824-BD5C-8306C0696035}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Jazz" ID="{CE04C8F9-7A34-45ED-95A5-AA7B7FD6A91A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Jazz_Fight_1" ID="{5A189C9C-A7AE-4936-9D13-054ED4A63715}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Jazz_Bar_Ambience" ID="{918E2898-4E55-4F3E-A1BB-7C8F1F97A986}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Jazz_Bar_Ambience_01" ID="{D09B3E80-0C27-4FE2-BEE5-185423584560}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Overworld" ID="{F08BEB87-1F81-4C6D-B1B4-9B4180242675}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Intro_Dream_World" ID="{76B49707-4DD5-429F-B815-3573573B7F25}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Overworld" ID="{9DF90F64-CD4B-4E77-B506-EEC4C9FF5536}" WorkUnitID="{A3A483D2-77CB-4023-B999-67A8DC3A62D2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
