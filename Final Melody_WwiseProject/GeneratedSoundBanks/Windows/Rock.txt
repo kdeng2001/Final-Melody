@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	576708969	Play_Rock_Battles			\Default Work Unit\Play_Rock_Battles	
+	3737082598	Play_Rock_Bar_Ambience			\Default Work Unit\Play_Rock_Bar_Ambience	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	345544	Character_Home	Music			
+	275234447	Indie_Battle	Music			
+	748895195	None	Music			
+	896309499	Jazz_Battle	Music			
+	1562068129	Overworld	Music			
+	2074201812	Jazz_Bar	Music			
+	2628598795	Rock_Battle	Music			
+	3404308272	Indie_Bar	Music			
+	3781847844	Rock_Bar	Music			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	65309078	Rock Song 1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Rock Song 1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 1\Rock Song 1		7494536
+	426595442	Rock Song 2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Rock Song 2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 2\Rock Song 2		16074608
+	468749629	Rock Bar Music overworld 110 bpm	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Rock Bar Music overworld 110 bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Bar Ambience\Rock Bar Music overworld 110 bpm\Rock Bar Music overworld 110 bpm		16756572
+
