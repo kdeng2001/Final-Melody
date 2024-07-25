@@ -150,7 +150,7 @@ public class ShopUIManager : MonoBehaviour
         if(cost > InventoryUI.Instance.points.money) { return; }
         // ======================= if purchasable =================================
         // play purchase sound
-        purchaseSFX.Post(AudioManager.Instance.gameObject);
+        //purchaseSFX.Post(AudioManager.Instance.gameObject);
         // add to player inventory
         InventoryUI.Instance.inventory.UpdateItem(itemName, itemsUI[itemName].buyAmountVal, ItemsList.Instance.items[itemName].iconFilePath);
         // decrement player money

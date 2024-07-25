@@ -79,23 +79,23 @@ public class CharacterMovement : Movement
     public void PlayFootstepSound(CallbackContext ctx)
     {
         if(pauseMovement) { return; }
-        footsteps.Post(gameObject);
+        //footsteps.Post(gameObject);
     }
 
     public void StopFootstepSound(CallbackContext ctx)
     {
-        footsteps.Stop(gameObject);
+        //footsteps.Stop(gameObject);
     }
 
     public void OnPauseMovementChange(bool val)
     {
-        if(val == true) { footsteps.Stop(gameObject); animHandler.Idle(); }
+        if(val == true) { /*footsteps.Stop(gameObject);*/ animHandler.Idle(); }
         else 
         { 
             if(transform.parent.TryGetComponent(out PlayerInput playerInput) 
                 && playerInput.actions["Move"].IsPressed())
             {
-                footsteps.Post(gameObject); 
+                //footsteps.Post(gameObject); 
             }
             
         }
