@@ -1,0 +1,22 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1841649256	Play_Overworld			\Default Work Unit\Play_Overworld	
+	2694120253	Play_Intro_Dream_World			\Default Work Unit\Play_Intro_Dream_World	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	345544	Character_Home	Music			
+	275234447	Indie_Battle	Music			
+	748895195	None	Music			
+	896309499	Jazz_Battle	Music			
+	1562068129	Overworld	Music			
+	2074201812	Jazz_Bar	Music			
+	2628598795	Rock_Battle	Music			
+	3404308272	Indie_Bar	Music			
+	3781847844	Rock_Bar	Music			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	245976823	Intro music loop (worldised)	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Intro music loop (worldised)_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Home\Intro Dream World\Intro Dream\Intro music loop (worldised)		9714668
+	666262496	overworld music loop	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\overworld music loop_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Overworld\Overworld\overworld music loop\overworld music loop		8205472
+

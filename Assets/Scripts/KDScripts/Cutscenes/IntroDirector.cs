@@ -26,6 +26,11 @@ public class IntroDirector : TimelineDirector
             )
         {
             timeline.gameObject.SetActive(false);
+            
+        }
+        else
+        {
+            FindAnyObjectByType<MusicHandler>().ManualLoad("intro");
         }
     }
     public override void StartDialogue(TextAsset asset)
@@ -54,6 +59,7 @@ public class IntroDirector : TimelineDirector
                     momCount++;
                     AddInstrument();
                     StartCoroutine(ResumeAndWaitDialogue(1.1f));
+                    AudioManager.Instance.UnloadCurrentMusic();
                     return;
                 }
             case 1:
@@ -109,13 +115,13 @@ public class IntroDirector : TimelineDirector
 
     public void PlayIntroLoop()
     {
-        AudioManager.Instance.PauseCurrentMusic();
+        //AudioManager.Instance.PauseCurrentMusic();
         introLoop.Post(AudioManager.Instance.gameObject);
     }
 
     public void StopIntroLoop()
     {
         introLoop.Stop(AudioManager.Instance.gameObject);
-        AudioManager.Instance.ResumeCurrentMusic();
+        //AudioManager.Instance.ResumeCurrentMusic();
     }
 }

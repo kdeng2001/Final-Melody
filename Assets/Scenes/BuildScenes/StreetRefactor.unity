@@ -2656,7 +2656,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306047196}
-  - component: {fileID: 306047195}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -2664,31 +2663,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &306047195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306047194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c55cdb72b777e514aa1b21832c48b3b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 3911b448d43d12747a8e84beef3fb36b, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &306047196
 Transform:
   m_ObjectHideFlags: 0
@@ -2735,6 +2709,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 0.68934196, z: 2}
   m_Center: {x: 0, y: 0.0978676, z: 0}
+--- !u!1001 &326830927
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087824471020682011, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495326837072124270, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
+      propertyPath: m_Name
+      value: StartStreetSceneMusicHandler
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73255b7f1fbbe5842aad6457621e4406, type: 3}
 --- !u!1001 &336460718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11511,6 +11542,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 0.49360678, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1282889242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282889244}
+  - component: {fileID: 1282889243}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1282889243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282889242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55cdb72b777e514aa1b21832c48b3b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 3911b448d43d12747a8e84beef3fb36b, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1282889244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282889242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1283761178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20748,39 +20836,39 @@ MonoBehaviour:
     costPerUnit: 2000
     stockOfUnits: 0
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: chime_SFX
+    itemName: Chime
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: guitar_snap_SFX
+    itemName: Guitar Strings
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: jazz_fight_MUSIC
+    itemName: Jazz Track
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: rock_ambience_MUSIC
+    itemName: Ambience Music Track
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: static_y_chords_SFX
+    itemName: Guitar Pick
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: guitar_impact_SFX
+    itemName: Guitar Capo
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: guitar_swoosh_SFX
+    itemName: Paper Cup
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: overworld_MUSIC
+    itemName: Ticket
     costPerUnit: 0
     stockOfUnits: 1
   - icon: {fileID: 21300000, guid: d4e3789a011ed5144a2bbf80d275fbda, type: 3}
-    itemName: rock_battle_MUSIC
+    itemName: Drum Sticks
     costPerUnit: 0
     stockOfUnits: 1
   id: e3587773-1d36-4430-982c-b087cfb1eecb
@@ -21340,6 +21428,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 163597506}
   - {fileID: 5160297589229315571}
+  - {fileID: 326830927}
   - {fileID: 2131756723}
   - {fileID: 770248917}
   - {fileID: 1189624133}
@@ -21378,3 +21467,4 @@ SceneRoots:
   - {fileID: 749314025}
   - {fileID: 1560497386}
   - {fileID: 1956865075}
+  - {fileID: 1282889244}

@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3917357839	Play_Indie_Music			\Default Work Unit\Play_Indie_Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	345544	Character_Home	Music			
+	275234447	Indie_Battle	Music			
+	748895195	None	Music			
+	896309499	Jazz_Battle	Music			
+	1562068129	Overworld	Music			
+	2074201812	Jazz_Bar	Music			
+	2628598795	Rock_Battle	Music			
+	3404308272	Indie_Bar	Music			
+	3781847844	Rock_Bar	Music			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	27257627	Indie1_worldised	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Indie1_worldised_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Indie\Indie Music\Indie 1\Indie1_worldised		22556256
+	938790332	Indie 2 - worldised	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Indie 2 - worldised_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Indie\Indie Music\Indie 2\Indie 2 - worldised		24390240
+

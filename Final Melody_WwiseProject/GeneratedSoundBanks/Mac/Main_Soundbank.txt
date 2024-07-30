@@ -26,83 +26,36 @@ Event	ID	Name			Wwise Object Path	Notes
 	3917357839	Play_Indie_Music			\Default Work Unit\Play_Indie_Music	
 	4236828667	Play_thick_paper__ticket_wobble_			\Default Work Unit\Play_thick_paper__ticket_wobble_	
 
-State Group	ID	Name			Wwise Object Path	Notes
-	3991942870	Music			\Default Work Unit\Music	
-
-State	ID	Name	State Group			Notes
-	345544	Character_Home	Music			
-	275234447	Indie_Battle	Music			
-	748895195	None	Music			
-	896309499	Jazz_Battle	Music			
-	1562068129	Overworld	Music			
-	2074201812	Jazz_Bar	Music			
-	2628598795	Rock_Battle	Music			
-	3404308272	Indie_Bar	Music			
-	3781847844	Rock_Bar	Music			
-
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	591885793	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\New Silence\Silence	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4149405	chime 3	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\chime 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chime\chime 3		705696
 	6109518	button click 1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\various clicks_C00FBD9E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button Click\button click 1		61404
-	27257627	Indie1_worldised	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Indie1_worldised_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Indie\Indie Music\Indie 1\Indie1_worldised		22556256
-	65309078	Rock Song 1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Song 1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 1\Rock Song 1		29977528
 	125427792	Drumstick2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Drumstick2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drum Stickls\Drumstick2		59488
-	135468730	Re2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Re2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Re2		384096
 	171165949	Drumstick1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Drumstick1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drum Stickls\Drumstick1		59488
 	172635804	guitar impact 1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar impact 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Impact\guitar impact 1		352896
-	176207028	Bar Crowd Loop 03	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Bar Crowd Loop 03_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Bar Crowd Loop 03		393452
-	182187529	Ti	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Ti_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Ti		384096
 	200926149	BOOT_CONC CLEAN_WALK_10	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_10		63028
 	201321310	button click 2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\various clicks_4CC09B7C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button Click\button click 2		50980
 	232196511	guitar pick click clack	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar pick click clack_16C842D0.wem		\Actor-Mixer Hierarchy\Default Work Unit\guitar pick click clack		61566
-	245976823	Intro music loop (worldised)	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Intro music loop (worldised)_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Home\Intro Dream World\Intro Dream\Intro music loop (worldised)		9714668
 	253651070	static-y chords	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\static-y chords_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\static-y chords		3880896
-	304759314	Fa2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Fa2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Fa2		384096
 	314858832	cash register	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\cash register_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\cash register		176496
-	331563995	Grab Bowl from Cupboard	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Grab Bowl from Cupboard_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Grab Bowl from Cupboard		56172
-	348757128	Glasses being Stacked	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Glasses being Stacked_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Glasses being Stacked		46534
-	378589776	La	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\La_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\La		384096
-	426595442	Rock Song 2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Song 2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Battles\Rock Song 2\Rock Song 2		36096160
 	431641171	Sniffing	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Sniffing_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sniffing		94304
-	466596290	Silverware Movement 02	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Silverware Movement 02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Silverware Movement 02		76708
-	468749629	Rock Bar Music overworld 110 bpm	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Rock Bar Music overworld 110 bpm_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Rock\Rock Bar Ambience\Rock Bar Music overworld 110 bpm\Rock Bar Music overworld 110 bpm		16756572
-	496944421	Mi	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Mi_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Mi		384096
 	505505623	BOOT_CONC CLEAN_WALK_3	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_3		82780
 	527394364	thick paper (ticket wobble)	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\thick paper (ticket wobble)_EFDF3408.wem		\Actor-Mixer Hierarchy\Default Work Unit\thick paper (ticket wobble)		24538
 	562146787	Door-Close	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Door-Close_F4C6B253.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door-Close		32728
-	578811595	Jazz Song 2 V1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Jazz Song 2 V1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Jazz\Jazz Fight 1\Jazz Song 2 V1\Jazz Song 2 V1		33163360
 	591124313	paper rips	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\paper rips_0B80AD88.wem		\Actor-Mixer Hierarchy\Default Work Unit\paper rips		92380
-	601627150	Jazz 1 	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Jazz 1 _FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Jazz\Jazz Fight 1\Jazz 1\Jazz 1 		25036900
 	605139908	Guitar Swoosh	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar swoosh_91713290.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Swoosh		191748
 	623018892	Door-Open	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Door-Open_9A4E3628.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door-Open		52940
 	645619578	BOOT_CONC CLEAN_WALK_5	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_5		70760
-	653401279	Silverware Movement 01	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Silverware Movement 01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Silverware Movement 01		103528
 	653746798	BOOT_CONC CLEAN_WALK_4	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_4		96840
-	666262496	overworld music loop	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\overworld music loop_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Overworld\Overworld\overworld music loop\overworld music loop		8205472
 	680661866	BOOT_CONC CLEAN_WALK	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK		66308
 	693247168	impact 2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\impact 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Impact\impact 2		352896
 	698235323	chime 2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\chime 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chime\chime 2		705696
 	702972314	BOOT_CONC CLEAN_WALK_7	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_7		48420
 	714191138	guitar string snap 2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar string snap 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Snap\Guitar String Snaps\guitar string snap 2		352896
-	770797067	Glasses Put Away in Cupboard	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Glasses Put Away in Cupboard_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Glasses Put Away in Cupboard		172276
-	770953017	Do	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Do_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Do		384096
-	794114772	Sol2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Sol2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Sol2		384096
 	843622230	electronic chimes	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\electronic chimes_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chime\electronic chimes		2998896
 	850621682	Stomach-gurlge	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Stomach-gurlge_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stomach-gurlge		165984
-	870181068	Ti2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Ti2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Ti2		384096
-	906275473	Sol	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Sol_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Sol		384096
-	923831673	Do2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Do2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Do2		384096
 	927113786	Stomach-growl	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Stomach-growl_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stomach-growl		137312
-	938790332	Indie 2 - worldised	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Indie 2 - worldised_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Indie\Indie Music\Indie 2\Indie 2 - worldised		24390240
-	959761817	Re	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Re_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Re		384096
-	991873149	Glass Breaking	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Glass Breaking_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Glass Breaking		144432
-	993713978	La2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\La2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\La2		384096
-	997201571	Mi2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Mi2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Mi2		384096
 	1005809217	guitar string snap	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\guitar string snap_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Guitar Snap\Guitar String Snaps\guitar string snap		352896
 	1029415312	BOOT_CONC CLEAN_WALK_2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_2		90292
 	1034615824	paper cup sounds	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\paper cup sounds_2A7C3CA5.wem		\Actor-Mixer Hierarchy\Default Work Unit\paper cup sounds		52986
-	1035264319	Fa	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\Fa_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Fa		384096
 	1051922225	BOOT_CONC CLEAN_WALK_1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Mac\SFX\BOOT_CONC CLEAN_WALK.1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\BOOT_CONC CLEAN_WALK_1		79080
 

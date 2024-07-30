@@ -37,20 +37,13 @@ public abstract class Item : MonoBehaviour, IDataPersistence
     {
         // wwise
         if(pickupWwiseSFX != null && !isSoundPlaying) 
-        { 
-            if(AudioManager.Instance.itemAudio != null) { AudioManager.Instance.itemAudio.StopSFX(false); }
+        {
+            if (AudioManager.Instance.itemAudio != null) { AudioManager.Instance.itemAudio.StopSFX(false); }
             pickupWwiseSFX.Post(AudioManager.Instance.gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);
             isSoundPlaying = true;
-            AudioManager.Instance.PauseCurrentMusic();
+            //AudioManager.Instance.PauseCurrentMusic();
             AudioManager.Instance.itemAudio = this;
         }
-        //// audio source
-        //else if(pickupAudioSFX != null && !pickupAudioSFX) 
-        //{ 
-        //    pickupAudioSFX.Play();
-        //    AudioManager.Instance.PauseCurrentMusic();
-            
-        //}
     }
 
     public void StopSFX(bool resume)
@@ -60,14 +53,9 @@ public abstract class Item : MonoBehaviour, IDataPersistence
             Debug.Log("StopSFX");
             pickupWwiseSFX.Stop(AudioManager.Instance.gameObject);
             isSoundPlaying = false;
-            if (resume) { AudioManager.Instance.ResumeCurrentMusic(); }
+            //if (resume) { AudioManager.Instance.ResumeCurrentMusic(); }
             AudioManager.Instance.itemAudio = null;
         }
-        //else if(pickupAudioSFX != null)
-        //{
-        //    pickupAudioSFX.Stop();
-        //    AudioManager.Instance.ResumeCurrentMusic();
-        //}
     }
 
     void CallBackFunction(object in_cookie, AkCallbackType callType, object in_info)

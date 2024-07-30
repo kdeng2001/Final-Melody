@@ -1,0 +1,47 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1066505092	Play_Jazz_Bar_Ambience_01			\Default Work Unit\Play_Jazz_Bar_Ambience_01	
+	1685503222	Play_Jazz_Bar_Ambience			\Default Work Unit\Play_Jazz_Bar_Ambience	
+	2231034946	Play_Jazz_Fight_1			\Default Work Unit\Play_Jazz_Fight_1	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	345544	Character_Home	Music			
+	275234447	Indie_Battle	Music			
+	748895195	None	Music			
+	896309499	Jazz_Battle	Music			
+	1562068129	Overworld	Music			
+	2074201812	Jazz_Bar	Music			
+	2628598795	Rock_Battle	Music			
+	3404308272	Indie_Bar	Music			
+	3781847844	Rock_Bar	Music			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	591885793	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\New Silence\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	135468730	Re2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Re2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Re2		384096
+	176207028	Bar Crowd Loop 03	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Bar Crowd Loop 03_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Bar Crowd Loop 03		393452
+	182187529	Ti	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Ti_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Ti		384096
+	304759314	Fa2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Fa2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Fa2		384096
+	331563995	Grab Bowl from Cupboard	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Grab Bowl from Cupboard_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Grab Bowl from Cupboard		56172
+	348757128	Glasses being Stacked	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Glasses being Stacked_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Glasses being Stacked		46534
+	378589776	La	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\La_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\La		384096
+	466596290	Silverware Movement 02	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Silverware Movement 02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Silverware Movement 02		76708
+	496944421	Mi	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Mi_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Mi		384096
+	578811595	Jazz Song 2 V1	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Jazz Song 2 V1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Jazz\Jazz Fight 1\Jazz Song 2 V1\Jazz Song 2 V1		33163360
+	601627150	Jazz 1 	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Jazz 1 _FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\World\Jazz\Jazz Fight 1\Jazz 1\Jazz 1 		25036900
+	653401279	Silverware Movement 01	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Silverware Movement 01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Silverware Movement 01		103528
+	770797067	Glasses Put Away in Cupboard	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Glasses Put Away in Cupboard_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Glasses Put Away in Cupboard		172276
+	770953017	Do	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Do_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Do		384096
+	794114772	Sol2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Sol2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Sol2		384096
+	870181068	Ti2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Ti2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Ti2		384096
+	906275473	Sol	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Sol_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Sol		384096
+	923831673	Do2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Do2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Do2		384096
+	959761817	Re	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Re_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Re		384096
+	991873149	Glass Breaking	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Glass Breaking_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Glass Breaking		144432
+	993713978	La2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\La2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\La2		384096
+	997201571	Mi2	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Mi2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Mi2		384096
+	1035264319	Fa	C:\Users\leand\OneDrive\Documents\GitHub\Final-Melody\Final Melody_WwiseProject\.cache\Windows\SFX\Fa_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jazz Bar Ambience\Random Events\Fa		384096
+

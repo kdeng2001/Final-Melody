@@ -83,11 +83,11 @@ public class Shopkeeper : NPCInteractable, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        Debug.Log("shop keeper start load data");
+        //Debug.Log("shop keeper start load data");
         // decode itemForSale data, where even strings are itemName, odd strings are stockOfUnits
         // set the string values to the corresponding itemForSale
         string decode;
-        if(!data.shopkeepers.TryGetValue(id, out decode)) { Debug.Log("no id found"); return; }
+        if(!data.shopkeepers.TryGetValue(id, out decode)) { /*Debug.Log("no id found");*/ return; }
         int index = 0;
         Dictionary<string, int> itemsTemp = new();
         // parse data
@@ -102,7 +102,7 @@ public class Shopkeeper : NPCInteractable, IDataPersistence
                 index++;
             }
             // get itemName
-            Debug.Log("Item... " + "strLength=" + decode.Substring(index - count, count) + ", " + "str=" + decode.Substring(index + 1, strLength));
+            //Debug.Log("Item... " + "strLength=" + decode.Substring(index - count, count) + ", " + "str=" + decode.Substring(index + 1, strLength));
             strLength = int.Parse(decode.Substring(index - count, count));
             string itemName = decode.Substring(index + 1, strLength);
             index += strLength + 1;
@@ -116,7 +116,7 @@ public class Shopkeeper : NPCInteractable, IDataPersistence
                 index++;
             }
             // get stockOfUnits
-            Debug.Log("Stock... " + "strLength=" + decode.Substring(index - count, count) + ", " + "str=" + decode.Substring(index + 1, strLength));
+            //Debug.Log("Stock... " + "strLength=" + decode.Substring(index - count, count) + ", " + "str=" + decode.Substring(index + 1, strLength));
             strLength = int.Parse(decode.Substring(index - count, count));
             int itemCount = int.Parse(decode.Substring(index + 1, strLength));
 
@@ -130,7 +130,7 @@ public class Shopkeeper : NPCInteractable, IDataPersistence
             temp.stockOfUnits = itemsTemp[itemsForSale[i].itemName];
             itemsForSale[i] = temp;
         }
-        Debug.Log("load shopkeeper data");
+        //Debug.Log("load shopkeeper data");
     }
 
     public void SaveData(GameData data)
@@ -146,7 +146,7 @@ public class Shopkeeper : NPCInteractable, IDataPersistence
                 item.stockOfUnits.ToString().Length, "#", item.stockOfUnits.ToString() 
                 );
         }
-        Debug.Log("save shopkeeper data");
+        //Debug.Log("save shopkeeper data");
         data.shopkeepers[id] = encode;
     }
 }

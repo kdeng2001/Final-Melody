@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ed2355a2df2f3549b31dc0d0ee21ba96
     GuidInternal: 
-    m_lastTime: -8584817432741672709
+    m_lastTime: -8584796699502588974
     List:
     - name: Main_Soundbank
       guid: 9486bfd2f4a4c24980b1bad61c2b0283
@@ -82,6 +82,90 @@ MonoBehaviour:
         ObjectType: 7
         guid: 9486bfd2f4a4c24980b1bad61c2b0283
       Path: SoundBanks\Default Work Unit\Main_Soundbank
+  - PhysicalPath: SoundBanks\Genre.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ed2355a2df2f3549b31dc0d0ee21ba96
+    - ElementName: Genre
+      ObjectType: 12
+      guid: faef29e30cbf0a4d95ff90271ec3e69d
+    ParentPath: SoundBanks\Default Work Unit\Genre
+    guid: faef29e30cbf0a4d95ff90271ec3e69d
+    GuidInternal: 
+    m_lastTime: -8584796699502548924
+    List:
+    - name: Indie
+      guid: a486f1126546a0489fa1cf10c2caa098
+      id: 971839182
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ed2355a2df2f3549b31dc0d0ee21ba96
+      - ElementName: Genre
+        ObjectType: 12
+        guid: faef29e30cbf0a4d95ff90271ec3e69d
+      - ElementName: Indie
+        ObjectType: 7
+        guid: a486f1126546a0489fa1cf10c2caa098
+      Path: SoundBanks\Default Work Unit\Genre\Indie
+    - name: Jazz
+      guid: f9c804ce347aed4595a5aa7b7fd6a91a
+      id: 3982678634
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ed2355a2df2f3549b31dc0d0ee21ba96
+      - ElementName: Genre
+        ObjectType: 12
+        guid: faef29e30cbf0a4d95ff90271ec3e69d
+      - ElementName: Jazz
+        ObjectType: 7
+        guid: f9c804ce347aed4595a5aa7b7fd6a91a
+      Path: SoundBanks\Default Work Unit\Genre\Jazz
+    - name: Overworld
+      guid: 87eb8bf0811f6d4cb1b49b4180242675
+      id: 1562068129
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ed2355a2df2f3549b31dc0d0ee21ba96
+      - ElementName: Genre
+        ObjectType: 12
+        guid: faef29e30cbf0a4d95ff90271ec3e69d
+      - ElementName: Overworld
+        ObjectType: 7
+        guid: 87eb8bf0811f6d4cb1b49b4180242675
+      Path: SoundBanks\Default Work Unit\Genre\Overworld
+    - name: Rock
+      guid: 83bdbbdb7d259548a6d789b9c4ee412f
+      id: 2144363834
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ed2355a2df2f3549b31dc0d0ee21ba96
+      - ElementName: Genre
+        ObjectType: 12
+        guid: faef29e30cbf0a4d95ff90271ec3e69d
+      - ElementName: Rock
+        ObjectType: 7
+        guid: 83bdbbdb7d259548a6d789b9c4ee412f
+      Path: SoundBanks\Default Work Unit\Genre\Rock
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -128,8 +212,8 @@ MonoBehaviour:
         guid: b883a6e98777bb4880b6b00d2c41f3c4
       Path: Events\Default Work Unit\Play_cash_register
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1
+      minDuration: 1
     - name: Play_Chime
       guid: 808bf1838279334dbe79e93300054f15
       id: 2969046030
@@ -145,8 +229,8 @@ MonoBehaviour:
         guid: 808bf1838279334dbe79e93300054f15
       Path: Events\Default Work Unit\Play_Chime
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 17
+      minDuration: 4
     - name: Play_Door_Close
       guid: a21fa471e912af4fafb71bbf48891d5f
       id: 2292458263
@@ -162,8 +246,8 @@ MonoBehaviour:
         guid: a21fa471e912af4fafb71bbf48891d5f
       Path: Events\Default Work Unit\Play_Door_Close
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.50987214
+      minDuration: 0.50987214
     - name: Play_Door_Open
       guid: 101f123c4792984c981ed8db30caffd4
       id: 1660008929
@@ -179,8 +263,8 @@ MonoBehaviour:
         guid: 101f123c4792984c981ed8db30caffd4
       Path: Events\Default Work Unit\Play_Door_Open
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.8256982
+      minDuration: 0.8256982
     - name: Play_Drum_Stickls
       guid: 61366b5c0b3981408eb9ada46dd2a031
       id: 2717851284
@@ -196,8 +280,8 @@ MonoBehaviour:
         guid: 61366b5c0b3981408eb9ada46dd2a031
       Path: Events\Default Work Unit\Play_Drum_Stickls
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.928
+      minDuration: 0.928
     - name: Play_Footsteps
       guid: fc569886e0f9ae458e1141abc8a1f8d1
       id: 3854155799
@@ -230,8 +314,8 @@ MonoBehaviour:
         guid: f5ba303dbcc2c24b8ca8463e5f1cf56a
       Path: Events\Default Work Unit\Play_Guitar_Impact
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2
+      minDuration: 2
     - name: Play_guitar_pick_click_clack
       guid: be8aef4ad53c634fb19e2bc9b62f7919
       id: 1957959728
@@ -247,8 +331,8 @@ MonoBehaviour:
         guid: be8aef4ad53c634fb19e2bc9b62f7919
       Path: Events\Default Work Unit\Play_guitar_pick_click_clack
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.69695
+      minDuration: 0.69695
     - name: Play_Guitar_Snap
       guid: 906faec7b753dd4b8c13a48651b3d6a6
       id: 1913203247
@@ -264,8 +348,8 @@ MonoBehaviour:
         guid: 906faec7b753dd4b8c13a48651b3d6a6
       Path: Events\Default Work Unit\Play_Guitar_Snap
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2
+      minDuration: 2
     - name: Play_Guitar_Swoosh
       guid: c0fd0ee87ecd784e80921140c0357c9a
       id: 1850691842
@@ -281,8 +365,8 @@ MonoBehaviour:
         guid: c0fd0ee87ecd784e80921140c0357c9a
       Path: Events\Default Work Unit\Play_Guitar_Swoosh
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.0864431
+      minDuration: 1.0864431
     - name: Play_Indie_Music
       guid: 516946f0f7942448bd5c8306c0696035
       id: 3917357839
@@ -298,8 +382,8 @@ MonoBehaviour:
         guid: 516946f0f7942448bd5c8306c0696035
       Path: Events\Default Work Unit\Play_Indie_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 138.26613
+      minDuration: 127.86939
     - name: Play_Intro_Dream_World
       guid: 0797b476d54d9f42b8153573573b7f25
       id: 2694120253
@@ -349,8 +433,8 @@ MonoBehaviour:
         guid: 803e9bd0270ce24fbee5185423584560
       Path: Events\Default Work Unit\Play_Jazz_Bar_Ambience_01
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Jazz_Fight_1
       guid: 9c9c185aaea736499d13054ed4a63715
       id: 2231034946
@@ -366,8 +450,8 @@ MonoBehaviour:
         guid: 9c9c185aaea736499d13054ed4a63715
       Path: Events\Default Work Unit\Play_Jazz_Fight_1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 188
+      minDuration: 141.93163
     - name: Play_Overworld
       guid: 640ff99d4bcd774eb506eec4c9ff5536
       id: 1841649256
@@ -400,8 +484,8 @@ MonoBehaviour:
         guid: cefff45e9497864bb6bf05a5b52f6b86
       Path: Events\Default Work Unit\Play_paper_cup_sounds
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5996522
+      minDuration: 0.5996522
     - name: Play_paper_rips
       guid: f55aaff51f1c234baa1db050d96cb0bc
       id: 2143556127
@@ -417,8 +501,8 @@ MonoBehaviour:
         guid: f55aaff51f1c234baa1db050d96cb0bc
       Path: Events\Default Work Unit\Play_paper_rips
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.0463043
+      minDuration: 1.0463043
     - name: Play_Rock_Bar_Ambience
       guid: d73d70cb39d70d4f8b78241f6239f216
       id: 3737082598
@@ -451,8 +535,8 @@ MonoBehaviour:
         guid: 6ec7c823647f4b44ac593b11f6f88fb2
       Path: Events\Default Work Unit\Play_Rock_Battles
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 188
+      minDuration: 156.13188
     - name: Play_Sniffing
       guid: cec812fa27f57c4ca24140cfbf2b8348
       id: 3904066322
@@ -468,8 +552,8 @@ MonoBehaviour:
         guid: cec812fa27f57c4ca24140cfbf2b8348
       Path: Events\Default Work Unit\Play_Sniffing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.472
+      minDuration: 1.472
     - name: Play_static_y_chords
       guid: 58b1c5bde0708749bbfee009a74ff33c
       id: 3447001990
@@ -485,8 +569,8 @@ MonoBehaviour:
         guid: 58b1c5bde0708749bbfee009a74ff33c
       Path: Events\Default Work Unit\Play_static_y_chords
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 22
+      minDuration: 22
     - name: Play_Stomach_growl
       guid: 7a285b7f34c7fb4aaed84b89e6837f63
       id: 2065944663
@@ -502,8 +586,8 @@ MonoBehaviour:
         guid: 7a285b7f34c7fb4aaed84b89e6837f63
       Path: Events\Default Work Unit\Play_Stomach_growl
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.144
+      minDuration: 2.144
     - name: Play_Stomach_gurlge
       guid: 8a503e6ea2cb4d4d94a41f054c475368
       id: 171402846
@@ -519,8 +603,8 @@ MonoBehaviour:
         guid: 8a503e6ea2cb4d4d94a41f054c475368
       Path: Events\Default Work Unit\Play_Stomach_gurlge
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.592
+      minDuration: 2.592
     - name: Play_thick_paper__ticket_wobble_
       guid: 82067ed67a8dba41a6fca8b991aeb13d
       id: 4236828667
@@ -536,8 +620,8 @@ MonoBehaviour:
         guid: 82067ed67a8dba41a6fca8b991aeb13d
       Path: Events\Default Work Unit\Play_thick_paper__ticket_wobble_
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.2771256
+      minDuration: 0.2771256
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -822,7 +906,7 @@ MonoBehaviour:
     m_lastTime: -8584827926414960707
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000023000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000002300000024000000250000002600000027000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

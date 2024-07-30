@@ -80,7 +80,7 @@ MonoBehaviour:
   footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7b6c813f7dda7474ab66656552b28e86, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 18ac77c0b18b5654c9fb26adf8ab32da, type: 2}
 --- !u!114 &8972076815917138027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,4 +706,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfa957d06939c54b886d8c3a636a57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookAtObj: {fileID: 0}
   ignoreY: 0
