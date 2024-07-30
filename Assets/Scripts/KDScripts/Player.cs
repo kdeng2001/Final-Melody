@@ -30,8 +30,8 @@ public class Player : MonoBehaviour, IDataPersistence
 
     public void PauseMovement() { movement.pauseMovement = true; }
     public void UnPauseMovement() { movement.pauseMovement = false; }
-    public void PauseInteractor() { interactorComponent.enabled = false; Debug.Log("pause interactor"); }
-    public void UnpauseInteractor() { interactorComponent.enabled = true; Debug.Log("unpause interactor");}
+    public void PauseInteractor() { interactorComponent.enabled = false; /*Debug.Log("pause interactor");*/ }
+    public void UnpauseInteractor() { interactorComponent.enabled = true; /*Debug.Log("unpause interactor");*/}
     public void SetPosition(Transform t)
     {
         CharacterController c = controller.GetComponent<CharacterController>();

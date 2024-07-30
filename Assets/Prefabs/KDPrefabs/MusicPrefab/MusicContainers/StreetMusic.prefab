@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9028292845213752097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4328100787437945550, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_Name
+      value: StreetMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008664812134128507, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902621778344749577, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: id
+      value: street
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902621778344749577, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: _music.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c50aa546ea494a4e897ffd13af7636e, type: 2}
+    - target: {fileID: 8711649405570001143, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c896ce66e423ff43b2fbefbb8e208a7, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}

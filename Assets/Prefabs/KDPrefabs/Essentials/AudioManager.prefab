@@ -102,45 +102,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6610bbc3c89828e4db043c566a19b291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  worldMusic:
-  - sceneNames:
-    - StreetRefactor
-    - BattleAlley
-    musicLoop:
-      idInternal: 0
-      valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 8c50aa546ea494a4e897ffd13af7636e, type: 2}
-  - sceneNames:
-    - DocOffice
-    musicLoop:
-      idInternal: 0
-      valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: f4a2b875486ff614eba5e45d186b31e9, type: 2}
-  - sceneNames:
-    - TempRoom1
-    - MusicVenue
-    musicLoop:
-      idInternal: 0
-      valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: e9305c707fe7f2c42ba0a8f096f30690, type: 2}
-  - sceneNames:
-    - MainMenuRefactor
-    musicLoop:
-      idInternal: 0
-      valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 01bbd9250c062a14a8c2963f85fec71d, type: 2}
-  - sceneNames:
-    - IntroRefactor
-    musicLoop:
-      idInternal: 0
-      valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 458beef08b0e74c40bae9ed3bd4d22e4, type: 2}
-  battleMusic:
-  - sceneNames:
-    - MockBattleScene
-    - VirtualRook_jyj_KD_BattleStage
-    musicLoop:
-      idInternal: 0
-      valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: f4a2b875486ff614eba5e45d186b31e9, type: 2}
+  musicContainers:
+  - {fileID: 8691435438907762500, guid: 2ec3e07d68b79654c8362b0fb3f5bee3, type: 3}
+  - {fileID: 4328100787437945550, guid: 2fa9b155271659f4793b31c6cbdf4deb, type: 3}
+  - {fileID: 4709199772437273071, guid: f76c0929351da7f4f9c2b18369f4cf6b, type: 3}
+  - {fileID: 3561090221165559922, guid: 2776e066693c44c40bfdce4dc3623399, type: 3}
+  - {fileID: 3650861361292964164, guid: e8f297c699609fb4b96f20307356e07d, type: 3}
   itemAudio: {fileID: 0}

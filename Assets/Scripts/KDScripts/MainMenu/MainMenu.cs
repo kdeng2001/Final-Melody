@@ -9,15 +9,16 @@ public class MainMenu : MonoBehaviour
     [SerializeField] Button SettingsButton;
     public void OnNewGameClicked()
     {
-        Debug.Log("new game clicked");
+        //Debug.Log("new game clicked");
         DataPersistenceManager.Instance.NewGame();
         SceneManager.LoadScene("IntroRefactor");
         SceneManager.LoadSceneAsync("KDEssentials", LoadSceneMode.Additive);
-        Debug.Log("async adding KDEssentials");
+        //Debug.Log("async adding KDEssentials");
+        //AudioManager.Instance.CreateMusic(0);
     }
     public void OnContinueClicked()
     {
-        Debug.Log("continue clicked");
+        //Debug.Log("continue clicked");
         DataPersistenceManager.Instance.LoadGame();
         if(DataPersistenceManager.Instance.globalGameData == null) { return; }
         //SceneManager.LoadScene(DataPersistenceManager.Instance.globalGameData.sceneIndex);
@@ -34,6 +35,10 @@ public class MainMenu : MonoBehaviour
     {
         SettingsButton.onClick.AddListener(OpenSettings);
         Settings.Instance.ExitButton.onClick.AddListener(ExitSettings);
+
+        AudioManager.Instance.UnloadAll();
+        MusicHandler handler = FindObjectOfType<MusicHandler>();
+        handler.ManualLoad(handler.sceneMusicHandling[0].container.id);
     }
 
     private void OpenSettings()

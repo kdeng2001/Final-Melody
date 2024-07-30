@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ed2355a2df2f3549b31dc0d0ee21ba96
     GuidInternal: 
-    m_lastTime: -8584802853162655401
+    m_lastTime: -8584796699502588974
     List:
     - name: Main_Soundbank
       guid: 9486bfd2f4a4c24980b1bad61c2b0283
@@ -82,6 +82,90 @@ MonoBehaviour:
         ObjectType: 7
         guid: 9486bfd2f4a4c24980b1bad61c2b0283
       Path: SoundBanks\Default Work Unit\Main_Soundbank
+  - PhysicalPath: SoundBanks\Genre.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ed2355a2df2f3549b31dc0d0ee21ba96
+    - ElementName: Genre
+      ObjectType: 12
+      guid: faef29e30cbf0a4d95ff90271ec3e69d
+    ParentPath: SoundBanks\Default Work Unit\Genre
+    guid: faef29e30cbf0a4d95ff90271ec3e69d
+    GuidInternal: 
+    m_lastTime: -8584796699502548924
+    List:
+    - name: Indie
+      guid: a486f1126546a0489fa1cf10c2caa098
+      id: 971839182
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ed2355a2df2f3549b31dc0d0ee21ba96
+      - ElementName: Genre
+        ObjectType: 12
+        guid: faef29e30cbf0a4d95ff90271ec3e69d
+      - ElementName: Indie
+        ObjectType: 7
+        guid: a486f1126546a0489fa1cf10c2caa098
+      Path: SoundBanks\Default Work Unit\Genre\Indie
+    - name: Jazz
+      guid: f9c804ce347aed4595a5aa7b7fd6a91a
+      id: 3982678634
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ed2355a2df2f3549b31dc0d0ee21ba96
+      - ElementName: Genre
+        ObjectType: 12
+        guid: faef29e30cbf0a4d95ff90271ec3e69d
+      - ElementName: Jazz
+        ObjectType: 7
+        guid: f9c804ce347aed4595a5aa7b7fd6a91a
+      Path: SoundBanks\Default Work Unit\Genre\Jazz
+    - name: Overworld
+      guid: 87eb8bf0811f6d4cb1b49b4180242675
+      id: 1562068129
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ed2355a2df2f3549b31dc0d0ee21ba96
+      - ElementName: Genre
+        ObjectType: 12
+        guid: faef29e30cbf0a4d95ff90271ec3e69d
+      - ElementName: Overworld
+        ObjectType: 7
+        guid: 87eb8bf0811f6d4cb1b49b4180242675
+      Path: SoundBanks\Default Work Unit\Genre\Overworld
+    - name: Rock
+      guid: 83bdbbdb7d259548a6d789b9c4ee412f
+      id: 2144363834
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ed2355a2df2f3549b31dc0d0ee21ba96
+      - ElementName: Genre
+        ObjectType: 12
+        guid: faef29e30cbf0a4d95ff90271ec3e69d
+      - ElementName: Rock
+        ObjectType: 7
+        guid: 83bdbbdb7d259548a6d789b9c4ee412f
+      Path: SoundBanks\Default Work Unit\Genre\Rock
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -822,7 +906,7 @@ MonoBehaviour:
     m_lastTime: -8584827926414960707
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000023000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000002300000024000000250000002600000027000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

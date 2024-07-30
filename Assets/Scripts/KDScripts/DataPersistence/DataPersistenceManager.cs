@@ -60,7 +60,7 @@ public class DataPersistenceManager : MonoBehaviour
         localGameData = globalGameData;
         if(globalGameData == null) 
         {
-            Debug.Log("No data was found");
+            //Debug.Log("No data was found");
             return;
         }
         // else load data for all scripts that implement IDataPersistence
@@ -74,7 +74,7 @@ public class DataPersistenceManager : MonoBehaviour
             if (dataPersistenceObj == null) { continue; }
             dataPersistenceObj.LoadData(globalGameData);
         }
-        Debug.Log("FinishLoadGame...");
+        //Debug.Log("FinishLoadGame...");
     }    
     public void SaveGame() 
     {
@@ -90,7 +90,7 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.SaveData(/*ref */globalGameData);
         }
         globalSaveDataHandler.Save(globalGameData);
-        Debug.Log("FinishSaveGame...");
+        //Debug.Log("FinishSaveGame...");
     }
 
     public void LoadScene(Scene scene, LoadSceneMode mode)
@@ -98,10 +98,10 @@ public class DataPersistenceManager : MonoBehaviour
         //if(mode == LoadSceneMode.Single) { return; }
         //if(mode == LoadSceneMode.Additive) { return; }
         if(scene.name == "MockBattleScene" || scene.name == "VirtualRook_jyj_KD_BattleStage") { return; }
-        Debug.Log("LoadScene..." + SceneManager.GetActiveScene().name);
+        //Debug.Log("LoadScene..." + SceneManager.GetActiveScene().name);
         if (localGameData == null && initializeDataIfNull)
         {
-            Debug.Log("LoadScene: localData is null");
+            //Debug.Log("LoadScene: localData is null");
             localGameData = new GameData(); 
         }
         dataPersistenceObjects = FindAllDataPersistenceObjects();
@@ -112,15 +112,15 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.LoadData(localGameData);
             //Debug.Log("scene data is loaded" + index++);
         }
-        Debug.Log("FinishLoadScene..." + SceneManager.GetActiveScene().name);
+        //Debug.Log("FinishLoadScene..." + SceneManager.GetActiveScene().name);
     }
     
     public void SaveScene(Scene scene)
     {
-        Debug.Log("SaveScene..." + SceneManager.GetActiveScene().name);
+        //Debug.Log("SaveScene..." + SceneManager.GetActiveScene().name);
         if (localGameData == null && initializeDataIfNull) 
         {
-            Debug.Log("SaveScene: localData is null");
+            //Debug.Log("SaveScene: localData is null");
             localGameData = new GameData(); 
         }
         dataPersistenceObjects = FindAllDataPersistenceObjects();
@@ -129,10 +129,10 @@ public class DataPersistenceManager : MonoBehaviour
         {
             if (dataPersistenceObj == null) { continue; }
             dataPersistenceObj.SaveData(/*ref */localGameData);
-            Debug.Log("scene data is saved " + index++);
+            //Debug.Log("scene data is saved " + index++);
         }
         localSaveDataHandler.Save(localGameData);
-        Debug.Log("FinishSaveScene..." + SceneManager.GetActiveScene().name);
+        //Debug.Log("FinishSaveScene..." + SceneManager.GetActiveScene().name);
     }
 
 

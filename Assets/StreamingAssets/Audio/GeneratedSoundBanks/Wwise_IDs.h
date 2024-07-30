@@ -73,7 +73,11 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID INDIE = 971839182U;
+        static const AkUniqueID JAZZ = 3982678634U;
         static const AkUniqueID MAIN_SOUNDBANK = 2228651116U;
+        static const AkUniqueID OVERWORLD = 1562068129U;
+        static const AkUniqueID ROCK = 2144363834U;
     } // namespace BANKS
 
     namespace BUSSES

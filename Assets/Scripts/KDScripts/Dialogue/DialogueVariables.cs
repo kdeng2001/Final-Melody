@@ -20,7 +20,7 @@ public class DialogueVariables : MonoBehaviour, IDataPersistence
         {
             Ink.Runtime.Object value = globalVariablesStory.variablesState.GetVariableWithName(name);
             variables.Add(name, value);
-            Debug.Log("Initialize global dialogue variable: " + name + " = " + value);
+            //Debug.Log("Initialize global dialogue variable: " + name + " = " + value);
         }
     }
 
@@ -42,7 +42,7 @@ public class DialogueVariables : MonoBehaviour, IDataPersistence
     /// <param name="value">value of variable</param>
     private void VariableChanged(string name, Ink.Runtime.Object value)
     {
-        Debug.Log("Variable changed: " + name + " = " + value);
+        //Debug.Log("Variable changed: " + name + " = " + value);
         if(variables.ContainsKey(name))
         {
             variables.Remove(name);
@@ -54,7 +54,7 @@ public class DialogueVariables : MonoBehaviour, IDataPersistence
     {
         foreach (KeyValuePair<string, Ink.Runtime.Object> variable in variables) 
         {
-            Debug.Log("Variable to story: " + variable.Key + " = " + variable.Value);
+            //Debug.Log("Variable to story: " + variable.Key + " = " + variable.Value);
             story.variablesState.SetGlobal(variable.Key, variable.Value);
         }
 
