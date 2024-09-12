@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ItemInteractable : Interactable
 {
+    // item variables
     [SerializeField] Item item;
     public delegate void ItemWasObtained(string name, int amount, string iconPath);
     public ItemWasObtained itemWasObtained;
@@ -35,7 +36,6 @@ public class ItemInteractable : Interactable
         // continue dialogue
         if (isTalking)
         {
-            Debug.Log("continue npc dialogue");
             if (DialogueManager.Instance.displayingChoices) { return; }
             isTalking = true;
             DialogueManager.Instance.ContinueStory();
@@ -43,33 +43,18 @@ public class ItemInteractable : Interactable
         // start dialogue
         else
         {
-
             if (currIndex >= texts.Length) { return; }
-            Debug.Log("begin npc dialogue");
             DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
-            //DialogueManager.Instance.ContinueStory();
             // set up variables in item dialogue;
             DialogueManager.Instance.currentStory.variablesState["item"] = item.itemName;
             DialogueManager.Instance.currentStory.variablesState["amount"] = item.amount.ToString();
             isTalking = true;
             itemWasObtained += InventoryUI.Instance.inventory.UpdateItem;
-            //if (item.pickupWwiseSFX != null/* || item.pickupAudioSFX != null*/) { item.PlaySFX(); }
         }
         // finish dialogue
         if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
         {
-            
             OnFinishInteract();
         }
     }
-
-    //public override void Start()
-    //{
-    //    base.Start();
-        
-    //}
-    //private void OnDisable()
-    //{
-        
-    //}
 }

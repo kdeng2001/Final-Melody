@@ -9,15 +9,10 @@ public class DoorInteractable : Interactable
     [SerializeField] public Transform positionToEnter;
 
     [SerializeField] public bool isARealDoor = true;
-    public override void OnFinishInteract()
-    {
-        //base.OnFinishInteract();
-        //throw new System.NotImplementedException();
-    }
+    public override void OnFinishInteract(){}
 
     public override void OnStartInteract()
     {
-        //base.OnStartInteract();
         SceneTransitionManager.Instance.EnterNewScene(sceneToEnterName, entranceID, isARealDoor);
     }
 }

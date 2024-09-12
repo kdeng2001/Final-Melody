@@ -22,7 +22,6 @@ public class NPCInteractable : Interactable
     }
     public override void OnFinishInteract()
     {
-        //Debug.Log("finish npc dialogue");
         interacting = false;
         isTalking = false;
         if (currIndex < texts.Length - 1) { currIndex++; }
@@ -32,9 +31,7 @@ public class NPCInteractable : Interactable
 
     public override void OnStartInteract()
     {
-        //Debug.Log("start interact npc");
         // continue dialogue
-        // start dialogue
         if(isTalking) { ContinueDialogue(); }
         else
         {
@@ -48,7 +45,6 @@ public class NPCInteractable : Interactable
 
     public virtual void ContinueDialogue()
     {
-        //Debug.Log("continue npc dialogue");
         if (DialogueManager.Instance.displayingChoices) { return; }
         isTalking = true;
         DialogueManager.Instance.ContinueStory();
@@ -58,19 +54,13 @@ public class NPCInteractable : Interactable
     {
         if (currIndex >= texts.Length) { return; }
         interacting = true;
-        //Debug.Log("begin npc dialogue");
         DialogueManager.Instance.EnterDialogueMode(texts[currIndex]);
-        //DialogueManager.Instance.ContinueStory();
         isTalking = true;
     }
 
     public virtual void FinishDialogue()
     {
-        if (isTalking && !DialogueManager.Instance.dialogueIsPlaying)
-        {
-            OnFinishInteract();
-            
-        }
+        if (isTalking && !DialogueManager.Instance.dialogueIsPlaying) { OnFinishInteract(); }
     }
 
     public void HandleSpriteLook()
@@ -82,14 +72,12 @@ public class NPCInteractable : Interactable
             // face right
             if(direction.x > 0)
             {
-                Debug.Log("Face right");
                 if(rightLook == null) { return; }
                 currentSprite.sprite = rightLook;
             }
             // face left
             else
             {
-                Debug.Log("Face left");
                 if (leftLook == null) { return; }
                 currentSprite.sprite = leftLook;
             }
@@ -100,14 +88,12 @@ public class NPCInteractable : Interactable
             // face up
             if(direction.z < 0)
             {
-                Debug.Log("Face up");
                 if (upLook == null) { return; }
                 currentSprite.sprite = upLook;
             }
             // face down
             else
             {
-                Debug.Log("Face down");
                 if (downLook == null) { return; }
                 currentSprite.sprite = downLook;
             }
