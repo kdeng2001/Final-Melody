@@ -9,17 +9,11 @@ public class Shopkeeper : NPCInteractable, IDataPersistence
     // shop keeper welcomes player (Dialogue 1)
     // shop menu pops up
     // on shop menu exit -> shop keeper thanks player (Dialogue 2) 
-    //private int shopkeeperIndex = 0;
 
     [Header("Shopkeeper goods")]
     [SerializeField] private List<ShopItem> itemsForSale;
     [Header("ID for data persistence across scenes and sessions")]
     public string id;
-    public bool isShopping { get; private set; }
-    private void Awake()
-    {
-        isShopping = false;
-    }
     public override void OnFinishInteract()
     {
         isTalking = false;
