@@ -9,7 +9,8 @@ public class GenericBattleNPC : NPCInteractable
 {
     [SerializeField] public bool hasBeenBeaten;
     [SerializeField] public string battleScene;
-    private string currentScene;
+    private string currentScene;    
+    private bool battleDebug = false; 
     public virtual void InitiateBattle()
     {
         if (hasBeenBeaten) { return; }
@@ -82,7 +83,7 @@ public class GenericBattleNPC : NPCInteractable
         Player.Instance.UnPauseMovement();
         InGameMenu.Instance.enabled = true;
     }
-    private bool battleDebug = false;    
+   
     private void EnableBattleDebug()
     {
         battleDebug = true;
