@@ -8,40 +8,32 @@ public abstract class Item : MonoBehaviour, IDataPersistence
 {
     [Header("Audio")]
     [SerializeField] public AK.Wwise.Event pickupWwiseSFX;
-    //[SerializeField] public AudioSource pickupAudioSFX;
-
     [SerializeField] public string itemName = "item";
     [SerializeField] public string id;
     [SerializeField] public int amount = 1;
     [SerializeField] public bool reusable = true;
     public string iconFilePath { get; private set; }
-
     [SerializeField] private GameObject model;
     [SerializeField] private GameObject interactable;
     [SerializeField] private GameObject interactIcon;
     [SerializeField] private SpriteRenderer icon;
-    //[System.NonSerialized]
+
     public bool obtained = false;
     public bool isSoundPlaying { get; private set; }
     private void Awake()
     {
-        //iconFilePath = AssetDatabase.GetAssetPath(icon.sprite);
         iconFilePath = icon.sprite.name;
-        //Debug.Log(icon.sprite.name);
-        //Debug.Log("iconFilePath: " + iconFilePath);
         isSoundPlaying = false;
     }
 
     public abstract void UseItem();
-    public virtual void PlaySFX()
+    public void PlaySFX()
     {
-        // wwise
         if(pickupWwiseSFX != null && !isSoundPlaying) 
         {
             if (AudioManager.Instance.itemAudio != null) { AudioManager.Instance.itemAudio.StopSFX(false); }
             pickupWwiseSFX.Post(AudioManager.Instance.gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);
             isSoundPlaying = true;
-            //AudioManager.Instance.PauseCurrentMusic();
             AudioManager.Instance.itemAudio = this;
         }
     }
@@ -53,12 +45,10 @@ public abstract class Item : MonoBehaviour, IDataPersistence
             Debug.Log("StopSFX");
             pickupWwiseSFX.Stop(AudioManager.Instance.gameObject);
             isSoundPlaying = false;
-            //if (resume) { AudioManager.Instance.ResumeCurrentMusic(); }
             AudioManager.Instance.itemAudio = null;
         }
     }
-
-    void CallBackFunction(object in_cookie, AkCallbackType callType, object in_info)
+    private void CallBackFunction(object in_cookie, AkCallbackType callType, object in_info)
     {
         if (callType == AkCallbackType.AK_EndOfEvent)
         {
@@ -68,39 +58,22 @@ public abstract class Item : MonoBehaviour, IDataPersistence
             StopSFX(true);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void LoadData(GameData data)
     {
         if(data.itemInScene.TryGetValue(id, out bool obtained))
         {
             this.obtained = obtained;
-            //Debug.Log(itemName + " was in data and obtained: " + obtained);
             if (this == null) { return; }
-            //Debug.Log(itemName + ", " + gameObject.name + " was in data and obtained: " + obtained);
             if (obtained) { Destroy(gameObject); }
             gameObject.SetActive(true);
         }
     }
 
-    public void SaveData(/*ref */GameData data)
+    public void SaveData(GameData data)
     {
         if(data.itemInScene.ContainsKey(id)) { data.itemInScene.Remove(id); }
-        //Debug.Log(itemName + " is saving... " + obtained);
         data.itemInScene[id] = obtained;
         if(this == null) { return; }
-        //Debug.Log(itemName + ", " + gameObject.name + " was obtained: " + obtained);
     }
 
     [ContextMenu("Generate guid for id")]

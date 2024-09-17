@@ -37,8 +37,6 @@ public class Inventory : MonoBehaviour, IDataPersistence
             itemAmounts[itemName] = amount.ToString();
             itemIcons[itemName] = iconPath;
         }
-
-        //if (itemAmounts.ContainsKey(itemName)) { Debug.Log("You have " + itemAmounts[itemName] + " of " + itemName); }
         InventoryUI.Instance.UpdateItemEntry(itemName, amount, iconPath);
 
     }
@@ -56,7 +54,6 @@ public class Inventory : MonoBehaviour, IDataPersistence
             int newAmount = int.Parse(itemAmounts[itemName]) + amount;
             itemAmounts[itemName] = newAmount.ToString();
             // if amount less than 0, remove from items, otherwise keep
-            //if (itemAmounts.ContainsKey(itemName)) { Debug.Log("You have " + itemAmounts[itemName] + " of " + itemName); }
             InventoryUI.Instance.UpdateItemEntry(itemName, amount, itemIcons[itemName]);            
             if (newAmount <= 0) 
                 { 
@@ -64,14 +61,10 @@ public class Inventory : MonoBehaviour, IDataPersistence
                     itemIcons.Remove(itemName);
              }
         }
-        // else if itemName does not exist and amount is positive, set amount directly, and set iconPath
-   
-
     }
 
     public void LoadData(GameData data)
     {
-        //Debug.Log("Load inventory");
         itemAmounts.Clear();
         itemIcons.Clear();
         InventoryUI.Instance.Clear();
@@ -83,19 +76,15 @@ public class Inventory : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void SaveData(/*ref */GameData data)
+    public void SaveData(GameData data)
     {        
-        //Debug.Log("Save inventory");
         data.itemAmountInventory.Clear();
         data.itemIconInventory.Clear();
         List<string> keys = itemAmounts.Keys.ToList();
         foreach(string key in keys)
         {
-            
             data.itemAmountInventory[key] = itemAmounts[key] ;
             data.itemIconInventory[key] = itemIcons[key];
-            //Debug.Log("adding key: " + key + " and values: " + data.itemInventory[key][0] + ", " + data.itemInventory[key][1]);
-            //data.itemInventory[key] = items[key];
         }
     }
 }

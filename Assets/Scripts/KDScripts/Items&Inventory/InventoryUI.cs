@@ -24,7 +24,6 @@ public class InventoryUI : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            //Debug.Log("Destroy InventoryUI");
             Destroy(gameObject);
             return;
         }
@@ -32,10 +31,6 @@ public class InventoryUI : MonoBehaviour
         {
             Instance = this;
             itemEntries = new Dictionary<string, GameObject>();
-            //inventory = gameObject.AddComponent<Inventory>();
-            //points = gameObject.AddComponent<Points>();
-            //moneyAmount = GameObject.Find("MoneyAmount").GetComponent<TextMeshProUGUI>();
-            //reputationAmount = GameObject.Find("ReputationAmount").GetComponent<TextMeshProUGUI>();
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -53,29 +48,24 @@ public class InventoryUI : MonoBehaviour
     {
         // find if item entry already exists
         // if so, update the ui entry
-
         if (itemEntries.ContainsKey(itemName))
         {
-            //Debug.Log(itemName + " exists");
-            UpdateUI(itemName, amount, iconPath);
+            UpdateUI(itemName, amount);
         }
         //else, create a new entry
         else
         {
-            //Debug.Log(itemName + " does not already exist");
             GameObject newEntry = Instantiate(itemEntry);
             newEntry.transform.SetParent(content, false);
             newEntry.SetActive(true);
             itemEntries[itemName] = newEntry;
-            UpdateUI(itemName, amount, iconPath);
+            UpdateUI(itemName, amount);
             CreateIcon(itemName, iconPath);
             Button button = itemEntries[itemName].GetComponent<Button>();
-            //button.onClick.AddListener(() => ItemsList.Instance.UseItem(itemName));
             button.onClick.AddListener(() => HandleConfirmationPopup(itemName));
-            //button.GetComponent<RectTransform>().pivot = Vector2.up;
         }
     }
-    private void UpdateUI(string itemName, int amount, string iconPath)
+    private void UpdateUI(string itemName, int amount)
     {
         Debug.Log("updateUI");
         List<TextMeshProUGUI> tmps = itemEntries[itemName].GetComponentsInChildren<TextMeshProUGUI>().ToList();
@@ -85,12 +75,10 @@ public class InventoryUI : MonoBehaviour
             else if (tmp.name == "Count")
             {
                 // compute new item amount
-                //Debug.Log("amount: " + amount);
                 int newAmount = int.Parse(tmp.text.Substring(1)) + amount;
                 // remove if newAmount less than 0
                 if (newAmount <= 0)
                 {
-                    //Debug.Log("Destroy " + itemName);
                     Destroy(itemEntries[itemName]);
                     itemEntries.Remove(itemName);
                     break;
@@ -100,10 +88,8 @@ public class InventoryUI : MonoBehaviour
                 else { tmp.text = newAmount.ToString(); }
                 // add x in front
                 tmp.text = "x" + tmp.text;
-
             }
         }
-
     }
     /// <summary>
     /// assumes that the icon is the only image, aside from the background image in the parent button
@@ -113,10 +99,6 @@ public class InventoryUI : MonoBehaviour
     private void CreateIcon(string itemName, string iconPath)
     {
         Image img = itemEntries[itemName].GetComponentsInChildren<Image>()[1];
-        //byte[] bytes = File.ReadAllBytes(iconPath);
-        //Texture2D texture = new(64, 64);
-        //texture.LoadImage(bytes);
-        //img.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
         img.sprite = Resources.Load<Sprite>(iconPath);
     }
 
@@ -160,7 +142,6 @@ public class InventoryUI : MonoBehaviour
                 break;
             }
         }
-
         // make confirmationPopup active
         confirmationPopup.gameObject.SetActive(true);
     }
