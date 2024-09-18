@@ -11,7 +11,6 @@ public class DrumsItem : Item, IInstrument
 
     public override void UseItem()
     {
-        //Debug.Log("use drums!");
         return;
     }
 }

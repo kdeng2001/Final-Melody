@@ -11,7 +11,6 @@ public class GuitarItem : Item, IInstrument
 
     public override void UseItem()
     {
-        //Debug.Log("use guitar!");
         return;
     }
 }

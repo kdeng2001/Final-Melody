@@ -11,7 +11,6 @@ public class KeytarItem : Item, IInstrument
 
     public override void UseItem()
     {
-        //Debug.Log("use keytar!");
         return;
     }
 }
