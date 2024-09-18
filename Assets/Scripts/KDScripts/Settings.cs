@@ -73,11 +73,10 @@ public class Settings : MonoBehaviour
     }
     public void Popup()
     {
-        if(options.activeSelf) { /*Debug.Log("options is active");*/ return; }
-        if(poppingDown != null) { /*Debug.Log("poppingDown is not null");*/ return; }
+        if(options.activeSelf) { return; }
+        if(poppingDown != null) { return; }
         options.SetActive(true);
         optionsAnim.Play("Popup");
-        //Debug.Log("Popup!!!");
     }
 
     private void OnEnable()

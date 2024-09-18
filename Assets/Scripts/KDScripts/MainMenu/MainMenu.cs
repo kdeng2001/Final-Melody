@@ -6,24 +6,18 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] Button SettingsButton;
+    [SerializeField] private Button SettingsButton;
     public void OnNewGameClicked()
     {
-        //Debug.Log("new game clicked");
         DataPersistenceManager.Instance.NewGame();
         SceneManager.LoadScene("IntroRefactor");
         SceneManager.LoadSceneAsync("KDEssentials", LoadSceneMode.Additive);
-        //Debug.Log("async adding KDEssentials");
-        //AudioManager.Instance.CreateMusic(0);
     }
     public void OnContinueClicked()
     {
-        //Debug.Log("continue clicked");
         DataPersistenceManager.Instance.LoadGame();
         if(DataPersistenceManager.Instance.globalGameData == null) { return; }
-        //SceneManager.LoadScene(DataPersistenceManager.Instance.globalGameData.sceneIndex);
         SceneManager.LoadSceneAsync("KDEssentials", LoadSceneMode.Additive);
-        //SceneManager.LoadScene(1);
     }
 
     public void MenuQuit()
