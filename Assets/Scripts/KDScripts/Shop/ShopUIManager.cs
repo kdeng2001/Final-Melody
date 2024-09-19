@@ -124,7 +124,7 @@ public class ShopUIManager : MonoBehaviour
         finishShopping?.Invoke();
     }
 
-    IEnumerator HandleFinishAnimation()
+    private IEnumerator HandleFinishAnimation()
     {
         while(shopMenu.transform.localScale.x > 0.1)
         {

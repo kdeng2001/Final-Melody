@@ -12,14 +12,11 @@ public class HoldClickableButton : MonoBehaviour, IPointerDownHandler, IPointerU
     public event Action OnHoldClicked;
 
     private bool _isHoldingButton;
-    private float _elapsedTime;
 
     // press button and start checking for hold
     public void OnPointerDown(PointerEventData eventData) 
     {
-        Debug.Log("begin hold");
         ToggleHoldingButton(true);
-        //OnClicked?.Invoke();
     } 
 
     private void ToggleHoldingButton(bool isPointerDown)
@@ -38,23 +35,21 @@ public class HoldClickableButton : MonoBehaviour, IPointerDownHandler, IPointerU
     {
         
         // wait holdDuration before handling hold behavior
-        yield return new WaitForSeconds(_holdDuration);
-        Debug.Log("click");
         OnClicked?.Invoke();
+        yield return new WaitForSeconds(_holdDuration);
+        
         // while holding button
         while(_isHoldingButton) 
         {
             OnHoldClicked?.Invoke();
             // wait before handling hold condition
             yield return new WaitForSeconds(_holdRate);
-            Debug.Log("holding");
         }
     }
 
     // release button and stop hold
     public void OnPointerUp(PointerEventData eventData)
     {
-        Debug.Log("release hold");
         ToggleHoldingButton(false);
     }
 }
