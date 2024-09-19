@@ -1153,7 +1153,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1307941776}
-  - component: {fileID: 1307941775}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1161,31 +1160,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1307941775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307941774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c55cdb72b777e514aa1b21832c48b3b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 3911b448d43d12747a8e84beef3fb36b, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!4 &1307941776
 Transform:
   m_ObjectHideFlags: 0
@@ -2469,11 +2443,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2912131568001307950, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000003941357
+      value: -0.000045776367
       objectReference: {fileID: 0}
     - target: {fileID: 2912131568001307950, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000013380311
+      value: 0.0000037897769
       objectReference: {fileID: 0}
     - target: {fileID: 3026885682572084662, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2531,6 +2505,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5376094506016573456, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
+      propertyPath: buyItemEntry
+      value: 
+      objectReference: {fileID: 7052764681346680095}
     - target: {fileID: 5376094506016573456, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
       propertyPath: purchaseSFX.WwiseObjectReference
       value: 
@@ -2674,6 +2652,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7052764681346680095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1267242186623571706, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}
+  m_PrefabInstance: {fileID: 7052764681346680091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7874863738570665091 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2898298430871996491, guid: 58290d402b8e8cb4e915e92c87856495, type: 3}

@@ -128,6 +128,8 @@ MonoBehaviour:
   itemEntry: {fileID: 8569673755262295189}
   inventory: {fileID: 8468116976330918768}
   points: {fileID: 4705883104144824615}
+  moneyAmount: {fileID: 0}
+  reputationAmount: {fileID: 0}
   confirmationPopup: {fileID: 1676023515352413598}
 --- !u!114 &3056023888413970542
 MonoBehaviour:
@@ -182,11 +184,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopMenuAnimator: {fileID: 1147592600559878088}
-  BuyItemEntry: {fileID: 1267242186623571706}
+  buyItemEntry: {fileID: 1267242186623571706}
   shopMenu: {fileID: 3838821189413722054}
   shopContent: {fileID: 4793192551951006613}
-  ExitButton: {fileID: 5141771586947736639}
+  exitButton: {fileID: 5141771586947736639}
   cash: {fileID: 3705966575149414142}
+  purchaseSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &8780002686262090549
 GameObject:
   m_ObjectHideFlags: 0

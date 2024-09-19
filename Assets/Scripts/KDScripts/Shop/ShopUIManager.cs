@@ -9,12 +9,12 @@ public class ShopUIManager : MonoBehaviour
     [Header("Shop Menu Animator")]
     [SerializeField] private Animator shopMenuAnimator;
     [Header("Buy Item Entry UI Template")]
-    [SerializeField] private GameObject BuyItemEntry;
+    [SerializeField] private GameObject buyItemEntry;
     [Header("Shop Menu UI")]
     [SerializeField] private RectTransform shopMenu;
     [SerializeField] private RectTransform shopContent;
     [Header("Shop Exit Button")]
-    [SerializeField] private Button ExitButton;
+    [SerializeField] private Button exitButton;
     [Header("Player Cash")]
     [SerializeField] private TextMeshProUGUI cash;
     [Header("Purchase SFX")]
@@ -35,8 +35,6 @@ public class ShopUIManager : MonoBehaviour
         {
             Instance = this;
             currentShopkeeper = null;
-            //shopMenu.gameObject.SetActive(false);
-            //DontDestroyOnLoad(gameObject);
         }
     }
     private void Start()
@@ -72,7 +70,7 @@ public class ShopUIManager : MonoBehaviour
 
     private ShoppingEntry CreateShoppingEntry(ShopItem item)
     {
-        GameObject entry = Instantiate(BuyItemEntry);
+        GameObject entry = Instantiate(buyItemEntry);
         ShoppingEntry entryData = entry.GetComponent<ShoppingEntry>();
         // set icon image
         entryData.icon.sprite = item.icon;
@@ -112,7 +110,7 @@ public class ShopUIManager : MonoBehaviour
         InGameMenu.Instance.enabled = false;
         currentShopkeeper = shopkeeper;
         shopMenu.gameObject.SetActive(true);
-        //shopMenuAnimator.Play("ShopPopup");
+        // shopMenuAnimator.Play("ShopPopup");
     }
     public delegate void FinishShopping();
     public FinishShopping finishShopping;
@@ -120,7 +118,6 @@ public class ShopUIManager : MonoBehaviour
     {
         shopMenuAnimator.Play("ShopUnpop");
         StartCoroutine(HandleFinishAnimation());
-        //shopMenu.gameObject.SetActive(false);
         // enable opening menu
         InGameMenu.Instance.enabled = true;
         currentShopkeeper = null;
@@ -144,7 +141,6 @@ public class ShopUIManager : MonoBehaviour
         if(itemsUI[itemName].buyAmountVal > itemsUI[itemName].stockAmountVal) { return; }
         // if amount is 0
         if(itemsUI[itemName].buyAmountVal == 0) { return; }
-
         // if not purchasable, return
         int cost = (itemsUI[itemName].buyAmountVal + 1) * itemsUI[itemName].costVal;
         if(cost > InventoryUI.Instance.points.money) { return; }
@@ -157,7 +153,6 @@ public class ShopUIManager : MonoBehaviour
         // update player money ui
         InventoryUI.Instance.points.UpdateMoney(-cost);
         cash.text = InventoryUI.Instance.points.money.ToString();
-
         // decrease stock inventory
         itemsUI[itemName].stockAmountVal -= itemsUI[itemName].buyAmountVal;
         // update shopkeeper stock
@@ -171,7 +166,6 @@ public class ShopUIManager : MonoBehaviour
     }
     public void IncrementBuyAmount(string itemName)
     {
-
         // do not increment if cost greater than money
         int cost = (itemsUI[itemName].buyAmountVal + 1) * itemsUI[itemName].costVal;
         if(InventoryUI.Instance.points.money <  cost) { return; }
@@ -195,35 +189,7 @@ public class ShopUIManager : MonoBehaviour
             itemsUI[itemName].buyAmount.text = itemsUI[itemName].buyAmountVal > 9 ?
                 "x <b>" + itemsUI[itemName].buyAmountVal.ToString() + "</b>" :
                 "x <b>0" + itemsUI[itemName].buyAmountVal.ToString() + "</b>";
-            //ShoppingEntry temp = items[itemName];
-            //temp.buyAmountVal -= 1;
-            //temp.buyAmount.text = temp.buyAmountVal > 9 ?
-            //    "x <b>" + temp.buyAmountVal.ToString() + "</b>" :
-            //    "x <b>0" + temp.buyAmountVal.ToString() + "</b>";
-            //items[itemName] = temp;
         }
     }
-    //IEnumerator HoldDecrement()
-    //{
-    //    while(ExitButton.on) { }
-    //}
-
-
 }
-
-//public class ShoppingEntry
-//{
-//    public TextMeshProUGUI itemName;
-//    public TextMeshProUGUI stockAmount;
-//    public TextMeshProUGUI cost;
-//    public TextMeshProUGUI buyAmount;
-//    public HoldClickableButton incrementBuyAmount;
-//    public HoldClickableButton decrementBuyAmount;
-
-//    public int stockAmountVal;
-//    public int costVal;
-//    public int buyAmountVal;
-
-
-//}
 
