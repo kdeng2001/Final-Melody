@@ -19,26 +19,9 @@ public class SpawnEssentials : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             if(spawnEssentialsAtStart) 
             {
-                Debug.Log("Spawning essentials...");
                 SceneManager.LoadScene("KDEssentials", LoadSceneMode.Additive);
-                Debug.Log("Finish spawning essentials!");
             }
         }
 
     }
-    //private void OnEnable()
-    //{
-    //    SceneManager.sceneLoaded += SetUpEssentials;
-    //}
-
-    //private void OnDisable()
-    //{
-    //    SceneManager.sceneLoaded += SetUpEssentials;
-    //}
-
-
-    //private void SetUpEssentials(Scene scene, LoadSceneMode mode)
-    //{
-    //    GameObject.
-    //}
 }

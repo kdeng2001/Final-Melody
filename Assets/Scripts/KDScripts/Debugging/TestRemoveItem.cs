@@ -8,7 +8,6 @@ public class TestRemoveItem : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(!other.gameObject.CompareTag("Player")) { return; }
-        Debug.Log("test remove item");
         foreach(string key in InventoryUI.Instance.itemEntries.Keys)
         {
             InventoryUI.Instance.inventory.UpdateItem(key, -removeAmount);
