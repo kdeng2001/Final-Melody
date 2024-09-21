@@ -80,7 +80,7 @@ public class GenericBattleNPC : NPCInteractable
     private void UnpauseAll()
     {
         Player.Instance.UnpauseInteractor();
-        Player.Instance.UnPauseMovement();
+        Player.Instance.UnpauseMovement();
         InGameMenu.Instance.enabled = true;
     }
    

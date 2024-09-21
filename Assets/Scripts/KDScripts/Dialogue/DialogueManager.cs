@@ -216,7 +216,7 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
-        Player.Instance.UnPauseMovement();
+        Player.Instance.UnpauseMovement();
         hasExitedDialogueMode?.Invoke();
     }
 

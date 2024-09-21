@@ -57,7 +57,7 @@ public class SceneTransitionManager : MonoBehaviour
         }
         LoadSceneManager.Instance.FadeFromScreen(LoadSceneManager.Instance.blackScreen);
         if (isRealDoor) { /*closeDoorSound.Post(AudioManager.Instance.gameObject);*/ }
-        player.UnPauseMovement();
+        player.UnpauseMovement();
         EnterSceneCoroutine = null;
     }
 

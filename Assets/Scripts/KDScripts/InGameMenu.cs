@@ -53,7 +53,7 @@ public class InGameMenu : MonoBehaviour
         {
             //Time.timeScale = 1;
             Settings.Instance.ExitSettings();
-            player.UnPauseMovement();
+            player.UnpauseMovement();
             isToggledOn = false;
             animator.Play("MenuOff");
         }

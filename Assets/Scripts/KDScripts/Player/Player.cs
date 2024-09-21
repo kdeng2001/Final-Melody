@@ -29,31 +29,27 @@ public class Player : MonoBehaviour, IDataPersistence
     }
 
     public void PauseMovement() { movement.pauseMovement = true; }
-    public void UnPauseMovement() { movement.pauseMovement = false; }
-    public void PauseInteractor() { interactorComponent.enabled = false; /*Debug.Log("pause interactor");*/ }
-    public void UnpauseInteractor() { interactorComponent.enabled = true; /*Debug.Log("unpause interactor");*/}
+    public void UnpauseMovement() { movement.pauseMovement = false; }
+    public void PauseInteractor() { interactorComponent.enabled = false; }
+    public void UnpauseInteractor() { interactorComponent.enabled = true; }
     public void SetPosition(Transform t)
     {
         CharacterController c = controller.GetComponent<CharacterController>();
         c.enabled = false;
         controller.position = model.position = interactor.position = t.position;
         c.enabled = true;
-        //Debug.Log("Finish set player position");
     }
 
     public void LoadData(GameData data)
     {
-        //Debug.Log("Load player data");
         CharacterController c = controller.GetComponent<CharacterController>();
         c.enabled = false;
         controller.position = model.position = interactor.position = data.playerPosition;
         c.enabled = true;
-        //Debug.Log("Finish load player data");
     }
 
-    public void SaveData(/*ref */GameData data)
+    public void SaveData(GameData data)
     {
-        //Debug.Log("Save player data");
         data.playerPosition = controller.position;
     }
 
@@ -61,28 +57,10 @@ public class Player : MonoBehaviour, IDataPersistence
     {
         InputAction toggleMenu = playerInput.actions["ToggleMenu"];
         toggleMenu.started += context => InGameMenu.Instance.ToggleMenu(context);
-
-        //GenericBattleNPC npc = FindAnyObjectByType<GenericBattleNPC>();
-        //InputAction loseEndBattle = playerInput.actions["LoseBattleDebug"];
-        //InputAction winEndBattle = playerInput.actions["WinBattleDebug"];
-        //if (npc != null)
-        //{
-        //    loseEndBattle.started += context => npc.EndBattleDebug(context, false);
-        //    winEndBattle.started += context => npc.EndBattleDebug(context, true);
-        //}
     }
     private void OnDisable()
     {
         InputAction toggleMenu = playerInput.actions["ToggleMenu"];
         toggleMenu.started -= context => InGameMenu.Instance.ToggleMenu(context);
-
-        //GenericBattleNPC npc = FindAnyObjectByType<GenericBattleNPC>();
-        //InputAction loseEndBattle = playerInput.actions["LoseBattleDebug"];
-        //InputAction winEndBattle = playerInput.actions["WinBattleDebug"];
-        //if (npc != null)
-        //{
-        //    loseEndBattle.started -= context => npc.EndBattleDebug(context, false);
-        //    winEndBattle.started -= context => npc.EndBattleDebug(context, true);
-        //}
     }
 }
