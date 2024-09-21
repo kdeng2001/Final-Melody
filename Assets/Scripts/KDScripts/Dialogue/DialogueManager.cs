@@ -106,30 +106,57 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueStory()
     {
+        // if there is more text in the story
         if(currentStory.canContinue)
         {
-            //dialogueText.text = currentStory.Continue();
-            if (displayLineCoroutine != null)
-            {
-                StopCoroutine(displayLineCoroutine);
-                ReachEndOfLine();
-                return;
-            }
-            displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
-            // display choices if any for this dialogue line
-            DisplayChoices();
-            // handle tags
-            HandleTags(currentStory.currentTags);
+            HandleContinueStory();
+        }
+        // if there is no more text in the story
+        else
+        {
+            HandleFinishStory();
+        }
+    }
 
+    private void HandleContinueStory()
+    {
+        // if coroutine is still running (text is still displaying character by character)
+        if (displayLineCoroutine != null)
+        {
+            // fully load the text
+            StopCoroutine(displayLineCoroutine);
+            ReachEndOfLine();
+            return;
+        }
+        // if coroutine is finished (text is fully displayed)
+        else
+        {
+            // start new coroutine with new text
+            // display choices if any for this dialogue line
+            // handle tags
+            displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
+            DisplayChoices();
+            HandleTags(currentStory.currentTags);
+        }
+    }
+
+    private void HandleFinishStory()
+    {
+        if (!canContinueToNextLine)
+        {
+            // fully load the text
+            StopCoroutine(displayLineCoroutine);
+            ReachEndOfLine();
+            return;
         }
         else
         {
-            if(!canContinueToNextLine) { return; }
+            // finish the story
             ExitDialogueMode();
         }
     }
 
-    public IEnumerator DisplayLine(string line)
+    private IEnumerator DisplayLine(string line)
     {
         canContinueIcon.SetActive(false);
         dialogueText.text = "";
