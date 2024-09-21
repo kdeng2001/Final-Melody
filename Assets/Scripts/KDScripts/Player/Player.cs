@@ -12,7 +12,7 @@ public class Player : MonoBehaviour, IDataPersistence
     [SerializeField] public PlayerInput playerInput;
 
     private Interactor interactorComponent;
-    CharacterMovement movement;
+    private CharacterMovement movement;
     private void Awake()
     {
         if(Instance != null && Instance != this)
