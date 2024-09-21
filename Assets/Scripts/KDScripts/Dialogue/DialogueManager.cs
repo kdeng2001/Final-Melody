@@ -70,8 +70,6 @@ public class DialogueManager : MonoBehaviour
                 choice.SetActive(false);
                 index++;
             }
-
-
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -82,15 +80,12 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJson.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
-
         dialogueVariables.StartListening(currentStory);
-    
-        //Time.timeScale = 0;
+
         Player.Instance.PauseMovement();
         displayNameText.text = "???";
         portraitAnimator.Play("default");
         layoutAnimator.Play("default");
-        //Debug.Log("set default tags");
 
         hasEnteredDialogueMode?.Invoke();
         StartCoroutine(DelayOneFrame());
@@ -107,15 +102,9 @@ public class DialogueManager : MonoBehaviour
     public void ContinueStory()
     {
         // if there is more text in the story
-        if(currentStory.canContinue)
-        {
-            HandleContinueStory();
-        }
+        if(currentStory.canContinue) { HandleContinueStory(); }
         // if there is no more text in the story
-        else
-        {
-            HandleFinishStory();
-        }
+        else { HandleFinishStory(); }
     }
 
     private void HandleContinueStory()
@@ -175,11 +164,9 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
-                //Debug.Log(letter);
                 dialogueText.text += letter;
                 yield return new WaitForSeconds(typingSpeed);
             }
-
         }
         ReachEndOfLine();
     }
@@ -195,29 +182,24 @@ public class DialogueManager : MonoBehaviour
     private void HandleTags(List<string> currentTags)
     {
         // loop through each tag and handle it accordingly
-       
         foreach(string tag in currentTags)
         {
             string[] splitTag = tag.Split(':');     
             if(splitTag.Length != 2)
             {
                 Debug.LogError("Tag could not be appropriately parsed: " + tag);
-
             }                
             string tagKey = splitTag[0].Trim();
             string tagValue = splitTag[1].Trim();
             switch (tagKey)
             {
                 case SPEAKER_TAG:
-                    //Debug.Log("speaker=" + tagValue);
                     displayNameText.text = tagValue;
                     break;
                 case PORTRAIT_TAG:
-                    //Debug.Log("portrait=" + tagValue);
                     portraitAnimator.Play(tagValue);
                     break;
                 case LAYOUT_TAG:
-                    //Debug.Log("layout=" + tagValue);
                     layoutAnimator.Play(tagValue);
                     break;
                 default:
@@ -225,8 +207,6 @@ public class DialogueManager : MonoBehaviour
                     break;
             }
         }
-        //Debug.Log("handle tags");
-
     }
 
     public void ExitDialogueMode()
@@ -236,7 +216,6 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
-        //Time.timeScale = 1;
         Player.Instance.UnPauseMovement();
         hasExitedDialogueMode?.Invoke();
     }
@@ -255,7 +234,6 @@ public class DialogueManager : MonoBehaviour
         // enable and initialize the choices up to the amount of choices for this line of dialogue
         foreach(Choice choice in currentChoices)
         {
-            //Debug.Log("choice " + index);
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
             index++;
@@ -264,10 +242,8 @@ public class DialogueManager : MonoBehaviour
         // go through the remaining choices the UI supports and make sure they are hidden
         for(int i=index; i<choices.Length; i++)
         {
-            //Debug.Log("choice inactive " + i);
             choices[i].gameObject.SetActive(false);
         }
-        //StartCoroutine(SelectFirstChoice());
     }
 
     private IEnumerator SelectFirstChoice()
@@ -281,10 +257,8 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
-        //Debug.Log("make choice " + choiceIndex);
         if(!canContinueToNextLine) { return; }
         currentStory.ChooseChoiceIndex(choiceIndex);
-        //displayingChoices = false;
         ContinueStory();
     }
 }
