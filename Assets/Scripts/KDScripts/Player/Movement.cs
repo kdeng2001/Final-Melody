@@ -9,17 +9,24 @@ public abstract class Movement : MonoBehaviour
     [SerializeField] private int speed = 1;
 
     private float walkSpeed = .7f;
-    /*[SerializeField]*/ private float runSpeed = 1.75f;
+    private float runSpeed = 1.75f;
     private float moveRate = 1f;
     [SerializeField] private Transform model;
     [SerializeField] private Transform interactor;
     [SerializeField] private int gravity = 10;
     [SerializeField] public CharacterAnimHandler animHandler;
-    private CharacterController _character;
-    public Vector2 direction { get; private set; }
+    private CharacterController character;
+    public Vector2 direction { get; private set; }        
+    private bool isRunning = false;
+    // Look variables
+    private const int Up = 1;
+    private const int Down = -1;
+    private const int Left = -1;
+    private const int Right = 1;
+    private const int None = 0;
     private void Awake()
     {
-        _character = GetComponent<CharacterController>();
+        character = GetComponent<CharacterController>();
     }
 
     public virtual void Update()
@@ -35,19 +42,16 @@ public abstract class Movement : MonoBehaviour
     public virtual void Move()
     {
         Vector3 moveValue = speed * moveRate * Time.deltaTime * Time.timeScale * new Vector3(direction.x, -gravity, direction.y);
-        _character.Move(moveValue);
-
+        character.Move(moveValue);
         Vector3 lookDir = new Vector3(moveValue.x, 0, moveValue.z).normalized;        
-        
         Look(lookDir);
         if (lookDir == Vector3.zero) { return; }
         model.position = transform.position;
         if(interactor == null) { return; }
         interactor.position = transform.position + lookDir.normalized;
-
     }
     // used for cutscenes
-    public IEnumerator SceneMoveTo(Vector3 movePosition, int speed)
+    public IEnumerator SceneMoveTo(Vector3 movePosition)
     {
         // calculate/set direction to move in
         direction = (movePosition - transform.position).normalized;
@@ -55,33 +59,20 @@ public abstract class Movement : MonoBehaviour
         Vector3 initPosition = transform.position;
         // calculate distance to travel
         float targetDistance = Vector3.Distance(transform.position, movePosition);
-        
         // move while targetDistance has not been covered
         while (Vector3.Distance(transform.position, initPosition) < targetDistance)
         {
             Move();
             yield return null;
-
         }
         // final adjustment if not properly positioned
-        _character.Move(movePosition);
+        character.Move(movePosition);
     }
-
-    int Up = 1;
-    int Down = -1;
-    int Left = -1;
-    int Right = 1;
-    int None = 0;
-    float diagonal = 0.71f;
     public virtual void Look(Vector3 direction)
     {
-        //float angle = Vector3.Angle(model.forward, direction);
-        //model.eulerAngles = new Vector3(model.eulerAngles.x, model.eulerAngles.y + angle, model.eulerAngles.z);
-
         if(direction == Vector3.zero) { animHandler.Idle(); }
         else
         {
-            //Debug.Log("direction: " + direction);
             // left anim --> left / left-down
             if((direction.x == Left && direction.z == None) || (direction.x < 0 && direction.z < 0)) 
             {
@@ -103,8 +94,6 @@ public abstract class Movement : MonoBehaviour
             }
         }
     }
-
-    private bool isRunning = false;
     public virtual void ToggleRun(CallbackContext context)
     {
         // stop runnning
@@ -113,7 +102,6 @@ public abstract class Movement : MonoBehaviour
             animHandler.Slowdown();
             moveRate = walkSpeed;
             isRunning = false;
-
         }
         // start running
         else
