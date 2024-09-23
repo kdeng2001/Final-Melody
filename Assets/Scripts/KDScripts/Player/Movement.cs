@@ -7,7 +7,6 @@ using static UnityEngine.InputSystem.InputAction;
 public abstract class Movement : MonoBehaviour
 {
     [SerializeField] private int speed = 1;
-
     private float walkSpeed = .7f;
     private float runSpeed = 1.75f;
     private float moveRate = 1f;
