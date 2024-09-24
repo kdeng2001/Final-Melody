@@ -8,24 +8,18 @@ public class Interactor : MonoBehaviour
 {
     [SerializeField] private string[] InteractableTags;
     private Interactable interactable;
-
-
     public void PressInteract(CallbackContext context)
     {
-        if(interactable == null || !interactable.enabled || !enabled) { /*Debug.Log("interactor is null or disabled");*/ return; }
+        if(interactable == null || !interactable.enabled || !enabled) { return; }
         if(InGameMenu.Instance.isToggledOn) { return; }
         interactable.OnStartInteract();
     }
     public void PausePlayer() { }
-
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("trigger enter: " + other.name);
         if(HasInteractableTag(other)) 
         {
-            // display interactable icon
-            // enable interaction?
-            //Debug.Log(other.gameObject.name + " is interactable");
+            // display/hide interactable icon
             if(interactable != null) { interactable.DisableInteraction(); }
             interactable = other.GetComponent<Interactable>();
             if(interactable == null) { return; }
@@ -34,7 +28,6 @@ public class Interactor : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        //Debug.Log("trigger exit: " + other.name);
         if(HasInteractableTag(other) && !interactable.interacting)
         {
             if(interactable == other.GetComponent<Interactable>()) 
@@ -54,27 +47,23 @@ public class Interactor : MonoBehaviour
     }    
     private void OnEnable()
     {
-        //Debug.Log("interactor enabled");
         if(transform.parent.TryGetComponent(out PlayerInput playerInput))
         {
             InputAction interactAction = playerInput.actions["Interact"];
             if(interactAction != null)
             {
                 interactAction.started += context => PressInteract(context);
-                //interactAction.canceled -= context => PressInteract(context);
             }
         }
     }
     private void OnDisable()
     {
-        //Debug.Log("interactor disabled");
         if (transform.parent.TryGetComponent(out PlayerInput playerInput))
         {
             InputAction interactAction = playerInput.actions["Interact"];
             if (interactAction != null)
             {
                 interactAction.started -= context => PressInteract(context);
-                //interactAction.canceled -= context => PressInteract(context);
             }
         }
     }
