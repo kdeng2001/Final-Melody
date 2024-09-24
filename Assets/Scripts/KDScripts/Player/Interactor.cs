@@ -19,7 +19,7 @@ public class Interactor : MonoBehaviour
     {
         if(HasInteractableTag(other)) 
         {
-            // display/hide interactable icon
+            // enables interaction with other, and disables interaction with previous interactable
             if(interactable != null) { interactable.DisableInteraction(); }
             interactable = other.GetComponent<Interactable>();
             if(interactable == null) { return; }
