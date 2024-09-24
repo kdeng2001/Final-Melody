@@ -6,10 +6,6 @@ using static UnityEngine.InputSystem.InputAction;
 public class CharacterMovement : Movement
 {
     public AK.Wwise.Event footsteps;
-    private float timeBetweenFootsteps = .35f;
-    Coroutine footstepCoroutine;
-
-
     public delegate void OnPauseVarChange(bool val);
     public OnPauseVarChange onPauseVarChange;
     private bool _pauseMovement = false;
