@@ -23,7 +23,6 @@ public class CharacterAnimHandler : MonoBehaviour
     {
         string newAnimation = action + direction;
         if(currentAnimation == newAnimation) { return; }
-        Debug.Log("Current animation: " + newAnimation);
         characterAnimator.Play(newAnimation);
         currentAnimation = newAnimation;
         currentDirection = direction;
@@ -34,7 +33,6 @@ public class CharacterAnimHandler : MonoBehaviour
     public void SetAnimation(string animation) { characterAnimator.Play(animation); }
     public void Idle()
     {
-        //Debug.Log("Idling..." + currentDirection);
         currentAnimation = aIdle + currentDirection;
         characterAnimator.Play(currentAnimation);
         currentAction = aIdle;
