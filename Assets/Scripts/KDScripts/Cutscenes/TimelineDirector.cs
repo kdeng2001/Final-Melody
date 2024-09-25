@@ -10,14 +10,9 @@ public class TimelineDirector : MonoBehaviour
     [SerializeField] public PlayableDirector timeline;
     [SerializeField] public TMP_InputField inputField;
     [SerializeField] public PlayerInput playerInput;
-
-    private string playerName = "";
-    private string currentDialogueName;
     public virtual void Awake()
     {
         inputField.gameObject.SetActive(false);
-        //if (!timeline.gameObject.activeSelf) { return; }
-        //Player.Instance.PauseMovement();
     }
     public virtual void StartDialogue(TextAsset asset)
     {
@@ -25,20 +20,9 @@ public class TimelineDirector : MonoBehaviour
         DialogueManager.Instance.EnterDialogueMode(asset);
         EnableCutsceneIteract();
         timeline.Pause();
-        //setInkVariable?.Invoke();
     }
-
-    //public delegate void SetInkVariable();
-    //public SetInkVariable setInkVariable;
-
-    //public virtual void AssignInkVariables()
-    //{
-    //    //DialogueManager.Instance.currentStory.variablesState["player_name"] = playerName;
-    //    //setNameInInk -= SetName;
-    //}
     public IEnumerator ResumeAndWaitDialogue(float waitTime)
     {
-
         Player.Instance.PauseInteractor();
         Player.Instance.PauseMovement();
         timeline.Resume();
@@ -58,7 +42,6 @@ public class TimelineDirector : MonoBehaviour
         }
         DialogueManager.Instance.ContinueStory();
     }
-
     private void EnableCutsceneIteract()
     {
         InputAction interactAction = playerInput.actions["Interact"];
@@ -75,8 +58,6 @@ public class TimelineDirector : MonoBehaviour
             interactAction.started -= ContinueDialogue;
         }
     }
-
-    // 
     public void DisplayField()
     {
         inputField.gameObject.SetActive(true);
@@ -84,14 +65,12 @@ public class TimelineDirector : MonoBehaviour
         Player.Instance.PauseInteractor();
         Player.Instance.PauseMovement();
     }
-
     public void PauseAll()
     {
         Player.Instance.PauseInteractor();
         Player.Instance.PauseMovement();
         InGameMenu.Instance.enabled = false;
     }
-
     public void UnpauseAll()
     {
         Player.Instance.UnpauseInteractor();
