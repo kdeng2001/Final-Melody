@@ -8,7 +8,6 @@ using UnityEngine.Playables;
 public class IntroDirector : TimelineDirector
 {
     private string playerName = "";
-    private string currentDialogueName;
 
     [SerializeField] private Sprite drumsIcon;
     [SerializeField] private Sprite guitarIcon;

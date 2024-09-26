@@ -10,6 +10,7 @@ public class TimelineDirector : MonoBehaviour
     [SerializeField] public PlayableDirector timeline;
     [SerializeField] public TMP_InputField inputField;
     [SerializeField] public PlayerInput playerInput;
+    protected string currentDialogueName;
     public virtual void Awake()
     {
         inputField.gameObject.SetActive(false);
