@@ -12,7 +12,13 @@ public class IntroDirector : TimelineDirector
     [SerializeField] private Sprite drumsIcon;
     [SerializeField] private Sprite guitarIcon;
     [SerializeField] private Sprite keytarIcon;
-    [SerializeField] private AK.Wwise.Event introLoop;
+    [SerializeField] private AK.Wwise.Event introLoop;    
+    
+    private int momCount = 0;
+    public delegate void MomFirstContinue();
+    public MomFirstContinue momContinue;    
+    public delegate void SetNameInInk();
+    public SetNameInInk setNameInInk;
     public override void Awake()
     {
         base.Awake();
@@ -43,9 +49,6 @@ public class IntroDirector : TimelineDirector
         base.StartDialogue(asset);
         setNameInInk?.Invoke();
     }
-    int momCount = 0;
-    public delegate void MomFirstContinue();
-    public MomFirstContinue momContinue;
     public void HandleMomContinue()
     {
         switch(momCount)
@@ -87,8 +90,6 @@ public class IntroDirector : TimelineDirector
             setNameInInk += SetName;
         }
     }
-    public delegate void SetNameInInk();
-    public SetNameInInk setNameInInk;
     public void SetName() 
     { 
         DialogueManager.Instance.currentStory.variablesState["player_name"] = playerName;
@@ -96,7 +97,7 @@ public class IntroDirector : TimelineDirector
     }
     private void AddInstrument()
     {
-        string instrument = (string)DialogueManager.Instance.currentStory.variablesState["instrument_name"];
+        string instrument = (string) DialogueManager.Instance.currentStory.variablesState["instrument_name"];
         Sprite icon;
         if (instrument == "Guitar") { icon = guitarIcon; }
         else if (instrument == "Keytar") { icon = keytarIcon; }
@@ -107,7 +108,6 @@ public class IntroDirector : TimelineDirector
     {
         introLoop.Post(AudioManager.Instance.gameObject);
     }
-
     public void StopIntroLoop()
     {
         introLoop.Stop(AudioManager.Instance.gameObject);
