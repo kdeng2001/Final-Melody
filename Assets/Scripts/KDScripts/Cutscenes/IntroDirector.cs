@@ -18,15 +18,15 @@ public class IntroDirector : TimelineDirector
     {
         base.Awake();
         if(
-            DataPersistenceManager.Instance != null && (
+            DataPersistenceManager.Instance != null && 
+            (
             DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Guitar") ||
             DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Keytar") ||
             DataPersistenceManager.Instance.globalGameData.itemAmountInventory.ContainsKey("Drums")
             )
-            )
+          )
         {
             timeline.gameObject.SetActive(false);
-            
         }
         else
         {
@@ -37,16 +37,13 @@ public class IntroDirector : TimelineDirector
     {
         Player.Instance.PauseMovement();
         currentDialogueName = asset.name;
-        //Debug.Log("currentDialogueName: " + currentDialogueName);
         if(currentDialogueName == "IntroMomNarration") 
         {
-            Debug.Log("it's mum time!");
             momContinue += HandleMomContinue; 
         }
         base.StartDialogue(asset);
         setNameInInk?.Invoke();
     }
-
     int momCount = 0;
     public delegate void MomFirstContinue();
     public MomFirstContinue momContinue;
@@ -69,10 +66,8 @@ public class IntroDirector : TimelineDirector
                     momCount++;
                     return;
                 }
-
         }
     }
-
     public override void ContinueDialogue(InputAction.CallbackContext context)
     {
         // must make choice before continuing dialogue
@@ -82,13 +77,11 @@ public class IntroDirector : TimelineDirector
         base.ContinueDialogue(context);
         momContinue?.Invoke();
     }
-
     public void SubmitName()
     {
-        if (inputField.text == "") { Debug.Log("Empty namefield is not allowed"); }
+        if (inputField.text == "") { /* do nothing */ }
         else
         {
-            Debug.Log("Submit!");
             inputField.gameObject.SetActive(false);
             playerName = inputField.text;
             timeline.Resume();
@@ -102,7 +95,6 @@ public class IntroDirector : TimelineDirector
         DialogueManager.Instance.currentStory.variablesState["player_name"] = playerName;
         setNameInInk -= SetName;
     }
-
     private void AddInstrument()
     {
         string instrument = (string)DialogueManager.Instance.currentStory.variablesState["instrument_name"];
@@ -112,16 +104,13 @@ public class IntroDirector : TimelineDirector
         else { icon = drumsIcon; }
         InventoryUI.Instance.inventory.UpdateItem(instrument, 1, icon.name);
     }
-
     public void PlayIntroLoop()
     {
-        //AudioManager.Instance.PauseCurrentMusic();
         introLoop.Post(AudioManager.Instance.gameObject);
     }
 
     public void StopIntroLoop()
     {
         introLoop.Stop(AudioManager.Instance.gameObject);
-        //AudioManager.Instance.ResumeCurrentMusic();
     }
 }
