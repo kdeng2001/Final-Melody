@@ -7,12 +7,10 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
-
     public static AudioManager Instance;
     [SerializeField] public GameObject[] musicContainers;
     // states of current music
     private Dictionary<MusicType, MusicContainer> musicState;
-    //private MusicData currentMusic = null;
     private MusicContainer currentContainer = null;
     private string currentID = "";
     public Item itemAudio;
@@ -33,10 +31,8 @@ public class AudioManager : MonoBehaviour
             musicState[MusicType.Cutscene] = null;
         }
     }
-
     public void CreateMusic(string id)
     {
-
         if(currentContainer != null && currentID == id)
         {
             return; 
@@ -47,16 +43,13 @@ public class AudioManager : MonoBehaviour
             if(o.GetComponent<MusicContainer>().GetID() == id) 
             {
                 obj = Instantiate(o);
-                obj.transform.SetParent(transform);        
+                obj.transform.SetParent(transform);
                 MusicContainer container = obj.GetComponent<MusicContainer>();
                 LoadMusic(container);
-                Debug.Log("created music index: " + container.id);
                 break;
             }
         }
-
     }
-
     // adds music data to musicState, without playing it
     public void PreLoadMusic(MusicContainer container)
     {
@@ -64,7 +57,6 @@ public class AudioManager : MonoBehaviour
         if(musicState[container.type] != null) { musicState[container.type].DestroyContainer(); }
         musicState[container.type] = container;
     }
-
     public void LoadMusic(MusicContainer container)
     {
         // Preload music
@@ -73,32 +65,26 @@ public class AudioManager : MonoBehaviour
         // preload and do nothing
         if (currentContainer != null) 
         { 
+            // keep current, add new to backlog
             if (currentContainer.type > container.type)
             {
-                Debug.Log("AudioManager no change");
                 return;
             }
             // pause current, play new
             else if(currentContainer.type < container.type)
             {
-                Debug.Log("AudioManager pause current");
                 currentContainer.PauseMusic();
             }
             // end current, play new
             else if(currentContainer.type == container.type)
             {
-                Debug.Log("AudioManager destroy current");
                 currentContainer.DestroyContainer();
             }
         }
         currentContainer = container;
         currentID = container.id;
         currentContainer.PlayMusic();
-        Debug.Log("AudioManager play current");
     }
-
-
-
     //// can only unload current music, when current music finishes
     public void UnloadCurrentMusic()
     {
@@ -137,7 +123,6 @@ public class AudioManager : MonoBehaviour
             currentContainer.PlayMusic();
         }
     }
-
     public void UnloadAll()
     {
         foreach(MusicType type in Enum.GetValues(typeof(MusicType)))
@@ -150,7 +135,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 }
-
 public enum MusicType
 {
     // manually load, default unload
@@ -162,13 +146,11 @@ public enum MusicType
     // 
     Overworld = 0
 }
-
 public enum MusicLoadType
 {
     Start,
     CustomCode,
 }
-
 public enum MusicUnloadType
 {
     Destroy,
