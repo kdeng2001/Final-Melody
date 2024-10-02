@@ -1572,8 +1572,8 @@ MonoBehaviour:
   leftLook: {fileID: 0}
   rightLook: {fileID: 0}
   currentSprite: {fileID: 1284042576}
-  HasBeenBeaten: 0
-  BattleScene: MockBattleScene
+  hasBeenBeaten: 0
+  battleScene: MockBattleScene
 --- !u!1001 &1310572844
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,12 +15,12 @@ public class jyj_battleScene : MonoBehaviour
     private bool init = false;
     public bool currentAction = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        command.transform.parent.gameObject.SetActive(false);
-        command.SetActive(false);
-    }
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+    //    command.transform.parent.gameObject.SetActive(false);
+    //    command.SetActive(false);
+    //}
 
     // Update is called once per frame
     void Update()

@@ -5294,8 +5294,8 @@ MonoBehaviour:
   leftLook: {fileID: -1499875663, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
   rightLook: {fileID: -422296248, guid: 1713f57ff377a344cb3d1a1e06bb7d94, type: 3}
   currentSprite: {fileID: 1068405636}
-  HasBeenBeaten: 0
-  BattleScene: VirtualRook_jyj_KD_BattleStage
+  hasBeenBeaten: 0
+  battleScene: VirtualRook_jyj_KD_BattleStage
 --- !u!1001 &1086304904
 PrefabInstance:
   m_ObjectHideFlags: 0
