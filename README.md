@@ -20,7 +20,7 @@ Design:
 * [cvu232](https://cvu232.itch.io/)
 * [mmcgeehan1128](https://mmcgeehan1128.itch.io/)
 
-Management:
+Production:
 * [Kara_40007](https://kara-40007.itch.io/)
 * [VirtualRook](https://virtualrook.itch.io/)
 
