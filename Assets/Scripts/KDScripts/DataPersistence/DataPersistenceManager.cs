@@ -39,14 +39,11 @@ public class DataPersistenceManager : MonoBehaviour
     private void OnEnable()
     {
         SceneManager.sceneLoaded += LoadScene;
-        //SceneManager.sceneUnloaded += SaveScene;
     }
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= LoadScene;
-        //SceneManager.sceneUnloaded -= SaveScene;
     }
-
     public void NewGame() 
     { 
         globalGameData = new GameData();
@@ -54,17 +51,15 @@ public class DataPersistenceManager : MonoBehaviour
     }
     public void LoadGame() 
     {
-        //Debug.Log("LoadGame...");
         // load any saved data from a file using the data handler
         globalGameData = globalSaveDataHandler.Load();
         localGameData = globalGameData;
         if(globalGameData == null) 
         {
-            //Debug.Log("No data was found");
             return;
         }
-        // else load data for all scripts that implement IDataPersistence
 
+        // else load data for all scripts that implement IDataPersistence
         // first load the correct scene
         SceneManager.LoadScene(globalGameData.sceneIndex);
         // then load everything else
@@ -74,11 +69,9 @@ public class DataPersistenceManager : MonoBehaviour
             if (dataPersistenceObj == null) { continue; }
             dataPersistenceObj.LoadData(globalGameData);
         }
-        //Debug.Log("FinishLoadGame...");
     }    
     public void SaveGame() 
     {
-        //Debug.Log("SaveGame...");
         globalGameData = localGameData;
         // first save the current scene
         globalGameData.sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -87,71 +80,48 @@ public class DataPersistenceManager : MonoBehaviour
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             if (dataPersistenceObj == null) { continue; }
-            dataPersistenceObj.SaveData(/*ref */globalGameData);
+            dataPersistenceObj.SaveData(globalGameData);
         }
         globalSaveDataHandler.Save(globalGameData);
-        //Debug.Log("FinishSaveGame...");
     }
 
     public void LoadScene(Scene scene, LoadSceneMode mode)
     {
-        //if(mode == LoadSceneMode.Single) { return; }
-        //if(mode == LoadSceneMode.Additive) { return; }
         if(scene.name == "MockBattleScene" || scene.name == "VirtualRook_jyj_KD_BattleStage") { return; }
-        //Debug.Log("LoadScene..." + SceneManager.GetActiveScene().name);
+
         if (localGameData == null && initializeDataIfNull)
         {
-            //Debug.Log("LoadScene: localData is null");
             localGameData = new GameData(); 
         }
+
         dataPersistenceObjects = FindAllDataPersistenceObjects();
-        //int index = 0;
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             if (dataPersistenceObj == null) { continue; }
             dataPersistenceObj.LoadData(localGameData);
-            //Debug.Log("scene data is loaded" + index++);
         }
-        //Debug.Log("FinishLoadScene..." + SceneManager.GetActiveScene().name);
     }
     
     public void SaveScene(Scene scene)
     {
-        //Debug.Log("SaveScene..." + SceneManager.GetActiveScene().name);
         if (localGameData == null && initializeDataIfNull) 
         {
-            //Debug.Log("SaveScene: localData is null");
             localGameData = new GameData(); 
         }
+
         dataPersistenceObjects = FindAllDataPersistenceObjects();
-        int index = 0;
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObjects)
         {
             if (dataPersistenceObj == null) { continue; }
-            dataPersistenceObj.SaveData(/*ref */localGameData);
-            //Debug.Log("scene data is saved " + index++);
+            dataPersistenceObj.SaveData(localGameData);
         }
         localSaveDataHandler.Save(localGameData);
-        //Debug.Log("FinishSaveScene..." + SceneManager.GetActiveScene().name);
     }
-
-
     public List<IDataPersistence> FindAllDataPersistenceObjects()
     {
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>()
             .OfType<IDataPersistence>();
-
         return new List<IDataPersistence>(dataPersistenceObjects);
-    }
-
-
-
-    // --- simple save on quit, load on start ---
-    private void Start()
-    {
-        //dataPersistenceObjects = FindAllDataPersistenceObjects();
-        //if(!enableDataPersistence) { return; }
-        //LoadGame();
     }
     public void OnApplicationQuit()
     {
