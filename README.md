@@ -1,6 +1,8 @@
 # Final-Melody
 [Download on itch.io to play](https://kdeng23.itch.io/final-melody)
 
+[Scripting Documentation](https://docs.google.com/document/d/1DT68T4bE4WxgdYY85ceindu8-QG1DvWmrwOPdH6RaOo/edit?tab=t.0#heading=h.y5hz2twub9sp)
+
 To view the project, download the ZIP or clone the repository. Then add the project through Unity Hub. Install Unity 2022.3.27f1 and open the Unity project.
 
 To view the Wwise project, download the Audiokinetic Launcher and install Wwise version 2023.1.4.8496.3091. Then find and select the 'Final Melody_WwiseProject' folder to open the Wwise project.
